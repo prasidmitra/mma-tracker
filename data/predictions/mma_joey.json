@@ -494,32 +494,6 @@
     "raw_excerpt": "I'm going to pick P Yan to get it done fourth round TKO...I just can't imagine a world where Jan loses this fight"
   },
   {
-    "prediction_id": "mma_joey_ufc_fight_night_yan_vs_figueiredo_hernandez_tumendemberel",
-    "creator": "mma_joey",
-    "event_id": "ufc-fight-night-yan-vs-figueiredo",
-    "fight_id": "ufc-fight-night-yan-vs-figueiredo-hernandez-tumendemberel",
-    "video_id": "nqo5O98aD8A",
-    "predicted_winner": null,
-    "confidence": "not_found",
-    "correct": null,
-    "prediction_changed": false,
-    "fight_skipped": true,
-    "raw_excerpt": null
-  },
-  {
-    "prediction_id": "mma_joey_ufc_fight_night_yan_vs_figueiredo_kavanagh_ochoa",
-    "creator": "mma_joey",
-    "event_id": "ufc-fight-night-yan-vs-figueiredo",
-    "fight_id": "ufc-fight-night-yan-vs-figueiredo-kavanagh-ochoa",
-    "video_id": "nqo5O98aD8A",
-    "predicted_winner": null,
-    "confidence": "not_found",
-    "correct": null,
-    "prediction_changed": false,
-    "fight_skipped": true,
-    "raw_excerpt": null
-  },
-  {
     "prediction_id": "mma_joey_ufc_309_hardy_moura",
     "creator": "mma_joey",
     "event_id": "ufc-309",
@@ -1610,19 +1584,6 @@
     "prediction_changed": false,
     "fight_skipped": false,
     "raw_excerpt": "I'm picking Ben Wason second round TKO I'm going to say second round TKO for Ben wony"
-  },
-  {
-    "prediction_id": "mma_joey_ufc_fight_night_moicano_vs_saint_denis_lapilus_morales",
-    "creator": "mma_joey",
-    "event_id": "ufc-fight-night-moicano-vs-saint-denis",
-    "fight_id": "ufc-fight-night-moicano-vs-saint-denis-lapilus-morales",
-    "video_id": "LMLjlC85O3g",
-    "predicted_winner": null,
-    "confidence": "not_found",
-    "correct": null,
-    "prediction_changed": false,
-    "fight_skipped": true,
-    "raw_excerpt": null
   },
   {
     "prediction_id": "mma_joey_ufc_306_aoriqileng_jr.",
