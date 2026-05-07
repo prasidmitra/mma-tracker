@@ -219,7 +219,7 @@ YOUTUBE_API_KEY=...        # from Google Cloud Console, free tier
 - NEVER calculate accuracy on pick_em predictions (predicted_winner: null)
 - NEVER calculate accuracy on cancelled fights
 - Missing prediction videos = excluded from accuracy, not counted as wrong
-- All date ranges: last 5 years from today
+- All date ranges: last 10 years from today
 - Always use Claude Haiku for bulk parsing (cheapest), Sonnet for ambiguous re-passes
 - For creators without a known channel_id, always confirm the channel is correct
   by checking video titles before bulk scraping — do not assume
