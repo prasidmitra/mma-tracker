@@ -793,19 +793,6 @@
     "raw_excerpt": "I'm going to go with Carlos prattes getting this one done... TKO win from Carlos pratz"
   },
   {
-    "prediction_id": "mma_guru_ufc_fight_night_magny_vs_prates_blackshear_stamann",
-    "creator": "mma_guru",
-    "event_id": "ufc-fight-night-magny-vs-prates",
-    "fight_id": "ufc-fight-night-magny-vs-prates-blackshear-stamann",
-    "video_id": "LNFsjfGnOdg",
-    "predicted_winner": null,
-    "confidence": "not_found",
-    "correct": null,
-    "prediction_changed": false,
-    "fight_skipped": false,
-    "raw_excerpt": null
-  },
-  {
     "prediction_id": "mma_guru_ufc_fight_night_moreno_vs_albazi_shore_zalal",
     "creator": "mma_guru",
     "event_id": "ufc-fight-night-moreno-vs-albazi",
@@ -4223,19 +4210,6 @@
     "prediction_changed": false,
     "fight_skipped": false,
     "raw_excerpt": "I'm going to go the underdog of Charles Johnson here over Jake Hadley"
-  },
-  {
-    "prediction_id": "mma_guru_ufc_fight_night_lewis_vs_nascimento_aldrich_hardy",
-    "creator": "mma_guru",
-    "event_id": "ufc-fight-night-lewis-vs-nascimento",
-    "fight_id": "ufc-fight-night-lewis-vs-nascimento-aldrich-hardy",
-    "video_id": "puGMN4bKkoo",
-    "predicted_winner": "JJ Aldrich",
-    "confidence": "medium",
-    "correct": false,
-    "prediction_changed": false,
-    "fight_skipped": false,
-    "raw_excerpt": "I think JJ Aldridge is just a little bit of a step up too soon"
   },
   {
     "prediction_id": "mma_guru_ufc_fight_night_lewis_vs_nascimento_lewis_nascimento",
