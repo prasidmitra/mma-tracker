@@ -16,6 +16,7 @@ YouTube IP-block workaround:
 
 import http.cookiejar
 import os
+import random
 import re
 import sys
 import time
@@ -130,6 +131,8 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
 
     if transcript is None:
         raise TranscriptUnavailable("No English transcript available")
+
+    time.sleep(random.uniform(3, 6))  # gap between list() and fetch() to avoid rate limits
 
     try:
         fetched = transcript.fetch()
