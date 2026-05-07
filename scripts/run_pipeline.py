@@ -12,6 +12,7 @@ Usage:
 
 import argparse
 import json
+import random
 import sys
 import time
 from datetime import datetime, timezone
@@ -198,7 +199,7 @@ def run(
             print(f"  Transcript error: {e}")
             continue
 
-        time.sleep(3)
+        time.sleep(random.uniform(3, 8))
 
         # ── 2C: Parse predictions ────────────────────────────────────────────
         try:
