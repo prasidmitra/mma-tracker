@@ -32,7 +32,7 @@ import sys
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from discover_videos import run as discover_run, CREATORS
-from fetch_transcripts import fetch_with_retry, TranscriptUnavailable
+from fetch_transcripts import fetch_with_retry, TranscriptUnavailable, TranscriptRateLimited
 from parse_predictions import (
     parse_video,
     load_predictions, save_predictions,
@@ -181,6 +181,11 @@ def run(
                 "status": "transcript_fetched",
                 "transcript_type": t_type,
             })
+        except TranscriptRateLimited as e:
+            print(f"  Rate limited: {e}")
+            print("  Stopping pipeline — re-run when rate limit clears (a few hours).")
+            save_manifest(manifest)
+            return  # Stop processing; all remaining stay 'pending' for next run
         except TranscriptUnavailable as e:
             print(f"  No transcript: {e}")
             update_manifest_entry(manifest, video_id, creator, {

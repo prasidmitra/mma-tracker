@@ -6,18 +6,23 @@ Never writes transcripts to disk. Returns (text, transcript_type) tuple.
 transcript_type: "manual" | "auto"
 
 YouTube IP-block workaround:
-  Export cookies from your logged-in browser using the "Get cookies.txt LOCALLY"
-  Chrome extension (or equivalent), save as cookies.txt in the project root.
-  The script picks them up automatically.
+  Set YOUTUBE_COOKIES_PATH in .env (or the environment) to the path of a
+  Netscape-format cookies file exported from your browser while logged in to
+  YouTube (e.g. via the "Get cookies.txt LOCALLY" Chrome extension).
+
+  Note: youtube-transcript-api v1.2.4 has cookies_path commented out internally,
+  so we load the file manually into a requests.Session and pass it as http_client.
 """
 
 import http.cookiejar
+import os
 import re
 import sys
 import time
 from pathlib import Path
 
 import requests
+from dotenv import load_dotenv
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import (
     IpBlocked,
@@ -26,41 +31,57 @@ from youtube_transcript_api._errors import (
     VideoUnavailable,
 )
 
-ROOT = Path(__file__).parent.parent
-COOKIES_FILE = ROOT / "cookies.txt"
+load_dotenv()
 
 LANG_PREFERENCES = ["en", "en-US", "en-GB", "en-CA", "en-AU"]
+
+
+def _cookies_path() -> Path | None:
+    raw = os.getenv("YOUTUBE_COOKIES_PATH", "").strip()
+    if not raw:
+        return None
+    p = Path(raw).expanduser()
+    return p if p.exists() else None
 
 
 class TranscriptUnavailable(Exception):
     pass
 
 
+class TranscriptRateLimited(Exception):
+    """YouTube is rate-limiting this IP. Temporary — retry after a delay."""
+    pass
+
+
 def _build_api() -> YouTubeTranscriptApi:
-    """Build API instance, loading browser cookies if cookies.txt exists."""
-    if COOKIES_FILE.exists():
+    """Build API instance, injecting browser cookies via http_client if configured."""
+    cp = _cookies_path()
+    if cp:
         jar = http.cookiejar.MozillaCookieJar()
         try:
-            jar.load(str(COOKIES_FILE), ignore_discard=True, ignore_expires=True)
+            jar.load(str(cp), ignore_discard=True, ignore_expires=True)
             session = requests.Session()
-            session.cookies = jar
+            session.cookies = jar  # type: ignore[assignment]
+            print(f"  [transcript] Using cookies from {cp}", file=sys.stderr)
             return YouTubeTranscriptApi(http_client=session)
         except Exception as e:
-            print(f"  WARN: Could not load cookies.txt: {e}", file=sys.stderr)
+            print(f"  WARN: Could not load cookie file {cp}: {e}", file=sys.stderr)
     return YouTubeTranscriptApi()
 
 
-# Module-level singleton (rebuilt if cookies.txt changes)
+# Module-level singleton — rebuilt whenever the cookies file path or mtime changes
 _api_instance: YouTubeTranscriptApi | None = None
-_cookies_mtime: float = 0.0
+_last_cookies_key: tuple = ()
 
 
 def _get_api() -> YouTubeTranscriptApi:
-    global _api_instance, _cookies_mtime
-    current_mtime = COOKIES_FILE.stat().st_mtime if COOKIES_FILE.exists() else 0.0
-    if _api_instance is None or current_mtime != _cookies_mtime:
+    global _api_instance, _last_cookies_key
+    cp = _cookies_path()
+    mtime = cp.stat().st_mtime if cp else 0.0
+    key = (str(cp), mtime)
+    if _api_instance is None or key != _last_cookies_key:
         _api_instance = _build_api()
-        _cookies_mtime = current_mtime
+        _last_cookies_key = key
     return _api_instance
 
 
@@ -78,10 +99,11 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
 
     try:
         transcript_list = api.list(video_id)
-    except IpBlocked as e:
-        raise TranscriptUnavailable(
-            "IP blocked by YouTube. Add cookies.txt to project root to fix this. "
-            "See scripts/fetch_transcripts.py docstring for instructions."
+    except IpBlocked:
+        raise TranscriptRateLimited(
+            "YouTube is rate-limiting this IP on transcript fetching. "
+            "This is temporary — wait a few hours and retry. "
+            "Using a VPN or mobile hotspot will bypass this immediately."
         )
     except (VideoUnavailable, TranscriptsDisabled) as e:
         raise TranscriptUnavailable(str(e))
@@ -110,13 +132,12 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
         raise TranscriptUnavailable("No English transcript available")
 
     try:
-        # v1.2.4+: fetch() returns FetchedTranscript, iterate to get FetchedTranscriptSnippet
-        # Each snippet has .text (str), .start (float), .duration (float)
         fetched = transcript.fetch()
         segments = list(fetched)
     except IpBlocked:
-        raise TranscriptUnavailable(
-            "IP blocked fetching segments. Add cookies.txt to project root."
+        raise TranscriptRateLimited(
+            "YouTube is rate-limiting this IP on transcript fetching. "
+            "Wait a few hours or switch to a different network/VPN."
         )
     except Exception as e:
         raise TranscriptUnavailable(f"Failed to fetch segments: {e}")
@@ -134,13 +155,13 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
 
 
 def fetch_with_retry(video_id: str, retries: int = 2) -> tuple[str, str]:
-    """Fetch transcript with retry on transient errors; no retry on permanent ones."""
+    """Fetch transcript with retry on transient errors; no retry on permanent or rate-limit errors."""
     last_err = None
     for attempt in range(retries + 1):
         try:
             return fetch_transcript(video_id)
-        except TranscriptUnavailable:
-            raise  # Permanent — don't retry
+        except (TranscriptUnavailable, TranscriptRateLimited):
+            raise  # Don't retry these
         except Exception as e:
             last_err = e
             if attempt < retries:
