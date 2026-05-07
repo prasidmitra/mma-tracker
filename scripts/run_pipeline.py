@@ -224,7 +224,7 @@ def run(
             print(f"  Transcript error: {e}")
             continue
 
-        time.sleep(random.uniform(20, 40))
+        time.sleep(random.uniform(60, 120))
 
         # ── 2C: Parse predictions ────────────────────────────────────────────
         try:
