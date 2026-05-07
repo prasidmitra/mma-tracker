@@ -1,0 +1,30 @@
+[
+  {
+    "flag_id": "flag_0001",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-magny-vs-prates",
+    "fight_id": "ufc-fight-night-magny-vs-prates-santos-scroggin",
+    "video_id": "LNFsjfGnOdg",
+    "ambiguity_reason": "Creator uses nickname 'Nicholas daby' which does not clearly map to either fighter on the card. Transcript context suggests picking the high-output fighter, but the alias is ambiguous.",
+    "raw_excerpt": "I'm gonna go Nicholas daby... putting him up against the cage",
+    "suggested_winner": "Zachary Scroggin",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0002",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-barboza-vs-murphy",
+    "fight_id": "ufc-fight-night-barboza-vs-murphy-alatengheili-rodrigues",
+    "video_id": "HcPAFEn5kXA",
+    "ambiguity_reason": "Creator uses nickname 'Helen'/'Heen' for Alatengheili; no explicit canonical name match in transcript for this specific fight",
+    "raw_excerpt": "I'm actually going to go with Helen here...more consistent overall",
+    "suggested_winner": "Alatengheili",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  }
+]
