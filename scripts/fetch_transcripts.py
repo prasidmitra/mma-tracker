@@ -132,7 +132,7 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
     if transcript is None:
         raise TranscriptUnavailable("No English transcript available")
 
-    time.sleep(random.uniform(3, 6))  # gap between list() and fetch() to avoid rate limits
+    time.sleep(random.uniform(8, 15))  # gap between list() and fetch() to avoid rate limits
 
     try:
         fetched = transcript.fetch()
