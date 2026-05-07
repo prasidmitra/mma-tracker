@@ -183,10 +183,30 @@ def run(
                 "transcript_type": t_type,
             })
         except TranscriptRateLimited as e:
-            print(f"  Rate limited: {e}")
-            print("  Stopping pipeline — re-run when rate limit clears (a few hours).")
+            wait_min = 30
+            print(f"  Rate limited — waiting {wait_min} minutes before retrying...")
             save_manifest(manifest)
-            return  # Stop processing; all remaining stay 'pending' for next run
+            time.sleep(wait_min * 60)
+            # Retry once after the wait
+            try:
+                transcript, t_type = fetch_with_retry(video_id)
+                word_count = len(transcript.split())
+                print(f"  Transcript (after wait): {t_type}, {word_count} words")
+                update_manifest_entry(manifest, video_id, creator, {
+                    "status": "transcript_fetched",
+                    "transcript_type": t_type,
+                })
+            except TranscriptRateLimited:
+                print("  Still rate limited after wait. Stopping — re-run later.")
+                return
+            except TranscriptUnavailable as e:
+                print(f"  No transcript: {e}")
+                update_manifest_entry(manifest, video_id, creator, {
+                    "status": "transcript_unavailable",
+                    "transcript_type": None,
+                })
+                save_manifest(manifest)
+                continue
         except TranscriptUnavailable as e:
             print(f"  No transcript: {e}")
             update_manifest_entry(manifest, video_id, creator, {
