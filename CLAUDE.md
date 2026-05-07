@@ -1,7 +1,7 @@
 # MMA Predictor Accuracy Tracker
 
 ## Git & GitHub
-- Remote: https://github.com/prasidmitra/mma-tracker
+- Remote: git@github.com:prasidmitra/mma-tracker.git (SSH — HTTPS auth doesn't work in this env)
 - After every code change in a session, commit and push to main.
 - Use descriptive commit messages. Co-author line is required (see below).
 - Commit format:
