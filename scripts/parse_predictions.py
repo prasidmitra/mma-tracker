@@ -152,12 +152,22 @@ Schema for each element:
 
 
 def parse_claude_response(text: str) -> list[dict]:
-    """Extract JSON array from Claude's response, handling markdown fences."""
+    """Extract JSON array from Claude's response, handling markdown fences and prose wrapping."""
     text = text.strip()
-    # Strip markdown code fences if present
+    # Strip markdown code fences
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
-    return json.loads(text)
+    text = text.strip()
+    # Try direct parse first
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    # Sonnet sometimes wraps JSON in explanatory text — find the array
+    m = re.search(r"\[.*\]", text, re.DOTALL)
+    if m:
+        return json.loads(m.group(0))
+    raise ValueError("No JSON array found in response")
 
 
 def call_claude(client: anthropic.Anthropic, model: str, user_message: str) -> tuple[list[dict], dict]:
