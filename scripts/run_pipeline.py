@@ -182,31 +182,36 @@ def run(
                 "status": "transcript_fetched",
                 "transcript_type": t_type,
             })
-        except TranscriptRateLimited as e:
-            wait_min = 30
-            print(f"  Rate limited — waiting {wait_min} minutes before retrying...")
+        except TranscriptRateLimited:
             save_manifest(manifest)
-            time.sleep(wait_min * 60)
-            # Retry once after the wait
-            try:
-                transcript, t_type = fetch_with_retry(video_id)
-                word_count = len(transcript.split())
-                print(f"  Transcript (after wait): {t_type}, {word_count} words")
-                update_manifest_entry(manifest, video_id, creator, {
-                    "status": "transcript_fetched",
-                    "transcript_type": t_type,
-                })
-            except TranscriptRateLimited:
-                print("  Still rate limited after wait. Stopping — re-run later.")
+            for attempt in range(3):
+                wait_min = 90
+                print(f"  Rate limited — waiting {wait_min} min (attempt {attempt + 1}/3)...")
+                time.sleep(wait_min * 60)
+                try:
+                    transcript, t_type = fetch_with_retry(video_id)
+                    word_count = len(transcript.split())
+                    print(f"  Transcript (after wait): {t_type}, {word_count} words")
+                    update_manifest_entry(manifest, video_id, creator, {
+                        "status": "transcript_fetched",
+                        "transcript_type": t_type,
+                    })
+                    break
+                except TranscriptRateLimited:
+                    if attempt == 2:
+                        print("  Still rate limited after 3 attempts. Stopping.")
+                        return
+                    continue
+                except TranscriptUnavailable as e:
+                    print(f"  No transcript: {e}")
+                    update_manifest_entry(manifest, video_id, creator, {
+                        "status": "transcript_unavailable",
+                        "transcript_type": None,
+                    })
+                    save_manifest(manifest)
+                    break
+            else:
                 return
-            except TranscriptUnavailable as e:
-                print(f"  No transcript: {e}")
-                update_manifest_entry(manifest, video_id, creator, {
-                    "status": "transcript_unavailable",
-                    "transcript_type": None,
-                })
-                save_manifest(manifest)
-                continue
         except TranscriptUnavailable as e:
             print(f"  No transcript: {e}")
             update_manifest_entry(manifest, video_id, creator, {
