@@ -26,5 +26,47 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0003",
+    "creator": "mma_joey",
+    "event_id": "ufc-fight-night-yan-vs-figueiredo",
+    "fight_id": "ufc-fight-night-yan-vs-figueiredo-ming-xiaocan",
+    "video_id": "nqo5O98aD8A",
+    "ambiguity_reason": "Creator refers to 'shaan fun' which maps to Feng Xiaocan based on context, but the phrasing is unclear and potentially indicates confusion with fighter names given the garbled pronunciation attempts throughout",
+    "raw_excerpt": "I think shaan can beat her anywhere...I'm going to pick shaan fun...to win via decision",
+    "suggested_winner": "Feng Xiaocan",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0004",
+    "creator": "mma_joey",
+    "event_id": "ufc-fight-night-magny-vs-prates",
+    "fight_id": "ufc-fight-night-magny-vs-prates-santos-scroggin",
+    "video_id": "WxqznEldaAg",
+    "ambiguity_reason": "Transcript refers to 'Nicholas Doby' but fight card lists 'Zachary Scroggin'. Names do not match. Creator may be referencing wrong fight or mislabeling fighter.",
+    "raw_excerpt": "I'm going Nicholas Doby via decision... doby's 39 but I the Dolby that I've seen in the last couple fights",
+    "suggested_winner": "Zachary Scroggin",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0005",
+    "creator": "mma_joey",
+    "event_id": "ufc-fight-night-burns-vs-brady",
+    "fight_id": "ufc-fight-night-burns-vs-brady-durden-schnell",
+    "video_id": "D1KlVpm0oyc",
+    "ambiguity_reason": "Card lists Cody Durden vs Matt Schnell, but transcript only discusses Matt Schnell vs Alessandro Costa (not on provided fight card). This is a mismatch between card and transcript content.",
+    "raw_excerpt": "I'm gonna say second round KO early second round KO for Costa",
+    "suggested_winner": "Alessandro Costa",
+    "confidence_in_suggestion": "high",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]
