@@ -68,5 +68,33 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0006",
+    "creator": "mma_joey",
+    "event_id": "ufc-297",
+    "fight_id": "ufc-297-cachoeira-jasudavicius",
+    "video_id": "snO3iGkEQ7s",
+    "ambiguity_reason": "Creator's statement 'I almost want to switch my pick' and 'wouldn't shock me if Priscilla wins' appears in context of a different fight (Gordon). Unclear if this applies to Cachoeira fight.",
+    "raw_excerpt": "I almost want to switch my pick to malol Gordon now that he missed weight... wouldn't shock me if Priscilla wins",
+    "suggested_winner": "Priscila Cachoeira",
+    "confidence_in_suggestion": "low",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0007",
+    "creator": "mma_joey",
+    "event_id": "ufc-297",
+    "fight_id": "ufc-297-flick-gordon",
+    "video_id": "snO3iGkEQ7s",
+    "ambiguity_reason": "Creator expresses wanting to switch to Gordon after learning he missed weight by 1.5 lbs, but the final pick is unclear. The phrase 'I almost want to switch' suggests uncertainty.",
+    "raw_excerpt": "Malcolm Gordon missed weight I think I did see that him putting the mouth Garden I almost want to switch my pick to malol Gordon",
+    "suggested_winner": "Jimmy Flick",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]
