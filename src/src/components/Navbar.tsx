@@ -1,15 +1,12 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
 import { useIsMobile } from '../hooks/useIsMobile';
+import { useData } from '../context/DataContext';
 import logo from '../assets/logo.png';
 
 const LOGO_HEIGHT = 48;
-
-const sortedCreators = [...ALL_CREATORS].sort((a, b) =>
-  CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
-);
 
 const navLinkStyle = {
   color: 'var(--text-secondary)' as const,
@@ -24,6 +21,14 @@ export function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const navigate = useNavigate();
   const isMobile = useIsMobile();
+  const { predictions } = useData();
+
+  const sortedCreators = useMemo(() =>
+    ALL_CREATORS
+      .filter(slug => predictions.some(p => p.creator === slug))
+      .sort((a, b) => CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])),
+    [predictions]
+  );
 
   const closeHamburger = () => setHamburgerOpen(false);
 

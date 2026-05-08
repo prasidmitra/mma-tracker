@@ -44,9 +44,10 @@ export function CreatorDetail() {
   const isMobile = useIsMobile();
 
   const sortedCreators = useMemo(() =>
-    [...ALL_CREATORS.filter(s => CREATOR_DISPLAY[s])].sort((a, b) =>
-      CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
-    ), []);
+    ALL_CREATORS
+      .filter(s => CREATOR_DISPLAY[s] && predictions.some(p => p.creator === s))
+      .sort((a, b) => CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])),
+    [predictions]);
 
   const creator = slug || '';
   const filtered = useMemo(() =>
