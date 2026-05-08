@@ -181,7 +181,7 @@ export function CreatorDetail() {
                     return (
                       <tr key={p.prediction_id} style={{
                         borderBottom: i < preds.length - 1 ? '1px solid var(--border)' : 'none',
-                        background: i % 2 === 1 ? `color-mix(in srgb, var(--bg-row-alt) 50%, ${rowBg})` : rowBg,
+                        background: rowBg,
                         borderLeft: `3px solid ${borderColor}`,
                         opacity: isEligible ? 1 : 0.6,
                       }}>
