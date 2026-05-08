@@ -175,7 +175,7 @@ export function CreatorDetail() {
                     const exclusionReason = !isEligible ? getExclusionReason(p, fight) : '';
                     const borderColor = !isEligible ? 'transparent' : p.correct ? 'var(--accent-purple)' : 'var(--accent-red)';
                     const rowBg = !isEligible ? 'transparent' : p.correct
-                      ? 'rgba(154,107,204,0.08)'
+                      ? 'rgba(123,79,170,0.08)'
                       : 'rgba(248,81,73,0.05)';
 
                     return (

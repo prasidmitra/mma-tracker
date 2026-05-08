@@ -87,7 +87,7 @@ export function Dashboard() {
                   <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
                   <td style={{ padding: '0.75rem 0.875rem' }}>
                     <Link to={`/creator/${s.slug}`} style={{ color: 'var(--text-primary)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}
-                      onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-blue)')}
+                      onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-purple)')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-primary)')}>
                       {s.displayName}
                     </Link>
