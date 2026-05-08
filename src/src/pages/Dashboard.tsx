@@ -39,7 +39,7 @@ export function Dashboard() {
       {pendingFlags > 0 && (
         <div style={{
           border: '1px solid var(--highlight)',
-          background: 'rgba(179,136,255,0.08)',
+          background: 'rgba(157,114,198,0.10)',
           borderRadius: '6px',
           padding: '0.625rem 1rem',
           marginBottom: '1rem',
