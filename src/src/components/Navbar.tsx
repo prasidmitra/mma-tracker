@@ -2,6 +2,15 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
+import logoIcon from '../assets/logo-text.png';
+import logoWordmark from '../assets/logo-image.png';
+
+const ICON_HEIGHT = 36;
+const WORDMARK_HEIGHT = Math.round(ICON_HEIGHT * 0.7);
+
+const sortedCreators = [...ALL_CREATORS].sort((a, b) =>
+  CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
+);
 
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -22,8 +31,23 @@ export function Navbar() {
       zIndex: 100,
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-        <Link to="/" style={{ color: 'var(--text-primary)', fontWeight: 800, fontSize: '1rem', letterSpacing: '-0.02em', textDecoration: 'none', whiteSpace: 'nowrap' }}>
-          MMA Prediction Tracker
+        {/* Logo */}
+        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <img src={logoIcon} alt="OctaScore icon" style={{ height: `${ICON_HEIGHT}px`, width: 'auto', display: 'block' }} />
+          <img src={logoWordmark} alt="OctaScore" style={{ height: `${WORDMARK_HEIGHT}px`, width: 'auto', display: 'block' }} />
+        </Link>
+
+        {/* Home */}
+        <Link to="/" style={{
+          color: 'var(--text-secondary)',
+          fontSize: '0.85rem',
+          fontWeight: 600,
+          textDecoration: 'none',
+        }}
+          onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
+          onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+        >
+          Home
         </Link>
 
         {/* Creators dropdown */}
@@ -60,7 +84,7 @@ export function Navbar() {
               boxShadow: '0 8px 24px rgba(0,0,0,0.3)',
               zIndex: 200,
             }}>
-              {ALL_CREATORS.map(slug => (
+              {sortedCreators.map(slug => (
                 <button
                   key={slug}
                   onClick={() => { navigate(`/creator/${slug}`); setDropdownOpen(false); }}

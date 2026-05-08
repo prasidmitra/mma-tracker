@@ -26,6 +26,16 @@ export function Dashboard() {
 
   return (
     <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '1.5rem' }}>
+      {/* Hero */}
+      <div style={{ marginBottom: '2rem' }}>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+          See how the top MMA YouTubers perform on their picks.
+        </p>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, letterSpacing: '-0.01em', color: 'var(--text-primary)' }}>
+          Leaderboard
+        </h2>
+      </div>
+
       {pendingFlags > 0 && (
         <div style={{
           border: '1px solid var(--accent-yellow)',

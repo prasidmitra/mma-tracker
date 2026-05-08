@@ -6,6 +6,23 @@ import { useFilters } from '../hooks/useFilters';
 import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, formatPct, getAccuracyColor } from '../utils/accuracy';
 import type { Prediction, Event, Fight } from '../types';
 
+const CARD_ORDER: Record<string, number> = {
+  main_event: 0,
+  main_card: 1,
+  prelims: 2,
+  early_prelims: 3,
+};
+
+function sortPredsByFightOrder(preds: Prediction[], event: Event): Prediction[] {
+  return [...preds].sort((a, b) => {
+    const fa = event.fights.find(f => f.fight_id === a.fight_id);
+    const fb = event.fights.find(f => f.fight_id === b.fight_id);
+    const oa = fa ? (CARD_ORDER[fa.card_position] ?? 99) : 99;
+    const ob = fb ? (CARD_ORDER[fb.card_position] ?? 99) : 99;
+    return oa - ob;
+  });
+}
+
 function getExclusionReason(p: Prediction, fight: Fight | undefined): string {
   if (!fight) return 'Fight not found';
   if (fight.winner === null) return 'Cancelled / No Contest';
@@ -101,7 +118,8 @@ export function CreatorDetail() {
       )}
 
       {/* Event groups */}
-      {eventGroups.map(({ event, preds }) => {
+      {eventGroups.map(({ event, preds: rawPreds }) => {
+        const preds = sortPredsByFightOrder(rawPreds, event);
         const isCollapsed = collapsed.has(event.event_id);
         const eventElig = eligiblePredictions(preds);
         const eventCorrect = eventElig.filter(p => p.correct).length;
