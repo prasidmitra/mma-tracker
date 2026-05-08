@@ -29,6 +29,23 @@ position to see who actually knows their stuff vs who just sounds confident.
 7. Bedtime MMA (search YouTube for "Bedtime MMA" predictions)
 8. Lucas Tracy MMA (search YouTube for "Lucas Tracy MMA" predictions)
 
+## CSV Exports — Run After Every Data Update
+Whenever any prediction data changes (pipeline run, manual correction, new creator added),
+always run the export script immediately after:
+
+```bash
+source venv/bin/activate && python scripts/export_to_csv.py
+```
+
+This regenerates all five CSVs in `data/exports/`:
+- `predictions_all.csv`   — one row per prediction (all creators)
+- `accuracy_summary.csv`  — one row per creator with overall stats
+- `flagged.csv`           — all ambiguous/pending predictions
+- `fights_by_creator.csv` — long format: one row per (fight × creator)
+- `fights_all_creators.csv` — wide format: one row per fight, all creator picks as columns
+
+Commit and push the updated CSVs alongside the JSON data changes.
+
 ## Architecture — Static JSON, No Backend
 This project follows the covid19india.org architecture pattern:
 - ALL data lives as static JSON files in /data directory

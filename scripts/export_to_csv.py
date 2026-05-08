@@ -3,9 +3,13 @@
 Export predictions data to human-readable CSVs for manual verification.
 
 Outputs:
-  data/exports/predictions_all.csv  — one row per prediction
-  data/exports/accuracy_summary.csv — one row per creator
-  data/exports/flagged.csv          — all flagged/ambiguous predictions
+  data/exports/predictions_all.csv     — one row per prediction
+  data/exports/accuracy_summary.csv    — one row per creator
+  data/exports/flagged.csv             — all flagged/ambiguous predictions
+  data/exports/fights_by_creator.csv   — long format: one row per fight per creator
+  data/exports/fights_all_creators.csv — wide format: one row per fight, one col per creator
+
+Run this script after every pipeline run or manual data update.
 """
 
 import csv
@@ -202,6 +206,83 @@ def export_flagged(fight_map: dict, event_map: dict) -> int:
     return rows_written
 
 
+CREATORS = [
+    "mma_guru", "mma_joey", "sneaky_mma", "brendan_schaub",
+    "luke_thomas", "the_weasel", "bedtime_mma", "lucas_tracy_mma",
+]
+
+
+def export_fights_by_creator(predictions: list[dict], fight_map: dict) -> int:
+    """Long format: one row per (fight, creator) for every non-skipped prediction."""
+    cols = ["event", "date", "fight", "predicted_winner", "correct", "creator"]
+    rows = []
+    for p in predictions:
+        if p.get("fight_skipped") or p.get("predicted_winner") is None:
+            continue
+        entry = fight_map.get(p["fight_id"])
+        if not entry:
+            continue
+        ev, fight = entry
+        rows.append({
+            "event": ev["name"],
+            "date": ev["date"],
+            "fight": f"{fight['fighter_a']} vs {fight['fighter_b']}",
+            "predicted_winner": p["predicted_winner"] or "—",
+            "correct": p.get("correct", ""),
+            "creator": p["creator"],
+        })
+    out = EXPORT_DIR / "fights_by_creator.csv"
+    with open(out, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows(rows)
+    return len(rows)
+
+
+def export_fights_all_creators(fight_map: dict) -> int:
+    """Wide format: one row per fight, pick + correct columns for each creator."""
+    # Build fight_id → creator → {pick, correct, skipped}
+    pred_index: dict[str, dict] = {}
+    for slug in CREATORS:
+        path = DATA_DIR / "predictions" / f"{slug}.json"
+        if not path.exists():
+            continue
+        for p in json.loads(path.read_text()):
+            fid = p["fight_id"]
+            pred_index.setdefault(fid, {})[slug] = {
+                "pick": p.get("predicted_winner") or "—",
+                "correct": p.get("correct", ""),
+                "skipped": p.get("fight_skipped", False),
+            }
+
+    cols = ["event", "date", "fight", "actual_winner", "method"] + [
+        col for slug in CREATORS for col in (f"{slug}_pick", f"{slug}_correct")
+    ]
+    rows = []
+    for fight_id, (ev, fight) in fight_map.items():
+        creator_data = pred_index.get(fight_id, {})
+        row: dict = {
+            "event": ev["name"],
+            "date": ev["date"],
+            "fight": f"{fight['fighter_a']} vs {fight['fighter_b']}",
+            "actual_winner": fight.get("winner") or "—",
+            "method": fight.get("method") or "—",
+        }
+        for slug in CREATORS:
+            cd = creator_data.get(slug, {})
+            row[f"{slug}_pick"] = "" if cd.get("skipped") else cd.get("pick", "")
+            row[f"{slug}_correct"] = "" if cd.get("skipped") or not cd else cd.get("correct", "")
+        rows.append(row)
+
+    rows.sort(key=lambda r: r["date"], reverse=True)
+    out = EXPORT_DIR / "fights_all_creators.csv"
+    with open(out, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows(rows)
+    return len(rows)
+
+
 def main():
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     fight_map, event_map = load_events()
@@ -215,6 +296,12 @@ def main():
 
     n_flagged = export_flagged(fight_map, event_map)
     print(f"Exported {n_flagged} flagged items to data/exports/flagged.csv")
+
+    n_by_creator = export_fights_by_creator(predictions, fight_map)
+    print(f"Exported {n_by_creator} rows to data/exports/fights_by_creator.csv")
+
+    n_wide = export_fights_all_creators(fight_map)
+    print(f"Exported {n_wide} rows to data/exports/fights_all_creators.csv")
 
 
 if __name__ == "__main__":
