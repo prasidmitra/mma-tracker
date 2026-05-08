@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect, type ReactNode } from '
 import type { Event, Prediction, FlaggedPrediction } from '../types';
 import { mockEvents, mockPredictions, mockFlagged } from '../data/mock';
 
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 const CREATORS = ['mma_guru', 'mma_joey', 'sneaky_mma', 'brendan_schaub', 'luke_thomas', 'the_weasel', 'bedtime_mma', 'lucas_tracy_mma'];
 
