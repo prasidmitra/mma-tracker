@@ -28,6 +28,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import (
     IpBlocked,
     NoTranscriptFound,
+    RequestBlocked,
     TranscriptsDisabled,
     VideoUnavailable,
 )
@@ -100,7 +101,7 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
 
     try:
         transcript_list = api.list(video_id)
-    except IpBlocked:
+    except (IpBlocked, RequestBlocked):
         raise TranscriptRateLimited(
             "YouTube is rate-limiting this IP on transcript fetching. "
             "This is temporary — wait a few hours and retry. "
@@ -137,7 +138,7 @@ def fetch_transcript(video_id: str) -> tuple[str, str]:
     try:
         fetched = transcript.fetch()
         segments = list(fetched)
-    except IpBlocked:
+    except (IpBlocked, RequestBlocked):
         raise TranscriptRateLimited(
             "YouTube is rate-limiting this IP on transcript fetching. "
             "Wait a few hours or switch to a different network/VPN."
