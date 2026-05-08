@@ -35,7 +35,7 @@ export function Navbar() {
       {/* Center nav links */}
       <div style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
 
-        {/* Home */}
+        {/* Leaderboard */}
         <Link to="/" style={{
           color: 'var(--text-secondary)',
           fontSize: '1rem',
@@ -45,7 +45,7 @@ export function Navbar() {
           onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
           onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
         >
-          Home
+          Leaderboard
         </Link>
 
         {/* About */}
@@ -112,7 +112,7 @@ export function Navbar() {
                     cursor: 'pointer',
                     fontFamily: 'inherit',
                   }}
-                  onMouseEnter={e => (e.currentTarget.style.background = 'var(--bg-row-alt)')}
+                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
                   onMouseLeave={e => (e.currentTarget.style.background = 'none')}
                 >
                   {CREATOR_DISPLAY[slug]}

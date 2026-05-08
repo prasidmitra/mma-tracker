@@ -38,7 +38,7 @@ function FilterOption({ active, onClick, children }: { active: boolean; onClick:
       transition: 'all 0.12s ease',
       marginBottom: '2px',
     }}
-      onMouseEnter={e => { if (!active) e.currentTarget.style.background = 'var(--bg-row-alt)'; }}
+      onMouseEnter={e => { if (!active) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
       onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'transparent'; }}
     >
       {children}

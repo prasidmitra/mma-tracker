@@ -80,17 +80,23 @@ export function CreatorDetail() {
           value={creator}
           onChange={e => navigate(`/creator/${e.target.value}${window.location.search}`)}
           style={{
-            background: 'var(--bg-card)',
+            background: 'var(--panel)',
             border: '1px solid var(--border)',
-            color: 'var(--text-primary)',
-            padding: '0.375rem 0.75rem',
-            borderRadius: '6px',
-            fontSize: '0.8rem',
+            color: 'var(--text)',
+            padding: '0.4rem 2.25rem 0.4rem 0.875rem',
+            borderRadius: '8px',
+            fontSize: '0.82rem',
             fontFamily: 'inherit',
+            fontWeight: 500,
             cursor: 'pointer',
+            appearance: 'none',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%238B93A7' d='M5 7L0 2h10z'/%3E%3C/svg%3E")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'right 0.65rem center',
+            outline: 'none',
           }}
         >
-          {ALL_CREATORS.filter(s => CREATOR_DISPLAY[s]).map(s => (
+          {[...ALL_CREATORS.filter(s => CREATOR_DISPLAY[s])].sort((a, b) => CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])).map(s => (
             <option key={s} value={s}>{CREATOR_DISPLAY[s]}</option>
           ))}
         </select>
