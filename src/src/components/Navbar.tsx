@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
-import logoIcon from '../assets/logo-text.png';
-import logoWordmark from '../assets/logo-image.png';
+import logoIcon from '../assets/logo-icon.png';
+import logoWordmark from '../assets/logo-wordmark.png';
 
 const ICON_HEIGHT = 48;
 const WORDMARK_HEIGHT = 87; // 3x original
