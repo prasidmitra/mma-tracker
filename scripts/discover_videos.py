@@ -274,9 +274,22 @@ def fetch_all_channel_videos(youtube, channel_id: str, cutoff: date) -> list[dic
 
 # ── Title filtering ──────────────────────────────────────────────────────────
 
+EXCLUDE_PATTERNS = [
+    "live chat", "livechat", "livestream", "live stream",
+    "recap", "reaction",
+    "early prediction",  # single-fight reaction/announcement vids
+    "press conference",
+    "breaking news",
+]
+
+
 def is_prediction_video(title: str) -> bool:
     tl = title.lower()
-    return "ufc" in tl and any(kw in tl for kw in PREDICTION_KEYWORDS)
+    if not ("ufc" in tl and any(kw in tl for kw in PREDICTION_KEYWORDS)):
+        return False
+    if any(pat in tl for pat in EXCLUDE_PATTERNS):
+        return False
+    return True
 
 
 def prediction_keyword_count(title: str) -> int:
