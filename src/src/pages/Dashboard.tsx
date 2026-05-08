@@ -31,21 +31,22 @@ export function Dashboard() {
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
           See how the top MMA YouTubers perform on their picks.
         </p>
-        <h2 style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)' }}>
+        <h2 style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
           Leaderboard
         </h2>
       </div>
 
       {pendingFlags > 0 && (
         <div style={{
-          border: '1px solid var(--highlight)',
-          background: 'rgba(157,114,198,0.10)',
+          border: '1px solid var(--gold-primary)',
+          background: 'rgba(245,197,66,0.07)',
           borderRadius: '6px',
           padding: '0.625rem 1rem',
           marginBottom: '1rem',
-          color: 'var(--highlight)',
+          color: 'var(--gold-primary)',
           fontSize: '0.8rem',
           fontWeight: 500,
+          boxShadow: '0 0 16px rgba(245, 197, 66, 0.10)',
         }}>
           ⚠ {pendingFlags} prediction{pendingFlags !== 1 ? 's' : ''} pending manual review — excluded from accuracy calculations
         </div>
@@ -78,13 +79,13 @@ export function Dashboard() {
               {stats.map((s, i) => (
                 <tr key={s.slug} style={{
                   borderBottom: '1px solid var(--border)',
-                  background: i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent',
+                  background: i === 0 ? 'rgba(245,197,66,0.04)' : (i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent'),
                   transition: 'background 0.1s',
                 }}
                   onMouseEnter={e => (e.currentTarget.style.background = 'rgba(107,63,152,0.08)')}
-                  onMouseLeave={e => (e.currentTarget.style.background = i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent')}
+                  onMouseLeave={e => (e.currentTarget.style.background = i === 0 ? 'rgba(245,197,66,0.04)' : (i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent'))}
                 >
-                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
+                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: i === 0 ? 'var(--gold-primary)' : 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
                   <td style={{ padding: '0.75rem 0.875rem' }}>
                     <Link to={`/creator/${s.slug}`} style={{ color: 'var(--text-primary)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}
                       onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-purple)')}

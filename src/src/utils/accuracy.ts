@@ -3,7 +3,7 @@ import { eligiblePredictions, calcAccuracy } from '../hooks/useData';
 
 export function getAccuracyColor(acc: number): string {
   if (acc >= 0.65) return 'var(--success)';
-  if (acc >= 0.55) return 'var(--highlight)';
+  if (acc >= 0.55) return 'var(--gold-primary)';
   return 'var(--danger)';
 }
 

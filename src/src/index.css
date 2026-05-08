@@ -16,6 +16,11 @@
   --secondary: #6B3F98;
   --highlight: #9D72C6;
 
+  /* Gold accent */
+  --gold-primary: #F5C542;
+  --gold-soft: #FFD76A;
+  --gold-glow: rgba(245, 197, 66, 0.35);
+
   /* Semantic */
   --success: #00D68F;
   --danger: #FF4D8D;
@@ -43,6 +48,9 @@
   --primary: #B5005A;
   --secondary: #52297A;
   --highlight: #7040B0;
+  --gold-primary: #C8981A;
+  --gold-soft: #DAA520;
+  --gold-glow: rgba(200, 152, 26, 0.30);
   --success: #008F63;
   --danger: #C83060;
 }
