@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prasidmitra.github.io/mma-tracker/sitemap.xml
