@@ -40,7 +40,7 @@ CREATORS = {
         "search_terms": ["UFC", "predictions", "preview", "breakdown"],
     },
     "mma_joey": {
-        "channel_id": None,
+        "channel_id": "UCHMz3GPVRmDmFOOLplZC0ZQ",  # @MMAJoey
         "display_name": "MMA Joey",
         "search_terms": ["UFC", "predictions", "picks"],
     },
@@ -60,7 +60,7 @@ CREATORS = {
         "search_terms": ["UFC", "predictions", "picks"],
     },
     "the_weasel": {
-        "channel_id": None,
+        "channel_id": "UCZD2qRU8J82XGdGdUWYneNQ",  # @TheWeasle
         "display_name": "The Weasel",
         "search_terms": ["UFC", "predictions", "picks", "preview"],
     },
@@ -70,7 +70,7 @@ CREATORS = {
         "search_terms": ["UFC", "predictions", "picks"],
     },
     "lucas_tracy_mma": {
-        "channel_id": None,
+        "channel_id": "UC7LzaJA-R2E52qzd5GW-kpg",  # @LucasTracyMMA
         "display_name": "Lucas Tracy MMA",
         "search_terms": ["UFC", "predictions", "picks", "breakdown"],
     },
