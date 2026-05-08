@@ -38,7 +38,7 @@ export function Navbar() {
         {/* Home */}
         <Link to="/" style={{
           color: 'var(--text-secondary)',
-          fontSize: '0.85rem',
+          fontSize: '1rem',
           fontWeight: 600,
           textDecoration: 'none',
         }}
@@ -58,7 +58,7 @@ export function Navbar() {
             background: 'none',
             border: 'none',
             color: 'var(--text-secondary)',
-            fontSize: '0.85rem',
+            fontSize: '1rem',
             fontWeight: 600,
             cursor: 'pointer',
             fontFamily: 'inherit',
@@ -94,7 +94,7 @@ export function Navbar() {
                     background: 'none',
                     border: 'none',
                     color: 'var(--text-primary)',
-                    fontSize: '0.85rem',
+                    fontSize: '1rem',
                     fontWeight: 500,
                     cursor: 'pointer',
                     fontFamily: 'inherit',

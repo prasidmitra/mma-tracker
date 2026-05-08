@@ -98,7 +98,7 @@ export function CreatorDetail() {
 
       {/* Header */}
       <div style={{ marginBottom: '1.5rem' }}>
-        <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>{CREATOR_DISPLAY[creator]}</h1>
+        <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--logo-red)' }}>{CREATOR_DISPLAY[creator]}</h1>
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'baseline' }}>
           <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
             {formatPct(stats.accuracy)}

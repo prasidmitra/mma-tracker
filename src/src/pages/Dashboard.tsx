@@ -31,7 +31,7 @@ export function Dashboard() {
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
           See how the top MMA YouTubers perform on their picks.
         </p>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, letterSpacing: '-0.01em', color: 'var(--text-primary)' }}>
+        <h2 style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)' }}>
           Leaderboard
         </h2>
       </div>
