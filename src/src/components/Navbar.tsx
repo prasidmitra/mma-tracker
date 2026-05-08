@@ -29,14 +29,10 @@ export function Navbar() {
       zIndex: 100,
     }}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        {/* Logo — fixed width matching sidebar (200px) minus nav's left padding (1.25rem) */}
-        <div style={{ width: 'calc(200px - 1.25rem)', flexShrink: 0 }}>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <img src={logo} alt="OctaScore" style={{ height: `${LOGO_HEIGHT}px`, width: 'auto', display: 'block' }} />
-          </Link>
-        </div>
+        <Link to="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
+          <img src={logo} alt="OctaScore" style={{ height: `${LOGO_HEIGHT}px`, width: 'auto', display: 'block' }} />
+        </Link>
 
-        {/* Nav links — start at 200px, matching main content left edge */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', paddingLeft: '1.5rem' }}>
 
         {/* Home */}
