@@ -95,7 +95,7 @@ export function CreatorDetail() {
               color: 'var(--text)',
               padding: '0.4rem 0.875rem',
               fontSize: '0.82rem',
-              fontFamily: 'inherit',
+              fontFamily: "'Manrope', sans-serif",
               fontWeight: 500,
               cursor: 'pointer',
               display: 'flex',
