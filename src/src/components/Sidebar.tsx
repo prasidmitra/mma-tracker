@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useFilters } from '../hooks/useFilters';
+import { useData } from '../hooks/useData';
 import type { Event, Filters } from '../types';
 
 interface Props { events: Event[]; asDrawer?: boolean; }
@@ -20,7 +21,7 @@ function FilterLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-function FilterOption({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+function FilterOption({ active, dim, onClick, children }: { active: boolean; dim?: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button onClick={onClick} style={{
       display: 'block',
@@ -30,15 +31,16 @@ function FilterOption({ active, onClick, children }: { active: boolean; onClick:
       borderRadius: '5px',
       border: 'none',
       background: active ? 'var(--accent-purple)' : 'transparent',
-      color: active ? '#fff' : 'var(--text-primary)',
+      color: active ? '#fff' : dim ? 'var(--muted)' : 'var(--text-primary)',
       fontSize: '0.82rem',
       fontWeight: active ? 600 : 400,
-      cursor: 'pointer',
+      opacity: dim && !active ? 0.45 : 1,
+      cursor: dim ? 'default' : 'pointer',
       fontFamily: 'inherit',
       transition: 'all 0.12s ease',
       marginBottom: '2px',
     }}
-      onMouseEnter={e => { if (!active) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
+      onMouseEnter={e => { if (!active && !dim) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
       onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'transparent'; }}
     >
       {children}
@@ -48,11 +50,22 @@ function FilterOption({ active, onClick, children }: { active: boolean; onClick:
 
 export function Sidebar({ events, asDrawer = false }: Props) {
   const [filters, setFilters] = useFilters();
+  const { predictions } = useData();
 
   const years = useMemo(() => {
     const ys = new Set(events.map(e => new Date(e.date).getFullYear()));
     return Array.from(ys).sort((a, b) => b - a);
   }, [events]);
+
+  const yearsWithData = useMemo(() => {
+    const eventYearMap = new Map(events.map(e => [e.event_id, new Date(e.date).getFullYear()]));
+    const ys = new Set<number>();
+    predictions.forEach(p => {
+      const y = eventYearMap.get(p.event_id);
+      if (y) ys.add(y);
+    });
+    return ys;
+  }, [events, predictions]);
 
   return (
     <aside style={asDrawer ? {
@@ -78,7 +91,7 @@ export function Sidebar({ events, asDrawer = false }: Props) {
             <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px' }}>
               {years.map(y => (
-                <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
+                <FilterOption key={y} active={filters.year === y} dim={!yearsWithData.has(y)} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
               ))}
             </div>
           </div>
@@ -107,7 +120,7 @@ export function Sidebar({ events, asDrawer = false }: Props) {
           <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
             {years.map(y => (
-              <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
+              <FilterOption key={y} active={filters.year === y} dim={!yearsWithData.has(y)} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
             ))}
           </div>
           <FilterLabel>Event Type</FilterLabel>

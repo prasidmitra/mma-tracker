@@ -52,22 +52,6 @@ export function Dashboard() {
         </h2>
       </div>
 
-      {pendingFlags > 0 && (
-        <div style={{
-          border: '1px solid var(--gold-primary)',
-          background: 'rgba(245,197,66,0.07)',
-          borderRadius: '6px',
-          padding: '0.625rem 1rem',
-          marginBottom: '1rem',
-          color: 'var(--gold-primary)',
-          fontSize: '0.8rem',
-          fontWeight: 500,
-          boxShadow: '0 0 16px rgba(245, 197, 66, 0.10)',
-        }}>
-          ⚠ {pendingFlags} prediction{pendingFlags !== 1 ? 's' : ''} pending manual review — excluded from accuracy calculations
-        </div>
-      )}
-
       {stats.length === 0 ? (
         <div style={{ color: 'var(--text-secondary)', padding: '2rem 0', textAlign: 'center' }}>
           No data for the selected filters.
@@ -148,6 +132,23 @@ export function Dashboard() {
       <p style={{ marginTop: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.75rem', textAlign: 'center' }}>
         Accuracy excludes pick'ems, cancelled fights, and predictions pending review
       </p>
+
+      {pendingFlags > 0 && (
+        <div style={{
+          border: '1px solid var(--gold-primary)',
+          background: 'rgba(245,197,66,0.07)',
+          borderRadius: '6px',
+          padding: '0.625rem 1rem',
+          marginTop: '1rem',
+          color: 'var(--gold-primary)',
+          fontSize: '0.8rem',
+          fontWeight: 500,
+          boxShadow: '0 0 16px rgba(245, 197, 66, 0.10)',
+          textAlign: 'center',
+        }}>
+          ⚠ {pendingFlags} prediction{pendingFlags !== 1 ? 's' : ''} pending manual review — excluded from accuracy calculations
+        </div>
+      )}
       </>
       )}
     </div>
