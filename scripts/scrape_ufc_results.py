@@ -63,13 +63,7 @@ def make_fight_id(event_id: str, fighter_a: str, fighter_b: str) -> str:
 
 
 def assign_card_positions(fights: list[dict]) -> list[dict]:
-    """
-    ufcstats lists fights main-event-first. We use positional heuristics:
-    - First 5 fights → main_card
-    - Fights 6-9 → prelim
-    - Fights 10+ → early_prelim
-    Within main_card: index 0 = main_event, index 1 = co_main, rest = main_card.
-    """
+    """Index-based heuristic fallback. Assumes 5-fight main card."""
     n = len(fights)
     for i, fight in enumerate(fights):
         if i < 5:
@@ -87,7 +81,6 @@ def assign_card_positions(fights: list[dict]) -> list[dict]:
             fight["card_type"] = "early_prelim"
             fight["card_position"] = "early_prelim"
 
-    # Edge case: event with fewer than 5 fights — still label them properly
     if n <= 2:
         for i, f in enumerate(fights):
             f["card_type"] = "main_card"
@@ -101,6 +94,41 @@ def assign_card_positions(fights: list[dict]) -> list[dict]:
                 f["card_position"] = "co_main"
             else:
                 f["card_position"] = "main_card"
+
+    return fights
+
+
+_SECTION_KEYWORDS = {
+    "main card": "main_card",
+    "preliminary card": "prelim",
+    "early preliminary": "early_prelim",
+}
+
+
+def assign_card_positions_from_sections(fights: list[dict]) -> list[dict]:
+    """Use the _section field written by parse_event_page; fall back to index heuristic."""
+    has_sections = any(f.get("_section", "main_card") != "main_card" for f in fights)
+
+    if not has_sections:
+        for f in fights:
+            f.pop("_section", None)
+        return assign_card_positions(fights)
+
+    section_counts: dict[str, int] = {}
+    for f in fights:
+        section = f.pop("_section", "main_card")
+        idx = section_counts.get(section, 0)
+        section_counts[section] = idx + 1
+
+        if section == "main_card":
+            f["card_type"] = "main_card"
+            f["card_position"] = "main_event" if idx == 0 else "co_main" if idx == 1 else "main_card"
+        elif section == "prelim":
+            f["card_type"] = "prelim"
+            f["card_position"] = "prelim"
+        else:
+            f["card_type"] = "early_prelim"
+            f["card_position"] = "early_prelim"
 
     return fights
 
@@ -132,10 +160,24 @@ def parse_event_page(event_url: str, event_id: str) -> list[dict]:
     soup = fetch(event_url)
     fights = []
 
-    # Only data rows have the __hover class; header row does not
-    rows = soup.find_all("tr", class_="b-fight-details__table-row__hover")
+    # Walk all rows in the fight table; non-hover rows may be section headers
+    fight_table = soup.find("table", class_=re.compile(r"b-fight-details__table"))
+    if fight_table:
+        all_rows = fight_table.find_all("tr")
+    else:
+        all_rows = soup.find_all("tr", class_="b-fight-details__table-row__hover")
 
-    for row in rows:
+    current_section = "main_card"
+    for row in all_rows:
+        row_classes = row.get("class", [])
+        if "b-fight-details__table-row__hover" not in row_classes:
+            row_text = row.get_text(separator=" ", strip=True).lower()
+            for kw, section in _SECTION_KEYWORDS.items():
+                if kw in row_text:
+                    current_section = section
+                    break
+            continue
+
         cols = row.find_all("td")
         if len(cols) < 10:
             continue
@@ -204,9 +246,10 @@ def parse_event_page(event_url: str, event_id: str) -> list[dict]:
             "weight_class": weight_class,
             "title_fight": title_fight,
             "result_type": result_type,
+            "_section": current_section,
         })
 
-    assign_card_positions(fights)
+    assign_card_positions_from_sections(fights)
     return fights
 
 
@@ -300,6 +343,7 @@ def run():
                 "name": name,
                 "date": meta["date"],
                 "location": meta.get("location"),
+                "url": meta["url"],
                 "fights": fights,
             })
         except Exception as e:
