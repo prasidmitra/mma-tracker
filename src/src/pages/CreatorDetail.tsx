@@ -182,6 +182,7 @@ export function CreatorDetail() {
         const eventCorrect = eventElig.filter(p => p.correct).length;
         const eventAcc = eventElig.length > 0 ? eventCorrect / eventElig.length : null;
         const eventDate = new Date(event.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        const eventDateShort = new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
         return (
           <div key={event.event_id} style={{ marginBottom: '0.75rem', background: 'var(--bg-card)', borderRadius: '8px', border: '1px solid var(--border)', overflow: 'hidden' }}>
@@ -198,13 +199,25 @@ export function CreatorDetail() {
               {isMobile ? (
                 /* ── Mobile: two rows ── */
                 <>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem' }}>
                     <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>{event.name}</span>
-                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', marginLeft: '0.5rem', flexShrink: 0 }}>{isCollapsed ? '▶' : '▼'}</span>
+                    {/* CSS-rotated ▼ avoids the coloured emoji ▶ on iOS */}
+                    <span style={{
+                      display: 'inline-block',
+                      transform: isCollapsed ? 'rotate(-90deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.15s ease',
+                      color: 'var(--muted)',
+                      fontSize: '0.75rem',
+                      lineHeight: 1,
+                      marginLeft: '0.5rem',
+                      flexShrink: 0,
+                    }}>▼</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                      {event.event_type === 'ppv' ? 'PPV' : 'Fight Night'}
+                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                      <span style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>{event.event_type === 'ppv' ? 'PPV' : 'Fight Night'}</span>
+                      <span style={{ fontSize: '0.85rem', opacity: 0.7 }}>•</span>
+                      <span>{eventDateShort}</span>
                     </span>
                     {eventAcc !== null && (
                       <span style={{ color: getAccuracyColor(eventAcc), fontWeight: 700, fontSize: '0.78rem' }}>
@@ -216,11 +229,11 @@ export function CreatorDetail() {
               ) : (
                 /* ── Desktop: single row ── */
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                     <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>{event.name}</span>
-                    <span style={{ color: 'var(--muted)', fontSize: '1.1rem', lineHeight: 1 }}>·</span>
+                    <span style={{ color: 'var(--muted)', fontSize: '1.3rem', lineHeight: 1, opacity: 0.8 }}>•</span>
                     <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{eventDate}</span>
-                    <span style={{ color: 'var(--muted)', fontSize: '1.1rem', lineHeight: 1 }}>·</span>
+                    <span style={{ color: 'var(--muted)', fontSize: '1.3rem', lineHeight: 1, opacity: 0.8 }}>•</span>
                     <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{event.event_type || 'Fight Night'}</span>
                   </div>
                   <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
@@ -229,14 +242,21 @@ export function CreatorDetail() {
                         {formatPct(eventAcc)} ({eventCorrect}/{eventElig.length})
                       </span>
                     )}
-                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{isCollapsed ? '▶' : '▼'}</span>
+                    <span style={{
+                      display: 'inline-block',
+                      transform: isCollapsed ? 'rotate(-90deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.15s ease',
+                      color: 'var(--muted)',
+                      fontSize: '0.8rem',
+                      lineHeight: 1,
+                    }}>▼</span>
                   </div>
                 </div>
               )}
             </div>
 
             {!isCollapsed && (
-              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <table className="creator-detail-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid var(--border)' }}>
                     {[
