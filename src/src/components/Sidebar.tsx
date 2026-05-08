@@ -72,9 +72,11 @@ export function Sidebar({ events }: Props) {
 
       <FilterLabel>Year</FilterLabel>
       <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
-      {years.map(y => (
-        <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
-      ))}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
+        {years.map(y => (
+          <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
+        ))}
+      </div>
 
       <FilterLabel>Event Type</FilterLabel>
       {([['all', 'All Events'], ['ppv', 'PPV Only'], ['fight_night', 'Fight Nights']] as [Filters['eventType'], string][]).map(([val, label]) => (
