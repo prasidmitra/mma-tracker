@@ -28,12 +28,12 @@ export function Navbar() {
       top: 0,
       zIndex: 100,
     }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Link to="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
-          <img src={logo} alt="OctaScore" style={{ height: `${LOGO_HEIGHT}px`, width: 'auto', display: 'block' }} />
-        </Link>
+      <Link to="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
+        <img src={logo} alt="OctaScore" style={{ height: `${LOGO_HEIGHT}px`, width: 'auto', display: 'block' }} />
+      </Link>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', paddingLeft: '1.5rem' }}>
+      {/* Center nav links */}
+      <div style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
 
         {/* Home */}
         <Link to="/" style={{
@@ -108,8 +108,7 @@ export function Navbar() {
             </div>
           )}
         </div>
-        </div>{/* end nav links */}
-      </div>
+      </div>{/* end center nav links */}
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <button
