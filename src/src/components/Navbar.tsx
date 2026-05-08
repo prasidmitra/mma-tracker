@@ -6,7 +6,7 @@ import logoIcon from '../assets/logo-text.png';
 import logoWordmark from '../assets/logo-image.png';
 
 const ICON_HEIGHT = 48;
-const WORDMARK_HEIGHT = 29; // 60% of 48px
+const WORDMARK_HEIGHT = 87; // 3x original
 
 const sortedCreators = [...ALL_CREATORS].sort((a, b) =>
   CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
@@ -22,7 +22,7 @@ export function Navbar() {
       background: 'var(--bg-card)',
       borderBottom: '1px solid var(--border)',
       padding: '0 1.25rem',
-      height: '72px',
+      height: '100px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -33,7 +33,7 @@ export function Navbar() {
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {/* Logo — fixed width matching sidebar (200px) minus nav's left padding (1.25rem) */}
         <div style={{ width: 'calc(200px - 1.25rem)', flexShrink: 0 }}>
-          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '2px' }}>
             <img src={logoIcon} alt="OctaScore icon" style={{ height: `${ICON_HEIGHT}px`, width: 'auto', display: 'block' }} />
             <img src={logoWordmark} alt="OctaScore" style={{ height: `${WORDMARK_HEIGHT}px`, width: 'auto', display: 'block' }} />
           </Link>
