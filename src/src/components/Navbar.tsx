@@ -48,6 +48,19 @@ export function Navbar() {
           Home
         </Link>
 
+        {/* About */}
+        <Link to="/about" style={{
+          color: 'var(--text-secondary)',
+          fontSize: '1rem',
+          fontWeight: 600,
+          textDecoration: 'none',
+        }}
+          onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
+          onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+        >
+          About
+        </Link>
+
         {/* Creators dropdown */}
         <div
           style={{ position: 'relative' }}

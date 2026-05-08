@@ -4,6 +4,8 @@ import { ThemeProvider } from './context/ThemeContext';
 import { Layout } from './components/Layout';
 import { Dashboard } from './pages/Dashboard';
 import { CreatorDetail } from './pages/CreatorDetail';
+import { About } from './pages/About';
+import { Navbar } from './components/Navbar';
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
               <Route index element={<Dashboard />} />
               <Route path="creator/:slug" element={<CreatorDetail />} />
             </Route>
+            <Route path="about" element={<><Navbar /><About /></>} />
           </Routes>
         </DataProvider>
       </ThemeProvider>
