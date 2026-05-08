@@ -1,11 +1,15 @@
 import { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { useIsMobile } from '../hooks/useIsMobile';
 import { useData } from '../hooks/useData';
 import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, formatPct, getAccuracyColor } from '../utils/accuracy';
 import type { Prediction, Event, Fight } from '../types';
+
+const SITE_URL = 'https://prasidmitra.github.io/mma-tracker';
+const OG_IMAGE = `${SITE_URL}/favicon.png`;
 
 const CARD_ORDER: Record<string, number> = {
   main_event: 0,
@@ -78,11 +82,64 @@ export function CreatorDetail() {
     });
   };
 
-  if (loading) return <div style={{ padding: '4rem', textAlign: 'center', color: 'var(--text-secondary)' }}>Loading...</div>;
+  const displayName = CREATOR_DISPLAY[creator] || creator;
+  const pageUrl = `${SITE_URL}/creator/${creator}`;
+  const description = !loading && stats.eligible > 0
+    ? `${displayName}'s UFC prediction record: ${stats.correct}W-${stats.incorrect}L (${formatPct(stats.accuracy)} accuracy) across ${stats.eligible} eligible picks.`
+    : `Track ${displayName}'s UFC fight prediction accuracy across all events and years on OctaScore.`;
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${displayName} — UFC Fight Prediction Accuracy`,
+    description,
+    url: pageUrl,
+    creator: { '@type': 'Organization', name: 'OctaScore', url: SITE_URL },
+    about: { '@type': 'Person', name: displayName },
+    ...(!loading && stats.eligible > 0 && {
+      variableMeasured: [
+        { '@type': 'PropertyValue', name: 'Prediction Accuracy', value: formatPct(stats.accuracy) },
+        { '@type': 'PropertyValue', name: 'Correct Predictions', value: stats.correct },
+        { '@type': 'PropertyValue', name: 'Incorrect Predictions', value: stats.incorrect },
+        { '@type': 'PropertyValue', name: 'Eligible Picks', value: stats.eligible },
+      ],
+    }),
+  };
+
+  if (loading) return (
+    <>
+      <Helmet>
+        <title>{`${displayName} Prediction Accuracy | OctaScore`}</title>
+        <meta name="description" content={`Track ${displayName}'s UFC fight prediction accuracy across all events and years on OctaScore.`} />
+        <meta property="og:title" content={`${displayName} Prediction Accuracy | OctaScore`} />
+        <meta property="og:description" content={`Track ${displayName}'s UFC fight prediction accuracy across all events and years on OctaScore.`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta name="twitter:card" content="summary" />
+        <link rel="canonical" href={pageUrl} />
+      </Helmet>
+      <div style={{ padding: '4rem', textAlign: 'center', color: 'var(--text-secondary)' }}>Loading...</div>
+    </>
+  );
   if (!CREATOR_DISPLAY[creator]) return <div style={{ padding: '2rem' }}>Creator not found.</div>;
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '1.5rem' }}>
+      <Helmet>
+        <title>{`${displayName} Prediction Accuracy | OctaScore`}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={`${displayName} Prediction Accuracy | OctaScore`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${displayName} Prediction Accuracy | OctaScore`} />
+        <meta name="twitter:description" content={description} />
+        <link rel="canonical" href={pageUrl} />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
       {/* Creator selector */}
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
         <div style={{ position: 'relative' }}>

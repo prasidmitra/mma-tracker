@@ -7207,12 +7207,12 @@
     "video_id": "ijibFYd3nAE",
     "title": "UFC on ESPN 63: Predictions and Breakdown & All Bets | Covington vs Buckley",
     "published_at": "2024-12-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:36:50.570032+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7220,12 +7220,12 @@
     "video_id": "lfn0aFRhmEU",
     "title": "UFC 310: FULL Predictions and Breakdown & All Bets Alexandre Pantoja vs Kai Asakura",
     "published_at": "2024-12-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:39:13.723041+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7233,12 +7233,12 @@
     "video_id": "UuIbbF6BPSA",
     "title": "UFC Macau: Predictions and Breakdown & All Bets Petr Yan vs Deiveson Figueiredo",
     "published_at": "2024-11-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:42:05.879056+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7246,12 +7246,12 @@
     "video_id": "dwklN54nHYo",
     "title": "UFC 309: Predictions and Breakdown & ALL Bets Jones vs Miocic",
     "published_at": "2024-11-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-08T22:44:55.727402+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7259,7 +7259,7 @@
     "video_id": "yRnoSNXTxRk",
     "title": "UFC 308: Predictions and Breakdown & All Bets Topuria vs Holloway",
     "published_at": "2024-10-23",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7272,12 +7272,12 @@
     "video_id": "BMT5Klgdm18",
     "title": "UFC & Francis Ngannou vs Renan Ferreira: Predictions and Breakdown & All Bets (Full UFC Card Picks)",
     "published_at": "2024-10-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:47:10.884405+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7285,12 +7285,12 @@
     "video_id": "K3Il7g2o3Vs",
     "title": "UFC 307: Predictions and Breakdown & All Bets",
     "published_at": "2024-10-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:49:56.038169+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7298,12 +7298,12 @@
     "video_id": "GhcUy92KC8A",
     "title": "UFC 306: Predictions and Breakdown & All Bets | Sean O'Malley vs Merab Dvalishvili",
     "published_at": "2024-09-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:52:36.047703+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7311,12 +7311,12 @@
     "video_id": "fwO-SfhsKUc",
     "title": "UFC Vegas: FULL Predictions and Breakdown & All Bets | Gilbert Burns vs Sean Brady",
     "published_at": "2024-09-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:54:55.082942+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7324,12 +7324,12 @@
     "video_id": "X9GqlFxzdcs",
     "title": "UFC 305: Predictions and Breakdown & All Bets | Dricus Du Plessis vs Israel Adesanya",
     "published_at": "2024-08-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T22:57:32.865126+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7337,12 +7337,12 @@
     "video_id": "HTIPJO_kwYc",
     "title": "UFC Abu Dhabi: Predictions and Breakdown & All Bets Sandhagen vs Nurmagomedov",
     "published_at": "2024-08-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:00:27.687560+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7350,12 +7350,12 @@
     "video_id": "8V8iw9NW210",
     "title": "UFC 304: Predictions and Breakdown & All Bets",
     "published_at": "2024-07-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:03:13.129756+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7363,12 +7363,12 @@
     "video_id": "ISdU4L4dENI",
     "title": "UFC 303: Predictions and Breakdown & All Bets",
     "published_at": "2024-06-28",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:05:17.442769+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7376,12 +7376,12 @@
     "video_id": "g8KSRdwaGKQ",
     "title": "UFC Saudi Arabia: Predictions and Breakdown & All Bets",
     "published_at": "2024-06-21",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:07:41.286335+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7389,12 +7389,12 @@
     "video_id": "8inWzR2auBQ",
     "title": "UFC 302: Predictions and Breakdown & All Bets",
     "published_at": "2024-05-29",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:10:03.444884+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7402,12 +7402,12 @@
     "video_id": "sFh9eK4oMuU",
     "title": "How Good is UFC 303? (Conor McGregor vs Michael Chandler Preview)",
     "published_at": "2024-05-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-08T23:12:31.127859+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7415,12 +7415,12 @@
     "video_id": "WNLKnAJHsAA",
     "title": "UFC 301: Predictions and Breakdown",
     "published_at": "2024-05-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:15:08.087602+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7428,12 +7428,12 @@
     "video_id": "XkkgF7pMGtI",
     "title": "UFC 300: FULL Predictions and Breakdown & All Bets",
     "published_at": "2024-04-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:17:16.446672+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7441,12 +7441,12 @@
     "video_id": "0wnqAcoyRa4",
     "title": "UFC 299 Predictions and Breakdown",
     "published_at": "2024-03-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:19:18.262131+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7454,12 +7454,12 @@
     "video_id": "nA2xXEHNXbc",
     "title": "UFC Moreno vs Royval 2 Predictions and Breakdown",
     "published_at": "2024-02-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:21:35.281233+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7467,12 +7467,12 @@
     "video_id": "G0F99IHtlro",
     "title": "UFC 298 Predictions and Breakdown",
     "published_at": "2024-02-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:24:11.249395+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7480,12 +7480,12 @@
     "video_id": "3fDZ1GPpUrc",
     "title": "Every UFC Champion at the End of 2024 (Predictions)",
     "published_at": "2024-01-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-08T23:26:55.973740+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7493,12 +7493,12 @@
     "video_id": "mJeNxg-Hjq4",
     "title": "UFC 297: Predictions and Breakdown",
     "published_at": "2024-01-18",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:29:55.555918+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7506,12 +7506,12 @@
     "video_id": "OXRMQiJoMxM",
     "title": "UFC Vegas 84: FULL Predictions and Breakdown",
     "published_at": "2024-01-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-08T23:32:53.894820+00:00"
   },
   {
     "creator": "the_weasel",
@@ -10171,6 +10171,201 @@
     "video_id": "A2m-OL8BvQ8",
     "title": "Predictions (UFC on FOX: Shevchenko vs Pena)",
     "published_at": "2017-01-28",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-della-maddalena-vs-prates",
+    "video_id": "pniECYZDwR0",
+    "title": "BRUTAL!!! How Prates DESTROYED JDM (Jack Della Maddalena vs Carlos Prates UFC Breakdown)",
+    "published_at": "2026-05-02",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-kape-vs-almabayev",
+    "video_id": "euzlaLAS4xA",
+    "title": "Most STACKED Card!!! UFC 314 Breakdown (Alexander Volkanovski vs Diego Lopes)",
+    "published_at": "2025-03-01",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-dern-vs-ribas-2",
+    "video_id": "eqtk7d3NupI",
+    "title": "Every UFC Champion at the End of 2025 (Predictions)",
+    "published_at": "2024-12-29",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-302",
+    "video_id": "fX-a9piac_8",
+    "title": "How Good is UFC 302? (Islam Makhachev vs Dustin Poirier Preview)",
+    "published_at": "2024-05-22",
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": "2026-05-08T23:45:52.912864+00:00"
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-299",
+    "video_id": "XuZ1QNNj-dQ",
+    "title": "Let's Talk: Topuria the Next Star?; Pantoja's Dominance; UFC 299 Preview + more",
+    "published_at": "2024-03-04",
+    "status": "transcript_unavailable",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-moreno-vs-royval-2",
+    "video_id": "ZON6uSmW3TM",
+    "title": "Most STACKED Card!!! UFC 300 Breakdown (Alex Pereira vs Jamahal Hill)",
+    "published_at": "2024-02-20",
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": "2026-05-08T23:48:18.313879+00:00"
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-song-vs-gutierrez",
+    "video_id": "6YS4OBb95Sc",
+    "title": "NGANNOU REPLACED!!! 6'7\" 260lb CUBAN MONSTER Signed to the UFC (Robelis Despaigne Breakdown)",
+    "published_at": "2023-12-05",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-dariush-vs-tsarukyan",
+    "video_id": "b2T2hRTbfa8",
+    "title": "UFC 297 is Pretty Good (Sean Strickland vs Dricus Du Plessis Preview)",
+    "published_at": "2023-11-27",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-dawson-vs-green",
+    "video_id": "n6jiZ3hMjU0",
+    "title": "UFC 296 is STACKED (Leon Edwards vs Colby Covington Preview)",
+    "published_at": "2023-09-29",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-290",
+    "video_id": "lU7I4l8A1do",
+    "title": "July is the BEST MONTH of Fights (UFC 290, UFC 291 & UFC London Preview)",
+    "published_at": "2023-07-01",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-emmett-vs-topuria",
+    "video_id": "gfeAALRfqN0",
+    "title": "UFC 292 is STACKED (Aljamain Sterling vs Sean O'Malley Preview)",
+    "published_at": "2023-06-20",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-dern-vs-rodriguez",
+    "video_id": "FhTPgw9Mi1c",
+    "title": "Let's Talk: Volkanovski the Best UFC Fighter? If Colby Covington Wins Belt; UFC 267 & 268 Preview",
+    "published_at": "2021-10-06",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-264",
+    "video_id": "Co1izkbG9Uc",
+    "title": "Let's Talk: Conor's Changes for Dustin; How Colby beats Usman; UFC 264 Preview + more",
+    "published_at": "2021-07-02",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-smith-vs-clark",
+    "video_id": "EykeH8adyB8",
+    "title": "UFC 256 is better than you think.....(UFC 256 Preview)",
+    "published_at": "2020-11-24",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-249",
+    "video_id": "6H3tOXfTuFw",
+    "title": "Let's Talk: UFC 249 Preview; Khabib Set Up for Conor; Jorge Masvidal Plans + much more",
+    "published_at": "2020-05-09",
     "status": "pending",
     "transcript_type": null,
     "predictions_extracted": 0,

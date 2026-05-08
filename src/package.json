@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && BUILD_MODE=ssr vite build && node prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.15.0",
     "recharts": "^3.8.1",
     "tailwindcss": "^4.2.4"

@@ -1,8 +1,12 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { useData } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { getCreatorStats, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
+
+const SITE_URL = 'https://prasidmitra.github.io/mma-tracker';
+const OG_IMAGE = `${SITE_URL}/favicon.png`;
 
 export function Dashboard() {
   const { events, predictions, flagged, loading } = useData();
@@ -17,15 +21,27 @@ export function Dashboard() {
 
   const pendingFlags = flagged.filter(f => !f.manually_resolved).length;
 
-  if (loading) return (
-    <div style={{ display: 'flex', justifyContent: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>
-      Loading data...
-    </div>
-  );
-
-
   return (
     <div className="page-container" style={{ maxWidth: '1100px', margin: '0 auto', padding: '1.5rem' }}>
+      <Helmet>
+        <title>OctaScore — MMA Prediction Accuracy Tracker | Who Really Knows MMA?</title>
+        <meta name="description" content="Track which MMA YouTubers actually get their picks right. Compare prediction accuracy across events, years, and card positions." />
+        <meta property="og:title" content="OctaScore — MMA Prediction Accuracy Tracker" />
+        <meta property="og:description" content="See who's actually sharp vs who just sounds confident. Live accuracy leaderboard for top MMA YouTube predictors." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/`} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="OctaScore — MMA Prediction Accuracy Tracker" />
+        <meta name="twitter:description" content="See who's actually sharp vs who just sounds confident. Live accuracy leaderboard for top MMA YouTube predictors." />
+        <link rel="canonical" href={`${SITE_URL}/`} />
+      </Helmet>
+      {loading ? (
+        <div style={{ display: 'flex', justifyContent: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>
+          Loading data...
+        </div>
+      ) : (
+      <>
       {/* Hero */}
       <div style={{ marginBottom: '2rem' }}>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
@@ -132,6 +148,8 @@ export function Dashboard() {
       <p style={{ marginTop: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.75rem', textAlign: 'center' }}>
         Accuracy excludes pick'ems, cancelled fights, and predictions pending review
       </p>
+      </>
+      )}
     </div>
   );
 }

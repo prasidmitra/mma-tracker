@@ -1,6 +1,21 @@
+import { Helmet } from 'react-helmet-async';
+
+const SITE_URL = 'https://prasidmitra.github.io/mma-tracker';
+
 export function About() {
   return (
     <div style={{ maxWidth: '720px', margin: '0 auto', padding: '3rem 2rem' }}>
+      <Helmet>
+        <title>About OctaScore — MMA Prediction Accountability</title>
+        <meta name="description" content="OctaScore tracks and scores MMA YouTube prediction accuracy. Actual numbers, actual receipts — fight by fight, event by event." />
+        <meta property="og:title" content="About OctaScore — MMA Prediction Accountability" />
+        <meta property="og:description" content="Everybody's got a prediction until the scoreboard goes up. OctaScore holds the picks accountable." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/about`} />
+        <meta property="og:image" content={`${SITE_URL}/favicon.png`} />
+        <meta name="twitter:card" content="summary" />
+        <link rel="canonical" href={`${SITE_URL}/about`} />
+      </Helmet>
 
       <h1 style={{
         fontSize: '2.2rem',
