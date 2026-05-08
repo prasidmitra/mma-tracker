@@ -61,8 +61,8 @@ export function Sidebar({ events }: Props) {
       padding: '1rem 0.875rem',
       borderRight: '1px solid var(--border)',
       position: 'sticky',
-      top: '52px',
-      height: 'calc(100vh - 52px)',
+      top: '72px',
+      height: 'calc(100vh - 72px)',
       overflowY: 'auto',
       background: 'var(--bg-card)',
     }}>

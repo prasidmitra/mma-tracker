@@ -5,8 +5,8 @@ import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
 import logoIcon from '../assets/logo-text.png';
 import logoWordmark from '../assets/logo-image.png';
 
-const ICON_HEIGHT = 36;
-const WORDMARK_HEIGHT = Math.round(ICON_HEIGHT * 0.7);
+const ICON_HEIGHT = 48;
+const WORDMARK_HEIGHT = 29; // 60% of 48px
 
 const sortedCreators = [...ALL_CREATORS].sort((a, b) =>
   CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
@@ -22,7 +22,7 @@ export function Navbar() {
       background: 'var(--bg-card)',
       borderBottom: '1px solid var(--border)',
       padding: '0 1.25rem',
-      height: '52px',
+      height: '72px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -30,12 +30,17 @@ export function Navbar() {
       top: 0,
       zIndex: 100,
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-        {/* Logo */}
-        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <img src={logoIcon} alt="OctaScore icon" style={{ height: `${ICON_HEIGHT}px`, width: 'auto', display: 'block' }} />
-          <img src={logoWordmark} alt="OctaScore" style={{ height: `${WORDMARK_HEIGHT}px`, width: 'auto', display: 'block' }} />
-        </Link>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        {/* Logo — fixed width matching sidebar (200px) minus nav's left padding (1.25rem) */}
+        <div style={{ width: 'calc(200px - 1.25rem)', flexShrink: 0 }}>
+          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <img src={logoIcon} alt="OctaScore icon" style={{ height: `${ICON_HEIGHT}px`, width: 'auto', display: 'block' }} />
+            <img src={logoWordmark} alt="OctaScore" style={{ height: `${WORDMARK_HEIGHT}px`, width: 'auto', display: 'block' }} />
+          </Link>
+        </div>
+
+        {/* Nav links — start at 200px, matching main content left edge */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', paddingLeft: '1.5rem' }}>
 
         {/* Home */}
         <Link to="/" style={{
@@ -110,6 +115,7 @@ export function Navbar() {
             </div>
           )}
         </div>
+        </div>{/* end nav links */}
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
