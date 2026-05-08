@@ -48,19 +48,6 @@ export function Navbar() {
           Leaderboard
         </Link>
 
-        {/* About */}
-        <Link to="/about" style={{
-          color: 'var(--text-secondary)',
-          fontSize: '1rem',
-          fontWeight: 600,
-          textDecoration: 'none',
-        }}
-          onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
-          onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-        >
-          About
-        </Link>
-
         {/* Creators dropdown */}
         <div
           style={{ position: 'relative' }}
@@ -121,6 +108,19 @@ export function Navbar() {
             </div>
           )}
         </div>
+
+        {/* About */}
+        <Link to="/about" style={{
+          color: 'var(--text-secondary)',
+          fontSize: '1rem',
+          fontWeight: 600,
+          textDecoration: 'none',
+        }}
+          onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
+          onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+        >
+          About
+        </Link>
       </div>{/* end center nav links */}
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
