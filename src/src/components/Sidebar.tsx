@@ -1,0 +1,90 @@
+import { useMemo } from 'react';
+import { useFilters } from '../hooks/useFilters';
+import type { Event, Filters } from '../types';
+
+interface Props { events: Event[]; }
+
+function FilterLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <div style={{
+      fontSize: '0.65rem',
+      fontWeight: 700,
+      textTransform: 'uppercase',
+      letterSpacing: '0.08em',
+      color: 'var(--text-secondary)',
+      marginBottom: '0.375rem',
+      marginTop: '1rem',
+    }}>
+      {children}
+    </div>
+  );
+}
+
+function FilterOption({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button onClick={onClick} style={{
+      display: 'block',
+      width: '100%',
+      textAlign: 'left',
+      padding: '5px 8px',
+      borderRadius: '5px',
+      border: 'none',
+      background: active ? 'var(--accent-blue)' : 'transparent',
+      color: active ? (document.documentElement.getAttribute('data-theme') === 'light' ? '#fff' : '#0d1117') : 'var(--text-primary)',
+      fontSize: '0.82rem',
+      fontWeight: active ? 600 : 400,
+      cursor: 'pointer',
+      fontFamily: 'inherit',
+      transition: 'all 0.12s ease',
+      marginBottom: '2px',
+    }}
+      onMouseEnter={e => { if (!active) e.currentTarget.style.background = 'var(--bg-row-alt)'; }}
+      onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'transparent'; }}
+    >
+      {children}
+    </button>
+  );
+}
+
+export function Sidebar({ events }: Props) {
+  const [filters, setFilters] = useFilters();
+
+  const years = useMemo(() => {
+    const ys = new Set(events.map(e => new Date(e.date).getFullYear()));
+    return Array.from(ys).sort((a, b) => b - a);
+  }, [events]);
+
+  return (
+    <aside style={{
+      width: '200px',
+      minWidth: '200px',
+      padding: '1rem 0.875rem',
+      borderRight: '1px solid var(--border)',
+      position: 'sticky',
+      top: '52px',
+      height: 'calc(100vh - 52px)',
+      overflowY: 'auto',
+      background: 'var(--bg-card)',
+    }}>
+      <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+        Filters
+      </div>
+
+      <FilterLabel>Year</FilterLabel>
+      <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
+      {years.map(y => (
+        <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
+      ))}
+
+      <FilterLabel>Event Type</FilterLabel>
+      {([['all', 'All Events'], ['ppv', 'PPV Only'], ['fight_night', 'Fight Nights']] as [Filters['eventType'], string][]).map(([val, label]) => (
+        <FilterOption key={val} active={filters.eventType === val} onClick={() => setFilters({ eventType: val })}>{label}</FilterOption>
+      ))}
+
+      <FilterLabel>Card Position</FilterLabel>
+      {([['all', 'All Fights'], ['main_card', 'Main Card'], ['main_event', 'Main Event Only']] as [Filters['cardPosition'], string][]).map(([val, label]) => (
+        <FilterOption key={val} active={filters.cardPosition === val} onClick={() => setFilters({ cardPosition: val })}>{label}</FilterOption>
+      ))}
+    </aside>
+  );
+}

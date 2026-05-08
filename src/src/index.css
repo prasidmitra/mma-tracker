@@ -13,6 +13,19 @@
   --accent-blue: #58a6ff;
 }
 
+[data-theme="light"] {
+  --bg-primary: #f6f8fa;
+  --bg-card: #ffffff;
+  --bg-row-alt: #f0f2f5;
+  --border: #d0d7de;
+  --text-primary: #1f2328;
+  --text-secondary: #57606a;
+  --accent-green: #1a7f37;
+  --accent-red: #cf222e;
+  --accent-yellow: #9a6700;
+  --accent-blue: #0969da;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Manrope', sans-serif;
@@ -20,6 +33,7 @@ body {
   color: var(--text-primary);
   font-size: 14px;
   line-height: 1.5;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 a { color: var(--accent-blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
