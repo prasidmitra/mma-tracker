@@ -173,10 +173,10 @@ export function CreatorDetail() {
                     const fight = event.fights.find(f => f.fight_id === p.fight_id);
                     const isEligible = p.correct !== null && p.predicted_winner !== null && !p.fight_skipped && (p.ambiguous !== true || p.manually_resolved === true);
                     const exclusionReason = !isEligible ? getExclusionReason(p, fight) : '';
-                    const borderColor = !isEligible ? 'transparent' : p.correct ? 'var(--accent-purple)' : 'var(--accent-red)';
+                    const borderColor = !isEligible ? 'transparent' : p.correct ? 'var(--success)' : 'var(--danger)';
                     const rowBg = !isEligible ? 'transparent' : p.correct
-                      ? 'rgba(123,79,170,0.08)'
-                      : 'rgba(248,81,73,0.05)';
+                      ? 'rgba(0,214,143,0.07)'
+                      : 'rgba(255,77,141,0.07)';
 
                     return (
                       <tr key={p.prediction_id} style={{

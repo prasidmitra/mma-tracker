@@ -38,12 +38,12 @@ export function Dashboard() {
 
       {pendingFlags > 0 && (
         <div style={{
-          border: '1px solid var(--accent-yellow)',
-          background: 'rgba(210,153,34,0.08)',
+          border: '1px solid var(--highlight)',
+          background: 'rgba(179,136,255,0.08)',
           borderRadius: '6px',
           padding: '0.625rem 1rem',
           marginBottom: '1rem',
-          color: 'var(--accent-yellow)',
+          color: 'var(--highlight)',
           fontSize: '0.8rem',
           fontWeight: 500,
         }}>
@@ -81,7 +81,7 @@ export function Dashboard() {
                   background: i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent',
                   transition: 'background 0.1s',
                 }}
-                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(88,166,255,0.06)')}
+                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(111,43,255,0.08)')}
                   onMouseLeave={e => (e.currentTarget.style.background = i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent')}
                 >
                   <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>

@@ -2,9 +2,9 @@ import type { Event, Prediction, Filters } from '../types';
 import { eligiblePredictions, calcAccuracy } from '../hooks/useData';
 
 export function getAccuracyColor(acc: number): string {
-  if (acc >= 0.65) return 'var(--accent-green)';
-  if (acc >= 0.55) return 'var(--accent-yellow)';
-  return 'var(--accent-red)';
+  if (acc >= 0.65) return 'var(--success)';
+  if (acc >= 0.55) return 'var(--highlight)';
+  return 'var(--danger)';
 }
 
 export function formatPct(n: number): string {

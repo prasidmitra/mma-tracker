@@ -9,9 +9,9 @@ function Pill({ active, onClick, children }: { active: boolean; onClick: () => v
     <button onClick={onClick} style={{
       padding: '4px 12px',
       borderRadius: '20px',
-      border: `1px solid ${active ? 'var(--accent-blue)' : 'var(--border)'}`,
-      background: active ? 'var(--accent-blue)' : 'transparent',
-      color: active ? '#0d1117' : 'var(--text-secondary)',
+      border: `1px solid ${active ? 'var(--primary)' : 'var(--border)'}`,
+      background: active ? 'var(--primary)' : 'transparent',
+      color: active ? '#fff' : 'var(--muted)',
       fontSize: '0.75rem',
       fontWeight: 600,
       cursor: 'pointer',
