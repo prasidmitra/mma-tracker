@@ -173,9 +173,9 @@ export function CreatorDetail() {
                     const fight = event.fights.find(f => f.fight_id === p.fight_id);
                     const isEligible = p.correct !== null && p.predicted_winner !== null && !p.fight_skipped && (p.ambiguous !== true || p.manually_resolved === true);
                     const exclusionReason = !isEligible ? getExclusionReason(p, fight) : '';
-                    const borderColor = !isEligible ? 'transparent' : p.correct ? 'var(--accent-green)' : 'var(--accent-red)';
+                    const borderColor = !isEligible ? 'transparent' : p.correct ? 'var(--accent-purple)' : 'var(--accent-red)';
                     const rowBg = !isEligible ? 'transparent' : p.correct
-                      ? 'rgba(63,185,80,0.05)'
+                      ? 'rgba(154,107,204,0.08)'
                       : 'rgba(248,81,73,0.05)';
 
                     return (

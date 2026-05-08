@@ -11,6 +11,7 @@
   --accent-red: #f85149;
   --accent-yellow: #d29922;
   --accent-blue: #58a6ff;
+  --accent-purple: #9A6BCC;
 }
 
 [data-theme="light"] {
@@ -24,6 +25,7 @@
   --accent-red: #cf222e;
   --accent-yellow: #9a6700;
   --accent-blue: #0969da;
+  --accent-purple: #6B3FA0;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
