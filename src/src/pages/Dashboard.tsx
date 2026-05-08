@@ -81,7 +81,7 @@ export function Dashboard() {
                   background: i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent',
                   transition: 'background 0.1s',
                 }}
-                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(111,43,255,0.08)')}
+                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(107,63,152,0.08)')}
                   onMouseLeave={e => (e.currentTarget.style.background = i % 2 === 1 ? 'var(--bg-row-alt)' : 'transparent')}
                 >
                   <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
