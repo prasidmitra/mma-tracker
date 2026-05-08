@@ -39,6 +39,12 @@ export function CreatorDetail() {
   const { events, predictions, loading } = useData();
   const [filters] = useFilters();
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const sortedCreators = useMemo(() =>
+    [...ALL_CREATORS.filter(s => CREATOR_DISPLAY[s])].sort((a, b) =>
+      CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
+    ), []);
 
   const creator = slug || '';
   const filtered = useMemo(() =>
@@ -76,30 +82,72 @@ export function CreatorDetail() {
     <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '1.5rem' }}>
       {/* Creator selector */}
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
-        <select
-          value={creator}
-          onChange={e => navigate(`/creator/${e.target.value}${window.location.search}`)}
-          style={{
-            background: 'var(--panel)',
-            border: '1px solid var(--border)',
-            color: 'var(--text)',
-            padding: '0.4rem 2.25rem 0.4rem 0.875rem',
-            borderRadius: '8px',
-            fontSize: '0.82rem',
-            fontFamily: 'inherit',
-            fontWeight: 500,
-            cursor: 'pointer',
-            appearance: 'none',
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%238B93A7' d='M5 7L0 2h10z'/%3E%3C/svg%3E")`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right 0.65rem center',
-            outline: 'none',
-          }}
-        >
-          {[...ALL_CREATORS.filter(s => CREATOR_DISPLAY[s])].sort((a, b) => CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])).map(s => (
-            <option key={s} value={s}>{CREATOR_DISPLAY[s]}</option>
-          ))}
-        </select>
+        <div style={{ position: 'relative' }}>
+          {dropdownOpen && (
+            <div style={{ position: 'fixed', inset: 0, zIndex: 199 }} onClick={() => setDropdownOpen(false)} />
+          )}
+          <button
+            onClick={() => setDropdownOpen(o => !o)}
+            style={{
+              background: 'var(--panel)',
+              border: '1px solid var(--border)',
+              borderRadius: '8px',
+              color: 'var(--text)',
+              padding: '0.4rem 0.875rem',
+              fontSize: '0.82rem',
+              fontFamily: 'inherit',
+              fontWeight: 500,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              outline: 'none',
+            }}
+          >
+            {CREATOR_DISPLAY[creator]}
+            <span style={{ fontSize: '0.55rem', color: 'var(--muted)', lineHeight: 1 }}>▾</span>
+          </button>
+          {dropdownOpen && (
+            <div style={{
+              position: 'absolute',
+              top: 'calc(100% + 4px)',
+              right: 0,
+              background: 'var(--panel)',
+              border: '1px solid var(--border)',
+              borderRadius: '8px',
+              padding: '0.25rem 0',
+              minWidth: '180px',
+              boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+              zIndex: 200,
+              overflow: 'hidden',
+            }}>
+              {sortedCreators.map(s => (
+                <button
+                  key={s}
+                  onClick={() => { navigate(`/creator/${s}${window.location.search}`); setDropdownOpen(false); }}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    textAlign: 'left',
+                    padding: '0.5rem 1rem',
+                    background: s === creator ? 'var(--secondary)' : 'none',
+                    border: 'none',
+                    color: s === creator ? '#fff' : 'var(--text)',
+                    fontSize: '0.82rem',
+                    fontWeight: s === creator ? 600 : 400,
+                    cursor: 'pointer',
+                    fontFamily: 'inherit',
+                    transition: 'background 0.1s',
+                  }}
+                  onMouseEnter={e => { if (s !== creator) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
+                  onMouseLeave={e => { if (s !== creator) e.currentTarget.style.background = 'none'; }}
+                >
+                  {CREATOR_DISPLAY[s]}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Header */}
