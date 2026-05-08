@@ -2,11 +2,9 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
-import logoIcon from '../assets/logo-icon.png';
-import logoWordmark from '../assets/logo-wordmark.png';
+import logo from '../assets/logo.png';
 
-const ICON_HEIGHT = 48;
-const WORDMARK_HEIGHT = 87; // 3x original
+const LOGO_HEIGHT = 48;
 
 const sortedCreators = [...ALL_CREATORS].sort((a, b) =>
   CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])
@@ -22,7 +20,7 @@ export function Navbar() {
       background: 'var(--bg-card)',
       borderBottom: '1px solid var(--border)',
       padding: '0 1.25rem',
-      height: '100px',
+      height: '72px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -33,9 +31,8 @@ export function Navbar() {
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {/* Logo — fixed width matching sidebar (200px) minus nav's left padding (1.25rem) */}
         <div style={{ width: 'calc(200px - 1.25rem)', flexShrink: 0 }}>
-          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '2px' }}>
-            <img src={logoIcon} alt="OctaScore icon" style={{ height: `${ICON_HEIGHT}px`, width: 'auto', display: 'block' }} />
-            <img src={logoWordmark} alt="OctaScore" style={{ height: `${WORDMARK_HEIGHT}px`, width: 'auto', display: 'block' }} />
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <img src={logo} alt="OctaScore" style={{ height: `${LOGO_HEIGHT}px`, width: 'auto', display: 'block' }} />
           </Link>
         </div>
 
