@@ -69,29 +69,57 @@ export function Sidebar({ events, asDrawer = false }: Props) {
       overflowY: 'auto',
       background: 'var(--bg-card)',
     }}>
-      {!asDrawer && (
-        <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
-          Filters
+      {asDrawer ? (
+        /* ── Drawer: 3-column layout ── */
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0 0.5rem' }}>
+          {/* Year */}
+          <div>
+            <FilterLabel>Year</FilterLabel>
+            <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px' }}>
+              {years.map(y => (
+                <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
+              ))}
+            </div>
+          </div>
+          {/* Event Type */}
+          <div>
+            <FilterLabel>Event Type</FilterLabel>
+            {([['all', 'All'], ['ppv', 'PPV'], ['fight_night', 'Fight Nights']] as [Filters['eventType'], string][]).map(([val, label]) => (
+              <FilterOption key={val} active={filters.eventType === val} onClick={() => setFilters({ eventType: val })}>{label}</FilterOption>
+            ))}
+          </div>
+          {/* Card Position */}
+          <div>
+            <FilterLabel>Card</FilterLabel>
+            {([['all', 'All Fights'], ['main_card', 'Main Card'], ['main_event', 'Main Event']] as [Filters['cardPosition'], string][]).map(([val, label]) => (
+              <FilterOption key={val} active={filters.cardPosition === val} onClick={() => setFilters({ cardPosition: val })}>{label}</FilterOption>
+            ))}
+          </div>
         </div>
+      ) : (
+        /* ── Sidebar: existing stacked layout ── */
+        <>
+          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+            Filters
+          </div>
+          <FilterLabel>Year</FilterLabel>
+          <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
+            {years.map(y => (
+              <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
+            ))}
+          </div>
+          <FilterLabel>Event Type</FilterLabel>
+          {([['all', 'All Events'], ['ppv', 'PPV Only'], ['fight_night', 'Fight Nights']] as [Filters['eventType'], string][]).map(([val, label]) => (
+            <FilterOption key={val} active={filters.eventType === val} onClick={() => setFilters({ eventType: val })}>{label}</FilterOption>
+          ))}
+          <FilterLabel>Card Position</FilterLabel>
+          {([['all', 'All Fights'], ['main_card', 'Main Card'], ['main_event', 'Main Event Only']] as [Filters['cardPosition'], string][]).map(([val, label]) => (
+            <FilterOption key={val} active={filters.cardPosition === val} onClick={() => setFilters({ cardPosition: val })}>{label}</FilterOption>
+          ))}
+        </>
       )}
-
-      <FilterLabel>Year</FilterLabel>
-      <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
-        {years.map(y => (
-          <FilterOption key={y} active={filters.year === y} onClick={() => setFilters({ year: y })}>{y}</FilterOption>
-        ))}
-      </div>
-
-      <FilterLabel>Event Type</FilterLabel>
-      {([['all', 'All Events'], ['ppv', 'PPV Only'], ['fight_night', 'Fight Nights']] as [Filters['eventType'], string][]).map(([val, label]) => (
-        <FilterOption key={val} active={filters.eventType === val} onClick={() => setFilters({ eventType: val })}>{label}</FilterOption>
-      ))}
-
-      <FilterLabel>Card Position</FilterLabel>
-      {([['all', 'All Fights'], ['main_card', 'Main Card'], ['main_event', 'Main Event Only']] as [Filters['cardPosition'], string][]).map(([val, label]) => (
-        <FilterOption key={val} active={filters.cardPosition === val} onClick={() => setFilters({ cardPosition: val })}>{label}</FilterOption>
-      ))}
     </aside>
   );
 }

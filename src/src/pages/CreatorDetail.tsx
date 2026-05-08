@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useIsMobile } from '../hooks/useIsMobile';
 import { useData } from '../hooks/useData';
 import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
@@ -40,6 +41,7 @@ export function CreatorDetail() {
   const [filters] = useFilters();
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const sortedCreators = useMemo(() =>
     [...ALL_CREATORS.filter(s => CREATOR_DISPLAY[s])].sort((a, b) =>
@@ -187,38 +189,63 @@ export function CreatorDetail() {
             <div
               onClick={() => toggleCollapse(event.event_id)}
               style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                padding: '0.75rem 1rem',
+                padding: isMobile ? '0.625rem 0.875rem' : '0.75rem 1rem',
                 background: 'var(--bg-row-alt)',
                 cursor: 'pointer',
                 userSelect: 'none',
               }}
             >
-              <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>{event.name}</span>
-                <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>·</span>
-                <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{eventDate}</span>
-                <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>·</span>
-                <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{event.event_type || 'Fight Night'}</span>
-              </div>
-              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                {eventAcc !== null && (
-                  <span style={{ color: getAccuracyColor(eventAcc), fontWeight: 700, fontSize: '0.85rem' }}>
-                    {formatPct(eventAcc)} ({eventCorrect}/{eventElig.length})
-                  </span>
-                )}
-                <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{isCollapsed ? '▶' : '▼'}</span>
-              </div>
+              {isMobile ? (
+                /* ── Mobile: two rows ── */
+                <>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                    <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>{event.name}</span>
+                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', marginLeft: '0.5rem', flexShrink: 0 }}>{isCollapsed ? '▶' : '▼'}</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      {event.event_type === 'ppv' ? 'PPV' : 'Fight Night'}
+                    </span>
+                    {eventAcc !== null && (
+                      <span style={{ color: getAccuracyColor(eventAcc), fontWeight: 700, fontSize: '0.78rem' }}>
+                        {formatPct(eventAcc)} ({eventCorrect}/{eventElig.length})
+                      </span>
+                    )}
+                  </div>
+                </>
+              ) : (
+                /* ── Desktop: single row ── */
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'center' }}>
+                    <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>{event.name}</span>
+                    <span style={{ color: 'var(--muted)', fontSize: '1.1rem', lineHeight: 1 }}>·</span>
+                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{eventDate}</span>
+                    <span style={{ color: 'var(--muted)', fontSize: '1.1rem', lineHeight: 1 }}>·</span>
+                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{event.event_type || 'Fight Night'}</span>
+                  </div>
+                  <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                    {eventAcc !== null && (
+                      <span style={{ color: getAccuracyColor(eventAcc), fontWeight: 700, fontSize: '0.85rem' }}>
+                        {formatPct(eventAcc)} ({eventCorrect}/{eventElig.length})
+                      </span>
+                    )}
+                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{isCollapsed ? '▶' : '▼'}</span>
+                  </div>
+                </div>
+              )}
             </div>
 
             {!isCollapsed && (
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid var(--border)' }}>
-                    {['Fight', 'Their Pick', 'Result', ''].map((h, idx) => (
-                      <th key={idx} style={{ padding: '0.5rem 1rem', textAlign: 'left', fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-secondary)' }}>{h}</th>
+                    {[
+                      { label: 'Fight' },
+                      { label: 'Their Pick' },
+                      { label: 'Result' },
+                      { label: '', hide: true },
+                    ].map(({ label, hide }, idx) => (
+                      <th key={idx} className={hide ? 'mobile-hide' : ''} style={{ padding: '0.5rem 1rem', textAlign: 'left', fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-secondary)' }}>{label}</th>
                     ))}
                   </tr>
                 </thead>
@@ -248,7 +275,7 @@ export function CreatorDetail() {
                         <td style={{ padding: '0.625rem 1rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
                           {fight?.winner || '—'}
                         </td>
-                        <td style={{ padding: '0.625rem 1rem', fontSize: '0.9rem', textAlign: 'right', paddingRight: '1rem' }}>
+                        <td className="mobile-hide" style={{ padding: '0.625rem 1rem', fontSize: '0.9rem', textAlign: 'right', paddingRight: '1rem' }}>
                           {isEligible
                             ? <span style={{ fontWeight: 700, color: p.correct ? 'var(--accent-green)' : 'var(--accent-red)' }}>{p.correct ? '✓' : '✗'}</span>
                             : <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>{exclusionReason}</span>

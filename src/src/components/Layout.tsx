@@ -41,7 +41,10 @@ export function Layout() {
               gap: '0.4rem',
             }}
           >
-            ⚙ Filters
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <path d="M0 1h14M2.5 6h9M5 11h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
+            Filters
           </button>
         </div>
       )}
@@ -91,7 +94,7 @@ export function Layout() {
                 style={{
                   width: '100%',
                   padding: '0.7rem',
-                  background: 'var(--primary)',
+                  background: '#E1006A',
                   border: 'none',
                   borderRadius: '8px',
                   color: '#fff',
