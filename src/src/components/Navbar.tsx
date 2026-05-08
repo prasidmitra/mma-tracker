@@ -80,7 +80,7 @@ export function Navbar() {
             gap: '4px',
             padding: '4px 0',
           }}>
-            Creators <span style={{ fontSize: '0.65rem' }}>▾</span>
+            Creators <span style={{ fontSize: '0.85rem' }}>▾</span>
           </button>
           {dropdownOpen && (
             <div style={{

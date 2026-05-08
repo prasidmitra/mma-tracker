@@ -105,7 +105,7 @@ export function CreatorDetail() {
             }}
           >
             {CREATOR_DISPLAY[creator]}
-            <span style={{ fontSize: '0.55rem', color: 'var(--muted)', lineHeight: 1 }}>▾</span>
+            <span style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1 }}>▾</span>
           </button>
           {dropdownOpen && (
             <div style={{
