@@ -25,13 +25,13 @@ export function Dashboard() {
 
 
   return (
-    <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '1.5rem' }}>
+    <div className="page-container" style={{ maxWidth: '1100px', margin: '0 auto', padding: '1.5rem' }}>
       {/* Hero */}
       <div style={{ marginBottom: '2rem' }}>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
           See how the top MMA YouTubers perform on their picks.
         </p>
-        <h2 style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
+        <h2 className="leaderboard-heading" style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
           Leaderboard
         </h2>
       </div>
@@ -61,17 +61,25 @@ export function Dashboard() {
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ borderBottom: '1px solid var(--border)' }}>
-                {['Rank', 'Creator', 'Accuracy', 'Record', 'Picks Made', 'Main Event Acc', 'PPV Acc'].map(h => (
-                  <th key={h} style={{
+                {[
+                  { label: 'Rank', center: true },
+                  { label: 'Creator' },
+                  { label: 'Accuracy' },
+                  { label: 'Record' },
+                  { label: 'Picks Made', hide: true },
+                  { label: 'Main Event Acc', hide: true },
+                  { label: 'PPV Acc', hide: true },
+                ].map(({ label, center, hide }) => (
+                  <th key={label} className={hide ? 'mobile-hide' : ''} style={{
                     padding: '0.625rem 0.875rem',
-                    textAlign: h === 'Rank' ? 'center' : 'left',
+                    textAlign: center ? 'center' : 'left',
                     fontSize: '0.7rem',
                     fontWeight: 700,
                     textTransform: 'uppercase',
                     letterSpacing: '0.06em',
                     color: 'var(--text-secondary)',
                     whiteSpace: 'nowrap',
-                  }}>{h}</th>
+                  }}>{label}</th>
                 ))}
               </tr>
             </thead>
@@ -86,7 +94,7 @@ export function Dashboard() {
                   onMouseLeave={e => (e.currentTarget.style.background = i === 0 ? 'rgba(245,197,66,0.04)' : 'transparent')}
                 >
                   <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: i === 0 ? 'var(--gold-primary)' : 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
-                  <td style={{ padding: '0.75rem 0.875rem' }}>
+                  <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
                     <Link to={`/creator/${s.slug}`} style={{ color: 'var(--text-primary)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}
                       onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-purple)')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-primary)')}>
@@ -103,13 +111,13 @@ export function Dashboard() {
                     <span style={{ color: 'var(--text-secondary)' }}>-</span>
                     <span style={{ color: 'var(--accent-red)' }}>{s.incorrect}</span>
                   </td>
-                  <td style={{ padding: '0.75rem 0.875rem', color: 'var(--text-secondary)', fontWeight: 500 }}>{s.eligible}</td>
-                  <td style={{ padding: '0.75rem 0.875rem' }}>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--text-secondary)', fontWeight: 500 }}>{s.eligible}</td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem' }}>
                     {s.mainEventAccuracy !== null
                       ? <span style={{ color: getAccuracyColor(s.mainEventAccuracy), fontWeight: 700 }}>{formatPct(s.mainEventAccuracy)}</span>
                       : <span style={{ color: 'var(--text-secondary)' }}>—</span>}
                   </td>
-                  <td style={{ padding: '0.75rem 0.875rem' }}>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem' }}>
                     {s.ppvAccuracy !== null
                       ? <span style={{ color: getAccuracyColor(s.ppvAccuracy), fontWeight: 700 }}>{formatPct(s.ppvAccuracy)}</span>
                       : <span style={{ color: 'var(--text-secondary)' }}>—</span>}

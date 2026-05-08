@@ -66,3 +66,19 @@ body {
 }
 a { color: var(--highlight); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* ── Mobile utilities (< 768px) ───────────────────────────── */
+@media (max-width: 767px) {
+  .mobile-hide { display: none !important; }
+
+  .mobile-creator-cell {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .leaderboard-heading { font-size: 1.5rem !important; }
+
+  .page-container { padding: 0.875rem !important; }
+}

@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useFilters } from '../hooks/useFilters';
 import type { Event, Filters } from '../types';
 
-interface Props { events: Event[]; }
+interface Props { events: Event[]; asDrawer?: boolean; }
 
 function FilterLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -46,7 +46,7 @@ function FilterOption({ active, onClick, children }: { active: boolean; onClick:
   );
 }
 
-export function Sidebar({ events }: Props) {
+export function Sidebar({ events, asDrawer = false }: Props) {
   const [filters, setFilters] = useFilters();
 
   const years = useMemo(() => {
@@ -55,7 +55,10 @@ export function Sidebar({ events }: Props) {
   }, [events]);
 
   return (
-    <aside style={{
+    <aside style={asDrawer ? {
+      padding: '0.75rem 1rem 0.5rem',
+      background: 'none',
+    } : {
       width: '200px',
       minWidth: '200px',
       padding: '1rem 0.875rem',
@@ -66,9 +69,11 @@ export function Sidebar({ events }: Props) {
       overflowY: 'auto',
       background: 'var(--bg-card)',
     }}>
-      <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
-        Filters
-      </div>
+      {!asDrawer && (
+        <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+          Filters
+        </div>
+      )}
 
       <FilterLabel>Year</FilterLabel>
       <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
