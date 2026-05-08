@@ -30,7 +30,7 @@ export function applyFilters(predictions: Prediction[], events: Event[], filters
       const fight = event.fights.find(f => f.fight_id === p.fight_id);
       if (!fight) return false;
       if (filters.cardPosition === 'main_event' && fight.card_position !== 'main_event') return false;
-      if (filters.cardPosition === 'main_card' && !['main_event', 'main_card'].includes(fight.card_position)) return false;
+      if (filters.cardPosition === 'main_card' && !['main_event', 'co_main', 'main_card'].includes(fight.card_position)) return false;
     }
     return true;
   });

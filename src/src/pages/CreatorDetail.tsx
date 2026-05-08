@@ -8,9 +8,10 @@ import type { Prediction, Event, Fight } from '../types';
 
 const CARD_ORDER: Record<string, number> = {
   main_event: 0,
-  main_card: 1,
-  prelims: 2,
-  early_prelims: 3,
+  co_main: 1,
+  main_card: 2,
+  prelim: 3,
+  early_prelim: 4,
 };
 
 function sortPredsByFightOrder(preds: Prediction[], event: Event): Prediction[] {
