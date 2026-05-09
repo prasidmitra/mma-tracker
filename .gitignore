@@ -6,4 +6,9 @@ __pycache__/
 .DS_Store
 tmp/
 cookies.txt
-har-traces
+har-traces/
+misc/
+.claude/
+
+# Windows WSL metadata
+*:Zone.Identifier
