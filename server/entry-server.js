@@ -1645,7 +1645,7 @@ function Dashboard() {
 					/* @__PURE__ */ jsx("p", {
 						style: {
 							color: "var(--text-secondary)",
-							fontSize: "0.88rem",
+							fontSize: "0.95rem",
 							lineHeight: 1.7,
 							marginBottom: "0.5rem"
 						},
@@ -1654,7 +1654,7 @@ function Dashboard() {
 					/* @__PURE__ */ jsxs("p", {
 						style: {
 							color: "var(--text-secondary)",
-							fontSize: "0.82rem",
+							fontSize: "0.95rem",
 							marginBottom: "1.25rem"
 						},
 						children: [
