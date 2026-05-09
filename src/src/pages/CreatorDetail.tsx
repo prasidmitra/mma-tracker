@@ -247,7 +247,7 @@ export function CreatorDetail() {
       </div>
 
       {/* Header */}
-      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '2rem' }}>
+      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
         <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
         <div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
@@ -264,7 +264,7 @@ export function CreatorDetail() {
               </a>
             ) : CREATOR_DISPLAY[creator]}
           </h1>
-          <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-end' }}>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-end' }}>
             <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
               {formatPct(stats.accuracy)}
             </span>
