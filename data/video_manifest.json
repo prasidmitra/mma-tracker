@@ -13863,12 +13863,12 @@
     "video_id": "0wVPVs6DOHc",
     "title": "UFC 313 Alex Pereira vs Magomed Ankalaev Full Card Predictions",
     "published_at": "2025-03-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:16:34.597705+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13876,12 +13876,12 @@
     "video_id": "7xFmrvS-tLY",
     "title": "UFC Vegas 102 Jared Cannonier vs Gregory Rodrigues Full Card Predictions",
     "published_at": "2025-02-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:19:05.049755+00:00"
   },
   {
     "creator": "mma_joey",
