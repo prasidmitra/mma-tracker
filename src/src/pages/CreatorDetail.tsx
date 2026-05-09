@@ -308,10 +308,8 @@ export function CreatorDetail() {
                     }}>▼</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                      <span style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>{event.event_type === 'ppv' ? 'PPV' : 'Fight Night'}</span>
-                      <span style={{ fontSize: '0.85rem', opacity: 0.7 }}>•</span>
-                      <span>{eventDateShort}</span>
+                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem' }}>
+                      {eventDateShort}
                     </span>
                     {eventAcc !== null && (
                       <span style={{ color: getAccuracyColor(eventAcc), fontWeight: 700, fontSize: '0.78rem' }}>
@@ -327,8 +325,6 @@ export function CreatorDetail() {
                     <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>{event.name}</span>
                     <span style={{ color: 'var(--muted)', fontSize: '1.3rem', lineHeight: 1, opacity: 0.8 }}>•</span>
                     <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{eventDate}</span>
-                    <span style={{ color: 'var(--muted)', fontSize: '1.3rem', lineHeight: 1, opacity: 0.8 }}>•</span>
-                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{event.event_type || 'Fight Night'}</span>
                   </div>
                   <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                     {eventAcc !== null && (

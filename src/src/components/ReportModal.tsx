@@ -68,8 +68,9 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
         style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.65)', zIndex: 1000, animation: 'octaModalIn 0.18s ease' }}
       />
 
-      {/* Modal */}
-      <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', zIndex: 1001, width: '100%', maxWidth: '440px', padding: '0 1rem', animation: 'octaModalIn 0.18s ease' }}>
+      {/* Modal — outer div only handles centering, inner div handles animation */}
+      <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', zIndex: 1001, width: '100%', maxWidth: '440px', padding: '0 1rem' }}>
+        <div style={{ animation: 'octaModalIn 0.18s ease' }}>
         <div style={{ background: 'var(--panel)', borderRadius: '12px', border: '1px solid var(--border)', padding: '1.5rem', boxShadow: '0 24px 64px rgba(0,0,0,0.6)' }}>
           <h2 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '1.25rem', color: 'var(--text)' }}>
             Report a Data Issue
@@ -192,6 +193,7 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
               </div>
             </form>
           )}
+        </div>
         </div>
       </div>
     </>
