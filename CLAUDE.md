@@ -3,16 +3,7 @@
 ## Git & GitHub
 - Remote: git@github.com:prasidmitra/mma-tracker.git (SSH — HTTPS auth doesn't work in this env)
 - Do NOT commit or push unless the user explicitly says "push changes" or asks for a commit/push.
-- Use descriptive commit messages. Co-author line is required (see below).
-- Commit format:
-  ```
-  git commit -m "$(cat <<'EOF'
-  <summary>
-
-  Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
-  EOF
-  )"
-  ```
+- One-liner commits only: `git commit -m "short description"`. No co-author, no body, no details.
 
 ## What This Project Is
 A website that tracks and displays the prediction accuracy of famous MMA YouTube
