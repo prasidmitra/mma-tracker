@@ -123,12 +123,6 @@ export function Navbar() {
               >About</Link>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <a href="https://github.com/prasidmitra/mma-tracker" target="_blank" rel="noreferrer"
-                style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', fontWeight: 500 }}>
-                GitHub
-              </a>
-            </div>
           </>
         )}
       </nav>

@@ -6,6 +6,7 @@ import { useData } from '../hooks/useData';
 import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, formatPct, getAccuracyColor } from '../utils/accuracy';
+import { ReportModal } from '../components/ReportModal';
 import type { Prediction, Event, Fight } from '../types';
 
 const SITE_URL = 'https://octascore.xyz';
@@ -51,6 +52,7 @@ export function CreatorDetail() {
   const [filters] = useFilters();
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [reportTarget, setReportTarget] = useState<{ prediction: Prediction; event: Event; fight: Fight | undefined } | null>(null);
   const isMobile = useIsMobile();
 
   const sortedCreators = useMemo(() =>
@@ -258,6 +260,15 @@ export function CreatorDetail() {
       )}
 
       {/* Event groups */}
+      {reportTarget && (
+        <ReportModal
+          prediction={reportTarget.prediction}
+          event={reportTarget.event}
+          fight={reportTarget.fight}
+          onClose={() => setReportTarget(null)}
+        />
+      )}
+
       {eventGroups.map(({ event, preds: rawPreds }) => {
         const preds = sortPredsByFightOrder(rawPreds, event);
         const isCollapsed = collapsed.has(event.event_id);
@@ -347,8 +358,9 @@ export function CreatorDetail() {
                       { label: 'Their Pick' },
                       { label: 'Result' },
                       { label: '', hide: true },
-                    ].map(({ label, hide }, idx) => (
-                      <th key={idx} className={hide ? 'mobile-hide' : ''} style={{ padding: '0.5rem 1rem', textAlign: 'left', fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-secondary)' }}>{label}</th>
+                      { label: '', report: true },
+                    ].map(({ label, hide, report }, idx) => (
+                      <th key={idx} className={hide ? 'mobile-hide' : report ? 'report-flag-col' : ''} style={{ padding: '0.5rem 1rem', textAlign: 'left', fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-secondary)', width: report ? '32px' : undefined }}>{label}</th>
                     ))}
                   </tr>
                 </thead>
@@ -383,6 +395,15 @@ export function CreatorDetail() {
                             ? <span style={{ fontWeight: 700, color: p.correct ? 'var(--accent-green)' : 'var(--accent-red)' }}>{p.correct ? '✓' : '✗'}</span>
                             : <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>{exclusionReason}</span>
                           }
+                        </td>
+                        <td className="report-flag-col" style={{ padding: '0 0.25rem', width: '32px', textAlign: 'center' }}>
+                          <button
+                            className="report-flag-btn"
+                            title="Report a data issue"
+                            onClick={() => setReportTarget({ prediction: p, event, fight })}
+                          >
+                            ⚑
+                          </button>
                         </td>
                       </tr>
                     );
