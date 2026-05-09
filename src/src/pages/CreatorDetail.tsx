@@ -249,7 +249,7 @@ export function CreatorDetail() {
       </div>
 
       {/* Header */}
-      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
+      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: mobilePortrait ? 'flex-start' : 'flex-end', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
         <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
         <div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
