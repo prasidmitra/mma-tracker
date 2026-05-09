@@ -1435,12 +1435,12 @@
     "video_id": "LAgSZKYnR74",
     "title": "UFC Singapore Event Recap Holloway vs Korean Zombie Full Card Reaction & Breakdown",
     "published_at": "2023-08-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:21:58.777303+00:00"
   },
   {
     "creator": "mma_guru",

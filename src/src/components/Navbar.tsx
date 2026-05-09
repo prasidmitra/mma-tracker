@@ -5,8 +5,6 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import { useData } from '../context/DataContext';
 import logo from '../assets/logo.png';
 
-const LOGO_HEIGHT = 36;
-
 const navLinkStyle = {
   color: 'var(--text-secondary)' as const,
   fontSize: '1rem',
