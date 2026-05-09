@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useIsMobile } from '../hooks/useIsMobile';
@@ -27,6 +27,83 @@ const CARD_ORDER: Record<string, number> = {
   prelim: 3,
   early_prelim: 4,
 };
+
+function CreatorSelector({ creator, sortedCreators, dropdownOpen, setDropdownOpen, navigate }: {
+  creator: string;
+  sortedCreators: string[];
+  dropdownOpen: boolean;
+  setDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  navigate: (path: string) => void;
+}) {
+  return (
+    <div style={{ position: 'relative', flexShrink: 0 }}>
+      {dropdownOpen && (
+        <div style={{ position: 'fixed', inset: 0, zIndex: 199 }} onClick={() => setDropdownOpen(false)} />
+      )}
+      <button
+        onClick={() => setDropdownOpen(o => !o)}
+        style={{
+          background: 'var(--panel)',
+          border: '1px solid var(--border)',
+          borderRadius: '8px',
+          color: 'var(--text)',
+          padding: '0.4rem 0.875rem',
+          fontSize: '0.82rem',
+          fontFamily: "'Manrope', sans-serif",
+          fontWeight: 500,
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          outline: 'none',
+        }}
+      >
+        {CREATOR_DISPLAY[creator]}
+        <span style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1 }}>▾</span>
+      </button>
+      {dropdownOpen && (
+        <div style={{
+          position: 'absolute',
+          top: 'calc(100% + 4px)',
+          right: 0,
+          background: 'var(--panel)',
+          border: '1px solid var(--border)',
+          borderRadius: '8px',
+          padding: '0.25rem 0',
+          minWidth: '180px',
+          boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+          zIndex: 200,
+          overflow: 'hidden',
+        }}>
+          {sortedCreators.map(s => (
+            <button
+              key={s}
+              onClick={() => { navigate(`/creator/${s}${window.location.search}`); setDropdownOpen(false); }}
+              style={{
+                display: 'block',
+                width: '100%',
+                textAlign: 'left',
+                padding: '0.5rem 1rem',
+                background: s === creator ? 'var(--secondary)' : 'none',
+                border: 'none',
+                color: s === creator ? '#fff' : 'var(--text)',
+                fontSize: '0.82rem',
+                fontWeight: s === creator ? 600 : 400,
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                transition: 'background 0.1s',
+              }}
+              onMouseEnter={e => { if (s !== creator) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
+              onMouseLeave={e => { if (s !== creator) e.currentTarget.style.background = 'none'; }}
+            >
+              {CREATOR_DISPLAY[s]}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 function AvatarBox({ creator, size }: { creator: string; size: number }) {
   const [hidden, setHidden] = useState(false);
@@ -177,80 +254,21 @@ export function CreatorDetail() {
         <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
-      {/* Creator selector */}
-      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
-        <div style={{ position: 'relative' }}>
-          {dropdownOpen && (
-            <div style={{ position: 'fixed', inset: 0, zIndex: 199 }} onClick={() => setDropdownOpen(false)} />
-          )}
-          <button
-            onClick={() => setDropdownOpen(o => !o)}
-            style={{
-              background: 'var(--panel)',
-              border: '1px solid var(--border)',
-              borderRadius: '8px',
-              color: 'var(--text)',
-              padding: '0.4rem 0.875rem',
-              fontSize: '0.82rem',
-              fontFamily: "'Manrope', sans-serif",
-              fontWeight: 500,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              outline: 'none',
-            }}
-          >
-            {CREATOR_DISPLAY[creator]}
-            <span style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1 }}>▾</span>
-          </button>
-          {dropdownOpen && (
-            <div style={{
-              position: 'absolute',
-              top: 'calc(100% + 4px)',
-              right: 0,
-              background: 'var(--panel)',
-              border: '1px solid var(--border)',
-              borderRadius: '8px',
-              padding: '0.25rem 0',
-              minWidth: '180px',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
-              zIndex: 200,
-              overflow: 'hidden',
-            }}>
-              {sortedCreators.map(s => (
-                <button
-                  key={s}
-                  onClick={() => { navigate(`/creator/${s}${window.location.search}`); setDropdownOpen(false); }}
-                  style={{
-                    display: 'block',
-                    width: '100%',
-                    textAlign: 'left',
-                    padding: '0.5rem 1rem',
-                    background: s === creator ? 'var(--secondary)' : 'none',
-                    border: 'none',
-                    color: s === creator ? '#fff' : 'var(--text)',
-                    fontSize: '0.82rem',
-                    fontWeight: s === creator ? 600 : 400,
-                    cursor: 'pointer',
-                    fontFamily: 'inherit',
-                    transition: 'background 0.1s',
-                  }}
-                  onMouseEnter={e => { if (s !== creator) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
-                  onMouseLeave={e => { if (s !== creator) e.currentTarget.style.background = 'none'; }}
-                >
-                  {CREATOR_DISPLAY[s]}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-
       {/* Header */}
       <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
+        {mobilePortrait && (
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <CreatorSelector
+              creator={creator}
+              sortedCreators={sortedCreators}
+              dropdownOpen={dropdownOpen}
+              setDropdownOpen={setDropdownOpen}
+              navigate={navigate}
+            />
+          </div>
+        )}
         <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
-        <div>
+        <div style={{ flex: 1 }}>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
             {CREATOR_YOUTUBE_URL[creator] ? (
               <a
@@ -287,6 +305,15 @@ export function CreatorDetail() {
             </div>
           </div>
         </div>
+        {!mobilePortrait && (
+          <CreatorSelector
+            creator={creator}
+            sortedCreators={sortedCreators}
+            dropdownOpen={dropdownOpen}
+            setDropdownOpen={setDropdownOpen}
+            navigate={navigate}
+          />
+        )}
       </div>
 
       {CREATOR_BIO[creator] && (
