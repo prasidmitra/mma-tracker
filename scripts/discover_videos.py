@@ -43,6 +43,9 @@ CREATORS = {
         "channel_id": "UCHMz3GPVRmDmFOOLplZC0ZQ",  # @MMAJoey
         "display_name": "MMA Joey",
         "search_terms": ["UFC", "predictions", "picks"],
+        # MMA Joey posts both a full-card predictions video AND a longer livestream per event.
+        # Prefer the predictions video; the livestream is much longer and often missing a title keyword.
+        "preferred_keywords": ["full card", "full predictions", "full card breakdown"],
     },
     "sneaky_mma": {
         "channel_id": None,
@@ -372,13 +375,17 @@ def discover_for_creator(
     event_candidates: dict[str, list] = defaultdict(list)
     unmatched = []
 
+    preferred_kws = CREATORS[creator_slug].get("preferred_keywords", [])
+
     for video in pred_videos:
         if video["video_id"] in existing_video_ids:
             continue
         event = match_video_to_event(video, events, events_by_num)
         if event:
             days_before = (date.fromisoformat(event["date"]) - date.fromisoformat(video["published_at"])).days
-            score = (MAX_DAYS_BEFORE - max(days_before, 0)) + prediction_keyword_count(video["title"]) * 2
+            tl = video["title"].lower()
+            preferred_bonus = 20 if preferred_kws and any(kw in tl for kw in preferred_kws) else 0
+            score = (MAX_DAYS_BEFORE - max(days_before, 0)) + prediction_keyword_count(video["title"]) * 2 + preferred_bonus
             event_candidates[event["event_id"]].append((video, score))
         else:
             unmatched.append(video)
