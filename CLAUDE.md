@@ -2,7 +2,7 @@
 
 ## Git & GitHub
 - Remote: git@github.com:prasidmitra/mma-tracker.git (SSH — HTTPS auth doesn't work in this env)
-- After every code change in a session, commit and push to main.
+- Do NOT commit or push unless the user explicitly says "push changes" or asks for a commit/push.
 - Use descriptive commit messages. Co-author line is required (see below).
 - Commit format:
   ```

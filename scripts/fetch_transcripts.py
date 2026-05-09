@@ -55,6 +55,13 @@ class TranscriptRateLimited(Exception):
     pass
 
 
+class _TimeoutSession(requests.Session):
+    """requests.Session with a hard per-request timeout so a hung YouTube connection never blocks forever."""
+    def request(self, *args, **kwargs):
+        kwargs.setdefault("timeout", 45)
+        return super().request(*args, **kwargs)
+
+
 def _build_api() -> YouTubeTranscriptApi:
     """Build API instance, injecting browser cookies via http_client if configured."""
     cp = _cookies_path()
@@ -62,13 +69,14 @@ def _build_api() -> YouTubeTranscriptApi:
         jar = http.cookiejar.MozillaCookieJar()
         try:
             jar.load(str(cp), ignore_discard=True, ignore_expires=True)
-            session = requests.Session()
+            session = _TimeoutSession()
             session.cookies = jar  # type: ignore[assignment]
             print(f"  [transcript] Using cookies from {cp}", file=sys.stderr)
             return YouTubeTranscriptApi(http_client=session)
         except Exception as e:
             print(f"  WARN: Could not load cookie file {cp}: {e}", file=sys.stderr)
-    return YouTubeTranscriptApi()
+    session = _TimeoutSession()
+    return YouTubeTranscriptApi(http_client=session)
 
 
 # Module-level singleton — rebuilt whenever the cookies file path or mtime changes

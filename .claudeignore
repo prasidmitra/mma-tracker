@@ -1,0 +1,39 @@
+# Dependencies
+src/node_modules/
+venv/
+
+# Build output
+src/dist/
+
+# Lock files
+src/package-lock.json
+src/yarn.lock
+
+# Python cache
+scripts/__pycache__/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Vite / tooling cache
+src/.vite/
+**/.cache/
+
+# Large data exports (CSVs — rarely needed unless explicitly working on export logic)
+data/exports/
+
+# Temp / cache directories
+tmp/
+
+# HAR traces
+har-traces/
+
+# Misc / secrets
+misc/
+.env
+
+# Zone identifier files (Windows WSL artifacts)
+**/*.Zone.Identifier
+
+# Git internals
+.git/
