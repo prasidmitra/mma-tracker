@@ -6362,12 +6362,12 @@
     "video_id": "m7JZRmbSWZI",
     "title": "\"He didn't Warm Up Enough...\" RIDICULOUS Excuses from Merab's Camp (UFC Royval vs Kape Predictions)",
     "published_at": "2025-12-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:39:58.422439+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6375,12 +6375,12 @@
     "video_id": "EolsDBQ7JyI",
     "title": "UFC 323 Predictions and Breakdown & All Bets | Merab Dvalishvili vs Petr Yan 2",
     "published_at": "2025-12-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:46:43.464627+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6388,7 +6388,7 @@
     "video_id": "Zgf-aW4cW-4",
     "title": "UFC Qatar Predictions and Breakdown & All Bets | Arman Tsarukyan vs Dan Hooker",
     "published_at": "2025-11-21",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -6401,12 +6401,12 @@
     "video_id": "wWDmYNSmDQo",
     "title": "UFC 322 Predictions and Breakdown & All Bets | Jack Della Maddalena vs Islam Makhachev",
     "published_at": "2025-11-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:49:15.636518+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6414,12 +6414,12 @@
     "video_id": "ihkmrufE9WQ",
     "title": "UFC 321: Predictions and Breakdown & All Bets | Tom Aspinall vs Ciryl Gane",
     "published_at": "2025-10-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:51:51.644025+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6427,12 +6427,12 @@
     "video_id": "v12pttHU0B8",
     "title": "UFC Brazil: Predictions and Breakdown & All Bets | Charles Oliveira vs Mateusz Gamrot",
     "published_at": "2025-10-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T06:54:08.963574+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6440,12 +6440,12 @@
     "video_id": "YNqBdpKq-_U",
     "title": "UFC 320: Predictions and Breakdown | Magomed Ankalaev vs Alex Pereira 2",
     "published_at": "2025-10-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:56:26.090276+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6453,12 +6453,12 @@
     "video_id": "P0EtGVoRlmE",
     "title": "UFC & Canelo Alvarez vs Terence Crawford: Predictions and Breakdown (Full UFC Card Picks)",
     "published_at": "2025-09-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:59:30.526396+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6466,12 +6466,12 @@
     "video_id": "b9tqndNL2xc",
     "title": "UFC Shanghai: Predictions and Breakdown & All Bets | Johnny Walker vs Zhang Mingyang",
     "published_at": "2025-08-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 2,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T07:02:04.505905+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6479,12 +6479,12 @@
     "video_id": "vxCOcCm6GHs",
     "title": "UFC 319: Predictions and Breakdown & All Bets | Dricus Du Plessis vs Khamzat Chimaev",
     "published_at": "2025-08-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:05:30.967265+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6492,12 +6492,12 @@
     "video_id": "yKQ87zRNkxw",
     "title": "UFC Abu Dhabi: Predictions and Breakdown & All Bets | Robert Whittaker vs Reinier de Ridder",
     "published_at": "2025-07-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:08:11.702121+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6505,12 +6505,12 @@
     "video_id": "5Vtm9tfpr40",
     "title": "UFC 318: Predictions and Breakdown & All Bets | Max Holloway vs Dustin Poirier 3",
     "published_at": "2025-07-18",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:10:10.954079+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6518,12 +6518,12 @@
     "video_id": "tcQhaG9Au3E",
     "title": "UFC 317: Predictions and Breakdown & All Bets | Ilia Topuria vs Charles Oliveira",
     "published_at": "2025-06-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:12:31.214317+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6531,12 +6531,12 @@
     "video_id": "NX-A4Og-EH8",
     "title": "UFC Atlanta: Predictions and Breakdown & All Bets | Kamaru Usman vs Joaquin Buckley",
     "published_at": "2025-06-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:15:45.889974+00:00"
   },
   {
     "creator": "the_weasel",
@@ -18582,12 +18582,12 @@
     "video_id": "WfLSGdYe_84",
     "title": "UFC Vancouver Full Card Post Fight Breakdown | Reinier de Ridder vs Brendan Allen",
     "published_at": "2025-10-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:35:09.720273+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18595,12 +18595,12 @@
     "video_id": "4yM6P8mcbSI",
     "title": "Chael Messaged Me? UFC Scrambling, Bo Humiliation, Islam vs Topuria, UFC 315 Predictions - Live",
     "published_at": "2025-05-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:37:32.163126+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19336,6 +19336,32 @@
     "video_id": "xF1cq_rFP10",
     "title": "UFC 261 Prediction: Weili Zhang vs Rose Namajunas",
     "published_at": "2021-04-20",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-della-maddalena-vs-prates",
+    "video_id": "RMRVkZvmbjQ",
+    "title": "MASTERCLASS!!! Aljamain is Still so Good...(Aljamain Sterling vs Youssef Zalal UFC Breakdown)",
+    "published_at": "2026-04-26",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-dawson-vs-green",
+    "video_id": "FVgZNHgsPm8",
+    "title": "UFC 294 is STACKED (Islam Makhachev vs Charles Oliveira 2 Preview)",
+    "published_at": "2023-09-27",
     "status": "pending",
     "transcript_type": null,
     "predictions_extracted": 0,

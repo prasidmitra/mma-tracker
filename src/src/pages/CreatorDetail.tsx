@@ -6,7 +6,7 @@ import { useIsPortrait } from '../hooks/useIsPortrait';
 import { useData } from '../hooks/useData';
 import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
-import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, CREATOR_YOUTUBE_URL, formatPct, getAccuracyColor } from '../utils/accuracy';
+import { applyFilters, getCreatorStats, calcBaselineAccuracy, ALL_CREATORS, CREATOR_DISPLAY, CREATOR_YOUTUBE_URL, formatPct, getAccuracyColor } from '../utils/accuracy';
 import { ReportModal } from '../components/ReportModal';
 import { useFilterDrawer } from '../components/Layout';
 import type { Prediction, Event, Fight } from '../types';
@@ -96,6 +96,7 @@ export function CreatorDetail() {
   );
 
   const stats = useMemo(() => getCreatorStats(creator, predictions, events, filters), [creator, predictions, events, filters]);
+  const baseline = useMemo(() => calcBaselineAccuracy(events, filters), [events, filters]);
 
   const eventGroups = useMemo(() => {
     const evMap = new Map<string, { event: Event; preds: Prediction[] }>();
@@ -275,6 +276,14 @@ export function CreatorDetail() {
                 <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
               </div>
               <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{stats.eligible} eligible picks</div>
+              {baseline.total > 0 && (
+                <div style={{ marginTop: '0.4rem', fontSize: '0.75rem', color: 'var(--muted)' }}>
+                  vs betting favorite:{' '}
+                  <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700 }}>
+                    {formatPct(baseline.accuracy)}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </div>

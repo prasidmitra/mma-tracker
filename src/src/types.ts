@@ -10,6 +10,8 @@ export interface Fight {
   card_type: 'main_card' | 'prelims' | 'early_prelims';
   weight_class: string;
   title_fight: boolean;
+  odds_favorite?: string | null;
+  odds_ml?: number | null;
 }
 
 export interface Event {

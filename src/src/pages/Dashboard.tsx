@@ -5,7 +5,7 @@ import { useData } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { useIsMobile } from '../hooks/useIsMobile';
 import { useFilterDrawer } from '../components/Layout';
-import { getCreatorStats, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
+import { getCreatorStats, calcBaselineAccuracy, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
 
 const SITE_URL = 'https://octascore.xyz';
 const OG_IMAGE = `${SITE_URL}/favicon.png`;
@@ -22,6 +22,8 @@ export function Dashboard() {
       .filter(s => s.eligible > 0)
       .sort((a, b) => b.accuracy - a.accuracy);
   }, [predictions, events, filters]);
+
+  const baseline = useMemo(() => calcBaselineAccuracy(events, filters), [events, filters]);
 
   return (
     <div className="page-container" style={{ maxWidth: '1100px', margin: '0 auto', padding: '1.5rem' }}>
@@ -151,6 +153,28 @@ export function Dashboard() {
                   </td>
                 </tr>
               ))}
+              {baseline.total > 0 && (
+                <tr style={{ borderTop: '2px solid var(--border)', opacity: 0.65 }}>
+                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--muted)', fontWeight: 600, fontSize: '0.85rem' }}>—</td>
+                  <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
+                    <span style={{ color: 'var(--muted)', fontWeight: 700, fontSize: '0.9rem' }}>Betting Favorite</span>
+                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem', marginLeft: '0.4rem', fontWeight: 400 }}>baseline</span>
+                  </td>
+                  <td style={{ padding: '0.75rem 0.875rem' }}>
+                    <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 800, fontSize: '1.1rem' }}>
+                      {formatPct(baseline.accuracy)}
+                    </span>
+                  </td>
+                  <td style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)', fontWeight: 500 }}>
+                    <span style={{ color: 'var(--accent-green)' }}>{baseline.correct}</span>
+                    <span style={{ color: 'var(--muted)' }}>-</span>
+                    <span style={{ color: 'var(--accent-red)' }}>{baseline.total - baseline.correct}</span>
+                  </td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)', fontWeight: 500 }}>{baseline.total}</td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)' }}>—</td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)' }}>—</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
