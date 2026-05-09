@@ -983,7 +983,7 @@ function Navbar() {
 			},
 			"aria-label": "Menu",
 			children: hamburgerOpen ? "✕" : "☰"
-		}) : /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsxs("div", {
+		}) : /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", {
 			style: {
 				position: "absolute",
 				left: "50%",
@@ -1067,24 +1067,7 @@ function Navbar() {
 					children: "About"
 				})
 			]
-		}), /* @__PURE__ */ jsx("div", {
-			style: {
-				display: "flex",
-				alignItems: "center",
-				gap: "1rem"
-			},
-			children: /* @__PURE__ */ jsx("a", {
-				href: "https://github.com/prasidmitra/mma-tracker",
-				target: "_blank",
-				rel: "noreferrer",
-				style: {
-					color: "var(--text-secondary)",
-					fontSize: "0.8rem",
-					fontWeight: 500
-				},
-				children: "GitHub"
-			})
-		})] })]
+		}) })]
 	}), isMobile && hamburgerOpen && /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("div", {
 		style: {
 			position: "fixed",
@@ -1835,6 +1818,286 @@ function Dashboard() {
 	});
 }
 //#endregion
+//#region src/components/ReportModal.tsx
+var FORM_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7kX9jIH9INe_MJFDYTTGwlNz0zCcnxrnPRhpLZxbtp00DKQ/formResponse";
+var REASONS = [
+	"Wrong predicted winner",
+	"Wrong actual result",
+	"Fight shouldn't be here",
+	"Prediction was a pick'em not a clear pick",
+	"Other"
+];
+function ReportModal({ prediction, event, fight, onClose }) {
+	const [reason, setReason] = useState("");
+	const [notes, setNotes] = useState("");
+	const [reasonError, setReasonError] = useState("");
+	const [submitted, setSubmitted] = useState(false);
+	const creatorName = CREATOR_DISPLAY[prediction.creator] || prediction.creator;
+	const fightName = fight ? `${fight.fighter_a} vs ${fight.fighter_b}` : prediction.fight_id;
+	async function handleSubmit(e) {
+		e.preventDefault();
+		if (!reason) {
+			setReasonError("Please select a reason");
+			return;
+		}
+		const fd = new FormData();
+		fd.append("entry.752930018", creatorName);
+		fd.append("entry.852269768", event.name);
+		fd.append("entry.1570155931", fightName);
+		fd.append("entry.967305642", prediction.fight_id);
+		fd.append("entry.2047943199", prediction.prediction_id);
+		fd.append("entry.866802608", notes);
+		fd.append("entry.369214997", reason);
+		await fetch(FORM_URL, {
+			method: "POST",
+			mode: "no-cors",
+			body: fd
+		});
+		setSubmitted(true);
+		setTimeout(onClose, 2e3);
+	}
+	const labelStyle = {
+		display: "block",
+		fontSize: "0.72rem",
+		fontWeight: 700,
+		color: "var(--muted)",
+		textTransform: "uppercase",
+		letterSpacing: "0.07em",
+		marginBottom: "0.35rem"
+	};
+	return /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("div", {
+		onClick: onClose,
+		style: {
+			position: "fixed",
+			inset: 0,
+			background: "rgba(0,0,0,0.65)",
+			zIndex: 1e3,
+			animation: "octaModalIn 0.18s ease"
+		}
+	}), /* @__PURE__ */ jsx("div", {
+		style: {
+			position: "fixed",
+			top: "50%",
+			left: "50%",
+			transform: "translate(-50%,-50%)",
+			zIndex: 1001,
+			width: "100%",
+			maxWidth: "440px",
+			padding: "0 1rem",
+			animation: "octaModalIn 0.18s ease"
+		},
+		children: /* @__PURE__ */ jsxs("div", {
+			style: {
+				background: "var(--panel)",
+				borderRadius: "12px",
+				border: "1px solid var(--border)",
+				padding: "1.5rem",
+				boxShadow: "0 24px 64px rgba(0,0,0,0.6)"
+			},
+			children: [
+				/* @__PURE__ */ jsx("h2", {
+					style: {
+						fontSize: "1rem",
+						fontWeight: 800,
+						marginBottom: "1.25rem",
+						color: "var(--text)"
+					},
+					children: "Report a Data Issue"
+				}),
+				/* @__PURE__ */ jsx("div", {
+					style: {
+						background: "var(--bg)",
+						borderRadius: "6px",
+						padding: "0.75rem 1rem",
+						marginBottom: "1.25rem",
+						display: "flex",
+						flexDirection: "column",
+						gap: "0.35rem"
+					},
+					children: [
+						{
+							label: "Creator",
+							value: creatorName
+						},
+						{
+							label: "Event",
+							value: event.name
+						},
+						{
+							label: "Fight",
+							value: fightName
+						}
+					].map(({ label, value }) => /* @__PURE__ */ jsxs("div", {
+						style: {
+							display: "flex",
+							gap: "0.5rem",
+							fontSize: "0.83rem"
+						},
+						children: [/* @__PURE__ */ jsx("span", {
+							style: {
+								color: "var(--muted)",
+								minWidth: "54px",
+								flexShrink: 0
+							},
+							children: label
+						}), /* @__PURE__ */ jsx("span", {
+							style: {
+								color: "var(--text)",
+								fontWeight: 500
+							},
+							children: value
+						})]
+					}, label))
+				}),
+				submitted ? /* @__PURE__ */ jsx("div", {
+					style: {
+						color: "var(--accent-green)",
+						fontSize: "0.9rem",
+						fontWeight: 600,
+						textAlign: "center",
+						padding: "1.25rem 0"
+					},
+					children: "✓ Thank you — your report has been submitted"
+				}) : /* @__PURE__ */ jsxs("form", {
+					onSubmit: handleSubmit,
+					children: [
+						/* @__PURE__ */ jsxs("div", {
+							style: { marginBottom: "1rem" },
+							children: [
+								/* @__PURE__ */ jsxs("label", {
+									style: labelStyle,
+									children: ["What's wrong? ", /* @__PURE__ */ jsx("span", {
+										style: { color: "var(--danger)" },
+										children: "*"
+									})]
+								}),
+								/* @__PURE__ */ jsxs("select", {
+									value: reason,
+									onChange: (e) => {
+										setReason(e.target.value);
+										setReasonError("");
+									},
+									style: {
+										width: "100%",
+										padding: "0.5rem 0.75rem",
+										background: "var(--bg)",
+										border: `1px solid ${reasonError ? "var(--danger)" : "var(--border)"}`,
+										borderRadius: "6px",
+										color: reason ? "var(--text)" : "var(--muted)",
+										fontSize: "0.875rem",
+										fontFamily: "'Manrope', sans-serif",
+										outline: "none"
+									},
+									children: [/* @__PURE__ */ jsx("option", {
+										value: "",
+										children: "Select a reason…"
+									}), REASONS.map((r) => /* @__PURE__ */ jsx("option", {
+										value: r,
+										children: r
+									}, r))]
+								}),
+								reasonError && /* @__PURE__ */ jsx("div", {
+									style: {
+										color: "var(--danger)",
+										fontSize: "0.78rem",
+										marginTop: "0.3rem"
+									},
+									children: reasonError
+								})
+							]
+						}),
+						/* @__PURE__ */ jsxs("div", {
+							style: { marginBottom: "1.25rem" },
+							children: [
+								/* @__PURE__ */ jsxs("label", {
+									style: labelStyle,
+									children: [
+										"Additional notes",
+										" ",
+										/* @__PURE__ */ jsx("span", {
+											style: {
+												textTransform: "none",
+												letterSpacing: 0,
+												fontWeight: 400
+											},
+											children: "(optional)"
+										})
+									]
+								}),
+								/* @__PURE__ */ jsx("textarea", {
+									value: notes,
+									onChange: (e) => setNotes(e.target.value.slice(0, 200)),
+									rows: 3,
+									placeholder: "Any extra context…",
+									style: {
+										width: "100%",
+										padding: "0.5rem 0.75rem",
+										resize: "vertical",
+										background: "var(--bg)",
+										border: "1px solid var(--border)",
+										borderRadius: "6px",
+										color: "var(--text)",
+										fontSize: "0.875rem",
+										fontFamily: "'Manrope', sans-serif",
+										outline: "none",
+										lineHeight: 1.5
+									}
+								}),
+								/* @__PURE__ */ jsxs("div", {
+									style: {
+										fontSize: "0.72rem",
+										color: "var(--muted)",
+										textAlign: "right",
+										marginTop: "0.2rem"
+									},
+									children: [notes.length, " / 200"]
+								})
+							]
+						}),
+						/* @__PURE__ */ jsxs("div", {
+							style: {
+								display: "flex",
+								gap: "0.75rem",
+								justifyContent: "flex-end"
+							},
+							children: [/* @__PURE__ */ jsx("button", {
+								type: "button",
+								onClick: onClose,
+								style: {
+									padding: "0.5rem 1rem",
+									background: "var(--row-alt)",
+									border: "1px solid var(--border)",
+									borderRadius: "6px",
+									color: "var(--muted)",
+									fontSize: "0.85rem",
+									fontWeight: 600,
+									cursor: "pointer",
+									fontFamily: "'Manrope', sans-serif"
+								},
+								children: "Cancel"
+							}), /* @__PURE__ */ jsx("button", {
+								type: "submit",
+								style: {
+									padding: "0.5rem 1.25rem",
+									background: "var(--primary)",
+									border: "none",
+									borderRadius: "6px",
+									color: "#fff",
+									fontSize: "0.85rem",
+									fontWeight: 700,
+									cursor: "pointer",
+									fontFamily: "'Manrope', sans-serif"
+								},
+								children: "Submit"
+							})]
+						})
+					]
+				})
+			]
+		})
+	})] });
+}
+//#endregion
 //#region src/pages/CreatorDetail.tsx
 var SITE_URL$1 = "https://octascore.xyz";
 var OG_IMAGE = `${SITE_URL$1}/favicon.png`;
@@ -1872,6 +2135,7 @@ function CreatorDetail() {
 	const [filters] = useFilters();
 	const [collapsed, setCollapsed] = useState(/* @__PURE__ */ new Set());
 	const [dropdownOpen, setDropdownOpen] = useState(false);
+	const [reportTarget, setReportTarget] = useState(null);
 	const isMobile = useIsMobile();
 	const sortedCreators = useMemo(() => ALL_CREATORS.filter((s) => CREATOR_DISPLAY[s] && predictions.some((p) => p.creator === s)).sort((a, b) => CREATOR_DISPLAY[a].localeCompare(CREATOR_DISPLAY[b])), [predictions]);
 	const creator = slug || "";
@@ -2215,6 +2479,12 @@ function CreatorDetail() {
 				},
 				children: "No predictions for selected filters."
 			}),
+			reportTarget && /* @__PURE__ */ jsx(ReportModal, {
+				prediction: reportTarget.prediction,
+				event: reportTarget.event,
+				fight: reportTarget.fight,
+				onClose: () => setReportTarget(null)
+			}),
 			eventGroups.map(({ event, preds: rawPreds }) => {
 				const preds = sortPredsByFightOrder(rawPreds, event);
 				const isCollapsed = collapsed.has(event.event_id);
@@ -2422,9 +2692,13 @@ function CreatorDetail() {
 								{
 									label: "",
 									hide: true
+								},
+								{
+									label: "",
+									report: true
 								}
-							].map(({ label, hide }, idx) => /* @__PURE__ */ jsx("th", {
-								className: hide ? "mobile-hide" : "",
+							].map(({ label, hide, report }, idx) => /* @__PURE__ */ jsx("th", {
+								className: hide ? "mobile-hide" : report ? "report-flag-col" : "",
 								style: {
 									padding: "0.5rem 1rem",
 									textAlign: "left",
@@ -2432,7 +2706,8 @@ function CreatorDetail() {
 									fontWeight: 700,
 									textTransform: "uppercase",
 									letterSpacing: "0.06em",
-									color: "var(--text-secondary)"
+									color: "var(--text-secondary)",
+									width: report ? "32px" : void 0
 								},
 								children: label
 							}, idx))
@@ -2502,6 +2777,24 @@ function CreatorDetail() {
 												fontStyle: "italic"
 											},
 											children: exclusionReason
+										})
+									}),
+									/* @__PURE__ */ jsx("td", {
+										className: "report-flag-col",
+										style: {
+											padding: "0 0.25rem",
+											width: "32px",
+											textAlign: "center"
+										},
+										children: /* @__PURE__ */ jsx("button", {
+											className: "report-flag-btn",
+											title: "Report a data issue",
+											onClick: () => setReportTarget({
+												prediction: p,
+												event,
+												fight
+											}),
+											children: "⚑"
 										})
 									})
 								]
