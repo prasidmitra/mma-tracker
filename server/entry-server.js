@@ -1852,6 +1852,11 @@ function Dashboard() {
 //#region src/pages/CreatorDetail.tsx
 var SITE_URL$1 = "https://octascore.xyz";
 var OG_IMAGE = `${SITE_URL$1}/favicon.png`;
+var CREATOR_BIO = {
+	mma_joey: "MMA Joey is known for a straightforward, fan-focused approach to UFC fight predictions that combines matchup analysis, betting instincts, and strong personal conviction. His prediction style often leans heavily on momentum, durability, cardio, and fighter confidence rather than purely technical breakdowns. Joey tends to trust proven veterans and fighters with reliable pressure or toughness, especially in chaotic matchups where intangibles matter. His content feels conversational and accessible, making viewers feel like they are discussing fights with another passionate MMA fan rather than watching a formal analyst.",
+	mma_guru: "MMA Guru has built his brand around highly confident UFC fight predictions, extensive event coverage, and aggressive takes on fighter trajectories and matchmaking. His prediction process blends stylistic analysis with narratives around activity, mentality, promotional favoritism, and championship composure. He is especially known for confidently calling upset picks and identifying fighters he believes are overrated or declining before public opinion fully shifts. Beyond the predictions themselves, much of his popularity comes from the entertainment factor and conviction behind his calls, which makes his wins and misses highly memorable within the MMA community.",
+	the_weasel: "The Weasel approaches fight prediction from a more technical and film-study-oriented perspective. His breakdowns focus heavily on striking mechanics, defensive habits, grappling transitions, cage control, pace management, and strategic tendencies shown in previous fights. Rather than relying on hype or narratives, he typically explains exactly why a stylistic matchup favors one fighter over another, often identifying subtle technical details that casual viewers may miss. His prediction content appeals strongly to fans who enjoy deeper tactical analysis and want to understand the strategic layers behind UFC outcomes."
+};
 var CARD_ORDER = {
 	main_event: 0,
 	co_main: 1,
@@ -2197,6 +2202,16 @@ function CreatorDetail() {
 						children: [stats.eligible, " eligible picks"]
 					})] })]
 				})]
+			}),
+			CREATOR_BIO[creator] && /* @__PURE__ */ jsx("p", {
+				style: {
+					color: "var(--text-secondary)",
+					fontSize: "0.88rem",
+					lineHeight: 1.7,
+					marginBottom: "1.5rem",
+					maxWidth: "72ch"
+				},
+				children: CREATOR_BIO[creator]
 			}),
 			eventGroups.length === 0 && /* @__PURE__ */ jsx("div", {
 				style: {

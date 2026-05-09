@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prasidmitra.github.io/mma-tracker/sitemap.xml
+Sitemap: https://octascore.xyz/sitemap.xml
