@@ -22761,8 +22761,8 @@
         "weight_class": "Women's Flyweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Manon Fiorot",
+        "odds_ml": -198
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-denis-moises",
@@ -22793,8 +22793,8 @@
         "weight_class": "Light Heavyweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Volkan Oezdemir",
+        "odds_ml": -184
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-ghemmouri-gomis",
@@ -22809,8 +22809,8 @@
         "weight_class": "Featherweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "William Gomis",
+        "odds_ml": -210
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-charriere-zecchini",
@@ -22825,8 +22825,8 @@
         "weight_class": "Featherweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Morgan Charriere",
+        "odds_ml": -360
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-lapilus-loughran",
@@ -22841,8 +22841,8 @@
         "weight_class": "Bantamweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Taylor Lapilus",
+        "odds_ml": -175
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-loosa-mckee",
@@ -22857,8 +22857,8 @@
         "weight_class": "Welterweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Ange Loosa",
+        "odds_ml": -157
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-cornolle-edwards",
@@ -22873,8 +22873,8 @@
         "weight_class": "Women's Bantamweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Joselyne Edwards",
+        "odds_ml": -135
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-basharat-rodrigues",
@@ -22889,8 +22889,8 @@
         "weight_class": "Bantamweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Farid Basharat",
+        "odds_ml": -400
       },
       {
         "fight_id": "ufc-fight-night-gane-vs-spivac-cavalcanti-fairn",
@@ -22905,8 +22905,8 @@
         "weight_class": "Catch Weight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Jacqueline Cavalcanti",
+        "odds_ml": -400
       }
     ],
     "event_type": "fight_night"
@@ -28485,8 +28485,8 @@
         "weight_class": "Heavyweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Serghei Spivac",
+        "odds_ml": -300
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-clark-jung",
@@ -28501,8 +28501,8 @@
         "weight_class": "Light Heavyweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Da Woon Jung",
+        "odds_ml": -265
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-ivanov-tybura",
@@ -28517,8 +28517,8 @@
         "weight_class": "Heavyweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Marcin Tybura",
+        "odds_ml": -143
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-choi-nelson",
@@ -28549,8 +28549,8 @@
         "weight_class": "Welterweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Yusaku Kinoshita",
+        "odds_ml": -345
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-jubli-saragih",
@@ -28565,8 +28565,8 @@
         "weight_class": "Lightweight",
         "title_fight": true,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Jeka Saragih",
+        "odds_ml": -148
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-lee-yizha",
@@ -28597,8 +28597,8 @@
         "weight_class": "Bantamweight",
         "title_fight": true,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Rinya Nakamura",
+        "odds_ml": -500
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-choi-park",
@@ -28629,8 +28629,8 @@
         "weight_class": "Middleweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "JunYong Park",
+        "odds_ml": -225
       },
       {
         "fight_id": "ufc-fight-night-lewis-vs-spivac-aguilar-taira",
@@ -28645,8 +28645,8 @@
         "weight_class": "Flyweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Tatsuro Taira",
+        "odds_ml": -1408
       }
     ],
     "event_type": "fight_night"
@@ -42080,8 +42080,8 @@
         "weight_class": "Featherweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Dan Ige",
+        "odds_ml": -155
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-oleinik-spivac",
@@ -42112,8 +42112,8 @@
         "weight_class": "Bantamweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Marlon Vera",
+        "odds_ml": -230
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-choi-erosa",
@@ -42128,8 +42128,8 @@
         "weight_class": "Featherweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "SeungWoo Choi",
+        "odds_ml": -150
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-silva-turman",
@@ -42144,8 +42144,8 @@
         "weight_class": "Middleweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Bruno Silva",
+        "odds_ml": -125
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-brown-lima",
@@ -42160,8 +42160,8 @@
         "weight_class": "Welterweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Dhiego Lima",
+        "odds_ml": -188
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-camur-negumereanu",
@@ -42176,8 +42176,8 @@
         "weight_class": "Light Heavyweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Aleksa Camur",
+        "odds_ml": -265
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-jandiroba-murata",
@@ -42192,8 +42192,8 @@
         "weight_class": "Women's Strawweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Virna Jandiroba",
+        "odds_ml": -139
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-semelsberger-williams",
@@ -42208,8 +42208,8 @@
         "weight_class": "Welterweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Khaos Williams",
+        "odds_ml": -162
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-martinez-parisian",
@@ -42224,8 +42224,8 @@
         "weight_class": "Heavyweight",
         "title_fight": false,
         "result_type": "decision",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Josh Parisian",
+        "odds_ml": -155
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-glenn-silva",
@@ -42240,8 +42240,8 @@
         "weight_class": "Lightweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Joaquim Silva",
+        "odds_ml": -134
       },
       {
         "fight_id": "ufc-fight-night-jung-vs-ige-o'neill-procopio",
@@ -42256,8 +42256,8 @@
         "weight_class": "Women's Flyweight",
         "title_fight": false,
         "result_type": "finish",
-        "odds_favorite": null,
-        "odds_ml": null
+        "odds_favorite": "Lara Procopio",
+        "odds_ml": -175
       }
     ],
     "event_type": "fight_night"

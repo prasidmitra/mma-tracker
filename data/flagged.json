@@ -208,5 +208,19 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0016",
+    "creator": "lucas_tracy_mma",
+    "event_id": "ufc-321",
+    "fight_id": "ufc-321-maksum-raposo",
+    "video_id": "Hkbq8WQvqG4",
+    "ambiguity_reason": "Creator uses name 'Askar Mozharov' which does not appear on fight card; unclear if referring to Azat Maksum or transcript error. Creator's intent is clear (picking the fighter in first position) but fighter identification is ambiguous.",
+    "raw_excerpt": "I'm going with Askar Mozharov... I think Askar Mozharov, if he's winning this fight... I think it's going to be a finish... TKO.",
+    "suggested_winner": "Azat Maksum",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

@@ -1,5 +1,5 @@
 creator,total_predictions,correct,incorrect,pick_ems,skipped,flagged,excluded,accuracy_pct,main_event_accuracy_pct,ppv_accuracy_pct,fight_night_accuracy_pct
-lucas_tracy_mma,395,197,124,0,71,2,74,61.4,63.3,62.2,60.8
-mma_guru,513,296,174,0,39,2,43,63.0,66.7,64.8,62.2
-mma_joey,500,247,147,0,101,5,106,62.7,59.0,66.7,61.7
-the_weasel,285,166,93,0,26,0,26,64.1,52.4,60.5,70.1
+lucas_tracy_mma,458,229,152,0,73,3,77,60.1,61.8,61.6,59.1
+mma_guru,981,588,336,0,47,7,57,63.6,62.8,64.0,63.5
+mma_joey,906,499,289,0,106,6,118,63.3,61.4,65.3,62.5
+the_weasel,613,367,207,0,32,0,39,63.9,54.3,62.3,66.0

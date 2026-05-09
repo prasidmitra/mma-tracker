@@ -9,6 +9,7 @@ Caches raw HTML in tmp/odds_cache/ to avoid re-fetching.
 import json
 import re
 import time
+from datetime import datetime, timedelta
 from pathlib import Path
 from statistics import median
 
@@ -74,29 +75,46 @@ def fetch_html(url: str, cache_key: str) -> str:
     return resp.text
 
 
-def search_event(query: str, card_names: list[str]) -> tuple[str, str] | None:
+def extract_bfo_date(html: str) -> datetime | None:
+    """Extract the event date from a BFO event page via JSON-LD startDate."""
+    m = re.search(r'"startDate"\s*:\s*"(\d{4}-\d{2}-\d{2})"', html)
+    if m:
+        try:
+            return datetime.strptime(m.group(1), "%Y-%m-%d")
+        except ValueError:
+            pass
+    return None
+
+
+def search_event(query: str, card_names: list[str], event_date: str) -> tuple[str, str] | None:
     """Search BFO and return (url, name) of the best-matching UFC result, or None.
-    Verifies the found event contains at least one of our card's fighter last names."""
+    Verifies the found event's date is within 4 days of our event date AND shares
+    at least one fighter last name with our card (belt-and-suspenders check)."""
     html = fetch_html(f"{BASE}/search?query={requests.utils.quote(query)}", f"search_{query.replace(' ', '_')}")
     soup = BeautifulSoup(html, "lxml")
     card_lastnames = {n.split()[-1].lower() for n in card_names}
+    our_date = datetime.strptime(event_date, "%Y-%m-%d")
 
     for a in soup.select("a[href*='/events/']"):
         href = a["href"]
         name = a.get_text(strip=True)
         if not ("ufc" in href.lower() or "ufc" in name.lower()):
             continue
-        # Verify: fetch the event page and check fighter overlap
         url = f"{BASE}{href}"
-        slug = href.strip("/").split("/")[-1]  # e.g. "ufc-327-4074"
+        slug = href.strip("/").split("/")[-1]
         try:
             event_html = fetch_html(url, f"event_{slug}")
         except Exception:
             continue
+        # Date check — must be within 4 days of our event
+        bfo_date = extract_bfo_date(event_html)
+        if bfo_date is None or abs((bfo_date - our_date).days) > 4:
+            continue
+        # Fighter overlap check
         esoup = BeautifulSoup(event_html, "lxml")
         bfo_names = {span.get_text(strip=True).split()[-1].lower()
                      for span in esoup.select("span.t-b-fcc")}
-        if card_lastnames & bfo_names:  # at least one fighter last name overlaps
+        if card_lastnames & bfo_names:
             return url, name
     return None
 
@@ -171,17 +189,35 @@ def determine_favorite(m: dict) -> tuple[str, str, int] | None:
 
 # ── Search query construction ─────────────────────────────────────────────────
 
-def make_search_query(event: dict) -> str:
+def main_event_query(event: dict) -> str | None:
+    """Return a search query using the main event fighters' last names."""
+    main = next((f for f in event["fights"] if f.get("card_position") == "main_event"), None)
+    if not main:
+        return None
+    a_last = main["fighter_a"].split()[-1]
+    b_last = main["fighter_b"].split()[-1]
+    return f"{a_last} {b_last}"
+
+
+def make_search_queries(event: dict) -> list[str]:
+    """Return ordered list of search queries to try for this event."""
     name = event["name"]
-    # "UFC 300: ..." → "UFC 300"
+    queries: list[str] = []
+    # Numbered UFC events: try "UFC 300" first
     m = re.match(r"(UFC\s+\d+)\b", name, re.I)
     if m:
-        return m.group(1)
-    # "UFC Fight Night: Della Maddalena vs. Prates" → "UFC Fight Night Della Maddalena Prates"
-    # Keep BOTH fighter names so the search finds the right event
-    name = re.sub(r":\s+", " ", name)
-    name = re.sub(r"\s+vs\.?\s+", " ", name, flags=re.I)
-    return name.strip()
+        queries.append(m.group(1))
+    # Always add main-event fighter last names as a fallback (or primary for Fight Night)
+    me = main_event_query(event)
+    if me:
+        queries.append(me)
+    # Last resort: strip colon and vs, use full name words
+    stripped = re.sub(r":\s+", " ", name)
+    stripped = re.sub(r"\s+vs\.?\s+", " ", stripped, flags=re.I)
+    stripped = stripped.strip()
+    if stripped not in queries:
+        queries.append(stripped)
+    return queries
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -201,12 +237,17 @@ def main():
         if not needs_odds:
             continue
 
-        query = make_search_query(event)
+        queries = make_search_queries(event)
         card_names = list({f for fight in event["fights"] for f in [fight["fighter_a"], fight["fighter_b"]]})
         print(f"\n{'─'*60}")
-        print(f"Event: {event['name']} ({event['date']})  query='{query}'")
+        print(f"Event: {event['name']} ({event['date']})")
 
-        result = search_event(query, card_names)
+        result = None
+        for query in queries:
+            print(f"  trying query='{query}'")
+            result = search_event(query, card_names, event["date"])
+            if result:
+                break
         if not result:
             print(f"  ✗  No BFO event found — marking all fights as null")
             for fight in needs_odds:
