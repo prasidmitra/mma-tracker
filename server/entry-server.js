@@ -1633,24 +1633,55 @@ function Dashboard() {
 		}) : /* @__PURE__ */ jsxs(Fragment, { children: [
 			/* @__PURE__ */ jsxs("div", {
 				style: { marginBottom: "2rem" },
-				children: [/* @__PURE__ */ jsx("p", {
-					style: {
-						color: "var(--text-secondary)",
-						fontSize: "0.95rem",
-						marginBottom: "1.25rem"
-					},
-					children: "See how the top MMA YouTubers perform on their picks."
-				}), /* @__PURE__ */ jsx("h2", {
-					className: "leaderboard-heading",
-					style: {
-						fontSize: "1.6rem",
-						fontWeight: 800,
-						letterSpacing: "-0.01em",
-						color: "var(--logo-red)",
-						textShadow: "0 0 40px rgba(245, 197, 66, 0.18)"
-					},
-					children: "Leaderboard"
-				})]
+				children: [
+					/* @__PURE__ */ jsx("p", {
+						style: {
+							color: "var(--text-secondary)",
+							fontSize: "0.95rem",
+							marginBottom: "0.75rem"
+						},
+						children: "See how the top MMA YouTubers perform on their picks."
+					}),
+					/* @__PURE__ */ jsx("p", {
+						style: {
+							color: "var(--text-secondary)",
+							fontSize: "0.88rem",
+							lineHeight: 1.7,
+							marginBottom: "0.5rem"
+						},
+						children: "Track prediction accuracy across UFC events, compare creator records, and see who's really calling fights right over time. From upset picks to hype-train fades, OCTASCORE lets the MMA community compare predictions with real results."
+					}),
+					/* @__PURE__ */ jsxs("p", {
+						style: {
+							color: "var(--text-secondary)",
+							fontSize: "0.82rem",
+							marginBottom: "1.25rem"
+						},
+						children: [
+							"Curious why this site exists?",
+							" ",
+							/* @__PURE__ */ jsx(Link, {
+								to: "/about",
+								style: {
+									color: "var(--highlight)",
+									fontWeight: 600
+								},
+								children: "Read the About page"
+							})
+						]
+					}),
+					/* @__PURE__ */ jsx("h2", {
+						className: "leaderboard-heading",
+						style: {
+							fontSize: "1.6rem",
+							fontWeight: 800,
+							letterSpacing: "-0.01em",
+							color: "var(--logo-red)",
+							textShadow: "0 0 40px rgba(245, 197, 66, 0.18)"
+						},
+						children: "Leaderboard"
+					})
+				]
 			}),
 			stats.length === 0 ? /* @__PURE__ */ jsx("div", {
 				style: {

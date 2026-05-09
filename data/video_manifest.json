@@ -10951,12 +10951,12 @@
     "video_id": "Cx5gIGn038E",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Abu Dhabi Sandhagen vs Nurmagomedov",
     "published_at": "2024-07-29",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T00:25:21.868893+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -10964,12 +10964,12 @@
     "video_id": "dgH1twc8BVs",
     "title": "My Full Card Predictions & Breakdown For UFC 304",
     "published_at": "2024-07-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T00:28:10.386164+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -10977,12 +10977,12 @@
     "video_id": "tpFR4bcLJ3I",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Rose Namajunas vs Tracy Cortez",
     "published_at": "2024-07-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:30:47.817968+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -10990,12 +10990,12 @@
     "video_id": "7ywKF7Q4qqw",
     "title": "My Full Card Predictions & Breakdown For UFC 303",
     "published_at": "2024-06-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
+    "flagged_count": 1,
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:33:03.929047+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11003,12 +11003,12 @@
     "video_id": "uiayJ4KQiAU",
     "title": "My Full Card Predictions & Breakdown For UFC Saudi Arabia Whittaker vs Aliskerov",
     "published_at": "2024-06-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T00:35:48.313544+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
