@@ -222,5 +222,19 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0017",
+    "creator": "lucas_tracy_mma",
+    "event_id": "ufc-319",
+    "fight_id": "ufc-319-barbosa-silva",
+    "video_id": "Iu8xjycjpto",
+    "ambiguity_reason": "Creator discusses 'Karine Silva vs JJ Aldrich' as first fight, but card shows 'Karine Silva vs Dione Barbosa'. This may be transcript error or card mislabeling. Assuming creator intended to discuss Silva vs Barbosa since both involve Silva.",
+    "raw_excerpt": "I got to go with Karen Silva. Karine Silva does remind me of the other women's Brazilian prospect. I think she's going to beat JJ Aldrich.",
+    "suggested_winner": "Karine Silva",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]
