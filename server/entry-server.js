@@ -1290,17 +1290,6 @@ function Sidebar({ events, asDrawer = false }) {
 				}, val))] })
 			]
 		}) : /* @__PURE__ */ jsxs(Fragment, { children: [
-			/* @__PURE__ */ jsx("div", {
-				style: {
-					fontSize: "0.75rem",
-					fontWeight: 700,
-					color: "var(--text-secondary)",
-					textTransform: "uppercase",
-					letterSpacing: "0.08em",
-					marginBottom: "0.5rem"
-				},
-				children: "Filters"
-			}),
 			/* @__PURE__ */ jsx(FilterLabel, { children: "Year" }),
 			/* @__PURE__ */ jsx(FilterOption, {
 				active: filters.year === "all",

@@ -499,12 +499,12 @@
     "video_id": "JMSjXcPZ_uY",
     "title": "UFC Fight Night Blanchfield vs Barber Predictions & Full Card Breakdown - UFC Vegas 107 Betting Tips",
     "published_at": "2025-05-28",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 9,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T02:49:16.190396+00:00"
   },
   {
     "creator": "mma_guru",
@@ -512,12 +512,12 @@
     "video_id": "0n4WzOEGaAA",
     "title": "UFC Fight Night Burns vs Morales Predictions & Full Card Breakdown - UFC Vegas 106 Betting Tips",
     "published_at": "2025-05-16",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:52:02.518989+00:00"
   },
   {
     "creator": "mma_guru",
