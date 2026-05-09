@@ -235,15 +235,22 @@ export function CreatorDetail() {
       </div>
 
       {CREATOR_BIO[creator] && (
-        <p style={{
-          color: 'var(--text-secondary)',
-          fontSize: '0.88rem',
-          lineHeight: 1.7,
+        <div style={{
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border)',
+          borderRadius: '10px',
+          padding: '1rem 1.25rem',
           marginBottom: '1.5rem',
-          maxWidth: '72ch',
         }}>
-          {CREATOR_BIO[creator]}
-        </p>
+          <p style={{
+            color: 'var(--text-secondary)',
+            fontSize: '0.88rem',
+            lineHeight: 1.7,
+            margin: 0,
+          }}>
+            {CREATOR_BIO[creator]}
+          </p>
+        </div>
       )}
 
       {eventGroups.length === 0 && (
