@@ -10886,12 +10886,12 @@
     "video_id": "jv1Y6Vdrb1g",
     "title": "UFC 310 Is Insanely UNDERRATED! Is Shavkat OVERRATED? My Early Picks",
     "published_at": "2024-10-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-09T00:13:19.630202+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -10899,12 +10899,12 @@
     "video_id": "S_pbtzWcCnI",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Tatsuro Taira vs Brandon Royval",
     "published_at": "2024-10-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T00:15:37.976111+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
