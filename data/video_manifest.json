@@ -1448,12 +1448,12 @@
     "video_id": "5P9X4chs1Bo",
     "title": "Last Minute Detailed Predictions! UFC 292 Sterling vs O'Malley - Full Card Betting Breakdown",
     "published_at": "2023-08-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:24:53.064227+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1461,12 +1461,12 @@
     "video_id": "42Rb_8t_FdU",
     "title": "UFC Fight Night Luque vs Dos Anjos Predictions & Full Card Betting Breakdown UFC Vegas 78",
     "published_at": "2023-08-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T21:27:20.189036+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1474,12 +1474,12 @@
     "video_id": "NWa39I6aTJo",
     "title": "UFC Fight Night Sandhagen vs Font Predictions & Full Card Breakdown - UFC Nashville Betting Tips",
     "published_at": "2023-08-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T21:29:31.472745+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1487,7 +1487,7 @@
     "video_id": "BDBmAnkxDPU",
     "title": "Last Minute Detailed Predictions! UFC 291 Poirier vs Gaethje 2 - Full Card Betting Breakdown",
     "published_at": "2023-07-29",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -1500,12 +1500,12 @@
     "video_id": "DlQRap-CpFk",
     "title": "UFC Fight Night Aspinall vs Tybura Predictions & Full Card Breakdown - UFC London Betting Tips",
     "published_at": "2023-07-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:46:09.675722+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1513,12 +1513,12 @@
     "video_id": "4bsjrsBlZjw",
     "title": "UFC Fight Night Holm vs Bueno Silva Predictions & Full Card Betting Breakdown UFC Vegas 77",
     "published_at": "2023-07-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:48:32.045835+00:00"
   },
   {
     "creator": "mma_guru",
