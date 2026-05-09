@@ -1345,155 +1345,121 @@ function Sidebar({ events, asDrawer = false }) {
 }
 //#endregion
 //#region src/components/Layout.tsx
+var FilterDrawerContext = createContext({ openDrawer: () => {} });
+function useFilterDrawer() {
+	return useContext(FilterDrawerContext);
+}
 function Layout() {
 	const { events } = useData();
 	const isMobile = useIsMobile();
 	const [drawerOpen, setDrawerOpen] = useState(false);
-	return /* @__PURE__ */ jsxs("div", {
-		style: { minHeight: "100vh" },
-		children: [
-			/* @__PURE__ */ jsx(Navbar, {}),
-			isMobile && /* @__PURE__ */ jsx("div", {
-				style: {
-					padding: "0.5rem 1rem",
-					borderBottom: "1px solid var(--border)",
-					background: "var(--panel)",
-					display: "flex",
-					alignItems: "center",
-					gap: "0.5rem"
-				},
-				children: /* @__PURE__ */ jsxs("button", {
-					onClick: () => setDrawerOpen(true),
+	return /* @__PURE__ */ jsx(FilterDrawerContext.Provider, {
+		value: { openDrawer: () => setDrawerOpen(true) },
+		children: /* @__PURE__ */ jsxs("div", {
+			style: { minHeight: "100vh" },
+			children: [
+				/* @__PURE__ */ jsx(Navbar, {}),
+				isMobile && drawerOpen && /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("div", {
 					style: {
-						background: "none",
-						border: "1px solid var(--border)",
-						borderRadius: "6px",
-						color: "var(--muted)",
-						fontSize: "0.8rem",
-						fontWeight: 600,
-						fontFamily: "'Manrope', sans-serif",
-						padding: "0.35rem 0.75rem",
-						cursor: "pointer",
+						position: "fixed",
+						inset: 0,
+						background: "rgba(0,0,0,0.6)",
+						zIndex: 300
+					},
+					onClick: () => setDrawerOpen(false)
+				}), /* @__PURE__ */ jsxs("div", {
+					style: {
+						position: "fixed",
+						bottom: 0,
+						left: 0,
+						right: 0,
+						background: "var(--panel)",
+						borderTop: "2px solid var(--border)",
+						borderRadius: "16px 16px 0 0",
+						zIndex: 301,
+						maxHeight: "78vh",
 						display: "flex",
-						alignItems: "center",
-						gap: "0.4rem"
+						flexDirection: "column"
 					},
-					children: [/* @__PURE__ */ jsx("svg", {
-						width: "14",
-						height: "12",
-						viewBox: "0 0 14 12",
-						fill: "none",
-						xmlns: "http://www.w3.org/2000/svg",
-						style: { flexShrink: 0 },
-						children: /* @__PURE__ */ jsx("path", {
-							d: "M0 1h14M2.5 6h9M5 11h4",
-							stroke: "currentColor",
-							strokeWidth: "1.5",
-							strokeLinecap: "round"
+					children: [
+						/* @__PURE__ */ jsxs("div", {
+							style: {
+								padding: "0.75rem 1rem",
+								borderBottom: "1px solid var(--border)",
+								display: "flex",
+								justifyContent: "space-between",
+								alignItems: "center",
+								flexShrink: 0
+							},
+							children: [/* @__PURE__ */ jsx("span", {
+								style: {
+									fontWeight: 700,
+									fontSize: "0.9rem",
+									color: "var(--text)"
+								},
+								children: "Filters"
+							}), /* @__PURE__ */ jsx("button", {
+								onClick: () => setDrawerOpen(false),
+								style: {
+									background: "none",
+									border: "none",
+									color: "var(--muted)",
+									fontSize: "1.1rem",
+									cursor: "pointer",
+									padding: "0 0.25rem",
+									lineHeight: 1
+								},
+								children: "✕"
+							})]
+						}),
+						/* @__PURE__ */ jsx("div", {
+							style: {
+								overflowY: "auto",
+								flex: 1
+							},
+							children: /* @__PURE__ */ jsx(Sidebar, {
+								events,
+								asDrawer: true
+							})
+						}),
+						/* @__PURE__ */ jsx("div", {
+							style: {
+								padding: "0.75rem 1rem",
+								borderTop: "1px solid var(--border)",
+								flexShrink: 0
+							},
+							children: /* @__PURE__ */ jsx("button", {
+								onClick: () => setDrawerOpen(false),
+								style: {
+									width: "100%",
+									padding: "0.7rem",
+									background: "#E1006A",
+									border: "none",
+									borderRadius: "8px",
+									color: "#fff",
+									fontWeight: 700,
+									fontSize: "0.9rem",
+									fontFamily: "'Manrope', sans-serif",
+									cursor: "pointer"
+								},
+								children: "Apply Filters"
+							})
 						})
-					}), "Filters"]
+					]
+				})] }),
+				/* @__PURE__ */ jsxs("div", {
+					style: { display: "flex" },
+					children: [!isMobile && /* @__PURE__ */ jsx(Sidebar, { events }), /* @__PURE__ */ jsx("main", {
+						style: {
+							flex: 1,
+							minWidth: 0,
+							overflowX: "hidden"
+						},
+						children: /* @__PURE__ */ jsx(Outlet, {})
+					})]
 				})
-			}),
-			isMobile && drawerOpen && /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("div", {
-				style: {
-					position: "fixed",
-					inset: 0,
-					background: "rgba(0,0,0,0.6)",
-					zIndex: 300
-				},
-				onClick: () => setDrawerOpen(false)
-			}), /* @__PURE__ */ jsxs("div", {
-				style: {
-					position: "fixed",
-					bottom: 0,
-					left: 0,
-					right: 0,
-					background: "var(--panel)",
-					borderTop: "2px solid var(--border)",
-					borderRadius: "16px 16px 0 0",
-					zIndex: 301,
-					maxHeight: "78vh",
-					display: "flex",
-					flexDirection: "column"
-				},
-				children: [
-					/* @__PURE__ */ jsxs("div", {
-						style: {
-							padding: "0.75rem 1rem",
-							borderBottom: "1px solid var(--border)",
-							display: "flex",
-							justifyContent: "space-between",
-							alignItems: "center",
-							flexShrink: 0
-						},
-						children: [/* @__PURE__ */ jsx("span", {
-							style: {
-								fontWeight: 700,
-								fontSize: "0.9rem",
-								color: "var(--text)"
-							},
-							children: "Filters"
-						}), /* @__PURE__ */ jsx("button", {
-							onClick: () => setDrawerOpen(false),
-							style: {
-								background: "none",
-								border: "none",
-								color: "var(--muted)",
-								fontSize: "1.1rem",
-								cursor: "pointer",
-								padding: "0 0.25rem",
-								lineHeight: 1
-							},
-							children: "✕"
-						})]
-					}),
-					/* @__PURE__ */ jsx("div", {
-						style: {
-							overflowY: "auto",
-							flex: 1
-						},
-						children: /* @__PURE__ */ jsx(Sidebar, {
-							events,
-							asDrawer: true
-						})
-					}),
-					/* @__PURE__ */ jsx("div", {
-						style: {
-							padding: "0.75rem 1rem",
-							borderTop: "1px solid var(--border)",
-							flexShrink: 0
-						},
-						children: /* @__PURE__ */ jsx("button", {
-							onClick: () => setDrawerOpen(false),
-							style: {
-								width: "100%",
-								padding: "0.7rem",
-								background: "#E1006A",
-								border: "none",
-								borderRadius: "8px",
-								color: "#fff",
-								fontWeight: 700,
-								fontSize: "0.9rem",
-								fontFamily: "'Manrope', sans-serif",
-								cursor: "pointer"
-							},
-							children: "Apply Filters"
-						})
-					})
-				]
-			})] }),
-			/* @__PURE__ */ jsxs("div", {
-				style: { display: "flex" },
-				children: [!isMobile && /* @__PURE__ */ jsx(Sidebar, { events }), /* @__PURE__ */ jsx("main", {
-					style: {
-						flex: 1,
-						minWidth: 0,
-						overflowX: "hidden"
-					},
-					children: /* @__PURE__ */ jsx(Outlet, {})
-				})]
-			})
-		]
+			]
+		})
 	});
 }
 //#endregion
@@ -1503,6 +1469,8 @@ var OG_IMAGE$1 = `${SITE_URL$2}/favicon.png`;
 function Dashboard() {
 	const { events, predictions, loading } = useData();
 	const [filters] = useFilters();
+	const isMobile = useIsMobile();
+	const { openDrawer } = useFilterDrawer();
 	const stats = useMemo(() => {
 		return ALL_CREATORS.map((slug) => getCreatorStats(slug, predictions, events, filters)).filter((s) => s.eligible > 0).sort((a, b) => b.accuracy - a.accuracy);
 	}, [
@@ -1607,16 +1575,53 @@ function Dashboard() {
 							})
 						]
 					}),
-					/* @__PURE__ */ jsx("h2", {
-						className: "leaderboard-heading",
+					/* @__PURE__ */ jsxs("div", {
 						style: {
-							fontSize: "1.6rem",
-							fontWeight: 800,
-							letterSpacing: "-0.01em",
-							color: "var(--logo-red)",
-							textShadow: "0 0 40px rgba(245, 197, 66, 0.18)"
+							display: "flex",
+							alignItems: "center",
+							gap: "1rem",
+							flexWrap: "wrap"
 						},
-						children: "Leaderboard"
+						children: [/* @__PURE__ */ jsx("h2", {
+							className: "leaderboard-heading",
+							style: {
+								fontSize: "1.6rem",
+								fontWeight: 800,
+								letterSpacing: "-0.01em",
+								color: "var(--logo-red)",
+								textShadow: "0 0 40px rgba(245, 197, 66, 0.18)"
+							},
+							children: "Leaderboard"
+						}), isMobile && /* @__PURE__ */ jsxs("button", {
+							onClick: openDrawer,
+							style: {
+								background: "none",
+								border: "1px solid var(--border)",
+								borderRadius: "6px",
+								color: "var(--muted)",
+								fontSize: "0.8rem",
+								fontWeight: 600,
+								fontFamily: "'Manrope', sans-serif",
+								padding: "0.3rem 0.7rem",
+								cursor: "pointer",
+								display: "inline-flex",
+								alignItems: "center",
+								gap: "0.4rem"
+							},
+							children: [/* @__PURE__ */ jsx("svg", {
+								width: "13",
+								height: "11",
+								viewBox: "0 0 14 12",
+								fill: "none",
+								style: { flexShrink: 0 },
+								children: /* @__PURE__ */ jsx("path", {
+									d: "M0 1h14M2.5 6h9M5 11h4",
+									stroke: "currentColor",
+									strokeWidth: "1.5",
+									strokeLinecap: "round"
+								})
+							}), "Filters"]
+						})]
 					})
 				]
 			}),

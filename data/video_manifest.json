@@ -460,12 +460,12 @@
     "video_id": "r6pJuyWZKw8",
     "title": "UFC Fight Night Hill vs Rountree Predictions & Full Card Breakdown - UFC Baku Betting Tips",
     "published_at": "2025-06-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:41:09.001425+00:00"
   },
   {
     "creator": "mma_guru",
