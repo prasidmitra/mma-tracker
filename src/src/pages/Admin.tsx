@@ -3,7 +3,7 @@ import { useData } from '../hooks/useData';
 import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
 import type { Prediction, FlaggedPrediction } from '../types';
 
-const PASS_HASH = '8930b5d0c97bfbe16ab204fbd2167bce1213cbe10f508692c80c4a26d1a07491';
+const PASS_HASH = '86beec3c13abe11fb1711a5111cf54d27867694027adf20deb7b0ba749165a42';
 const REPO = 'prasidmitra/mma-tracker';
 
 async function sha256hex(text: string): Promise<string> {
