@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext';
 import { ALL_CREATORS, CREATOR_DISPLAY } from '../utils/accuracy';
 import { useIsMobile } from '../hooks/useIsMobile';
 import { useData } from '../context/DataContext';
@@ -16,7 +15,6 @@ const navLinkStyle = {
 };
 
 export function Navbar() {
-  const { theme, toggleTheme } = useTheme();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const navigate = useNavigate();
@@ -126,14 +124,6 @@ export function Navbar() {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <button onClick={toggleTheme} style={{
-                background: 'var(--bg-row-alt)', border: '1px solid var(--border)',
-                borderRadius: '6px', color: 'var(--text-secondary)', fontSize: '0.75rem',
-                fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit',
-                padding: '4px 10px', transition: 'all 0.15s ease',
-              }}>
-                {theme === 'dark' ? 'Light' : 'Dark'}
-              </button>
               <a href="https://github.com/prasidmitra/mma-tracker" target="_blank" rel="noreferrer"
                 style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', fontWeight: 500 }}>
                 GitHub
@@ -192,17 +182,6 @@ export function Navbar() {
               </button>
             ))}
 
-            {/* Theme toggle at bottom */}
-            <div style={{ padding: '0.875rem 1.25rem' }}>
-              <button onClick={() => { toggleTheme(); closeHamburger(); }} style={{
-                background: 'var(--bg-row-alt)', border: '1px solid var(--border)',
-                borderRadius: '6px', color: 'var(--muted)', fontSize: '0.8rem',
-                fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit',
-                padding: '6px 14px',
-              }}>
-                {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-              </button>
-            </div>
           </div>
         </>
       )}
