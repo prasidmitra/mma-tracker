@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useData } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
+import { useIsMobile } from '../hooks/useIsMobile';
+import { useFilterDrawer } from '../components/Layout';
 import { getCreatorStats, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
 
 const SITE_URL = 'https://octascore.xyz';
@@ -11,6 +13,8 @@ const OG_IMAGE = `${SITE_URL}/favicon.png`;
 export function Dashboard() {
   const { events, predictions, loading } = useData();
   const [filters] = useFilters();
+  const isMobile = useIsMobile();
+  const { openDrawer } = useFilterDrawer();
 
   const stats = useMemo(() => {
     return ALL_CREATORS
@@ -52,9 +56,27 @@ export function Dashboard() {
           Curious why this site exists?{' '}
           <Link to="/about" style={{ color: 'var(--highlight)', fontWeight: 600 }}>Read the About page</Link>
         </p>
-        <h2 className="leaderboard-heading" style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
-          Leaderboard
-        </h2>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+          <h2 className="leaderboard-heading" style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
+            Leaderboard
+          </h2>
+          {isMobile && (
+            <button
+              onClick={openDrawer}
+              style={{
+                background: 'none', border: '1px solid var(--border)', borderRadius: '6px',
+                color: 'var(--muted)', fontSize: '0.8rem', fontWeight: 600,
+                fontFamily: "'Manrope', sans-serif", padding: '0.3rem 0.7rem',
+                cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+              }}
+            >
+              <svg width="13" height="11" viewBox="0 0 14 12" fill="none" style={{ flexShrink: 0 }}>
+                <path d="M0 1h14M2.5 6h9M5 11h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+              Filters
+            </button>
+          )}
+        </div>
       </div>
 
       {stats.length === 0 ? (
