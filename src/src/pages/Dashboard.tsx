@@ -47,10 +47,10 @@ export function Dashboard() {
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '0.75rem' }}>
           See how the top MMA YouTubers perform on their picks.
         </p>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '0.5rem' }}>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '0.5rem' }}>
           Track prediction accuracy across UFC events, compare creator records, and see who's really calling fights right over time. From upset picks to hype-train fades, OCTASCORE lets the MMA community compare predictions with real results.
         </p>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.25rem' }}>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
           Curious why this site exists?{' '}
           <Link to="/about" style={{ color: 'var(--highlight)', fontWeight: 600 }}>Read the About page</Link>
         </p>
