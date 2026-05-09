@@ -255,57 +255,61 @@ export function CreatorDetail() {
         <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
-      {/* Header */}
-      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
-        {mobilePortrait && (
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <CreatorSelector
-              creator={creator}
-              sortedCreators={sortedCreators}
-              dropdownOpen={dropdownOpen}
-              setDropdownOpen={setDropdownOpen}
-              navigate={navigate}
-            />
-          </div>
-        )}
-        <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
-        <div style={{ flex: 1 }}>
-          <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
-            {CREATOR_YOUTUBE_URL[creator] ? (
-              <a
-                href={CREATOR_YOUTUBE_URL[creator]}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'var(--logo-red)', textDecoration: 'none', transition: 'color 0.15s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--secondary)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--logo-red)')}
-              >
-                {CREATOR_DISPLAY[creator]}
-              </a>
-            ) : CREATOR_DISPLAY[creator]}
-          </h1>
-          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-end' }}>
-            <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
-              {formatPct(stats.accuracy)}
-            </span>
-            <div>
-              <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>
-                <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
-                <span style={{ color: 'var(--text-secondary)' }}> - </span>
-                <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
-              </div>
-              <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{stats.eligible} eligible picks</div>
-              {baseline.total > 0 && (
-                <div style={{ marginTop: '0.4rem', fontSize: '0.75rem', color: 'var(--muted)' }}>
-                  vs betting favorite:{' '}
-                  <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700 }}>
-                    {formatPct(baseline.accuracy)}
-                  </span>
+      {/* Header — outer row: [avatar+info] [selector] */}
+      <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+        {/* Inner: avatar + info, layout unchanged from original */}
+        <div style={{ flex: 1, display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
+          {mobilePortrait && (
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <CreatorSelector
+                creator={creator}
+                sortedCreators={sortedCreators}
+                dropdownOpen={dropdownOpen}
+                setDropdownOpen={setDropdownOpen}
+                navigate={navigate}
+              />
+            </div>
+          )}
+          <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
+          <div>
+            <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+              {CREATOR_YOUTUBE_URL[creator] ? (
+                <a
+                  href={CREATOR_YOUTUBE_URL[creator]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--logo-red)', textDecoration: 'none', transition: 'color 0.15s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--secondary)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--logo-red)')}
+                >
+                  {CREATOR_DISPLAY[creator]}
+                </a>
+              ) : CREATOR_DISPLAY[creator]}
+            </h1>
+            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-end' }}>
+              <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
+                {formatPct(stats.accuracy)}
+              </span>
+              <div>
+                <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>
+                  <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
+                  <span style={{ color: 'var(--text-secondary)' }}> - </span>
+                  <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
                 </div>
-              )}
+                <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{stats.eligible} eligible picks</div>
+                {baseline.total > 0 && (
+                  <div style={{ marginTop: '0.4rem', fontSize: '0.75rem', color: 'var(--muted)' }}>
+                    vs betting favorite:{' '}
+                    <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700 }}>
+                      {formatPct(baseline.accuracy)}
+                    </span>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
+        {/* Selector: sibling of the whole inner block, not of the avatar */}
         {!mobilePortrait && (
           <CreatorSelector
             creator={creator}
