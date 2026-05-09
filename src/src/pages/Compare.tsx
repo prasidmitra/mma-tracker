@@ -85,7 +85,7 @@ export function Compare() {
                 cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
               }}
             >
-              <svg width="13" height="11" viewBox="0 0 14 12" fill="none" style={{ flexShrink: 0 }}>
+              <svg width="16" height="14" viewBox="0 0 14 12" fill="none" style={{ flexShrink: 0 }}>
                 <path d="M0 1h14M2.5 6h9M5 11h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
               Filters
