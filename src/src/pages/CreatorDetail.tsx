@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useEffect } from 'react';
+import { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useIsMobile } from '../hooks/useIsMobile';
@@ -83,8 +83,6 @@ export function CreatorDetail() {
   const isPortrait = useIsPortrait();
   const { openDrawer } = useFilterDrawer();
   const mobilePortrait = isMobile && isPortrait;
-  const infoRef = useRef<HTMLDivElement>(null);
-  const [avatarH, setAvatarH] = useState(80);
 
   const sortedCreators = useMemo(() =>
     ALL_CREATORS
@@ -93,12 +91,6 @@ export function CreatorDetail() {
     [predictions]);
 
   const creator = slug || '';
-
-  useEffect(() => {
-    if (mobilePortrait || !infoRef.current) return;
-    const h = infoRef.current.getBoundingClientRect().height;
-    if (h > 0) setAvatarH(h);
-  }, [mobilePortrait, creator]);
   const filtered = useMemo(() =>
     applyFilters(predictions.filter(p => p.creator === creator), events, filters),
     [predictions, events, filters, creator]
@@ -258,8 +250,10 @@ export function CreatorDetail() {
 
       {/* Header */}
       <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: mobilePortrait ? 'flex-start' : 'flex-end', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
-        <AvatarBox creator={creator} size={mobilePortrait ? 112 : avatarH} />
-        <div ref={infoRef} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
+
+        {/* Block 1: name (top) + accuracy % (bottom) */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800, margin: 0 }}>
             {CREATOR_YOUTUBE_URL[creator] ? (
               <a
@@ -274,28 +268,34 @@ export function CreatorDetail() {
               </a>
             ) : CREATOR_DISPLAY[creator]}
           </h1>
-          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-end' }}>
-            <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
-              {formatPct(stats.accuracy)}
-            </span>
-            <div>
-              <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>
-                <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
-                <span style={{ color: 'var(--text-secondary)' }}> - </span>
-                <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
-              </div>
-              <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{stats.eligible} eligible picks</div>
-              {baseline.total > 0 && (
-                <div style={{ marginTop: '0.4rem', fontSize: '0.75rem', color: 'var(--muted)' }}>
-                  vs betting favorite:{' '}
-                  <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700 }}>
-                    {formatPct(baseline.accuracy)}
-                  </span>
-                </div>
-              )}
-            </div>
+          <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
+            {formatPct(stats.accuracy)}
+          </span>
+        </div>
+
+        {/* Block 2: W-L (top) + eligible picks (bottom) — height matches accuracy number */}
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: mobilePortrait ? 'auto' : '2.5rem', gap: mobilePortrait ? '0.2rem' : 0 }}>
+          <div style={{ fontWeight: 600, fontSize: '0.9rem', lineHeight: 1 }}>
+            <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
+            <span style={{ color: 'var(--text-secondary)' }}> - </span>
+            <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
+          </div>
+          <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', lineHeight: 1 }}>
+            {stats.eligible} eligible picks
           </div>
         </div>
+
+        {/* Block 3: Betting Favorite label (top) + baseline accuracy (bottom) — same height */}
+        {baseline.total > 0 && (
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: mobilePortrait ? 'auto' : '2.5rem', gap: mobilePortrait ? '0.2rem' : 0 }}>
+            <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', lineHeight: 1 }}>
+              Betting Favorite
+            </div>
+            <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700, fontSize: '0.9rem', lineHeight: 1 }}>
+              {formatPct(baseline.accuracy)}
+            </span>
+          </div>
+        )}
       </div>
 
       {CREATOR_BIO[creator] && (
