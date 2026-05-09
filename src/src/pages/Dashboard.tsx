@@ -114,16 +114,37 @@ export function Dashboard() {
               </tr>
             </thead>
             <tbody>
+              {baseline.total > 0 && (
+                <tr style={{ borderBottom: '2px solid var(--border)', background: 'var(--row-hover-bg)' }}>
+                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>—</td>
+                  <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
+                    <span style={{ color: 'var(--text-secondary)', fontWeight: 700, fontSize: '0.9rem' }}>Baseline<InfoTooltip /></span>
+                  </td>
+                  <td style={{ padding: '0.75rem 0.875rem' }}>
+                    <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 800, fontSize: '1.1rem' }}>
+                      {formatPct(baseline.accuracy)}
+                    </span>
+                  </td>
+                  <td style={{ padding: '0.75rem 0.875rem', fontWeight: 500 }}>
+                    <span style={{ color: 'var(--accent-green)' }}>{baseline.correct}</span>
+                    <span style={{ color: 'var(--text-secondary)' }}>-</span>
+                    <span style={{ color: 'var(--accent-red)' }}>{baseline.total - baseline.correct}</span>
+                  </td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--text-secondary)', fontWeight: 500 }}>{baseline.total}</td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--text-secondary)' }}>—</td>
+                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--text-secondary)' }}>—</td>
+                </tr>
+              )}
               {stats.map((s, i) => (
                 <tr key={s.slug} style={{
                   borderBottom: '1px solid var(--border)',
-                  background: i === 0 ? 'var(--row-gold-bg)' : 'transparent',
+                  background: 'transparent',
                   transition: 'background 0.1s',
                 }}
                   onMouseEnter={e => (e.currentTarget.style.background = 'var(--row-hover-bg)')}
-                  onMouseLeave={e => (e.currentTarget.style.background = i === 0 ? 'var(--row-gold-bg)' : 'transparent')}
+                  onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                 >
-                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: i === 0 ? 'var(--gold-primary)' : 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
+                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
                   <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
                     <Link to={`/creator/${s.slug}`} style={{ color: 'var(--text-primary)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}
                       onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-purple)')}
@@ -154,27 +175,6 @@ export function Dashboard() {
                   </td>
                 </tr>
               ))}
-              {baseline.total > 0 && (
-                <tr style={{ borderTop: '2px solid var(--border)', opacity: 0.65 }}>
-                  <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--muted)', fontWeight: 600, fontSize: '0.85rem' }}>—</td>
-                  <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
-                    <span style={{ color: 'var(--muted)', fontWeight: 700, fontSize: '0.9rem' }}>Baseline<InfoTooltip /></span>
-                  </td>
-                  <td style={{ padding: '0.75rem 0.875rem' }}>
-                    <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 800, fontSize: '1.1rem' }}>
-                      {formatPct(baseline.accuracy)}
-                    </span>
-                  </td>
-                  <td style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)', fontWeight: 500 }}>
-                    <span style={{ color: 'var(--accent-green)' }}>{baseline.correct}</span>
-                    <span style={{ color: 'var(--muted)' }}>-</span>
-                    <span style={{ color: 'var(--accent-red)' }}>{baseline.total - baseline.correct}</span>
-                  </td>
-                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)', fontWeight: 500 }}>{baseline.total}</td>
-                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)' }}>—</td>
-                  <td className="mobile-hide" style={{ padding: '0.75rem 0.875rem', color: 'var(--muted)' }}>—</td>
-                </tr>
-              )}
             </tbody>
           </table>
         </div>

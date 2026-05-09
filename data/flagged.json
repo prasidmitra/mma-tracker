@@ -348,5 +348,19 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0026",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-song-vs-gutierrez",
+    "fight_id": "ufc-fight-night-song-vs-gutierrez-elliott-sumudaerji",
+    "video_id": "XIlSrrVAgk4",
+    "ambiguity_reason": "Creator discusses 'Alan Naso' vs 'Sumudaerji' but the fight card lists 'Tim Elliott' vs 'Sumudaerji'. Alan Naso is not on the provided card. This appears to be a mismatch between transcript and card.",
+    "raw_excerpt": "I'm going to say Alan nento by rear naked joke...I'm going to go with Alan naso...getting the back pretty easily",
+    "suggested_winner": "Tim Elliott",
+    "confidence_in_suggestion": "high",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

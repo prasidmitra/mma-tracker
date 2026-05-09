@@ -28,7 +28,7 @@
   --gold-glow: rgba(245, 197, 66, 0.35);
 
   /* Semantic */
-  --success: #00D68F;
+  --success: #02c886; /*#00D68F*/
   --danger: #FF4D8D;
 
   /* Overlays & interactive states */
