@@ -113,9 +113,6 @@ export function Sidebar({ events, asDrawer = false }: Props) {
       ) : (
         /* ── Sidebar: existing stacked layout ── */
         <>
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
-            Filters
-          </div>
           <FilterLabel>Year</FilterLabel>
           <FilterOption active={filters.year === 'all'} onClick={() => setFilters({ year: 'all' })}>All Time</FilterOption>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
