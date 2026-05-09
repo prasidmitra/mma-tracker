@@ -20,7 +20,7 @@ export function InfoTooltip({ text = TOOLTIP_TEXT }: { text?: string }) {
           top: pos.top,
           left: pos.left,
           transform: 'translate(-50%, -100%)',
-          backgroundColor: '#1a1a28',
+          backgroundColor: 'var(--tooltip-bg)',
           border: '1px solid var(--border)',
           borderRadius: '6px',
           padding: '0.4rem 0.7rem',

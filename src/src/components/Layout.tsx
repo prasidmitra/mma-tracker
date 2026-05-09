@@ -71,7 +71,7 @@ export function Layout() {
 
         <div style={{ display: 'flex' }}>
           {!isMobile && <Sidebar events={events} />}
-          <main style={{ flex: 1, minWidth: 0, overflowX: 'hidden' }}>
+          <main style={{ flex: 1, minWidth: 0, overflowX: 'hidden', paddingTop: '3.5rem' }}>
             <Outlet />
           </main>
         </div>

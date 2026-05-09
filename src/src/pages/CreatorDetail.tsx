@@ -179,9 +179,10 @@ export function CreatorDetail() {
         <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
-      {/* Creator selector */}
-      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
-        <div style={{ position: 'relative' }}>
+      {/* Header: avatar on top (mobile) or left (desktop), then 3 blocks always side-by-side */}
+      <div style={{ position: 'relative', marginBottom: '1.5rem' }}>
+        {/* Creator selector — top-right, top edge aligned with avatar */}
+        <div style={{ position: 'absolute', top: 0, right: 0, zIndex: 100 }}>
           {dropdownOpen && (
             <div style={{ position: 'fixed', inset: 0, zIndex: 199 }} onClick={() => setDropdownOpen(false)} />
           )}
@@ -247,10 +248,7 @@ export function CreatorDetail() {
             </div>
           )}
         </div>
-      </div>
-
-      {/* Header: avatar on top (mobile) or left (desktop), then 3 blocks always side-by-side */}
-      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: mobilePortrait ? 'flex-start' : 'flex-end', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
+        <div style={{ display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: mobilePortrait ? 'flex-start' : 'flex-end', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
         <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
 
         {/* Inner row: 3 blocks always side-by-side on both mobile and desktop */}
@@ -302,6 +300,7 @@ export function CreatorDetail() {
           </div>
 
         </div>
+      </div>
       </div>
 
       {CREATOR_BIO[creator] && (

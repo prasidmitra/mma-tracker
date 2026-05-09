@@ -236,5 +236,61 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0018",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-emmett-vs-vallejos",
+    "fight_id": "ufc-fight-night-emmett-vs-vallejos-cutelaba-sy",
+    "video_id": "nQZjnhI4FMs",
+    "ambiguity_reason": "Creator uses multiple different names (Umar Nurmagomedov, Ho Kouma Saïev) when discussing this fight - unclear if these are aliases or transcript errors, though context suggests predicting Oumar Sy to win",
+    "raw_excerpt": "I'm going to go with Umar Nurmagomedov...I think Ho Kouma Saïev is going to find the finish in the late second or third round.",
+    "suggested_winner": "Oumar Sy",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0019",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-strickland-vs-hernandez",
+    "fight_id": "ufc-fight-night-strickland-vs-hernandez-idiris-osbourne",
+    "video_id": "6LfQ9eGp1mE",
+    "ambiguity_reason": "Creator consistently calls this fighter 'Al Iaquinta' but card lists 'Alibi Idiris'. While context suggests same fighter (vs Ode Osbourne at flyweight), the name mismatch creates genuine ambiguity.",
+    "raw_excerpt": "I'm going to take Al Iaquinta...I'm going to go with Al Iaquinta.",
+    "suggested_winner": "Alibi Idiris",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0020",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-bautista-vs-oliveira",
+    "fight_id": "ufc-fight-night-bautista-vs-oliveira-gafurov-wiklacz",
+    "video_id": "QpB3ceNKoOU",
+    "ambiguity_reason": "Transcript mentions 'Youssef Wehbe' as predicted winner but this fighter is not on the card. Context suggests Gafurov matchup but unclear who beats whom.",
+    "raw_excerpt": "I'm going to say that Youssef Wehbe gets a submission in the first two rounds over Muin Gafurov.",
+    "suggested_winner": "Muin Gafurov",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0021",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-bautista-vs-oliveira",
+    "fight_id": "ufc-fight-night-bautista-vs-oliveira-cachoeira-sygula",
+    "video_id": "QpB3ceNKoOU",
+    "ambiguity_reason": "Transcript opponent name 'Claudia Gadelha' does not match card opponent 'Klaudia Sygula' - likely auto-caption error or name variation, but ambiguity on whether creator intended this specific fight.",
+    "raw_excerpt": "I'm going to go with Priscilla Cachoeira... easily beat Claudia Gadelha.",
+    "suggested_winner": "Priscila Cachoeira",
+    "confidence_in_suggestion": "high",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

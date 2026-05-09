@@ -136,7 +136,7 @@ export function Navbar() {
       {isMobile && hamburgerOpen && (
         <>
           <div
-            style={{ position: 'fixed', inset: 0, zIndex: 98, background: 'rgba(0,0,0,0.5)' }}
+            style={{ position: 'fixed', inset: 0, zIndex: 98, background: 'var(--overlay)' }}
             onClick={closeHamburger}
           />
           <div style={{

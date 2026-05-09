@@ -1,11 +1,17 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────────────────────
+   DESIGN TOKENS — single source of truth for all colors used in the app.
+   To retheme: edit values here. Components must NOT use raw hex/rgba;
+   use a variable from this file instead.
+   ───────────────────────────────────────────────────────────────────────── */
+
 :root {
-  /* Backgrounds */
-  --bg: #070B14;
-  --panel: #111827;
-  --row-alt: #161F36;
-  --border: #1F2D4A;
+  /* Backgrounds — dark blue-purple base */
+  --bg: #09091A;
+  --panel: #131222;
+  --row-alt: #1A192E;
+  --border: #25204A;
 
   /* Text */
   --text: #F3F4F6;
@@ -25,6 +31,17 @@
   --success: #00D68F;
   --danger: #FF4D8D;
 
+  /* Overlays & interactive states */
+  --overlay: rgba(0, 0, 0, 0.60);          /* modal / drawer backdrop */
+  --overlay-dark: rgba(0, 0, 0, 0.65);     /* heavier modal backdrop */
+  --hover-overlay: rgba(255, 255, 255, 0.08); /* list-item hover tint */
+  --hover-overlay-subtle: rgba(255, 255, 255, 0.05); /* softer hover */
+  --tooltip-bg: #1C1A2E;                   /* tooltip background */
+
+  /* Row tints (correct / incorrect) */
+  --row-correct-bg: rgba(0, 214, 143, 0.07);
+  --row-incorrect-bg: rgba(255, 77, 141, 0.07);
+
   /* Legacy aliases — components reference these */
   --bg-primary: var(--bg);
   --bg-card: var(--panel);
@@ -39,10 +56,10 @@
 }
 
 [data-theme="light"] {
-  --bg: #F3F4F6;
+  --bg: #EEEDF6;
   --panel: #FFFFFF;
-  --row-alt: #EAECF2;
-  --border: #D1D5E0;
+  --row-alt: #E4E2F0;
+  --border: #C8C4DC;
   --text: #111827;
   --muted: #57606A;
   --primary: #B5005A;
@@ -53,6 +70,11 @@
   --gold-glow: rgba(200, 152, 26, 0.30);
   --success: #008F63;
   --danger: #C83060;
+  --overlay: rgba(0, 0, 0, 0.45);
+  --overlay-dark: rgba(0, 0, 0, 0.50);
+  --hover-overlay: rgba(0, 0, 0, 0.06);
+  --hover-overlay-subtle: rgba(0, 0, 0, 0.03);
+  --tooltip-bg: #2D2650;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
