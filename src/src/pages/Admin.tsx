@@ -298,7 +298,7 @@ export function Admin() {
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
             <thead>
               <tr style={{ borderBottom: '1px solid var(--border)', background: 'var(--bg)' }}>
-                {['Creator', 'Event', 'Fight', 'Predicted Winner', 'Correct', 'Flagged', 'Actions'].map(h => (
+                {['Creator', 'Event', 'Fight', 'Predicted Winner', 'Actual Winner', 'Correct', 'Flagged', 'Actions'].map(h => (
                   <th key={h} style={{ padding: '0.5rem 0.875rem', textAlign: 'left', fontWeight: 700, fontSize: '0.68rem', textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--muted)', whiteSpace: 'nowrap' }}>{h}</th>
                 ))}
               </tr>
@@ -334,6 +334,11 @@ export function Admin() {
                     {/* Fight */}
                     <td style={{ padding: '0.5rem 0.875rem', whiteSpace: 'nowrap' }}>
                       {fight ? `${fight.fighter_a} vs ${fight.fighter_b}` : p.fight_id}
+                    </td>
+
+                    {/* Actual Winner */}
+                    <td style={{ padding: '0.5rem 0.875rem', whiteSpace: 'nowrap', color: fight?.winner ? 'var(--accent-green)' : 'var(--muted)', fontWeight: fight?.winner ? 600 : 400, fontStyle: fight?.winner ? 'normal' : 'italic' }}>
+                      {fight?.winner ?? 'TBD'}
                     </td>
 
                     {/* Predicted Winner — click to edit */}
