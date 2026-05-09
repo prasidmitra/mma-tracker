@@ -255,21 +255,33 @@ export function CreatorDetail() {
         <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
-      {/* Header — outer row: [avatar+info] [selector] */}
-      <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-        {/* Inner: avatar + info, layout unchanged from original */}
-        <div style={{ flex: 1, display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
-          {mobilePortrait && (
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-              <CreatorSelector
-                creator={creator}
-                sortedCreators={sortedCreators}
-                dropdownOpen={dropdownOpen}
-                setDropdownOpen={setDropdownOpen}
-                navigate={navigate}
-              />
-            </div>
-          )}
+      {/* Header — position:relative wrapper so selector can be pinned top-right without touching flex layout */}
+      <div style={{ position: 'relative', marginBottom: '1.5rem' }}>
+        {/* Selector: absolutely positioned top-right, zero impact on header flex layout */}
+        {!mobilePortrait && (
+          <div style={{ position: 'absolute', top: 0, right: 0 }}>
+            <CreatorSelector
+              creator={creator}
+              sortedCreators={sortedCreators}
+              dropdownOpen={dropdownOpen}
+              setDropdownOpen={setDropdownOpen}
+              navigate={navigate}
+            />
+          </div>
+        )}
+        {mobilePortrait && (
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '0.75rem' }}>
+            <CreatorSelector
+              creator={creator}
+              sortedCreators={sortedCreators}
+              dropdownOpen={dropdownOpen}
+              setDropdownOpen={setDropdownOpen}
+              navigate={navigate}
+            />
+          </div>
+        )}
+        {/* Header flex row — identical to original, untouched */}
+        <div style={{ display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
           <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
           <div>
             <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
@@ -309,16 +321,6 @@ export function CreatorDetail() {
             </div>
           </div>
         </div>
-        {/* Selector: sibling of the whole inner block, not of the avatar */}
-        {!mobilePortrait && (
-          <CreatorSelector
-            creator={creator}
-            sortedCreators={sortedCreators}
-            dropdownOpen={dropdownOpen}
-            setDropdownOpen={setDropdownOpen}
-            navigate={navigate}
-          />
-        )}
       </div>
 
       {CREATOR_BIO[creator] && (
