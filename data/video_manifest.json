@@ -11029,12 +11029,12 @@
     "video_id": "EfxXOBoH6k8",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Cannonier vs Imavov",
     "published_at": "2024-06-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:41:04.901779+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11042,12 +11042,12 @@
     "video_id": "_zml_obaZjE",
     "title": "My Full Card Predictions & Breakdown For UFC 302",
     "published_at": "2024-05-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T00:43:36.243195+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11055,12 +11055,12 @@
     "video_id": "ekc__DXpJX4",
     "title": "My Predictions & Breakdown For UFC Fight Night Edson Barboza vs Lerone Murphy",
     "published_at": "2024-05-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 4,
+    "processed_at": "2026-05-09T00:46:27.596042+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11068,12 +11068,12 @@
     "video_id": "YfhnKDYf-5Q",
     "title": "My Predictions & Breakdown For UFC Fight Night Derrick Lewis vs Rodrigo Nascimento",
     "published_at": "2024-05-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:48:24.765607+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11081,12 +11081,12 @@
     "video_id": "YMUxAnqHv3s",
     "title": "My Full Card Predictions & Breakdown For UFC 301",
     "published_at": "2024-04-29",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T00:50:59.854219+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11094,12 +11094,12 @@
     "video_id": "5pw76MNmErc",
     "title": "Greatest Card Ever! My Full Card Predictions & Breakdown For UFC Fight Night Nicolau vs Perez",
     "published_at": "2024-04-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T00:54:13.465398+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11107,12 +11107,12 @@
     "video_id": "AHP6HSnTPnA",
     "title": "My Full Card Predictions & Breakdown For UFC 300",
     "published_at": "2024-04-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:57:08.878375+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11120,12 +11120,12 @@
     "video_id": "NpKiSH9N7oM",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Blanchfield vs Fiorot",
     "published_at": "2024-03-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:59:34.150459+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11133,12 +11133,12 @@
     "video_id": "Du7gPJFqD6g",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Namajunas vs Ribas",
     "published_at": "2024-03-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:01:44.205405+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11146,12 +11146,12 @@
     "video_id": "bWZGX5EPl8M",
     "title": "My Full Card Predictions & Breakdown For UFC 299",
     "published_at": "2024-03-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:04:13.384357+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11159,12 +11159,12 @@
     "video_id": "eEMy5HX3O5U",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Rozenstruik vs Gaziev",
     "published_at": "2024-02-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:07:19.685456+00:00"
   },
   {
     "creator": "lucas_tracy_mma",

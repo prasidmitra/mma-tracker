@@ -818,25 +818,17 @@ var ThemeContext = createContext({
 	toggleTheme: () => {}
 });
 function ThemeProvider({ children }) {
-	const [theme, setTheme] = useState(() => {
-		if (typeof window === "undefined") return "dark";
-		return localStorage.getItem("theme") || "dark";
-	});
 	useEffect(() => {
-		document.documentElement.setAttribute("data-theme", theme);
-		localStorage.setItem("theme", theme);
-	}, [theme]);
-	const toggleTheme = () => setTheme((t) => t === "dark" ? "light" : "dark");
+		document.documentElement.setAttribute("data-theme", "dark");
+		localStorage.removeItem("theme");
+	}, []);
 	return /* @__PURE__ */ jsx(ThemeContext.Provider, {
 		value: {
-			theme,
-			toggleTheme
+			theme: "dark",
+			toggleTheme: () => {}
 		},
 		children
 	});
-}
-function useTheme() {
-	return useContext(ThemeContext);
 }
 //#endregion
 //#region src/hooks/useData.ts
@@ -941,7 +933,6 @@ var navLinkStyle = {
 	textDecoration: "none"
 };
 function Navbar() {
-	const { theme, toggleTheme } = useTheme();
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
 	const navigate = useNavigate();
@@ -1076,28 +1067,13 @@ function Navbar() {
 					children: "About"
 				})
 			]
-		}), /* @__PURE__ */ jsxs("div", {
+		}), /* @__PURE__ */ jsx("div", {
 			style: {
 				display: "flex",
 				alignItems: "center",
 				gap: "1rem"
 			},
-			children: [/* @__PURE__ */ jsx("button", {
-				onClick: toggleTheme,
-				style: {
-					background: "var(--bg-row-alt)",
-					border: "1px solid var(--border)",
-					borderRadius: "6px",
-					color: "var(--text-secondary)",
-					fontSize: "0.75rem",
-					fontWeight: 600,
-					cursor: "pointer",
-					fontFamily: "inherit",
-					padding: "4px 10px",
-					transition: "all 0.15s ease"
-				},
-				children: theme === "dark" ? "Light" : "Dark"
-			}), /* @__PURE__ */ jsx("a", {
+			children: /* @__PURE__ */ jsx("a", {
 				href: "https://github.com/prasidmitra/mma-tracker",
 				target: "_blank",
 				rel: "noreferrer",
@@ -1107,7 +1083,7 @@ function Navbar() {
 					fontWeight: 500
 				},
 				children: "GitHub"
-			})]
+			})
 		})] })]
 	}), isMobile && hamburgerOpen && /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("div", {
 		style: {
@@ -1184,28 +1160,7 @@ function Navbar() {
 				onMouseEnter: (e) => e.currentTarget.style.background = "rgba(255,255,255,0.05)",
 				onMouseLeave: (e) => e.currentTarget.style.background = "none",
 				children: CREATOR_DISPLAY[slug]
-			}, slug)),
-			/* @__PURE__ */ jsx("div", {
-				style: { padding: "0.875rem 1.25rem" },
-				children: /* @__PURE__ */ jsx("button", {
-					onClick: () => {
-						toggleTheme();
-						closeHamburger();
-					},
-					style: {
-						background: "var(--bg-row-alt)",
-						border: "1px solid var(--border)",
-						borderRadius: "6px",
-						color: "var(--muted)",
-						fontSize: "0.8rem",
-						fontWeight: 600,
-						cursor: "pointer",
-						fontFamily: "inherit",
-						padding: "6px 14px"
-					},
-					children: theme === "dark" ? "Light Mode" : "Dark Mode"
-				})
-			})
+			}, slug))
 		]
 	})] })] });
 }
@@ -2768,21 +2723,818 @@ function About() {
 	});
 }
 //#endregion
+//#region src/pages/Admin.tsx
+var PASS_HASH = "8042a35d49864d4761a9d053cd870b226bebf3d0e67ede3f65a809ae842a7a0f";
+var REPO = "prasidmitra/mma-tracker";
+async function sha256hex(text) {
+	const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+	return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+function b64decode(b64) {
+	return decodeURIComponent(escape(atob(b64.replace(/\s/g, ""))));
+}
+function b64encode(str) {
+	return btoa(unescape(encodeURIComponent(str)));
+}
+async function ghGet(path, pat) {
+	const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, { headers: {
+		Authorization: `Bearer ${pat}`,
+		Accept: "application/vnd.github.v3+json"
+	} });
+	if (!res.ok) throw new Error(`GET ${path} failed: ${res.status} — ${await res.text()}`);
+	return res.json();
+}
+async function ghPut(path, pat, data, sha, message) {
+	const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+		method: "PUT",
+		headers: {
+			Authorization: `Bearer ${pat}`,
+			Accept: "application/vnd.github.v3+json",
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify({
+			message,
+			content: b64encode(JSON.stringify(data, null, 2)),
+			sha
+		})
+	});
+	if (!res.ok) throw new Error(`PUT ${path} failed: ${res.status} — ${await res.text()}`);
+	return res.json();
+}
+var inputStyle = {
+	width: "100%",
+	padding: "0.5rem 0.75rem",
+	background: "var(--bg)",
+	border: "1px solid var(--border)",
+	borderRadius: "6px",
+	color: "var(--text)",
+	fontSize: "0.9rem",
+	fontFamily: "'Manrope', sans-serif",
+	outline: "none"
+};
+var btnPrimary = {
+	padding: "0.5rem 1.25rem",
+	background: "var(--primary)",
+	border: "none",
+	borderRadius: "6px",
+	color: "#fff",
+	fontSize: "0.85rem",
+	fontWeight: 700,
+	cursor: "pointer",
+	fontFamily: "'Manrope', sans-serif"
+};
+var btnMuted = {
+	...btnPrimary,
+	background: "var(--row-alt)",
+	color: "var(--muted)"
+};
+var selectStyle = {
+	background: "var(--bg)",
+	border: "1px solid var(--border)",
+	borderRadius: "4px",
+	color: "var(--text)",
+	fontSize: "0.82rem",
+	fontFamily: "'Manrope', sans-serif",
+	padding: "3px 6px"
+};
+function LoginScreen({ onSuccess }) {
+	const [phase, setPhase] = useState("password");
+	const [passInput, setPassInput] = useState("");
+	const [passError, setPassError] = useState("");
+	const [patInput, setPatInput] = useState("");
+	async function handlePassword(e) {
+		e.preventDefault();
+		if (await sha256hex(passInput) === PASS_HASH) setPhase("pat");
+		else setPassError("Incorrect password");
+	}
+	function handlePat(e) {
+		e.preventDefault();
+		if (!patInput.trim()) return;
+		sessionStorage.setItem("admin_pat", patInput.trim());
+		onSuccess();
+	}
+	return /* @__PURE__ */ jsx("div", {
+		style: {
+			minHeight: "100vh",
+			display: "flex",
+			alignItems: "center",
+			justifyContent: "center",
+			background: "var(--bg)",
+			fontFamily: "'Manrope', sans-serif"
+		},
+		children: /* @__PURE__ */ jsxs("div", {
+			style: {
+				width: "100%",
+				maxWidth: "360px",
+				padding: "2rem",
+				background: "var(--panel)",
+				borderRadius: "12px",
+				border: "1px solid var(--border)"
+			},
+			children: [/* @__PURE__ */ jsx("div", {
+				style: {
+					fontSize: "1.1rem",
+					fontWeight: 800,
+					color: "var(--logo-red)",
+					marginBottom: "1.5rem",
+					letterSpacing: "-0.01em"
+				},
+				children: "OctaScore Admin"
+			}), phase === "password" ? /* @__PURE__ */ jsxs("form", {
+				onSubmit: handlePassword,
+				children: [
+					/* @__PURE__ */ jsx("label", {
+						style: {
+							display: "block",
+							fontSize: "0.78rem",
+							fontWeight: 700,
+							color: "var(--muted)",
+							textTransform: "uppercase",
+							letterSpacing: "0.06em",
+							marginBottom: "0.4rem"
+						},
+						children: "Password"
+					}),
+					/* @__PURE__ */ jsx("input", {
+						type: "password",
+						value: passInput,
+						autoFocus: true,
+						onChange: (e) => {
+							setPassInput(e.target.value);
+							setPassError("");
+						},
+						style: inputStyle
+					}),
+					passError && /* @__PURE__ */ jsx("div", {
+						style: {
+							color: "var(--danger)",
+							fontSize: "0.8rem",
+							marginTop: "0.35rem"
+						},
+						children: passError
+					}),
+					/* @__PURE__ */ jsx("button", {
+						type: "submit",
+						style: {
+							...btnPrimary,
+							width: "100%",
+							marginTop: "1rem"
+						},
+						children: "Continue"
+					})
+				]
+			}) : /* @__PURE__ */ jsxs("form", {
+				onSubmit: handlePat,
+				children: [
+					/* @__PURE__ */ jsx("label", {
+						style: {
+							display: "block",
+							fontSize: "0.78rem",
+							fontWeight: 700,
+							color: "var(--muted)",
+							textTransform: "uppercase",
+							letterSpacing: "0.06em",
+							marginBottom: "0.4rem"
+						},
+						children: "GitHub Personal Access Token"
+					}),
+					/* @__PURE__ */ jsx("input", {
+						type: "password",
+						value: patInput,
+						placeholder: "ghp_...",
+						autoFocus: true,
+						onChange: (e) => setPatInput(e.target.value),
+						style: inputStyle
+					}),
+					/* @__PURE__ */ jsxs("div", {
+						style: {
+							fontSize: "0.75rem",
+							color: "var(--muted)",
+							marginTop: "0.4rem",
+							lineHeight: 1.5
+						},
+						children: [
+							"Needs ",
+							/* @__PURE__ */ jsx("code", { children: "repo" }),
+							" scope.",
+							" ",
+							/* @__PURE__ */ jsx("a", {
+								href: "https://github.com/settings/tokens",
+								target: "_blank",
+								rel: "noreferrer",
+								style: { color: "var(--highlight)" },
+								children: "Create token ↗"
+							}),
+							/* @__PURE__ */ jsx("br", {}),
+							"Stored in sessionStorage only — cleared on tab close."
+						]
+					}),
+					/* @__PURE__ */ jsx("button", {
+						type: "submit",
+						disabled: !patInput.trim(),
+						style: {
+							...btnPrimary,
+							width: "100%",
+							marginTop: "1rem",
+							opacity: patInput.trim() ? 1 : .5
+						},
+						children: "Enter Admin"
+					})
+				]
+			})]
+		})
+	});
+}
+function Admin() {
+	const [authed, setAuthed] = useState(() => typeof window !== "undefined" && !!sessionStorage.getItem("admin_pat"));
+	const { events, predictions, flagged } = useData();
+	const [filterCreator, setFilterCreator] = useState("all");
+	const [filterEvent, setFilterEvent] = useState("all");
+	const [showFlaggedOnly, setShowFlaggedOnly] = useState(false);
+	const [showUnresolvedOnly, setShowUnresolvedOnly] = useState(false);
+	const [predChanges, setPredChanges] = useState({});
+	const [flagChanges, setFlagChanges] = useState({});
+	const [editingCell, setEditingCell] = useState(null);
+	const [saving, setSaving] = useState(false);
+	const [saveResult, setSaveResult] = useState(null);
+	const flagLookup = useMemo(() => {
+		const m = /* @__PURE__ */ new Map();
+		flagged.forEach((f) => m.set(`${f.creator}|${f.event_id}|${f.fight_id}`, f));
+		return m;
+	}, [flagged]);
+	const eventMap = useMemo(() => new Map(events.map((e) => [e.event_id, e])), [events]);
+	const sortedEvents = useMemo(() => [...events].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()), [events]);
+	const filtered = useMemo(() => predictions.filter((p) => {
+		if (filterCreator !== "all" && p.creator !== filterCreator) return false;
+		if (filterEvent !== "all" && p.event_id !== filterEvent) return false;
+		if (showFlaggedOnly && !p.ambiguous) return false;
+		if (showUnresolvedOnly && (!p.ambiguous || p.manually_resolved)) return false;
+		return true;
+	}), [
+		predictions,
+		filterCreator,
+		filterEvent,
+		showFlaggedOnly,
+		showUnresolvedOnly
+	]);
+	function applyPredChange(predId, field, value) {
+		setPredChanges((prev) => ({
+			...prev,
+			[predId]: {
+				...prev[predId],
+				[field]: value
+			}
+		}));
+		setSaveResult(null);
+	}
+	function applyFlagChange(flagId, change) {
+		setFlagChanges((prev) => ({
+			...prev,
+			[flagId]: change
+		}));
+		setSaveResult(null);
+	}
+	const totalChanges = Object.keys(predChanges).length + Object.keys(flagChanges).length;
+	async function handleSave() {
+		const pat = sessionStorage.getItem("admin_pat");
+		if (!pat) {
+			setAuthed(false);
+			return;
+		}
+		setSaving(true);
+		setSaveResult(null);
+		try {
+			const byCreator = {};
+			for (const predId of Object.keys(predChanges)) {
+				const pred = predictions.find((p) => p.prediction_id === predId);
+				if (!pred) continue;
+				(byCreator[pred.creator] ||= []).push(predId);
+			}
+			let totalUpdated = 0;
+			for (const [creator, predIds] of Object.entries(byCreator)) {
+				const path = `data/predictions/${creator}.json`;
+				const { content, sha } = await ghGet(path, pat);
+				const preds = JSON.parse(b64decode(content));
+				for (const predId of predIds) {
+					const idx = preds.findIndex((p) => p.prediction_id === predId);
+					if (idx !== -1) {
+						Object.assign(preds[idx], predChanges[predId]);
+						totalUpdated++;
+					}
+				}
+				await ghPut(path, pat, preds, sha, `Admin correction: ${predIds.length} prediction${predIds.length !== 1 ? "s" : ""} updated`);
+			}
+			if (Object.keys(flagChanges).length > 0) {
+				const path = "data/flagged.json";
+				const { content, sha } = await ghGet(path, pat);
+				const flags = JSON.parse(b64decode(content));
+				for (const [flagId, change] of Object.entries(flagChanges)) {
+					const idx = flags.findIndex((f) => f.flag_id === flagId);
+					if (idx !== -1) Object.assign(flags[idx], change);
+				}
+				const n = Object.keys(flagChanges).length;
+				await ghPut(path, pat, flags, sha, `Admin correction: ${n} flag${n !== 1 ? "s" : ""} resolved`);
+			}
+			setPredChanges({});
+			setFlagChanges({});
+			setEditingCell(null);
+			setSaveResult({
+				ok: true,
+				msg: `Saved ${totalUpdated} prediction${totalUpdated !== 1 ? "s" : ""} — GitHub Actions will rebuild the site.`
+			});
+		} catch (err) {
+			setSaveResult({
+				ok: false,
+				msg: String(err)
+			});
+		} finally {
+			setSaving(false);
+		}
+	}
+	if (!authed) return /* @__PURE__ */ jsx(LoginScreen, { onSuccess: () => setAuthed(true) });
+	return /* @__PURE__ */ jsxs("div", {
+		style: {
+			minHeight: "100vh",
+			background: "var(--bg)",
+			fontFamily: "'Manrope', sans-serif"
+		},
+		children: [
+			/* @__PURE__ */ jsxs("div", {
+				style: {
+					background: "var(--panel)",
+					borderBottom: "1px solid var(--border)",
+					padding: "0.75rem 1.5rem",
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "space-between",
+					position: "sticky",
+					top: 0,
+					zIndex: 50
+				},
+				children: [/* @__PURE__ */ jsx("span", {
+					style: {
+						fontWeight: 800,
+						fontSize: "0.95rem",
+						color: "var(--logo-red)",
+						letterSpacing: "-0.01em"
+					},
+					children: "OctaScore Admin"
+				}), /* @__PURE__ */ jsx("button", {
+					onClick: () => {
+						sessionStorage.removeItem("admin_pat");
+						setAuthed(false);
+					},
+					style: btnMuted,
+					children: "Log out"
+				})]
+			}),
+			/* @__PURE__ */ jsxs("div", {
+				style: {
+					padding: "1.25rem 1.5rem",
+					maxWidth: "1500px",
+					margin: "0 auto"
+				},
+				children: [/* @__PURE__ */ jsxs("div", {
+					style: {
+						display: "flex",
+						gap: "0.75rem",
+						alignItems: "center",
+						flexWrap: "wrap",
+						marginBottom: "1rem",
+						background: "var(--panel)",
+						padding: "0.75rem 1rem",
+						borderRadius: "8px",
+						border: "1px solid var(--border)"
+					},
+					children: [
+						/* @__PURE__ */ jsxs("select", {
+							value: filterCreator,
+							onChange: (e) => setFilterCreator(e.target.value),
+							style: selectStyle,
+							children: [/* @__PURE__ */ jsx("option", {
+								value: "all",
+								children: "All Creators"
+							}), ALL_CREATORS.map((s) => /* @__PURE__ */ jsx("option", {
+								value: s,
+								children: CREATOR_DISPLAY[s]
+							}, s))]
+						}),
+						/* @__PURE__ */ jsxs("select", {
+							value: filterEvent,
+							onChange: (e) => setFilterEvent(e.target.value),
+							style: selectStyle,
+							children: [/* @__PURE__ */ jsx("option", {
+								value: "all",
+								children: "All Events"
+							}), sortedEvents.map((e) => /* @__PURE__ */ jsx("option", {
+								value: e.event_id,
+								children: e.name
+							}, e.event_id))]
+						}),
+						/* @__PURE__ */ jsxs("label", {
+							style: {
+								display: "flex",
+								alignItems: "center",
+								gap: "0.4rem",
+								fontSize: "0.82rem",
+								color: "var(--text)",
+								cursor: "pointer"
+							},
+							children: [/* @__PURE__ */ jsx("input", {
+								type: "checkbox",
+								checked: showFlaggedOnly,
+								onChange: (e) => setShowFlaggedOnly(e.target.checked)
+							}), "Flagged only"]
+						}),
+						/* @__PURE__ */ jsxs("label", {
+							style: {
+								display: "flex",
+								alignItems: "center",
+								gap: "0.4rem",
+								fontSize: "0.82rem",
+								color: "var(--text)",
+								cursor: "pointer"
+							},
+							children: [/* @__PURE__ */ jsx("input", {
+								type: "checkbox",
+								checked: showUnresolvedOnly,
+								onChange: (e) => setShowUnresolvedOnly(e.target.checked)
+							}), "Unresolved only"]
+						}),
+						/* @__PURE__ */ jsxs("span", {
+							style: {
+								marginLeft: "auto",
+								fontSize: "0.78rem",
+								color: "var(--muted)"
+							},
+							children: [
+								filtered.length,
+								" prediction",
+								filtered.length !== 1 ? "s" : ""
+							]
+						})
+					]
+				}), /* @__PURE__ */ jsxs("div", {
+					style: {
+						background: "var(--panel)",
+						borderRadius: "8px",
+						border: "1px solid var(--border)",
+						overflowX: "auto",
+						marginBottom: "80px"
+					},
+					children: [/* @__PURE__ */ jsxs("table", {
+						style: {
+							width: "100%",
+							borderCollapse: "collapse",
+							fontSize: "0.82rem"
+						},
+						children: [/* @__PURE__ */ jsx("thead", { children: /* @__PURE__ */ jsx("tr", {
+							style: {
+								borderBottom: "1px solid var(--border)",
+								background: "var(--bg)"
+							},
+							children: [
+								"Creator",
+								"Event",
+								"Fight",
+								"Predicted Winner",
+								"Correct",
+								"Flagged",
+								"Actions"
+							].map((h) => /* @__PURE__ */ jsx("th", {
+								style: {
+									padding: "0.5rem 0.875rem",
+									textAlign: "left",
+									fontWeight: 700,
+									fontSize: "0.68rem",
+									textTransform: "uppercase",
+									letterSpacing: "0.07em",
+									color: "var(--muted)",
+									whiteSpace: "nowrap"
+								},
+								children: h
+							}, h))
+						}) }), /* @__PURE__ */ jsx("tbody", { children: filtered.map((p) => {
+							const event = eventMap.get(p.event_id);
+							const fight = event?.fights.find((f) => f.fight_id === p.fight_id);
+							const flag = flagLookup.get(`${p.creator}|${p.event_id}|${p.fight_id}`);
+							const changes = predChanges[p.prediction_id] ?? {};
+							const flagChange = flag ? flagChanges[flag.flag_id] ?? null : null;
+							const currentPW = "predicted_winner" in changes ? changes.predicted_winner : p.predicted_winner;
+							const currentCorrect = "correct" in changes ? changes.correct : p.correct;
+							const pwChanged = "predicted_winner" in changes;
+							const correctChanged = "correct" in changes;
+							const isEditPW = editingCell?.predId === p.prediction_id && editingCell.field === "pw";
+							const isEditCorrect = editingCell?.predId === p.prediction_id && editingCell.field === "correct";
+							return /* @__PURE__ */ jsxs("tr", {
+								style: { borderBottom: "1px solid var(--border)" },
+								children: [
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											color: "var(--muted)",
+											whiteSpace: "nowrap"
+										},
+										children: CREATOR_DISPLAY[p.creator]
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											whiteSpace: "nowrap"
+										},
+										children: event?.name ?? p.event_id
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											whiteSpace: "nowrap"
+										},
+										children: fight ? `${fight.fighter_a} vs ${fight.fighter_b}` : p.fight_id
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											background: pwChanged ? "rgba(250,204,21,0.12)" : "transparent",
+											cursor: "pointer",
+											whiteSpace: "nowrap"
+										},
+										onClick: () => !isEditPW && setEditingCell({
+											predId: p.prediction_id,
+											field: "pw"
+										}),
+										children: isEditPW ? /* @__PURE__ */ jsxs("select", {
+											autoFocus: true,
+											value: currentPW ?? "__null__",
+											style: selectStyle,
+											onChange: (e) => {
+												applyPredChange(p.prediction_id, "predicted_winner", e.target.value === "__null__" ? null : e.target.value);
+												setEditingCell(null);
+											},
+											onBlur: () => setEditingCell(null),
+											children: [/* @__PURE__ */ jsx("option", {
+												value: "__null__",
+												children: "null (pick'em)"
+											}), fight && /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("option", {
+												value: fight.fighter_a,
+												children: fight.fighter_a
+											}), /* @__PURE__ */ jsx("option", {
+												value: fight.fighter_b,
+												children: fight.fighter_b
+											})] })]
+										}) : /* @__PURE__ */ jsxs("span", {
+											style: {
+												color: currentPW ? "var(--text)" : "var(--muted)",
+												fontStyle: currentPW ? "normal" : "italic"
+											},
+											children: [
+												currentPW ?? "null",
+												" ",
+												pwChanged && /* @__PURE__ */ jsx("span", {
+													style: {
+														fontSize: "0.7rem",
+														color: "var(--gold-primary)"
+													},
+													children: "✎"
+												})
+											]
+										})
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											background: correctChanged ? "rgba(250,204,21,0.12)" : "transparent",
+											cursor: "pointer",
+											whiteSpace: "nowrap"
+										},
+										onClick: () => !isEditCorrect && setEditingCell({
+											predId: p.prediction_id,
+											field: "correct"
+										}),
+										children: isEditCorrect ? /* @__PURE__ */ jsxs("select", {
+											autoFocus: true,
+											value: currentCorrect === null ? "__null__" : String(currentCorrect),
+											style: selectStyle,
+											onChange: (e) => {
+												const v = e.target.value === "__null__" ? null : e.target.value === "true";
+												applyPredChange(p.prediction_id, "correct", v);
+												setEditingCell(null);
+											},
+											onBlur: () => setEditingCell(null),
+											children: [
+												/* @__PURE__ */ jsx("option", {
+													value: "__null__",
+													children: "null"
+												}),
+												/* @__PURE__ */ jsx("option", {
+													value: "true",
+													children: "✓ true"
+												}),
+												/* @__PURE__ */ jsx("option", {
+													value: "false",
+													children: "✗ false"
+												})
+											]
+										}) : /* @__PURE__ */ jsxs("span", {
+											style: {
+												color: currentCorrect === true ? "var(--accent-green)" : currentCorrect === false ? "var(--accent-red)" : "var(--muted)",
+												fontWeight: currentCorrect !== null ? 700 : 400,
+												fontStyle: currentCorrect === null ? "italic" : "normal"
+											},
+											children: [
+												currentCorrect === true ? "✓" : currentCorrect === false ? "✗" : "null",
+												" ",
+												correctChanged && /* @__PURE__ */ jsx("span", {
+													style: {
+														fontSize: "0.7rem",
+														color: "var(--gold-primary)"
+													},
+													children: "✎"
+												})
+											]
+										})
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											minWidth: "220px"
+										},
+										children: p.ambiguous && flag ? /* @__PURE__ */ jsxs("div", { children: [
+											/* @__PURE__ */ jsxs("div", {
+												title: flag.ambiguity_reason,
+												style: {
+													color: "var(--gold-primary)",
+													fontSize: "0.78rem",
+													marginBottom: "0.3rem",
+													cursor: "help"
+												},
+												children: ["⚑ ", /* @__PURE__ */ jsx("span", {
+													style: { textDecoration: "underline dotted" },
+													children: flag.ambiguity_reason.length > 45 ? flag.ambiguity_reason.slice(0, 45) + "…" : flag.ambiguity_reason
+												})]
+											}),
+											/* @__PURE__ */ jsxs("label", {
+												style: {
+													display: "flex",
+													alignItems: "center",
+													gap: "0.35rem",
+													fontSize: "0.78rem",
+													color: "var(--text)",
+													cursor: "pointer"
+												},
+												children: [/* @__PURE__ */ jsx("input", {
+													type: "checkbox",
+													checked: flagChange?.manually_resolved ?? flag.manually_resolved,
+													onChange: (e) => applyFlagChange(flag.flag_id, {
+														manually_resolved: e.target.checked,
+														resolved_winner: flagChange?.resolved_winner ?? flag.resolved_winner
+													})
+												}), "Mark resolved"]
+											}),
+											(flagChange?.manually_resolved ?? flag.manually_resolved) && /* @__PURE__ */ jsx("input", {
+												type: "text",
+												placeholder: "Resolved winner name",
+												value: flagChange?.resolved_winner ?? flag.resolved_winner ?? "",
+												onChange: (e) => applyFlagChange(flag.flag_id, {
+													manually_resolved: true,
+													resolved_winner: e.target.value || null
+												}),
+												style: {
+													...inputStyle,
+													fontSize: "0.78rem",
+													padding: "3px 8px",
+													marginTop: "0.3rem",
+													width: "180px"
+												}
+											})
+										] }) : p.ambiguous ? /* @__PURE__ */ jsx("span", {
+											style: {
+												color: "var(--gold-primary)",
+												fontSize: "0.78rem"
+											},
+											children: "⚑ no flag record"
+										}) : /* @__PURE__ */ jsx("span", {
+											style: { color: "var(--border)" },
+											children: "—"
+										})
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											whiteSpace: "nowrap"
+										},
+										children: p.video_id ? /* @__PURE__ */ jsx("a", {
+											href: `https://youtube.com/watch?v=${p.video_id}`,
+											target: "_blank",
+											rel: "noreferrer",
+											style: {
+												color: "var(--highlight)",
+												fontSize: "0.78rem",
+												fontWeight: 600,
+												textDecoration: "none"
+											},
+											children: "View Video ↗"
+										}) : /* @__PURE__ */ jsx("span", {
+											style: { color: "var(--border)" },
+											children: "—"
+										})
+									})
+								]
+							}, p.prediction_id);
+						}) })]
+					}), filtered.length === 0 && /* @__PURE__ */ jsx("div", {
+						style: {
+							padding: "3rem",
+							textAlign: "center",
+							color: "var(--muted)"
+						},
+						children: "No predictions match the current filters."
+					})]
+				})]
+			}),
+			/* @__PURE__ */ jsxs("div", {
+				style: {
+					position: "fixed",
+					bottom: 0,
+					left: 0,
+					right: 0,
+					background: "var(--panel)",
+					borderTop: "1px solid var(--border)",
+					padding: "0.75rem 1.5rem",
+					display: "flex",
+					alignItems: "center",
+					gap: "1rem",
+					zIndex: 100
+				},
+				children: [
+					/* @__PURE__ */ jsx("button", {
+						onClick: handleSave,
+						disabled: saving || totalChanges === 0,
+						style: {
+							...btnPrimary,
+							opacity: totalChanges === 0 || saving ? .5 : 1
+						},
+						children: saving ? "Saving…" : totalChanges > 0 ? `Save ${totalChanges} change${totalChanges !== 1 ? "s" : ""}` : "Save"
+					}),
+					totalChanges > 0 && !saving && /* @__PURE__ */ jsx("button", {
+						onClick: () => {
+							setPredChanges({});
+							setFlagChanges({});
+							setSaveResult(null);
+						},
+						style: btnMuted,
+						children: "Discard"
+					}),
+					saveResult ? /* @__PURE__ */ jsxs("span", {
+						style: {
+							fontSize: "0.85rem",
+							color: saveResult.ok ? "var(--accent-green)" : "var(--accent-red)"
+						},
+						children: [
+							saveResult.ok ? "✓ " : "✗ ",
+							saveResult.msg,
+							saveResult.ok && /* @__PURE__ */ jsxs(Fragment, { children: [" — ", /* @__PURE__ */ jsx("a", {
+								href: "https://github.com/prasidmitra/mma-tracker/actions",
+								target: "_blank",
+								rel: "noreferrer",
+								style: { color: "var(--highlight)" },
+								children: "View Actions ↗"
+							})] })
+						]
+					}) : totalChanges === 0 ? /* @__PURE__ */ jsx("span", {
+						style: {
+							fontSize: "0.82rem",
+							color: "var(--muted)"
+						},
+						children: "No unsaved changes"
+					}) : null
+				]
+			})
+		]
+	});
+}
+//#endregion
 //#region src/AppRoutes.tsx
 function AppRoutes() {
-	return /* @__PURE__ */ jsxs(Routes, { children: [/* @__PURE__ */ jsxs(Route, {
-		element: /* @__PURE__ */ jsx(Layout, {}),
-		children: [/* @__PURE__ */ jsx(Route, {
-			index: true,
-			element: /* @__PURE__ */ jsx(Dashboard, {})
-		}), /* @__PURE__ */ jsx(Route, {
-			path: "creator/:slug",
-			element: /* @__PURE__ */ jsx(CreatorDetail, {})
-		})]
-	}), /* @__PURE__ */ jsx(Route, {
-		path: "about",
-		element: /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx(Navbar, {}), /* @__PURE__ */ jsx(About, {})] })
-	})] });
+	return /* @__PURE__ */ jsxs(Routes, { children: [
+		/* @__PURE__ */ jsxs(Route, {
+			element: /* @__PURE__ */ jsx(Layout, {}),
+			children: [/* @__PURE__ */ jsx(Route, {
+				index: true,
+				element: /* @__PURE__ */ jsx(Dashboard, {})
+			}), /* @__PURE__ */ jsx(Route, {
+				path: "creator/:slug",
+				element: /* @__PURE__ */ jsx(CreatorDetail, {})
+			})]
+		}),
+		/* @__PURE__ */ jsx(Route, {
+			path: "about",
+			element: /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx(Navbar, {}), /* @__PURE__ */ jsx(About, {})] })
+		}),
+		/* @__PURE__ */ jsx(Route, {
+			path: "admin",
+			element: /* @__PURE__ */ jsx(Admin, {})
+		})
+	] });
 }
 //#endregion
 //#region src/entry-server.tsx
