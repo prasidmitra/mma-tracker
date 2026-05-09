@@ -7,8 +7,8 @@ import { AppRoutes } from './AppRoutes';
 
 export function render(route: string, basename: string) {
   const helmetContext: Record<string, unknown> = {};
-  // StaticRouter needs the full path including basename to correctly match routes
-  const location = basename + (route === '/' ? '' : route);
+  const strippedBase = basename.replace(/\/$/, '');
+  const location = strippedBase + (route === '/' ? '' : route) || '/';
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
       <StaticRouter location={location} basename={basename}>

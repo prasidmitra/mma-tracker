@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import fs from 'fs'
 
-const SITE_URL = 'https://prasidmitra.github.io/mma-tracker';
+const SITE_URL = 'https://octascore.xyz';
 const CREATOR_SLUGS = [
   'mma_guru', 'mma_joey', 'sneaky_mma', 'brendan_schaub',
   'luke_thomas', 'the_weasel', 'bedtime_mma', 'lucas_tracy_mma',
@@ -64,7 +64,7 @@ function dataPlugin() {
 const isSSR = process.env.BUILD_MODE === 'ssr';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/mma-tracker/' : '/',
+  base: '/',
   plugins: [react(), tailwindcss(), dataPlugin(), sitemapPlugin()],
   resolve: {
     alias: { '@': path.resolve(__dirname, './src') }

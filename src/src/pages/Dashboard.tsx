@@ -5,7 +5,7 @@ import { useData } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { getCreatorStats, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
 
-const SITE_URL = 'https://prasidmitra.github.io/mma-tracker';
+const SITE_URL = 'https://octascore.xyz';
 const OG_IMAGE = `${SITE_URL}/favicon.png`;
 
 export function Dashboard() {

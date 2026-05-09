@@ -8,7 +8,7 @@ import { useFilters } from '../hooks/useFilters';
 import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, formatPct, getAccuracyColor } from '../utils/accuracy';
 import type { Prediction, Event, Fight } from '../types';
 
-const SITE_URL = 'https://prasidmitra.github.io/mma-tracker';
+const SITE_URL = 'https://octascore.xyz';
 const OG_IMAGE = `${SITE_URL}/favicon.png`;
 
 const CARD_ORDER: Record<string, number> = {
