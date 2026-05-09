@@ -11172,12 +11172,12 @@
     "video_id": "FybIIEpxmQc",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Moreno vs Royval 2",
     "published_at": "2024-02-21",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:09:18.948025+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11185,12 +11185,12 @@
     "video_id": "B6nl__jMzsc",
     "title": "My Full Card Predictions & Breakdown For UFC 298",
     "published_at": "2024-02-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T01:11:17.366380+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11198,12 +11198,12 @@
     "video_id": "6-92kiLPl8Q",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Hermansson vs Pyfer",
     "published_at": "2024-02-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:13:46.861890+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11211,12 +11211,12 @@
     "video_id": "K67kj_R2KX0",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Dolidze vs Imavov",
     "published_at": "2024-01-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:16:16.308043+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -11224,12 +11224,12 @@
     "video_id": "4X7JoR1dSq4",
     "title": "My Full Card Predictions & Breakdown For UFC 297",
     "published_at": "2024-01-16",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-09T01:18:15.954397+00:00"
   },
   {
     "creator": "lucas_tracy_mma",

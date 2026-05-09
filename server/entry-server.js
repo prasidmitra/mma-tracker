@@ -2724,7 +2724,7 @@ function About() {
 }
 //#endregion
 //#region src/pages/Admin.tsx
-var PASS_HASH = "8042a35d49864d4761a9d053cd870b226bebf3d0e67ede3f65a809ae842a7a0f";
+var PASS_HASH = "8930b5d0c97bfbe16ab204fbd2167bce1213cbe10f508692c80c4a26d1a07491";
 var REPO = "prasidmitra/mma-tracker";
 async function sha256hex(text) {
 	const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
