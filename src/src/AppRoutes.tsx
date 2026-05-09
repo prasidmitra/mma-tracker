@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Layout } from './components/Layout';
 import { Dashboard } from './pages/Dashboard';
 import { CreatorDetail } from './pages/CreatorDetail';
@@ -7,7 +8,17 @@ import { About } from './pages/About';
 import { Admin } from './pages/Admin';
 import { Navbar } from './components/Navbar';
 
+declare global { interface Window { gtag?: (...args: unknown[]) => void; } }
+
+function usePageTracking() {
+  const location = useLocation();
+  useEffect(() => {
+    window.gtag?.('event', 'page_view', { page_path: location.pathname });
+  }, [location.pathname]);
+}
+
 export function AppRoutes() {
+  usePageTracking();
   return (
     <Routes>
       <Route element={<Layout />}>

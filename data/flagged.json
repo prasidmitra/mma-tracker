@@ -194,5 +194,19 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0015",
+    "creator": "mma_joey",
+    "event_id": "ufc-320",
+    "fight_id": "ufc-320-santos-yoo",
+    "video_id": "pN_0fSr3d44",
+    "ambiguity_reason": "Transcript discusses 'Jussier Formiga vs Daniel Santos' but fight card lists 'JooSang Yoo vs Daniel Santos'. Creator's prediction cannot be reliably mapped.",
+    "raw_excerpt": "Jussier Formiga first round KO. Walks into a big shot.",
+    "suggested_winner": "JooSang Yoo",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

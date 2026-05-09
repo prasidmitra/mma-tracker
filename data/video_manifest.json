@@ -13551,12 +13551,12 @@
     "video_id": "7KFoOKe_n58",
     "title": "UFC Vancouver Full Card Predictions Reinier de Ridder vs. Brendan Allen",
     "published_at": "2025-10-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T04:38:20.798694+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13564,12 +13564,12 @@
     "video_id": "d3yW052VgAs",
     "title": "UFC Rio Full Card Predictions Charles Oliveira vs Mateusz Gamrot",
     "published_at": "2025-10-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T04:41:07.005435+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13577,12 +13577,12 @@
     "video_id": "pN_0fSr3d44",
     "title": "UFC 320 Full Card Predictions Magomed Ankalaev vs Alex Pereira 2",
     "published_at": "2025-09-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
+    "flagged_count": 1,
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T04:44:18.709499+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13590,7 +13590,7 @@
     "video_id": "edDE5EsVCjg",
     "title": "UFC Fight Night Perth Carlos Ulberg vs Dominick Reyes Full Card Predictions",
     "published_at": "2025-09-25",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
