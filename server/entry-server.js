@@ -2203,15 +2203,23 @@ function CreatorDetail() {
 					})] })]
 				})]
 			}),
-			CREATOR_BIO[creator] && /* @__PURE__ */ jsx("p", {
+			CREATOR_BIO[creator] && /* @__PURE__ */ jsx("div", {
 				style: {
-					color: "var(--text-secondary)",
-					fontSize: "0.88rem",
-					lineHeight: 1.7,
-					marginBottom: "1.5rem",
-					maxWidth: "72ch"
+					background: "var(--bg-card)",
+					border: "1px solid var(--border)",
+					borderRadius: "10px",
+					padding: "1rem 1.25rem",
+					marginBottom: "1.5rem"
 				},
-				children: CREATOR_BIO[creator]
+				children: /* @__PURE__ */ jsx("p", {
+					style: {
+						color: "var(--text-secondary)",
+						fontSize: "0.88rem",
+						lineHeight: 1.7,
+						margin: 0
+					},
+					children: CREATOR_BIO[creator]
+				})
 			}),
 			eventGroups.length === 0 && /* @__PURE__ */ jsx("div", {
 				style: {

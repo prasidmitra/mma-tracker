@@ -10912,12 +10912,12 @@
     "video_id": "o3lv6wYsdkA",
     "title": "My Full Card Predictions & Breakdown For UFC 307",
     "published_at": "2024-10-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T00:18:05.313158+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -10925,12 +10925,12 @@
     "video_id": "2D_u7pLUia0",
     "title": "My Full Card Predictions & Breakdown For UFC Paris Moicano vs Saint Denis",
     "published_at": "2024-09-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T00:20:33.963075+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
@@ -10938,12 +10938,12 @@
     "video_id": "Vy7u3qTaXHo",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Tybura vs Spivak 2",
     "published_at": "2024-08-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T00:22:27.673293+00:00"
   },
   {
     "creator": "lucas_tracy_mma",
