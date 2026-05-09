@@ -5,7 +5,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import { useData } from '../context/DataContext';
 import logo from '../assets/logo.png';
 
-const LOGO_HEIGHT = 48;
+const LOGO_HEIGHT = 36;
 
 const navLinkStyle = {
   color: 'var(--text-secondary)' as const,
@@ -35,8 +35,8 @@ export function Navbar() {
       <nav style={{
         background: 'var(--bg-card)',
         borderBottom: '1px solid var(--border)',
-        padding: '0 1.25rem',
-        height: '72px',
+        padding: '0 1.25rem 0 0.875rem',
+        height: '54px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -49,7 +49,7 @@ export function Navbar() {
           <img
             src={logo}
             alt="OctaScore"
-            style={{ height: isMobile ? '36px' : `${LOGO_HEIGHT}px`, width: 'auto', display: 'block' }}
+            style={{ width: isMobile ? 'auto' : '172px', height: isMobile ? '26px' : 'auto', display: 'block' }}
           />
         </Link>
 
@@ -140,7 +140,7 @@ export function Navbar() {
             onClick={closeHamburger}
           />
           <div style={{
-            position: 'fixed', top: '72px', left: 0, right: 0,
+            position: 'fixed', top: '54px', left: 0, right: 0,
             background: 'var(--panel)', borderBottom: '1px solid var(--border)',
             zIndex: 99, maxHeight: 'calc(100vh - 72px)', overflowY: 'auto',
           }}>

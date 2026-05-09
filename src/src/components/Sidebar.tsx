@@ -77,7 +77,7 @@ export function Sidebar({ events, asDrawer = false }: Props) {
       padding: '1rem 0.875rem',
       borderRight: '1px solid var(--border)',
       position: 'sticky',
-      top: '72px',
+      top: '54px',
       height: 'calc(100vh - 72px)',
       overflowY: 'auto',
       background: 'var(--bg-card)',

@@ -1396,12 +1396,12 @@
     "video_id": "Vhqf6Q2vAv4",
     "title": "UFC Fight Night Grasso vs Shevchenko 2 Predictions & Full Card Breakdown - UFC Noche Betting Tips",
     "published_at": "2023-09-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:15:03.854265+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1409,12 +1409,12 @@
     "video_id": "FE9J1NcBMDw",
     "title": "Last Minute Detailed Predictions! UFC 293 Adesanya vs Strickland - Full Card Betting Breakdown",
     "published_at": "2023-09-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:17:06.572193+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1422,12 +1422,12 @@
     "video_id": "rnqUpV0wk5s",
     "title": "Ciryl Gane vs Serghei Spivak Full Fight Reaction and Breakdown - UFC Paris Event Recap",
     "published_at": "2023-09-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-09T21:19:32.905511+00:00"
   },
   {
     "creator": "mma_guru",
