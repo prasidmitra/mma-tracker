@@ -774,7 +774,7 @@ function DataProvider({ children }) {
 		error: null
 	});
 	useEffect(() => {
-		const base = "/mma-tracker/";
+		const base = "/";
 		const eventsPromise = fetchJson(`${base}data/events.json`, []);
 		const flaggedPromise = fetchJson(`${base}data/flagged.json`, []);
 		const creatorPromises = CREATORS.map((c) => fetchJson(`${base}data/predictions/${c}.json`, []));
@@ -930,7 +930,7 @@ function useIsMobile(breakpoint = 768) {
 }
 //#endregion
 //#region src/assets/logo.png
-var logo_default = "/mma-tracker/assets/logo-BzfFgSVn.png";
+var logo_default = "/assets/logo-BzfFgSVn.png";
 //#endregion
 //#region src/components/Navbar.tsx
 var LOGO_HEIGHT = 48;
@@ -1560,7 +1560,7 @@ function Layout() {
 }
 //#endregion
 //#region src/pages/Dashboard.tsx
-var SITE_URL$2 = "https://prasidmitra.github.io/mma-tracker";
+var SITE_URL$2 = "https://octascore.xyz";
 var OG_IMAGE$1 = `${SITE_URL$2}/favicon.png`;
 function Dashboard() {
 	const { events, predictions, flagged, loading } = useData();
@@ -1850,7 +1850,7 @@ function Dashboard() {
 }
 //#endregion
 //#region src/pages/CreatorDetail.tsx
-var SITE_URL$1 = "https://prasidmitra.github.io/mma-tracker";
+var SITE_URL$1 = "https://octascore.xyz";
 var OG_IMAGE = `${SITE_URL$1}/favicon.png`;
 var CARD_ORDER = {
 	main_event: 0,
@@ -2506,7 +2506,7 @@ function CreatorDetail() {
 }
 //#endregion
 //#region src/pages/About.tsx
-var SITE_URL = "https://prasidmitra.github.io/mma-tracker";
+var SITE_URL = "https://octascore.xyz";
 function About() {
 	return /* @__PURE__ */ jsxs("div", {
 		style: {
@@ -2737,7 +2737,7 @@ function render(route, basename) {
 	const html = renderToString(/* @__PURE__ */ jsx(HelmetProvider, {
 		context: helmetContext,
 		children: /* @__PURE__ */ jsx(StaticRouter, {
-			location: basename + (route === "/" ? "" : route),
+			location: basename.replace(/\/$/, "") + (route === "/" ? "" : route) || "/",
 			basename,
 			children: /* @__PURE__ */ jsx(ThemeProvider, { children: /* @__PURE__ */ jsx(DataProvider, { children: /* @__PURE__ */ jsx(AppRoutes, {}) }) })
 		})
