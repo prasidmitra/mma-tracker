@@ -1060,6 +1060,13 @@ function Navbar() {
 					})]
 				}),
 				/* @__PURE__ */ jsx(Link, {
+					to: "/compare",
+					style: navLinkStyle,
+					onMouseEnter: (e) => e.currentTarget.style.color = "var(--text-primary)",
+					onMouseLeave: (e) => e.currentTarget.style.color = "var(--text-secondary)",
+					children: "Compare"
+				}),
+				/* @__PURE__ */ jsx(Link, {
 					to: "/about",
 					style: navLinkStyle,
 					onMouseEnter: (e) => e.currentTarget.style.color = "var(--text-primary)",
@@ -1089,13 +1096,20 @@ function Navbar() {
 			overflowY: "auto"
 		},
 		children: [
-			[{
-				label: "Leaderboard",
-				to: "/"
-			}, {
-				label: "About",
-				to: "/about"
-			}].map(({ label, to }) => /* @__PURE__ */ jsx(Link, {
+			[
+				{
+					label: "Leaderboard",
+					to: "/"
+				},
+				{
+					label: "Compare",
+					to: "/compare"
+				},
+				{
+					label: "About",
+					to: "/about"
+				}
+			].map(({ label, to }) => /* @__PURE__ */ jsx(Link, {
 				to,
 				onClick: closeHamburger,
 				style: {
@@ -2137,7 +2151,7 @@ var CREATOR_BIO = {
 	mma_guru: "MMA Guru has become one of the biggest voices in MMA YouTube through nonstop coverage, controversial takes, livestreams, and an ability to turn every UFC card into a storyline. His fight predictions go beyond pure technique — he talks confidence, activity, cardio, mentality, durability, and who he thinks folds when the pressure hits. Whether people agree with him or hate-watch him, Guru's picks have become part of the weekly MMA conversation.",
 	the_weasel: "The Weasel is the go-to creator for fans who care about the technical side of fighting without all the extra noise. His content is built around detailed film study, stylistic breakdowns, and explaining the small things that decide fights at the highest level. When it comes to predictions, The Weasel focuses heavily on striking habits, defensive tendencies, grappling transitions, and how styles actually interact inside the cage, which is why a lot of hardcore fans trust his reads going into big matchups."
 };
-var CARD_ORDER = {
+var CARD_ORDER$1 = {
 	main_event: 0,
 	co_main: 1,
 	main_card: 2,
@@ -2148,7 +2162,7 @@ function sortPredsByFightOrder(preds, event) {
 	return [...preds].sort((a, b) => {
 		const fa = event.fights.find((f) => f.fight_id === a.fight_id);
 		const fb = event.fights.find((f) => f.fight_id === b.fight_id);
-		return (fa ? CARD_ORDER[fa.card_position] ?? 99 : 99) - (fb ? CARD_ORDER[fb.card_position] ?? 99 : 99);
+		return (fa ? CARD_ORDER$1[fa.card_position] ?? 99 : 99) - (fb ? CARD_ORDER$1[fb.card_position] ?? 99 : 99);
 	});
 }
 function getExclusionReason(p, fight) {
@@ -2800,6 +2814,334 @@ function CreatorDetail() {
 		]
 	});
 }
+//#endregion
+//#region src/pages/Compare.tsx
+var CARD_ORDER = {
+	main_event: 0,
+	co_main: 1,
+	main_card: 2,
+	prelim: 3,
+	early_prelim: 4
+};
+function Compare() {
+	const { events, predictions, loading } = useData();
+	const [filters] = useFilters();
+	const [collapsed, setCollapsed] = useState(/* @__PURE__ */ new Set());
+	const isMobile = useIsMobile();
+	const { openDrawer } = useFilterDrawer();
+	const activeCreators = useMemo(() => ALL_CREATORS.filter((s) => predictions.some((p) => p.creator === s)), [predictions]);
+	const filtered = useMemo(() => applyFilters(predictions, events, filters), [
+		predictions,
+		events,
+		filters
+	]);
+	const predLookup = useMemo(() => {
+		const m = /* @__PURE__ */ new Map();
+		filtered.forEach((p) => m.set(`${p.creator}|${p.fight_id}`, p));
+		return m;
+	}, [filtered]);
+	const eventGroups = useMemo(() => {
+		const evMap = /* @__PURE__ */ new Map();
+		filtered.forEach((p) => {
+			const event = events.find((e) => e.event_id === p.event_id);
+			if (!event) return;
+			if (!evMap.has(p.event_id)) evMap.set(p.event_id, {
+				event,
+				fightIds: /* @__PURE__ */ new Set()
+			});
+			evMap.get(p.event_id).fightIds.add(p.fight_id);
+		});
+		return Array.from(evMap.values()).sort((a, b) => new Date(b.event.date).getTime() - new Date(a.event.date).getTime()).map(({ event, fightIds }) => {
+			return {
+				event,
+				fights: Array.from(fightIds).map((fid) => event.fights.find((f) => f.fight_id === fid)).filter((f) => !!f).sort((a, b) => (CARD_ORDER[a.card_position] ?? 99) - (CARD_ORDER[b.card_position] ?? 99))
+			};
+		});
+	}, [filtered, events]);
+	const toggleCollapse = (id) => setCollapsed((prev) => {
+		const next = new Set(prev);
+		next.has(id) ? next.delete(id) : next.add(id);
+		return next;
+	});
+	if (loading) return /* @__PURE__ */ jsx("div", {
+		style: {
+			padding: "4rem",
+			textAlign: "center",
+			color: "var(--text-secondary)"
+		},
+		children: "Loading..."
+	});
+	return /* @__PURE__ */ jsxs("div", {
+		className: "page-container",
+		style: {
+			maxWidth: "1100px",
+			margin: "0 auto",
+			padding: "1.5rem"
+		},
+		children: [
+			/* @__PURE__ */ jsx("div", {
+				style: { marginBottom: "1rem" },
+				children: /* @__PURE__ */ jsxs("div", {
+					style: {
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "space-between"
+					},
+					children: [/* @__PURE__ */ jsx("h2", {
+						className: "leaderboard-heading",
+						style: {
+							fontSize: "1.6rem",
+							fontWeight: 800,
+							letterSpacing: "-0.01em",
+							color: "var(--logo-red)",
+							textShadow: "0 0 40px rgba(245, 197, 66, 0.18)"
+						},
+						children: "Compare"
+					}), isMobile && /* @__PURE__ */ jsxs("button", {
+						onClick: openDrawer,
+						style: {
+							background: "none",
+							border: "1px solid var(--border)",
+							borderRadius: "6px",
+							color: "var(--muted)",
+							fontSize: "0.8rem",
+							fontWeight: 600,
+							fontFamily: "'Manrope', sans-serif",
+							padding: "0.3rem 0.7rem",
+							cursor: "pointer",
+							display: "inline-flex",
+							alignItems: "center",
+							gap: "0.4rem"
+						},
+						children: [/* @__PURE__ */ jsx("svg", {
+							width: "13",
+							height: "11",
+							viewBox: "0 0 14 12",
+							fill: "none",
+							style: { flexShrink: 0 },
+							children: /* @__PURE__ */ jsx("path", {
+								d: "M0 1h14M2.5 6h9M5 11h4",
+								stroke: "currentColor",
+								strokeWidth: "1.5",
+								strokeLinecap: "round"
+							})
+						}), "Filters"]
+					})]
+				})
+			}),
+			eventGroups.length === 0 && /* @__PURE__ */ jsx("div", {
+				style: {
+					color: "var(--text-secondary)",
+					textAlign: "center",
+					padding: "3rem"
+				},
+				children: "No predictions for selected filters."
+			}),
+			eventGroups.map(({ event, fights }) => {
+				const isCollapsed = collapsed.has(event.event_id);
+				const eventDate = new Date(event.date).toLocaleDateString("en-US", {
+					month: "long",
+					day: "numeric",
+					year: "numeric"
+				});
+				const eventDateShort = new Date(event.date).toLocaleDateString("en-US", {
+					month: "short",
+					day: "numeric",
+					year: "numeric"
+				});
+				return /* @__PURE__ */ jsxs("div", {
+					style: {
+						marginBottom: "0.75rem",
+						background: "var(--bg-card)",
+						borderRadius: "8px",
+						border: "1px solid var(--border)",
+						overflow: "hidden"
+					},
+					children: [/* @__PURE__ */ jsx("div", {
+						onClick: () => toggleCollapse(event.event_id),
+						style: {
+							padding: isMobile ? "0.625rem 0.875rem" : "0.75rem 1rem",
+							background: "var(--bg-row-alt)",
+							cursor: "pointer",
+							userSelect: "none"
+						},
+						children: isMobile ? /* @__PURE__ */ jsxs("div", {
+							style: {
+								display: "flex",
+								justifyContent: "space-between",
+								alignItems: "center"
+							},
+							children: [/* @__PURE__ */ jsx("span", {
+								style: {
+									fontWeight: 700,
+									fontSize: "0.88rem"
+								},
+								children: event.name
+							}), /* @__PURE__ */ jsxs("div", {
+								style: {
+									display: "flex",
+									alignItems: "center",
+									gap: "0.5rem"
+								},
+								children: [/* @__PURE__ */ jsx("span", {
+									style: {
+										color: "var(--muted)",
+										fontSize: "0.72rem"
+									},
+									children: eventDateShort
+								}), /* @__PURE__ */ jsx("span", {
+									style: {
+										display: "inline-block",
+										transform: isCollapsed ? "rotate(-90deg)" : "rotate(0deg)",
+										transition: "transform 0.15s ease",
+										color: "var(--muted)",
+										fontSize: "0.75rem",
+										lineHeight: 1
+									},
+									children: "▼"
+								})]
+							})]
+						}) : /* @__PURE__ */ jsxs("div", {
+							style: {
+								display: "flex",
+								justifyContent: "space-between",
+								alignItems: "center"
+							},
+							children: [/* @__PURE__ */ jsxs("div", {
+								style: {
+									display: "flex",
+									gap: "0.5rem",
+									alignItems: "center"
+								},
+								children: [
+									/* @__PURE__ */ jsx("span", {
+										style: {
+											fontWeight: 700,
+											fontSize: "0.9rem"
+										},
+										children: event.name
+									}),
+									/* @__PURE__ */ jsx("span", {
+										style: {
+											color: "var(--muted)",
+											fontSize: "1.3rem",
+											lineHeight: 1,
+											opacity: .8
+										},
+										children: "•"
+									}),
+									/* @__PURE__ */ jsx("span", {
+										style: {
+											color: "var(--text-secondary)",
+											fontSize: "0.8rem"
+										},
+										children: eventDate
+									})
+								]
+							}), /* @__PURE__ */ jsx("span", {
+								style: {
+									display: "inline-block",
+									transform: isCollapsed ? "rotate(-90deg)" : "rotate(0deg)",
+									transition: "transform 0.15s ease",
+									color: "var(--muted)",
+									fontSize: "0.8rem",
+									lineHeight: 1
+								},
+								children: "▼"
+							})]
+						})
+					}), !isCollapsed && /* @__PURE__ */ jsx("div", {
+						style: { overflowX: "auto" },
+						children: /* @__PURE__ */ jsxs("table", {
+							style: {
+								width: "100%",
+								borderCollapse: "collapse",
+								fontSize: "0.82rem",
+								minWidth: `${300 + activeCreators.length * 80}px`
+							},
+							children: [/* @__PURE__ */ jsx("thead", { children: /* @__PURE__ */ jsxs("tr", {
+								style: { borderBottom: "1px solid var(--border)" },
+								children: [
+									/* @__PURE__ */ jsx("th", {
+										style: thStyle,
+										children: "Fight"
+									}),
+									/* @__PURE__ */ jsx("th", {
+										style: thStyle,
+										children: "Result"
+									}),
+									activeCreators.map((slug) => /* @__PURE__ */ jsx("th", {
+										style: {
+											...thStyle,
+											textAlign: "center",
+											whiteSpace: "nowrap"
+										},
+										children: CREATOR_DISPLAY[slug]
+									}, slug))
+								]
+							}) }), /* @__PURE__ */ jsx("tbody", { children: fights.map((fight, i) => /* @__PURE__ */ jsxs("tr", {
+								style: { borderBottom: i < fights.length - 1 ? "1px solid var(--border)" : "none" },
+								children: [
+									/* @__PURE__ */ jsxs("td", {
+										style: {
+											...tdStyle,
+											fontSize: "0.83rem"
+										},
+										children: [
+											fight.fighter_a,
+											" vs ",
+											fight.fighter_b
+										]
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											...tdStyle,
+											color: "var(--text-secondary)",
+											whiteSpace: "nowrap"
+										},
+										children: fight.winner ?? "—"
+									}),
+									activeCreators.map((slug) => {
+										const pred = predLookup.get(`${slug}|${fight.fight_id}`);
+										const eligible = pred && pred.correct !== null && pred.predicted_winner !== null && !pred.fight_skipped && (pred.ambiguous !== true || pred.manually_resolved === true);
+										return /* @__PURE__ */ jsx("td", {
+											style: {
+												...tdStyle,
+												textAlign: "center"
+											},
+											children: eligible ? /* @__PURE__ */ jsx("span", {
+												style: {
+													fontWeight: 700,
+													fontSize: "0.9rem",
+													color: pred.correct ? "var(--accent-green)" : "var(--accent-red)"
+												},
+												children: pred.correct ? "✓" : "✗"
+											}) : /* @__PURE__ */ jsx("span", {
+												style: { color: "var(--border)" },
+												children: "—"
+											})
+										}, slug);
+									})
+								]
+							}, fight.fight_id)) })]
+						})
+					})]
+				}, event.event_id);
+			})
+		]
+	});
+}
+var thStyle = {
+	padding: "0.5rem 0.875rem",
+	textAlign: "left",
+	fontSize: "0.68rem",
+	fontWeight: 700,
+	textTransform: "uppercase",
+	letterSpacing: "0.06em",
+	color: "var(--text-secondary)",
+	whiteSpace: "nowrap"
+};
+var tdStyle = { padding: "0.6rem 0.875rem" };
 //#endregion
 //#region src/pages/About.tsx
 var SITE_URL = "https://octascore.xyz";
@@ -3838,13 +4180,20 @@ function AppRoutes() {
 	return /* @__PURE__ */ jsxs(Routes, { children: [
 		/* @__PURE__ */ jsxs(Route, {
 			element: /* @__PURE__ */ jsx(Layout, {}),
-			children: [/* @__PURE__ */ jsx(Route, {
-				index: true,
-				element: /* @__PURE__ */ jsx(Dashboard, {})
-			}), /* @__PURE__ */ jsx(Route, {
-				path: "creator/:slug",
-				element: /* @__PURE__ */ jsx(CreatorDetail, {})
-			})]
+			children: [
+				/* @__PURE__ */ jsx(Route, {
+					index: true,
+					element: /* @__PURE__ */ jsx(Dashboard, {})
+				}),
+				/* @__PURE__ */ jsx(Route, {
+					path: "creator/:slug",
+					element: /* @__PURE__ */ jsx(CreatorDetail, {})
+				}),
+				/* @__PURE__ */ jsx(Route, {
+					path: "compare",
+					element: /* @__PURE__ */ jsx(Compare, {})
+				})
+			]
 		}),
 		/* @__PURE__ */ jsx(Route, {
 			path: "about",

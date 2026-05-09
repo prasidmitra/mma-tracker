@@ -525,12 +525,12 @@
     "video_id": "n4k8oIFlOHU",
     "title": "UFC 315 Predictions Muhammad vs Della Maddalena Full Card Betting Breakdown",
     "published_at": "2025-05-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:54:16.159355+00:00"
   },
   {
     "creator": "mma_guru",
@@ -538,12 +538,12 @@
     "video_id": "Q4u5Q-j9sfk",
     "title": "UFC Fight Night Sandhagen vs Figueiredo Predictions & Full Card Breakdown - UFC Des Moines Betting",
     "published_at": "2025-04-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:57:01.458172+00:00"
   },
   {
     "creator": "mma_guru",
@@ -551,12 +551,12 @@
     "video_id": "idGScTsk-AU",
     "title": "UFC Fight Night Garry vs Prates Predictions & Full Card Breakdown - UFC Kansas City Betting Tips",
     "published_at": "2025-04-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:59:46.800731+00:00"
   },
   {
     "creator": "mma_guru",
@@ -564,12 +564,12 @@
     "video_id": "e6m8eeTOi2E",
     "title": "UFC 314 Predictions Volkanovski vs Lopes Full Card Betting Breakdown",
     "published_at": "2025-04-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T03:02:31.293486+00:00"
   },
   {
     "creator": "mma_guru",
