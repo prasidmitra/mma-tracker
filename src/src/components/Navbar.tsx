@@ -117,6 +117,11 @@ export function Navbar() {
                 )}
               </div>
 
+              <Link to="/compare" style={navLinkStyle}
+                onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+              >Compare</Link>
+
               <Link to="/about" style={navLinkStyle}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
@@ -140,7 +145,7 @@ export function Navbar() {
             zIndex: 99, maxHeight: 'calc(100vh - 72px)', overflowY: 'auto',
           }}>
             {/* Main nav links */}
-            {[{ label: 'Leaderboard', to: '/' }, { label: 'About', to: '/about' }].map(({ label, to }) => (
+            {[{ label: 'Leaderboard', to: '/' }, { label: 'Compare', to: '/compare' }, { label: 'About', to: '/about' }].map(({ label, to }) => (
               <Link key={to} to={to} onClick={closeHamburger} style={{
                 display: 'block', padding: '0.875rem 1.25rem',
                 color: 'var(--text)', fontSize: '1rem', fontWeight: 600,
