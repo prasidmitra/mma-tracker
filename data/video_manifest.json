@@ -6609,12 +6609,12 @@
     "video_id": "81j-Pq_u1_Y",
     "title": "UFC London Predictions and Breakdown & ALL Bets | Leon Edwards vs Sean Brady",
     "published_at": "2025-03-21",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:30:11.460049+00:00"
   },
   {
     "creator": "the_weasel",
