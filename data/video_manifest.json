@@ -13603,12 +13603,12 @@
     "video_id": "WFjQWZN2Y7c",
     "title": "UFC Noche Diego Lopes vs Jean Silva Full Card Predictions",
     "published_at": "2025-09-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:00:29.232675+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13616,12 +13616,12 @@
     "video_id": "U8gs93y9dJM",
     "title": "UFC Paris Nassourdine Imavov vs. Caio Borralho Full Card Predictions",
     "published_at": "2025-09-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:09:18.232834+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13629,7 +13629,7 @@
     "video_id": "Y5dtYvIO67I",
     "title": "UFC China Predictions, Khamzat Dog Walks DDP, Islam vs Khamzat - Live",
     "published_at": "2025-08-23",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -13642,12 +13642,12 @@
     "video_id": "p6v8Q83-L-Y",
     "title": "UFC 319 Dricus Du Plessis vs Khamzat Chimaev Full Card Predictions",
     "published_at": "2025-08-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T05:11:26.023572+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13655,7 +13655,7 @@
     "video_id": "n4AID5vmEnI",
     "title": "UFC Vegas 109 Roman Dolidze vs. Anthony Hernandez Full Card Predictions",
     "published_at": "2025-08-06",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -13668,12 +13668,12 @@
     "video_id": "Ecwkx6LF8uw",
     "title": "UFC Abu Dhabi Robert Whittaker vs. Reinier de Ridder Full Card Predictions",
     "published_at": "2025-07-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:39:38.550581+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13681,12 +13681,12 @@
     "video_id": "25MLggAKDsI",
     "title": "UFC 318 Max Holloway vs Dustin Poirier 3 Full Card Predictions",
     "published_at": "2025-07-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:45:04.086856+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13694,7 +13694,7 @@
     "video_id": "sHDuiS2Gphc",
     "title": "UFC Fight Night Nashville Lewis vs. Teixeira Full Card Predictions",
     "published_at": "2025-07-10",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -13707,12 +13707,12 @@
     "video_id": "AS_Td3weJ5g",
     "title": "UFC 317 Ilia Topuria vs Charles Oliveira Full Card Predictions",
     "published_at": "2025-06-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T05:47:37.395658+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13720,12 +13720,12 @@
     "video_id": "KWn2p4GO0ig",
     "title": "UFC Baku Jamahal Hill vs Khalil Rountree Full Card Predictions",
     "published_at": "2025-06-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:50:19.285007+00:00"
   },
   {
     "creator": "mma_joey",
