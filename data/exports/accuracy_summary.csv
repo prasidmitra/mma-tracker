@@ -1,4 +1,5 @@
 creator,total_predictions,correct,incorrect,pick_ems,skipped,flagged,excluded,accuracy_pct,main_event_accuracy_pct,ppv_accuracy_pct,fight_night_accuracy_pct
+lucas_tracy_mma,395,197,124,0,71,2,74,61.4,63.3,62.2,60.8
 mma_guru,513,296,174,0,39,2,43,63.0,66.7,64.8,62.2
 mma_joey,500,247,147,0,101,5,106,62.7,59.0,66.7,61.7
 the_weasel,285,166,93,0,26,0,26,64.1,52.4,60.5,70.1

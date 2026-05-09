@@ -1,4 +1,328 @@
 event,date,fight,predicted_winner,correct,creator
+UFC Fight Night: Yan vs. Figueiredo,2024-11-23,Petr Yan vs Deiveson Figueiredo,Petr Yan,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Jon Jones vs Stipe Miocic,Jon Jones,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Charles Oliveira vs Michael Chandler,Charles Oliveira,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Bo Nickal vs Paul Craig,Bo Nickal,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Viviane Araujo vs Karine Silva,Karine Silva,False,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Mauricio Ruffy vs James Llontop,Mauricio Ruffy,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Marcus McGhee vs Jonathan Martinez,Jonathan Martinez,False,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Jim Miller vs Damon Jackson,Jim Miller,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Marcin Tybura vs Jhonata Diniz,Marcin Tybura,True,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Ramiz Brahimaj vs Mickey Gall,Mickey Gall,False,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Oban Elliott vs Bassil Hafez,Bassil Hafez,False,lucas_tracy_mma
+UFC 309: Jones vs. Miocic,2024-11-16,Eduarda Moura vs Veronica Hardy,Veronica Hardy,False,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Ilia Topuria vs Max Holloway,Ilia Topuria,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Khamzat Chimaev vs Robert Whittaker,Robert Whittaker,False,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Magomed Ankalaev vs Aleksandar Rakic,Magomed Ankalaev,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Lerone Murphy vs Dan Ige,Lerone Murphy,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Shara Magomedov vs Armen Petrosyan,Shara Magomedov,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Ibo Aslan vs Rafael Cerqueira,Ibo Aslan,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Geoff Neal vs Rafael Dos Anjos,Geoff Neal,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Mateusz Rebecki vs Myktybek Orolbai,Myktybek Orolbai,False,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Abus Magomedov vs Brunno Ferreira,Brunno Ferreira,False,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Farid Basharat vs Victor Hugo,Victor Hugo,False,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Ismail Naurdiev vs Bruno Silva,Bruno Silva,False,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Rinat Fakhretdinov vs Carlos Leal,Rinat Fakhretdinov,True,lucas_tracy_mma
+UFC 308: Topuria vs. Holloway,2024-10-26,Shara Magomedov vs Armen Petrosyan,Shara Magomedov,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Brandon Royval vs Tatsuro Taira,Tatsuro Taira,False,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,JunYong Park vs Brad Tavares,JunYong Park,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Chidi Njokuani vs Jared Gooden,Chidi Njokuani,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Grant Dawson vs Rafa Garcia,Grant Dawson,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Daniel Rodriguez vs Alex Morono,Daniel Rodriguez,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Ramazan Temirov vs CJ Vergara,CJ Vergara,False,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Pat Sabatini vs Jonathan Pearce,Jonathan Pearce,False,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Themba Gorimbo vs Niko Price,Themba Gorimbo,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Junior Tafa vs Sean Sharaf,Junior Tafa,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Julia Polastri vs Cory McKenna,Julia Polastri,True,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Cody Haddon vs Dan Argueta,Dan Argueta,False,lucas_tracy_mma
+UFC Fight Night: Royval vs. Taira,2024-10-12,Clayton Carpenter vs Lucas Rocha,Clayton Carpenter,True,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Alex Pereira vs Khalil Rountree Jr.,Alex Pereira,True,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Julianna Pena vs Raquel Pennington,Raquel Pennington,False,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Mario Bautista vs Jose Aldo,Jose Aldo,False,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Roman Dolidze vs Kevin Holland,Kevin Holland,False,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Kayla Harrison vs Ketlen Vieira,Kayla Harrison,True,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Joaquin Buckley vs Stephen Thompson,Joaquin Buckley,True,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Iasmin Lucindo vs Marina Rodriguez,Marina Rodriguez,False,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Cesar Almeida vs Ihor Potieria,Cesar Almeida,True,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Ryan Spann vs Ovince Saint Preux,Ovince Saint Preux,False,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Tecia Pennington vs Carla Esparza,Carla Esparza,False,lucas_tracy_mma
+UFC 307: Pereira vs. Rountree Jr.,2024-10-05,Court McGee vs Tim Means,Tim Means,False,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Renato Moicano vs Benoit Saint Denis,Benoit Saint Denis,False,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Nassourdine Imavov vs Brendan Allen,Nassourdine Imavov,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,William Gomis vs Joanderson Brito,William Gomis,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Bryan Battle vs Kevin Jousset,Bryan Battle,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Morgan Charriere vs Gabriel Miranda,Morgan Charriere,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Fares Ziam vs Matt Frevola,Matt Frevola,False,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Ion Cutelaba vs Ivan Erslan,Ion Cutelaba,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Oumar Sy vs Da Woon Jung,Oumar Sy,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Ludovit Klein vs Roosevelt Roberts,Ludovit Klein,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Taylor Lapilus vs Vince Morales,Taylor Lapilus,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Ailin Perez vs Daria Zhelezniakova,Ailin Perez,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Daniel Barez vs Victor Altamirano,Daniel Barez,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Jacqueline Cavalcanti vs Nora Cornolle,Jacqueline Cavalcanti,True,lucas_tracy_mma
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,Chris Duncan vs Bolaji Oki,Chris Duncan,True,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Serghei Spivac vs Marcin Tybura,Marcin Tybura,False,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Chepe Mariscal vs Damon Jackson,Chepe Mariscal,True,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Danny Barlow vs Nikolay Veretennikov,Danny Barlow,True,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Chris Gutierrez vs Quang Le,Chris Gutierrez,True,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Yana Santos vs Chelsea Chandler,Chelsea Chandler,False,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Toshiomi Kazama vs Charalampos Grigoriou,Charalampos Grigoriou,False,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Karol Rosa vs Pannie Kianzad,Karol Rosa,True,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Jhonata Diniz vs Karl Williams,Karl Williams,False,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Youssef Zalal vs Jarno Errens,Youssef Zalal,True,lucas_tracy_mma
+UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,Stephanie Luciano vs Talita Alencar,Talita Alencar,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Sedriques Dumas vs Denis Tiuliulin,Denis Tiuliulin,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Jai Herbert vs Rolando Bedoya,Jai Herbert,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Sam Hughes vs Viktoriia Dudakova,Viktoriia Dudakova,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Guram Kutateladze vs Jordan Vucenic,Guram Kutateladze,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Shamil Gaziev vs Don'Tale Mayes,Shamil Gaziev,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Kaue Fernandes vs Mohammad Yahya,Mohammad Yahya,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Azamat Murzakanov vs Alonzo Menifield,Azamat Murzakanov,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Joel Alvarez vs Elves Brener,Elves Brener,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Mackenzie Dern vs Loopy Godinez,Loopy Godinez,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Michael Chiesa vs Tony Ferguson,Michael Chiesa,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Deiveson Figueiredo vs Marlon Vera,Deiveson Figueiredo,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Shara Magomedov vs Michal Oleksiejczuk,Shara Magomedov,True,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Umar Nurmagomedov vs Cory Sandhagen,Cory Sandhagen,False,lucas_tracy_mma
+UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,Joel Alvarez vs Elves Brener,Elves Brener,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Modestas Bukauskas vs Marcin Prachnio,Marcin Prachnio,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Sam Patterson vs Kiefer Crosbie,Sam Patterson,True,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Oban Elliott vs Preston Parsons,Preston Parsons,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Mick Parkin vs Lukasz Brzeski,Mick Parkin,True,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Jake Hadley vs Caolan Loughran,Caolan Loughran,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Bruna Brasil vs Molly McCann,Molly McCann,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Nathaniel Wood vs Daniel Pineda,Nathaniel Wood,True,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Muhammad Mokaev vs Manel Kape,Manel Kape,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Arnold Allen vs Giga Chikadze,Arnold Allen,True,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Gregory Rodrigues vs Christian Leroy Duncan,Gregory Rodrigues,True,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Paddy Pimblett vs King Green,King Green,False,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Tom Aspinall vs Curtis Blaydes,Tom Aspinall,True,lucas_tracy_mma
+UFC 304: Edwards vs. Muhammad 2,2024-07-27,Belal Muhammad vs Leon Edwards,Leon Edwards,False,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Andre Petroski vs Josh Fremd,Andre Petroski,True,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Montel Jackson vs Da'Mon Blackshear,Montel Jackson,True,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Jasmine Jasudavicius vs Fatima Kline,Jasmine Jasudavicius,True,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Charles Johnson vs Joshua Van,Joshua Van,False,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Abdul Razak Alhassan vs Cody Brundage,Abdul Razak Alhassan,,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Julian Erosa vs Christian Rodriguez,Christian Rodriguez,False,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Gabriel Bonfim vs Ange Loosa,Gabriel Bonfim,True,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Jean Silva vs Drew Dober,Jean Silva,True,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Muslim Salikhov vs Santiago Ponzinibbio,Santiago Ponzinibbio,False,lucas_tracy_mma
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,Rose Namajunas vs Tracy Cortez,Rose Namajunas,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Vinicius Oliveira vs Ricky Simon,Ricky Simon,False,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Rei Tsuruya vs Carlos Hernandez,Rei Tsuruya,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Martin Buday vs Andrei Arlovski,Martin Buday,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Gillian Robertson vs Michelle Waterson-Gomez,Gillian Robertson,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Payton Talbott vs Yanis Ghemmouri,Payton Talbott,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Jean Silva vs Charles Jourdain,Charles Jourdain,False,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Andre Fili vs Cub Swanson,Andre Fili,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Joe Pyfer vs Marc-Andre Barriault,Joe Pyfer,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Ian Machado Garry vs Michael Page,Ian Machado Garry,True,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Roman Dolidze vs Anthony Smith,Anthony Smith,False,lucas_tracy_mma
+UFC 303: Pereira vs. Prochazka 2,2024-06-29,Alex Pereira vs Jiri Prochazka,Alex Pereira,True,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,ChangHo Lee vs Xiao Long,Xiao Long,False,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Magomed Gadzhiyasulov vs Brendson Ribeiro,Magomed Gadzhiyasulov,True,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Rinat Fakhretdinov vs Nicolas Dalby,Rinat Fakhretdinov,True,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Nasrat Haqparast vs Jared Gordon,Nasrat Haqparast,True,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Shara Magomedov vs Antonio Trocoli,Shara Magomedov,True,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Volkan Oezdemir vs Johnny Walker,Volkan Oezdemir,True,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Kelvin Gastelum vs Daniel Rodriguez,Daniel Rodriguez,False,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Alexander Volkov vs Sergei Pavlovich,Sergei Pavlovich,False,lucas_tracy_mma
+UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,Robert Whittaker vs Ikram Aliskerov,Robert Whittaker,True,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Tatsuro Taira vs Alex Perez,Tatsuro Taira,True,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Miles Johns vs Douglas Silva de Andrade,Douglas Silva de Andrade,False,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Lucas Almeida vs Timmy Cuamba,Timmy Cuamba,False,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Brady Hiestand vs Garrett Armfield,Garrett Armfield,False,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Asu Almabayev vs Jose Johnson,Asu Almabayev,True,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Adam Fugitt vs Josh Quinlan,Josh Quinlan,False,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Nate Maness vs Jimmy Flick,Nate Maness,True,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Gabriella Fernandes vs Carli Judice,Gabriella Fernandes,True,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Westin Wilson vs Jeka Saragih,Jeka Saragih,False,lucas_tracy_mma
+UFC Fight Night: Perez vs. Taira,2024-06-15,Melquizael Costa vs Shayilan Nuerdanbieke,Melquizael Costa,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Taylor Lapilus vs Cody Stamann,Taylor Lapilus,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Denise Gomes vs Eduarda Moura,Eduarda Moura,False,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Daniel Marcos vs John Castaneda,Daniel Marcos,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Brad Katona vs Jesse Butler,Jesse Butler,False,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Montana De La Rosa vs Andrea Lee,Andrea Lee,False,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Carlos Prates vs Charles Radtke,Carlos Prates,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Ludovit Klein vs Thiago Moises,Ludovit Klein,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Punahele Soriano vs Miguel Baeza,Miguel Baeza,False,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Zach Reese vs Julian Marquez,Zach Reese,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Brunno Ferreira vs Dustin Stoltzfus,Brunno Ferreira,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Raul Rosas Jr. vs Ricky Turcios,Raul Rosas Jr.,True,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Dominick Reyes vs Dustin Jacoby,Dustin Jacoby,False,lucas_tracy_mma
+UFC Fight Night: Cannonier vs. Imavov,2024-06-08,Nassourdine Imavov vs Jared Cannonier,Jared Cannonier,False,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Islam Makhachev vs Dustin Poirier,Islam Makhachev,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Sean Strickland vs Paulo Costa,Sean Strickland,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Kevin Holland vs Michal Oleksiejczuk,Kevin Holland,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Niko Price vs Alex Morono,Alex Morono,False,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Randy Brown vs Elizeu Zaleski dos Santos,Randy Brown,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Roman Kopylov vs Cesar Almeida,Roman Kopylov,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Jailton Almeida vs Alexandr Romanov,Jailton Almeida,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Grant Dawson vs Joe Solecki,Grant Dawson,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Jake Matthews vs Phil Rowe,Phil Rowe,False,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Bassil Hafez vs Mickey Gall,Bassil Hafez,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Ailin Perez vs Joselyne Edwards,Ailin Perez,True,lucas_tracy_mma
+UFC 302: Makhachev vs. Poirier,2024-06-01,Andre Lima vs Mitch Raposo,Andre Lima,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Alatengheili vs Kleydson Rodrigues,Kleydson Rodrigues,False,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Abus Magomedov vs Warlley Alves,Abus Magomedov,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Tom Nolan vs Victor Martinez,Tom Nolan,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Oumar Sy vs Tuco Tokkos,Oumar Sy,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Adrian Yanez vs Vinicius Salvador,Adrian Yanez,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Themba Gorimbo vs Ramiz Brahimaj,Themba Gorimbo,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Khaos Williams vs Carlston Harris,Khaos Williams,True,lucas_tracy_mma
+UFC Fight Night: Barboza vs. Murphy,2024-05-18,Lerone Murphy vs Edson Barboza,Edson Barboza,False,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Veronica Hardy vs JJ Aldrich,Veronica Hardy,True,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Joaquin Buckley vs Nursulton Ruziboev,Joaquin Buckley,True,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Carlos Ulberg vs Alonzo Menifield,Carlos Ulberg,True,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Diego Ferreira vs Mateusz Rebecki,Mateusz Rebecki,False,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Waldo Cortes Acosta vs Robelis Despaigne,Robelis Despaigne,False,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Chase Hooper vs Viacheslav Borshchev,Viacheslav Borshchev,False,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Esteban Ribovics vs Terrance McKinney,Terrance McKinney,False,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Tabatha Ricci vs Tecia Pennington,Tabatha Ricci,True,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Trey Waters vs Billy Ray Goff,Trey Waters,True,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Charles Johnson vs Jake Hadley,Charles Johnson,True,lucas_tracy_mma
+UFC Fight Night: Lewis vs. Nascimento,2024-05-11,Derrick Lewis vs Rodrigo Nascimento,Derrick Lewis,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Alessandro Costa vs Kevin Borjas,Alessandro Costa,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Ismael Bonfim vs Vinc Pichel,Ismael Bonfim,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Mauricio Ruffy vs Jamie Mullarkey,Mauricio Ruffy,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Drakkar Klose vs Joaquim Silva,Drakkar Klose,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Joanderson Brito vs Jack Shore,Joanderson Brito,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Myktybek Orolbai vs Elves Brener,Myktybek Orolbai,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Michel Pereira vs Ihor Potieria,Michel Pereira,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Anthony Smith vs Vitor Petrino,Vitor Petrino,False,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Jose Aldo vs Jonathan Martinez,Jose Aldo,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Caio Borralho vs Paul Craig,Caio Borralho,True,lucas_tracy_mma
+UFC 301: Pantoja vs. Erceg,2024-05-04,Alexandre Pantoja vs Steve Erceg,Alexandre Pantoja,True,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Alex Perez vs Matheus Nicolau,Matheus Nicolau,False,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Bogdan Guskov vs Ryan Spann,Ryan Spann,False,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Karine Silva vs Ariane da Silva,Karine Silva,True,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Jhonata Diniz vs Austen Lane,Jhonata Diniz,True,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,David Onama vs Jonathan Pearce,Jonathan Pearce,False,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Uros Medic vs Tim Means,Uros Medic,True,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Victor Henry vs Rani Yahya,Victor Henry,True,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Austin Hubbard vs Michal Figlak,Michal Figlak,False,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Don'Tale Mayes vs Caio Machado,Don'Tale Mayes,True,lucas_tracy_mma
+UFC Fight Night: Nicolau vs. Perez,2024-04-27,Chris Padilla vs James Llontop,James Llontop,False,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Alex Pereira vs Jamahal Hill,Alex Pereira,True,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Zhang Weili vs Yan Xiaonan,Zhang Weili,True,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Max Holloway vs Justin Gaethje,Justin Gaethje,False,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Arman Tsarukyan vs Charles Oliveira,Charles Oliveira,False,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Bo Nickal vs Cody Brundage,Bo Nickal,True,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Jiri Prochazka vs Aleksandar Rakic,Jiri Prochazka,True,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Aljamain Sterling vs Calvin Kattar,Calvin Kattar,False,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Kayla Harrison vs Holly Holm,Kayla Harrison,True,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Diego Lopes vs Sodiq Yusuff,Diego Lopes,True,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Renato Moicano vs Jalin Turner,Jalin Turner,False,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,King Green vs Jim Miller,Jim Miller,False,lucas_tracy_mma
+UFC 300: Pereira vs. Hill,2024-04-13,Deiveson Figueiredo vs Cody Garbrandt,Deiveson Figueiredo,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Caolan Loughran vs Angel Pacheco,Caolan Loughran,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Jacob Malkoun vs Andre Petroski,Jacob Malkoun,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Ibo Aslan vs Anton Turkalj,Ibo Aslan,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Dennis Buzukja vs Connor Matthews,Connor Matthews,False,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Julio Arce vs Herbert Burns,Julio Arce,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Nate Landwehr vs Jamall Emmers,Nate Landwehr,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Chidi Njokuani vs Rhys McKee,Chidi Njokuani,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Kyle Nelson vs Bill Algeo,Bill Algeo,False,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Nursulton Ruziboev vs Sedriques Dumas,Nursulton Ruziboev,True,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Chris Weidman vs Bruno Silva,Bruno Silva,False,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Joaquin Buckley vs Vicente Luque,Vicente Luque,False,lucas_tracy_mma
+UFC Fight Night: Blanchfield vs. Fiorot,2024-03-30,Manon Fiorot vs Erin Blanchfield,Manon Fiorot,True,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Rose Namajunas vs Amanda Ribas,Rose Namajunas,True,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Karl Williams vs Justin Tafa,Karl Williams,True,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Edmen Shahbazyan vs AJ Dobson,Edmen Shahbazyan,True,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Payton Talbott vs Cameron Saaiman,Cameron Saaiman,False,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Fernando Padilla vs Luis Pajuelo,Luis Pajuelo,False,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Trey Ogden vs Kurt Holobaugh,Kurt Holobaugh,False,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Julian Erosa vs Ricardo Ramos,Ricardo Ramos,False,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Miles Johns vs Cody Gibson,Miles Johns,True,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Jarno Errens vs Steven Nguyen,Steven Nguyen,False,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Andre Lima vs Igor Severino,Andre Lima,True,lucas_tracy_mma
+UFC Fight Night: Ribas vs. Namajunas,2024-03-23,Mick Parkin vs Mohammed Usman,Mohammed Usman,False,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Asu Almabayev vs CJ Vergara,Asu Almabayev,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Robelis Despaigne vs Josh Parisian,Robelis Despaigne,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Philipe Lins vs Ion Cutelaba,Ion Cutelaba,False,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Michel Pereira vs Michal Oleksiejczuk,Michal Oleksiejczuk,False,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Kyler Phillips vs Pedro Munhoz,Kyler Phillips,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Mateusz Gamrot vs Rafael Dos Anjos,Mateusz Gamrot,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Jack Della Maddalena vs Gilbert Burns,Jack Della Maddalena,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Petr Yan vs Song Yadong,Petr Yan,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Michael Page vs Kevin Holland,Kevin Holland,False,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Dustin Poirier vs Benoit Saint Denis,Benoit Saint Denis,False,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Sean O'Malley vs Marlon Vera,Sean O'Malley,True,lucas_tracy_mma
+UFC 299: O'Malley vs. Vera 2,2024-03-09,Asu Almabayev vs CJ Vergara,Asu Almabayev,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Loik Radzhabov vs Abdul-Kareem Al-Selwady,Abdul-Kareem Al-Selwady,False,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Christian Leroy Duncan vs Claudio Ribeiro,Christian Leroy Duncan,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Aiemann Zahabi vs Javid Basharat,Javid Basharat,False,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Eryk Anders vs Jamie Pickett,Eryk Anders,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Umar Nurmagomedov vs Bekzat Almakhan,Umar Nurmagomedov,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Steve Erceg vs Matt Schnell,Steve Erceg,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Muhammad Mokaev vs Alex Perez,Muhammad Mokaev,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Vitor Petrino vs Tyson Pedro,Vitor Petrino,True,lucas_tracy_mma
+UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,Jairzinho Rozenstruik vs Shamil Gaziev,Shamil Gaziev,False,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Brandon Royval vs Brandon Moreno,Brandon Moreno,False,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Brian Ortega vs Yair Rodriguez,Yair Rodriguez,False,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Daniel Zellhuber vs Francisco Prado,Daniel Zellhuber,True,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Manuel Torres vs Chris Duncan,Manuel Torres,True,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Jesus Aguilar vs Mateus Mendonca,Mateus Mendonca,False,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Edgar Chairez vs Daniel Lacerda,Edgar Chairez,True,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Fares Ziam vs Claudio Puelles,Claudio Puelles,False,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Ronaldo Rodriguez vs Denys Bondar,Denys Bondar,False,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Felipe dos Santos vs Victor Altamirano,Felipe dos Santos,True,lucas_tracy_mma
+UFC Fight Night: Moreno vs. Royval 2,2024-02-24,Muhammad Naimov vs Erik Silva,Muhammad Naimov,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Oban Elliott vs Val Woodburn,Oban Elliott,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Danny Barlow vs Josh Quinlan,Danny Barlow,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Zhang Mingyang vs Brendson Ribeiro,Zhang Mingyang,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Rinya Nakamura vs Carlos Vera,Rinya Nakamura,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Marcos Rogerio de Lima vs Junior Tafa,Marcos Rogerio de Lima,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Amanda Lemos vs Mackenzie Dern,Mackenzie Dern,False,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Anthony Hernandez vs Roman Kopylov,Roman Kopylov,False,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Merab Dvalishvili vs Henry Cejudo,Merab Dvalishvili,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Ian Machado Garry vs Geoff Neal,Ian Machado Garry,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Robert Whittaker vs Paulo Costa,Robert Whittaker,True,lucas_tracy_mma
+UFC 298: Volkanovski vs. Topuria,2024-02-17,Ilia Topuria vs Alexander Volkanovski,Ilia Topuria,True,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Daniel Marcos vs Aoriqileng,Daniel Marcos,,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Hyder Amil vs Fernie Garcia,Hyder Amil,True,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Bogdan Guskov vs Zac Pauga,Bogdan Guskov,True,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Max Griffin vs Jeremiah Wells,Jeremiah Wells,False,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Marcin Prachnio vs Devin Clark,Devin Clark,False,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Carlos Prates vs Trevin Giles,Carlos Prates,True,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Rodolfo Vieira vs Armen Petrosyan,Armen Petrosyan,False,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Michael Johnson vs Darrius Flowers,Darrius Flowers,False,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Gregory Rodrigues vs Brad Tavares,Gregory Rodrigues,True,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Ihor Potieria vs Robert Bryczek,Robert Bryczek,False,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Dan Ige vs Andre Fili,Dan Ige,True,lucas_tracy_mma
+UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,Jack Hermansson vs Joe Pyfer,Joe Pyfer,False,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Nassourdine Imavov vs Roman Dolidze,Nassourdine Imavov,True,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Renato Moicano vs Drew Dober,Renato Moicano,True,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Randy Brown vs Muslim Salikhov,Randy Brown,True,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Natalia Silva vs Viviane Araujo,Natalia Silva,True,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Aliaskhab Khizriev vs Makhmud Muradov,Aliaskhab Khizriev,,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Charles Radtke vs Gilbert Urbina,Gilbert Urbina,False,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Molly McCann vs Diana Belbita,Molly McCann,True,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Charles Johnson vs Azat Maksum,Azat Maksum,False,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Themba Gorimbo vs Pete Rodriguez,Themba Gorimbo,True,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,JeongYeong Lee vs Blake Bilder,Blake Bilder,False,lucas_tracy_mma
+UFC Fight Night: Dolidze vs. Imavov,2024-02-03,Jamal Pogues vs Thomas Petersen,Jamal Pogues,True,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Jimmy Flick vs Malcolm Gordon,Jimmy Flick,True,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Sam Patterson vs Yohan Lainesse,Yohan Lainesse,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Ramon Taveras vs Serhiy Sidey,Serhiy Sidey,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Sean Woodson vs Charles Jourdain,Charles Jourdain,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Garrett Armfield vs Brad Katona,Brad Katona,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Movsar Evloev vs Arnold Allen,Arnold Allen,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Chris Curtis vs Marc-Andre Barriault,Chris Curtis,True,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Neil Magny vs Mike Malott,Mike Malott,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Raquel Pennington vs Mayra Bueno Silva,Mayra Bueno Silva,False,lucas_tracy_mma
+UFC 297: Strickland vs. Du Plessis,2024-01-20,Dricus Du Plessis vs Sean Strickland,Dricus Du Plessis,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Joshua Van vs Felipe Bunes,Joshua Van,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Nikolas Motta vs Tom Nolan,Tom Nolan,False,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Farid Basharat vs Taylor Lapilus,Farid Basharat,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Marcus McGhee vs Gaston Bolanos,Marcus McGhee,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Preston Parsons vs Matthew Semelsberger,Matthew Semelsberger,False,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Waldo Cortes Acosta vs Andrei Arlovski,Waldo Cortes Acosta,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Brunno Ferreira vs Phil Hawes,Brunno Ferreira,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Mario Bautista vs Ricky Simon,Ricky Simon,False,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Jim Miller vs Gabriel Benitez,Jim Miller,True,lucas_tracy_mma
+UFC Fight Night: Ankalaev vs. Walker 2,2024-01-13,Magomed Ankalaev vs Johnny Walker,Magomed Ankalaev,True,lucas_tracy_mma
 UFC Fight Night: Covington vs. Buckley,2024-12-14,Piera Rodriguez vs Josefine Knutsson,Josefine Knutsson,False,mma_guru
 UFC Fight Night: Covington vs. Buckley,2024-12-14,Davey Grant vs Ramon Taveras,Davey Grant,True,mma_guru
 UFC Fight Night: Covington vs. Buckley,2024-12-14,Miranda Maverick vs Jamey-Lyn Horth,Miranda Maverick,True,mma_guru

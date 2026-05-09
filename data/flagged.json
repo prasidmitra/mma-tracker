@@ -96,5 +96,33 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0008",
+    "creator": "lucas_tracy_mma",
+    "event_id": "ufc-308",
+    "fight_id": "ufc-308-barnett-nzechukwu",
+    "video_id": "oqihF_AZXPs",
+    "ambiguity_reason": "Creator discusses 'Justin Tafa vs Kennedy Nzechukwu' extensively but card lists 'Chris Barnett vs Kennedy Nzechukwu'. Creator appears to have discussed wrong fight entirely.",
+    "raw_excerpt": "I think Kennedy Nuku is going to take down Justin TAA and submit him...Kennedy is going to get it done by submission",
+    "suggested_winner": "Kennedy Nzechukwu",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0009",
+    "creator": "lucas_tracy_mma",
+    "event_id": "ufc-303",
+    "fight_id": "ufc-303-ige-lopes",
+    "video_id": "7ywKF7Q4qqw",
+    "ambiguity_reason": "Creator discusses 'Diego Lopez vs Brian Ortega' but the card shows 'Diego Lopes vs Dan Ige'. The names and context don't match. This appears to be a discussion of a different fight or a name mismatch that cannot be reliably resolved.",
+    "raw_excerpt": "I'm going to pick Diego Lopez to knock out Brian Ortega in the first round brutally okay I think he's going to brutally K with an uppercut",
+    "suggested_winner": "Diego Lopes",
+    "confidence_in_suggestion": "high",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]
