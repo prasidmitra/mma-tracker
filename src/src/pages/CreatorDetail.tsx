@@ -35,7 +35,7 @@ function AvatarBox({ creator, size }: { creator: string; size: number }) {
   return (
     <div style={{
       width: `${size}px`,
-      alignSelf: 'stretch',
+      height: `${size}px`,
       borderRadius: '14px',
       overflow: 'hidden',
       flexShrink: 0,
