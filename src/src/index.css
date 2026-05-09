@@ -38,9 +38,11 @@
   --hover-overlay-subtle: rgba(255, 255, 255, 0.05); /* softer hover */
   --tooltip-bg: #1C1A2E;                   /* tooltip background */
 
-  /* Row tints (correct / incorrect) */
+  /* Row tints */
   --row-correct-bg: rgba(0, 214, 143, 0.07);
   --row-incorrect-bg: rgba(255, 77, 141, 0.07);
+  --row-gold-bg: rgba(245, 197, 66, 0.04);     /* #1 rank row */
+  --row-hover-bg: rgba(107, 63, 152, 0.08);    /* leaderboard row hover */
 
   /* Legacy aliases — components reference these */
   --bg-primary: var(--bg);

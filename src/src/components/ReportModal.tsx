@@ -65,7 +65,7 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
       {/* Backdrop */}
       <div
         onClick={onClose}
-        style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.65)', zIndex: 1000, animation: 'octaModalIn 0.18s ease' }}
+        style={{ position: 'fixed', inset: 0, background: 'var(--overlay-dark)', zIndex: 1000, animation: 'octaModalIn 0.18s ease' }}
       />
 
       {/* Modal — outer div only handles centering, inner div handles animation */}
@@ -141,7 +141,7 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
                             fontSize: '0.875rem', fontFamily: "'Manrope', sans-serif",
                             fontWeight: r === reason ? 600 : 400, cursor: 'pointer',
                           }}
-                          onMouseEnter={e => { if (r !== reason) e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; }}
+                          onMouseEnter={e => { if (r !== reason) e.currentTarget.style.background = 'var(--hover-overlay-subtle)'; }}
                           onMouseLeave={e => { if (r !== reason) e.currentTarget.style.background = 'none'; }}
                         >
                           {r}

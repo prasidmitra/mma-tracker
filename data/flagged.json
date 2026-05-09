@@ -292,5 +292,61 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0022",
+    "creator": "the_weasel",
+    "event_id": "ufc-327",
+    "fight_id": "ufc-327-blaydes-hokit",
+    "video_id": "Rg004vA7kO8",
+    "ambiguity_reason": "Card lists 'Josh Hokit' but transcript clearly discusses 'Josh Barnett'. Names do not match - cannot verify if Hokit is an alias for Barnett or if there is a name error on the fight card",
+    "raw_excerpt": "Josh Barnett wins the fight by a third round TKO",
+    "suggested_winner": "Josh Hokit",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0023",
+    "creator": "the_weasel",
+    "event_id": "ufc-326",
+    "fight_id": "ufc-326-borralho-ridder",
+    "video_id": "bgez2aE_kSo",
+    "ambiguity_reason": "Creator uses unclear alias 'Kyle Ohio' for Borralho; may be auto-caption error or unclear reference",
+    "raw_excerpt": "I'm going to go with Kyle Ohio on this one to win by a decision.",
+    "suggested_winner": "Caio Borralho",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0024",
+    "creator": "the_weasel",
+    "event_id": "ufc-326",
+    "fight_id": "ufc-326-durden-tumendemberel",
+    "video_id": "bgez2aE_kSo",
+    "ambiguity_reason": "Creator uses unclear name 'Nam Dragal' for Nyamjargal Tumendemberel; likely auto-caption error",
+    "raw_excerpt": "I'm going to go with Nam Dragal to win the fight by a third round submission.",
+    "suggested_winner": "Nyamjargal Tumendemberel",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0025",
+    "creator": "the_weasel",
+    "event_id": "ufc-fight-night-strickland-vs-hernandez",
+    "fight_id": "ufc-fight-night-strickland-vs-hernandez-judice-miller",
+    "video_id": "TzCzV-a1uFU",
+    "ambiguity_reason": "Transcript names 'Karolina Jedrzejczyk' as opponent but card lists 'Carli Judice'. Name does not match any fighter on the provided card.",
+    "raw_excerpt": "I'm going with Karolina Jedrzejczyk. Jedrzejczyk wins this fight by a third-round TKO keeping her 100% knockout ratio",
+    "suggested_winner": "Carli Judice",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

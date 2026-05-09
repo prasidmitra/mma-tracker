@@ -107,7 +107,7 @@ export function Navbar() {
                           color: 'var(--text-primary)', fontSize: '1rem', fontWeight: 500,
                           cursor: 'pointer', fontFamily: 'inherit',
                         }}
-                        onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
+                        onMouseEnter={e => (e.currentTarget.style.background = 'var(--hover-overlay)')}
                         onMouseLeave={e => (e.currentTarget.style.background = 'none')}
                       >
                         {CREATOR_DISPLAY[slug]}
@@ -174,7 +174,7 @@ export function Navbar() {
                   color: 'var(--text)', fontSize: '0.95rem', fontWeight: 500,
                   cursor: 'pointer', fontFamily: 'inherit',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.05)')}
+                onMouseEnter={e => (e.currentTarget.style.background = 'var(--hover-overlay-subtle)')}
                 onMouseLeave={e => (e.currentTarget.style.background = 'none')}
               >
                 {CREATOR_DISPLAY[slug]}

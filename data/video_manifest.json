@@ -6232,12 +6232,12 @@
     "video_id": "D20hC_z3EP8",
     "title": "JDM VS PRATES! UFC Perth FULL Picks, Predictions and Breakdown",
     "published_at": "2026-04-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T20:06:01.891116+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6245,12 +6245,12 @@
     "video_id": "Rg004vA7kO8",
     "title": "JIRI VS ULBERG! UFC 327 FULL Picks, Predictions and Breakdown",
     "published_at": "2026-04-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
+    "flagged_count": 1,
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T20:08:48.075288+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6258,12 +6258,12 @@
     "video_id": "blnPc-gA71E",
     "title": "ADESANYA VS PYFER! UFC Seattle FULL Picks, Predictions and Breakdown",
     "published_at": "2026-03-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:10:40.790169+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6271,12 +6271,12 @@
     "video_id": "6IYnW6n9eNE",
     "title": "EVLOEV VS MURPHY! UFC London FULL Predictions and Breakdown",
     "published_at": "2026-03-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:13:15.298539+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6284,12 +6284,12 @@
     "video_id": "zhbKydGyfN8",
     "title": "UFC 328 is STACKED!!! Khamzat Chimaev vs Sean Strickland Breakdown",
     "published_at": "2026-03-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 14,
+    "processed_at": "2026-05-09T20:15:58.598866+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6297,12 +6297,12 @@
     "video_id": "bgez2aE_kSo",
     "title": "MAX VS CHARLES 2! UFC 326 FULL Predictions and Breakdown & All Bets",
     "published_at": "2026-03-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
+    "flagged_count": 2,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:18:37.943420+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6310,12 +6310,12 @@
     "video_id": "xiDWjXwC7-M",
     "title": "MORENO VS KAVANAGH! UFC Mexico FULL Predictions and Breakdown & All Bets",
     "published_at": "2026-02-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:21:07.226568+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6323,12 +6323,12 @@
     "video_id": "TzCzV-a1uFU",
     "title": "STRICKLAND VS HERNANDEZ! UFC Houston FULL Predictions and Breakdown & All Bets",
     "published_at": "2026-02-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:23:23.040023+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6336,12 +6336,12 @@
     "video_id": "BIFDn8m6eIc",
     "title": "VOLK VS LOPES 2! UFC 325 FULL Predictions and Breakdown & All Bets",
     "published_at": "2026-01-31",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:25:27.026167+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6349,12 +6349,12 @@
     "video_id": "wukHdR-2JJ0",
     "title": "GAETHJE VS PADDY! UFC 324 FULL Predictions and Breakdown & All Bets",
     "published_at": "2026-01-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:27:58.234850+00:00"
   },
   {
     "creator": "the_weasel",
@@ -9703,12 +9703,12 @@
     "video_id": "pniECYZDwR0",
     "title": "BRUTAL!!! How Prates DESTROYED JDM (Jack Della Maddalena vs Carlos Prates UFC Breakdown)",
     "published_at": "2026-05-02",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:30:13.925324+00:00"
   },
   {
     "creator": "the_weasel",
@@ -13460,12 +13460,12 @@
     "video_id": "4-2a98RacEw",
     "title": "UFC 324 Full Card Predictions Justin Gaethje vs Paddy Pimblett",
     "published_at": "2026-01-21",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T20:03:58.804523+00:00"
   },
   {
     "creator": "mma_joey",

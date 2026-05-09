@@ -239,7 +239,7 @@ export function CreatorDetail() {
                     fontFamily: 'inherit',
                     transition: 'background 0.1s',
                   }}
-                  onMouseEnter={e => { if (s !== creator) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
+                  onMouseEnter={e => { if (s !== creator) e.currentTarget.style.background = 'var(--hover-overlay)'; }}
                   onMouseLeave={e => { if (s !== creator) e.currentTarget.style.background = 'none'; }}
                 >
                   {CREATOR_DISPLAY[s]}
@@ -457,8 +457,8 @@ export function CreatorDetail() {
                     const exclusionReason = !isEligible ? getExclusionReason(p, fight) : '';
                     const borderColor = !isEligible ? 'transparent' : p.correct ? 'var(--success)' : 'var(--danger)';
                     const rowBg = !isEligible ? 'transparent' : p.correct
-                      ? 'rgba(0,214,143,0.07)'
-                      : 'rgba(255,77,141,0.07)';
+                      ? 'var(--row-correct-bg)'
+                      : 'var(--row-incorrect-bg)';
 
                     return (
                       <tr key={p.prediction_id} style={{

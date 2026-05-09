@@ -40,7 +40,7 @@ function FilterOption({ active, dim, onClick, children }: { active: boolean; dim
       transition: 'all 0.12s ease',
       marginBottom: '2px',
     }}
-      onMouseEnter={e => { if (!active && !dim) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
+      onMouseEnter={e => { if (!active && !dim) e.currentTarget.style.background = 'var(--hover-overlay)'; }}
       onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'transparent'; }}
     >
       {children}

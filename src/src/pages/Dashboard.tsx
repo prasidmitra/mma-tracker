@@ -117,11 +117,11 @@ export function Dashboard() {
               {stats.map((s, i) => (
                 <tr key={s.slug} style={{
                   borderBottom: '1px solid var(--border)',
-                  background: i === 0 ? 'rgba(245,197,66,0.04)' : 'transparent',
+                  background: i === 0 ? 'var(--row-gold-bg)' : 'transparent',
                   transition: 'background 0.1s',
                 }}
-                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(107,63,152,0.08)')}
-                  onMouseLeave={e => (e.currentTarget.style.background = i === 0 ? 'rgba(245,197,66,0.04)' : 'transparent')}
+                  onMouseEnter={e => (e.currentTarget.style.background = 'var(--row-hover-bg)')}
+                  onMouseLeave={e => (e.currentTarget.style.background = i === 0 ? 'var(--row-gold-bg)' : 'transparent')}
                 >
                   <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: i === 0 ? 'var(--gold-primary)' : 'var(--text-secondary)', fontWeight: 600, fontSize: '0.85rem' }}>{i + 1}</td>
                   <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
