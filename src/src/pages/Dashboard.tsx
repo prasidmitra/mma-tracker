@@ -45,7 +45,7 @@ export function Dashboard() {
       ) : (
       <>
       {/* Hero */}
-      <div style={{ marginBottom: '2rem' }}>
+      <div style={{ marginBottom: '1rem' }}>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '0.75rem' }}>
           See how the top MMA YouTubers perform on their picks.
         </p>
@@ -56,7 +56,7 @@ export function Dashboard() {
           Curious why this site exists?{' '}
           <Link to="/about" style={{ color: 'var(--highlight)', fontWeight: 600 }}>Read the About page</Link>
         </p>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <h2 className="leaderboard-heading" style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
             Leaderboard
           </h2>
