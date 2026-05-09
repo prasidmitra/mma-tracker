@@ -6544,12 +6544,12 @@
     "video_id": "Qy-YTwiuU1E",
     "title": "UFC 316: Predictions and Breakdown & All Bets | Merab Dvalishvili vs Sean O'Malley 2",
     "published_at": "2025-06-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:18:40.727295+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6557,12 +6557,12 @@
     "video_id": "8C_qkY2vzKM",
     "title": "UFC 315: Predictions and Breakdown & All Bets | Belal Muhammad vs Jack Della Maddalena",
     "published_at": "2025-05-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:20:39.769044+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6570,12 +6570,12 @@
     "video_id": "DuGLa4eBq5E",
     "title": "UFC Des Moines: Predictions and Breakdown & All Bets | Cory Sandhagen vs Deiveson Figueiredo",
     "published_at": "2025-05-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:23:05.358667+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6583,12 +6583,12 @@
     "video_id": "jp9q7AS8hw8",
     "title": "UFC Kansas City: Predictions and Breakdown & All Bets | Ian Garry vs Carlos Prates",
     "published_at": "2025-04-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:25:03.365438+00:00"
   },
   {
     "creator": "the_weasel",
@@ -6596,12 +6596,12 @@
     "video_id": "G8-tKPhAzZQ",
     "title": "UFC 314: Predictions and Breakdown & All Bets | Alexander Volkanovski vs Diego Lopes",
     "published_at": "2025-04-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T07:27:42.986792+00:00"
   },
   {
     "creator": "the_weasel",
