@@ -13733,12 +13733,12 @@
     "video_id": "karI2gOKjOw",
     "title": "UFC Fight Night Atlanta Kamaru Usman vs Joaquin Buckley Full Card Predictions",
     "published_at": "2025-06-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:52:21.445603+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13746,12 +13746,12 @@
     "video_id": "ahvdDspnGvU",
     "title": "UFC 316 Merab Dvalishvili vs Sean O'Malley 2 Full Card Predictions",
     "published_at": "2025-06-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:54:27.622212+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13759,12 +13759,12 @@
     "video_id": "9GwcbNz-X1k",
     "title": "UFC 315 Belal Muhammad vs Jack Della Maddalena Full Card Predictions",
     "published_at": "2025-05-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:56:40.434679+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13772,12 +13772,12 @@
     "video_id": "bxxutzgHJ2w",
     "title": "UFC Des Moines Cory Sandhagen vs Deiveson Figueiredo Full Card Predictions",
     "published_at": "2025-04-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T05:59:33.304566+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13785,12 +13785,12 @@
     "video_id": "xWx8msGnKzk",
     "title": "UFC Kansas City Ian Machado Garry vs Carlos Prates Full Card Predictions",
     "published_at": "2025-04-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:01:48.786513+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13798,12 +13798,12 @@
     "video_id": "1-d4Fi1DJEo",
     "title": "UFC 314 Alexander Volkanovski vs Diego Lopes Full Card Predictions",
     "published_at": "2025-04-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:03:41.195127+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13811,12 +13811,12 @@
     "video_id": "3cZklA3yVxU",
     "title": "UFC Vegas 105 Josh Emmett vs Lerone Murphy Full Card Predictions",
     "published_at": "2025-04-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T06:06:10.837702+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13824,12 +13824,12 @@
     "video_id": "1czwDDuJJQo",
     "title": "UFC Mexico City Brandon Moreno vs Steve Erceg Full Card Predictions",
     "published_at": "2025-03-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:09:08.822438+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13837,12 +13837,12 @@
     "video_id": "32YUCWe2xAA",
     "title": "UFC London Leon Edwards vs Sean Brady Full Card Predictions",
     "published_at": "2025-03-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:11:01.777946+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13850,12 +13850,12 @@
     "video_id": "IDd7ZWaEFVg",
     "title": "UFC Vegas 104 Marvin Vettori vs Roman Dolidze 2 Full Card Predictions",
     "published_at": "2025-03-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:13:41.270992+00:00"
   },
   {
     "creator": "mma_joey",

@@ -35,7 +35,7 @@
   --accent-red: var(--danger);
   --accent-purple: var(--secondary);
   --accent-blue: var(--highlight);
-  --logo-red: var(--secondary);
+  --logo-red: var(--text);
 }
 
 [data-theme="light"] {

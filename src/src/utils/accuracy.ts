@@ -42,12 +42,23 @@ export const CREATOR_DISPLAY: Record<string, string> = {
   sneaky_mma: 'Sneaky MMA',
   brendan_schaub: 'Brendan Schaub',
   luke_thomas: 'Luke Thomas',
-  the_weasel: 'The Weasel',
+  the_weasel: 'The Weasle',
   bedtime_mma: 'Bedtime MMA',
   lucas_tracy_mma: 'Lucas Tracy MMA',
 };
 
 export const ALL_CREATORS = Object.keys(CREATOR_DISPLAY);
+
+export const CREATOR_YOUTUBE_URL: Record<string, string> = {
+  mma_guru:       'https://www.youtube.com/@the-mma-guru',
+  mma_joey:       'https://www.youtube.com/@MMAJOEYC',
+  sneaky_mma:     'https://youtube.com/@SneakyMMA',
+  brendan_schaub: 'https://youtube.com/@BrendanSchaubPodcast',
+  luke_thomas:    'https://youtube.com/@LukeThomas',
+  the_weasel:     'https://www.youtube.com/channel/UCZD2qRU8J82XGdGdUWYneNQ',
+  bedtime_mma:    'https://www.youtube.com/results?search_query=Bedtime+MMA+predictions',
+  lucas_tracy_mma:'https://www.youtube.com/channel/UC7LzaJA-R2E52qzd5GW-kpg',
+};
 
 export function getCreatorStats(slug: string, allPredictions: Prediction[], events: Event[], filters: Filters) {
   const preds = applyFilters(allPredictions.filter(p => p.creator === slug), events, filters);

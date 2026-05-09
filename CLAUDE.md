@@ -16,7 +16,7 @@ position to see who actually knows their stuff vs who just sounds confident.
 3. Sneaky MMA (channel: @SneakyMMA)
 4. Brendan Schaub (channel: @BrendanSchaubPodcast or similar)
 5. Luke Thomas / Morning Kombat (channel: @LukeThomas)
-6. The Weasel (search YouTube for "The Weasel MMA" predictions)
+6. The Weasle (search YouTube for "The Weasle MMA" predictions)
 7. Bedtime MMA (search YouTube for "Bedtime MMA" predictions)
 8. Lucas Tracy MMA (search YouTube for "Lucas Tracy MMA" predictions)
 
@@ -185,7 +185,7 @@ CREATORS = {
     },
     "the_weasel": {
         "channel_id": None,
-        "display_name": "The Weasel",
+        "display_name": "The Weasle",
         "search_terms": ["UFC", "predictions", "picks", "preview"]
     },
     "bedtime_mma": {

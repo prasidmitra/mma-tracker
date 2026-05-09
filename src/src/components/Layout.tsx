@@ -57,7 +57,7 @@ export function Layout() {
                 <button
                   onClick={() => setDrawerOpen(false)}
                   style={{
-                    width: '100%', padding: '0.7rem', background: '#E1006A',
+                    width: '100%', padding: '0.7rem', background: 'var(--secondary)',
                     border: 'none', borderRadius: '8px', color: '#fff',
                     fontWeight: 700, fontSize: '0.9rem', fontFamily: "'Manrope', sans-serif", cursor: 'pointer',
                   }}

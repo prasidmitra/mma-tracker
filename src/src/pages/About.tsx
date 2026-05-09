@@ -20,7 +20,7 @@ export function About() {
       <h1 style={{
         fontSize: '2.2rem',
         fontWeight: 900,
-        color: 'var(--logo-red)',
+        color: 'var(--secondary)',
         letterSpacing: '-0.02em',
         marginBottom: '0.5rem',
         lineHeight: 1.1,
@@ -93,7 +93,7 @@ export function About() {
       <div style={{
         marginTop: '2.5rem',
         padding: '1.25rem 1.5rem',
-        borderLeft: `4px solid var(--logo-red)`,
+        borderLeft: `4px solid var(--secondary)`,
         background: 'var(--bg-card)',
         borderRadius: '0 8px 8px 0',
       }}>

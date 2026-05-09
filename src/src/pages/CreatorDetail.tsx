@@ -5,7 +5,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import { useData } from '../hooks/useData';
 import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
-import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, formatPct, getAccuracyColor } from '../utils/accuracy';
+import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, CREATOR_YOUTUBE_URL, formatPct, getAccuracyColor } from '../utils/accuracy';
 import { ReportModal } from '../components/ReportModal';
 import type { Prediction, Event, Fight } from '../types';
 
@@ -15,7 +15,7 @@ const OG_IMAGE = `${SITE_URL}/favicon.png`;
 const CREATOR_BIO: Record<string, string> = {
   mma_joey: 'MMA Joey is one of those creators that feels plugged directly into the MMA fanbase — straight-up UFC talk, community debates, fight week reactions, and zero overproduced analyst energy. His prediction style is built around momentum, durability, pressure, and whether a fighter has that "dog" in them once things get ugly. Joey\'s the type to back a gritty underdog everybody counted out or fade a hype train before the rest of the community catches on.',
   mma_guru: 'MMA Guru has become one of the biggest voices in MMA YouTube through nonstop coverage, controversial takes, livestreams, and an ability to turn every UFC card into a storyline. His fight predictions go beyond pure technique — he talks confidence, activity, cardio, mentality, durability, and who he thinks folds when the pressure hits. Whether people agree with him or hate-watch him, Guru\'s picks have become part of the weekly MMA conversation.',
-  the_weasel: 'The Weasel is the go-to creator for fans who care about the technical side of fighting without all the extra noise. His content is built around detailed film study, stylistic breakdowns, and explaining the small things that decide fights at the highest level. When it comes to predictions, The Weasel focuses heavily on striking habits, defensive tendencies, grappling transitions, and how styles actually interact inside the cage, which is why a lot of hardcore fans trust his reads going into big matchups.',
+  the_weasel: 'The Weasle is the go-to creator for fans who care about the technical side of fighting without all the extra noise. His content is built around detailed film study, stylistic breakdowns, and explaining the small things that decide fights at the highest level. When it comes to predictions, The Weasle focuses heavily on striking habits, defensive tendencies, grappling transitions, and how styles actually interact inside the cage, which is why a lot of hardcore fans trust his reads going into big matchups.',
 };
 
 const CARD_ORDER: Record<string, number> = {
@@ -25,6 +25,29 @@ const CARD_ORDER: Record<string, number> = {
   prelim: 3,
   early_prelim: 4,
 };
+
+function AvatarBox({ creator }: { creator: string }) {
+  const [hidden, setHidden] = useState(false);
+  if (hidden) return null;
+  return (
+    <div style={{
+      width: '80px',
+      alignSelf: 'stretch',
+      borderRadius: '14px',
+      overflow: 'hidden',
+      flexShrink: 0,
+      border: '1px solid var(--border)',
+      background: 'var(--panel)',
+    }}>
+      <img
+        src={`/avatars/${creator}.jpg`}
+        alt=""
+        onError={() => setHidden(true)}
+        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+      />
+    </div>
+  );
+}
 
 function sortPredsByFightOrder(preds: Prediction[], event: Event): Prediction[] {
   return [...preds].sort((a, b) => {
@@ -219,19 +242,35 @@ export function CreatorDetail() {
       </div>
 
       {/* Header */}
-      <div style={{ marginBottom: '1.5rem' }}>
-        <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--logo-red)' }}>{CREATOR_DISPLAY[creator]}</h1>
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'baseline' }}>
-          <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
-            {formatPct(stats.accuracy)}
-          </span>
-          <div>
-            <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>
-              <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
-              <span style={{ color: 'var(--text-secondary)' }}> - </span>
-              <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
+      <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
+        <AvatarBox creator={creator} />
+        <div>
+          <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+            {CREATOR_YOUTUBE_URL[creator] ? (
+              <a
+                href={CREATOR_YOUTUBE_URL[creator]}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'var(--logo-red)', textDecoration: 'none', transition: 'color 0.15s' }}
+                onMouseEnter={e => (e.currentTarget.style.color = 'var(--secondary)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'var(--logo-red)')}
+              >
+                {CREATOR_DISPLAY[creator]}
+              </a>
+            ) : CREATOR_DISPLAY[creator]}
+          </h1>
+          <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-end' }}>
+            <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
+              {formatPct(stats.accuracy)}
+            </span>
+            <div>
+              <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>
+                <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
+                <span style={{ color: 'var(--text-secondary)' }}> - </span>
+                <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
+              </div>
+              <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{stats.eligible} eligible picks</div>
             </div>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{stats.eligible} eligible picks</div>
           </div>
         </div>
       </div>
