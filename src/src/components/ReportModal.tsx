@@ -21,6 +21,7 @@ interface Props {
 
 export function ReportModal({ prediction, event, fight, onClose }: Props) {
   const [reason, setReason] = useState('');
+  const [reasonOpen, setReasonOpen] = useState(false);
   const [notes, setNotes] = useState('');
   const [reasonError, setReasonError] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -50,6 +51,13 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
   const labelStyle: React.CSSProperties = {
     display: 'block', fontSize: '0.72rem', fontWeight: 700,
     color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: '0.35rem',
+  };
+
+  const fieldBase: React.CSSProperties = {
+    width: '100%', padding: '0.5rem 0.75rem',
+    background: 'var(--bg)', border: '1px solid var(--border)',
+    borderRadius: '6px', color: 'var(--text)', fontSize: '0.875rem',
+    fontFamily: "'Manrope', sans-serif", outline: 'none',
   };
 
   return (
@@ -87,24 +95,60 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              {/* Reason */}
+              {/* Reason — custom dropdown */}
               <div style={{ marginBottom: '1rem' }}>
                 <label style={labelStyle}>
                   What's wrong? <span style={{ color: 'var(--danger)' }}>*</span>
                 </label>
-                <select
-                  value={reason}
-                  onChange={e => { setReason(e.target.value); setReasonError(''); }}
-                  style={{
-                    width: '100%', padding: '0.5rem 0.75rem',
-                    background: 'var(--bg)', border: `1px solid ${reasonError ? 'var(--danger)' : 'var(--border)'}`,
-                    borderRadius: '6px', color: reason ? 'var(--text)' : 'var(--muted)',
-                    fontSize: '0.875rem', fontFamily: "'Manrope', sans-serif", outline: 'none',
-                  }}
-                >
-                  <option value="">Select a reason…</option>
-                  {REASONS.map(r => <option key={r} value={r}>{r}</option>)}
-                </select>
+                <div style={{ position: 'relative' }}>
+                  {reasonOpen && (
+                    <div
+                      style={{ position: 'fixed', inset: 0, zIndex: 10 }}
+                      onClick={() => setReasonOpen(false)}
+                    />
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => setReasonOpen(o => !o)}
+                    style={{
+                      ...fieldBase,
+                      border: `1px solid ${reasonError ? 'var(--danger)' : 'var(--border)'}`,
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      cursor: 'pointer', textAlign: 'left',
+                      color: reason ? 'var(--text)' : 'var(--muted)',
+                    }}
+                  >
+                    <span>{reason || 'Select a reason…'}</span>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--muted)', marginLeft: '0.5rem', flexShrink: 0 }}>▾</span>
+                  </button>
+                  {reasonOpen && (
+                    <div style={{
+                      position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0,
+                      background: 'var(--panel)', border: '1px solid var(--border)',
+                      borderRadius: '8px', overflow: 'hidden',
+                      boxShadow: '0 8px 32px rgba(0,0,0,0.5)', zIndex: 11,
+                    }}>
+                      {REASONS.map(r => (
+                        <button
+                          key={r}
+                          type="button"
+                          onClick={() => { setReason(r); setReasonOpen(false); setReasonError(''); }}
+                          style={{
+                            display: 'block', width: '100%', textAlign: 'left',
+                            padding: '0.6rem 0.875rem', background: r === reason ? 'var(--secondary)' : 'none',
+                            border: 'none', color: r === reason ? '#fff' : 'var(--text)',
+                            fontSize: '0.875rem', fontFamily: "'Manrope', sans-serif",
+                            fontWeight: r === reason ? 600 : 400, cursor: 'pointer',
+                          }}
+                          onMouseEnter={e => { if (r !== reason) e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; }}
+                          onMouseLeave={e => { if (r !== reason) e.currentTarget.style.background = 'none'; }}
+                        >
+                          {r}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
                 {reasonError && <div style={{ color: 'var(--danger)', fontSize: '0.78rem', marginTop: '0.3rem' }}>{reasonError}</div>}
               </div>
 
@@ -120,10 +164,9 @@ export function ReportModal({ prediction, event, fight, onClose }: Props) {
                   rows={3}
                   placeholder="Any extra context…"
                   style={{
-                    width: '100%', padding: '0.5rem 0.75rem', resize: 'vertical',
-                    background: 'var(--bg)', border: '1px solid var(--border)',
-                    borderRadius: '6px', color: 'var(--text)', fontSize: '0.875rem',
-                    fontFamily: "'Manrope', sans-serif", outline: 'none', lineHeight: 1.5,
+                    ...fieldBase,
+                    resize: 'vertical', lineHeight: 1.6,
+                    colorScheme: 'dark',
                   }}
                 />
                 <div style={{ fontSize: '0.72rem', color: 'var(--muted)', textAlign: 'right', marginTop: '0.2rem' }}>
