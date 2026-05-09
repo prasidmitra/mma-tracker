@@ -13889,12 +13889,12 @@
     "video_id": "q0U2kI0FXVI",
     "title": "UFC 312 Dricus Du Plessis vs Sean Strickland 2 Full Card Predictions",
     "published_at": "2025-02-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:21:55.848036+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13902,12 +13902,12 @@
     "video_id": "2KQ4_Ucz7No",
     "title": "UFC Saudi Arabia Adesanya vs. Imavov Full Card Predictions",
     "published_at": "2025-01-28",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:24:11.242283+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13915,12 +13915,12 @@
     "video_id": "jE8hAVX-wrU",
     "title": "UFC 311 Islam Makhachev vs. Arman Tsarukyan 2 Full Card Predictions",
     "published_at": "2025-01-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:26:33.996876+00:00"
   },
   {
     "creator": "mma_joey",
@@ -13928,12 +13928,12 @@
     "video_id": "6OgPQlV39J0",
     "title": "UFC Vegas 101 Mackenzie Dern vs. Amanda Ribas 2 Full Card Predictions",
     "published_at": "2025-01-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T06:29:44.252337+00:00"
   },
   {
     "creator": "mma_joey",

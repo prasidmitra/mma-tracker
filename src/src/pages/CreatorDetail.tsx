@@ -2,11 +2,13 @@ import { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useIsMobile } from '../hooks/useIsMobile';
+import { useIsPortrait } from '../hooks/useIsPortrait';
 import { useData } from '../hooks/useData';
 import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { applyFilters, getCreatorStats, ALL_CREATORS, CREATOR_DISPLAY, CREATOR_YOUTUBE_URL, formatPct, getAccuracyColor } from '../utils/accuracy';
 import { ReportModal } from '../components/ReportModal';
+import { useFilterDrawer } from '../components/Layout';
 import type { Prediction, Event, Fight } from '../types';
 
 const SITE_URL = 'https://octascore.xyz';
@@ -26,12 +28,12 @@ const CARD_ORDER: Record<string, number> = {
   early_prelim: 4,
 };
 
-function AvatarBox({ creator }: { creator: string }) {
+function AvatarBox({ creator, size }: { creator: string; size: number }) {
   const [hidden, setHidden] = useState(false);
   if (hidden) return null;
   return (
     <div style={{
-      width: '80px',
+      width: `${size}px`,
       alignSelf: 'stretch',
       borderRadius: '14px',
       overflow: 'hidden',
@@ -77,6 +79,9 @@ export function CreatorDetail() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [reportTarget, setReportTarget] = useState<{ prediction: Prediction; event: Event; fight: Fight | undefined } | null>(null);
   const isMobile = useIsMobile();
+  const isPortrait = useIsPortrait();
+  const { openDrawer } = useFilterDrawer();
+  const mobilePortrait = isMobile && isPortrait;
 
   const sortedCreators = useMemo(() =>
     ALL_CREATORS
@@ -242,8 +247,8 @@ export function CreatorDetail() {
       </div>
 
       {/* Header */}
-      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'flex-start', gap: isMobile ? '0.75rem' : '2rem' }}>
-        <AvatarBox creator={creator} />
+      <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: 'flex-start', gap: mobilePortrait ? '0.75rem' : '2rem' }}>
+        <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
         <div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>
             {CREATOR_YOUTUBE_URL[creator] ? (
@@ -293,6 +298,29 @@ export function CreatorDetail() {
           </p>
         </div>
       )}
+
+      {/* Fight Picks heading + filter button */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+        <h2 style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)' }}>
+          Fight Picks
+        </h2>
+        {isMobile && (
+          <button
+            onClick={openDrawer}
+            style={{
+              background: 'none', border: '1px solid var(--border)', borderRadius: '6px',
+              color: 'var(--muted)', fontSize: '0.8rem', fontWeight: 600,
+              fontFamily: "'Manrope', sans-serif", padding: '0.3rem 0.7rem',
+              cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+            }}
+          >
+            <svg width="13" height="11" viewBox="0 0 14 12" fill="none" style={{ flexShrink: 0 }}>
+              <path d="M0 1h14M2.5 6h9M5 11h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
+            Filters
+          </button>
+        )}
+      </div>
 
       {eventGroups.length === 0 && (
         <div style={{ color: 'var(--text-secondary)', textAlign: 'center', padding: '2rem' }}>No predictions for selected filters.</div>
