@@ -6,7 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(__dirname, 'dist');
 const SERVER_BUNDLE = path.join(DIST, 'server', 'entry-server.js');
 const TEMPLATE = path.join(DIST, 'index.html');
-const BASE = '/';
+const BASE = ''; // empty = routes served from root (octascore.xyz)
 
 const CREATOR_SLUGS = [
   'mma_guru', 'mma_joey', 'sneaky_mma', 'brendan_schaub',
