@@ -1331,12 +1331,12 @@
     "video_id": "jpmbhNDaiqY",
     "title": "UFC Fight Night Almeida vs Lewis Predictions & Full Card Breakdown - UFC Sao Paulo Betting Tips",
     "published_at": "2023-10-31",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:02:35.700531+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1344,12 +1344,12 @@
     "video_id": "WUEa_VccsQs",
     "title": "Last Minute Detailed Predictions! UFC 294 Makhachev vs Volkanovski 2 - Full Card Betting Breakdown",
     "published_at": "2023-10-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T21:04:51.304977+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1357,12 +1357,12 @@
     "video_id": "8_K7NWTPSVI",
     "title": "UFC Fight Night Yusuff vs Barboza Predictions & Full Card Betting Breakdown UFC Vegas 81",
     "published_at": "2023-10-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:06:42.777844+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1370,12 +1370,12 @@
     "video_id": "xrJJr4je6XU",
     "title": "UFC Fight Night Dawson vs Green Predictions & Full Card Betting Breakdown UFC Vegas 80",
     "published_at": "2023-10-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:09:38.753660+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1383,12 +1383,12 @@
     "video_id": "Wy_tNKpVXX4",
     "title": "UFC Fight Night Fiziev vs Gamrot Predictions & Full Card Betting Breakdown UFC Vegas 79",
     "published_at": "2023-09-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:12:14.635880+00:00"
   },
   {
     "creator": "mma_guru",
