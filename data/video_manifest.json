@@ -11237,12 +11237,12 @@
     "video_id": "ILtgQORSz_Y",
     "title": "My Full Card Predictions & Breakdown For UFC Fight Night Ankalaev vs Walker 2",
     "published_at": "2024-01-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-09T01:20:48.365245+00:00"
   },
   {
     "creator": "lucas_tracy_mma",

@@ -3198,6 +3198,7 @@ function Admin() {
 								"Event",
 								"Fight",
 								"Predicted Winner",
+								"Actual Winner",
 								"Correct",
 								"Flagged",
 								"Actions"
@@ -3250,6 +3251,16 @@ function Admin() {
 											whiteSpace: "nowrap"
 										},
 										children: fight ? `${fight.fighter_a} vs ${fight.fighter_b}` : p.fight_id
+									}),
+									/* @__PURE__ */ jsx("td", {
+										style: {
+											padding: "0.5rem 0.875rem",
+											whiteSpace: "nowrap",
+											color: fight?.winner ? "var(--accent-green)" : "var(--muted)",
+											fontWeight: fight?.winner ? 600 : 400,
+											fontStyle: fight?.winner ? "normal" : "italic"
+										},
+										children: fight?.winner ?? "TBD"
 									}),
 									/* @__PURE__ */ jsx("td", {
 										style: {
