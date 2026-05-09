@@ -1537,7 +1537,7 @@ function Dashboard() {
 			children: "Loading data..."
 		}) : /* @__PURE__ */ jsxs(Fragment, { children: [
 			/* @__PURE__ */ jsxs("div", {
-				style: { marginBottom: "2rem" },
+				style: { marginBottom: "1rem" },
 				children: [
 					/* @__PURE__ */ jsx("p", {
 						style: {
@@ -1579,8 +1579,7 @@ function Dashboard() {
 						style: {
 							display: "flex",
 							alignItems: "center",
-							gap: "1rem",
-							flexWrap: "wrap"
+							justifyContent: "space-between"
 						},
 						children: [/* @__PURE__ */ jsx("h2", {
 							className: "leaderboard-heading",

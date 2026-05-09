@@ -473,12 +473,12 @@
     "video_id": "4gsvkNHr-VY",
     "title": "UFC Fight Night Usman vs Buckley Predictions & Full Card Breakdown - UFC Atlanta Betting Tips",
     "published_at": "2025-06-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:43:53.976610+00:00"
   },
   {
     "creator": "mma_guru",
@@ -486,12 +486,12 @@
     "video_id": "tiZV39LsFg8",
     "title": "UFC 316 Predictions Dvalishvili vs O'Malley 2 Full Card Betting Breakdown",
     "published_at": "2025-06-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:47:00.111291+00:00"
   },
   {
     "creator": "mma_guru",
