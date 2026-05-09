@@ -259,7 +259,14 @@ export function Admin() {
     <div style={{ minHeight: '100vh', background: 'var(--bg)', fontFamily: "'Manrope', sans-serif" }}>
       {/* Header */}
       <div style={{ background: 'var(--panel)', borderBottom: '1px solid var(--border)', padding: '0.75rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 50 }}>
-        <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--logo-red)', letterSpacing: '-0.01em' }}>OctaScore Admin</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--logo-red)', letterSpacing: '-0.01em' }}>OctaScore Admin</span>
+          {flagged.filter(f => !f.manually_resolved).length > 0 && (
+            <span style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--gold-primary)', background: 'rgba(245,197,66,0.1)', border: '1px solid rgba(245,197,66,0.3)', borderRadius: '4px', padding: '2px 8px' }}>
+              ⚠ {flagged.filter(f => !f.manually_resolved).length} pending review
+            </span>
+          )}
+        </div>
         <button onClick={() => { sessionStorage.removeItem('admin_pat'); setAuthed(false); }} style={btnMuted}>
           Log out
         </button>

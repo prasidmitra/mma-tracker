@@ -9,7 +9,7 @@ const SITE_URL = 'https://octascore.xyz';
 const OG_IMAGE = `${SITE_URL}/favicon.png`;
 
 export function Dashboard() {
-  const { events, predictions, flagged, loading } = useData();
+  const { events, predictions, loading } = useData();
   const [filters] = useFilters();
 
   const stats = useMemo(() => {
@@ -18,8 +18,6 @@ export function Dashboard() {
       .filter(s => s.eligible > 0)
       .sort((a, b) => b.accuracy - a.accuracy);
   }, [predictions, events, filters]);
-
-  const pendingFlags = flagged.filter(f => !f.manually_resolved).length;
 
   return (
     <div className="page-container" style={{ maxWidth: '1100px', margin: '0 auto', padding: '1.5rem' }}>
@@ -140,22 +138,6 @@ export function Dashboard() {
         Accuracy excludes pick'ems, cancelled fights, and predictions pending review
       </p>
 
-      {pendingFlags > 0 && (
-        <div style={{
-          border: '1px solid var(--gold-primary)',
-          background: 'rgba(245,197,66,0.07)',
-          borderRadius: '6px',
-          padding: '0.625rem 1rem',
-          marginTop: '1rem',
-          color: 'var(--gold-primary)',
-          fontSize: '0.8rem',
-          fontWeight: 500,
-          boxShadow: '0 0 16px rgba(245, 197, 66, 0.10)',
-          textAlign: 'center',
-        }}>
-          ⚠ {pendingFlags} prediction{pendingFlags !== 1 ? 's' : ''} pending manual review — excluded from accuracy calculations
-        </div>
-      )}
       </>
       )}
     </div>
