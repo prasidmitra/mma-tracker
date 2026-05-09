@@ -8,6 +8,7 @@ import { eligiblePredictions } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { applyFilters, getCreatorStats, calcBaselineAccuracy, ALL_CREATORS, CREATOR_DISPLAY, CREATOR_YOUTUBE_URL, formatPct, getAccuracyColor } from '../utils/accuracy';
 import { ReportModal } from '../components/ReportModal';
+import { InfoTooltip } from '../components/InfoTooltip';
 import { useFilterDrawer } from '../components/Layout';
 import type { Prediction, Event, Fight } from '../types';
 
@@ -248,54 +249,59 @@ export function CreatorDetail() {
         </div>
       </div>
 
-      {/* Header */}
+      {/* Header: avatar on top (mobile) or left (desktop), then 3 blocks always side-by-side */}
       <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: mobilePortrait ? 'column' : 'row', alignItems: mobilePortrait ? 'flex-start' : 'flex-end', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
         <AvatarBox creator={creator} size={mobilePortrait ? 112 : 80} />
 
-        {/* Block 1: name (top) + accuracy % (bottom) */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <h1 style={{ fontSize: '1.6rem', fontWeight: 800, margin: 0 }}>
-            {CREATOR_YOUTUBE_URL[creator] ? (
-              <a
-                href={CREATOR_YOUTUBE_URL[creator]}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'var(--logo-red)', textDecoration: 'none', transition: 'color 0.15s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--secondary)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--logo-red)')}
-              >
-                {CREATOR_DISPLAY[creator]}
-              </a>
-            ) : CREATOR_DISPLAY[creator]}
-          </h1>
-          <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
-            {formatPct(stats.accuracy)}
-          </span>
-        </div>
+        {/* Inner row: 3 blocks always side-by-side on both mobile and desktop */}
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-end', gap: mobilePortrait ? '0.75rem' : '1.5rem' }}>
 
-        {/* Block 2: W-L (top) + eligible picks (bottom) — height matches accuracy number */}
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: mobilePortrait ? 'auto' : '2.5rem', gap: mobilePortrait ? '0.2rem' : 0 }}>
-          <div style={{ fontWeight: 600, fontSize: '0.9rem', lineHeight: 1 }}>
-            <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
-            <span style={{ color: 'var(--text-secondary)' }}> - </span>
-            <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
-          </div>
-          <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', lineHeight: 1 }}>
-            {stats.eligible} eligible picks
-          </div>
-        </div>
-
-        {/* Block 3: Betting Favorite label (top) + baseline accuracy (bottom) — same height */}
-        {baseline.total > 0 && (
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: mobilePortrait ? 'auto' : '2.5rem', gap: mobilePortrait ? '0.2rem' : 0 }}>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', lineHeight: 1 }}>
-              Betting Favorite
-            </div>
-            <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700, fontSize: '0.9rem', lineHeight: 1 }}>
-              {formatPct(baseline.accuracy)}
+          {/* Block 1: name (top) + accuracy % (bottom) */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+            <h1 style={{ fontSize: '1.6rem', fontWeight: 800, margin: 0 }}>
+              {CREATOR_YOUTUBE_URL[creator] ? (
+                <a
+                  href={CREATOR_YOUTUBE_URL[creator]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--logo-red)', textDecoration: 'none', transition: 'color 0.15s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--secondary)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--logo-red)')}
+                >
+                  {CREATOR_DISPLAY[creator]}
+                </a>
+              ) : CREATOR_DISPLAY[creator]}
+            </h1>
+            <span style={{ fontSize: '2.5rem', fontWeight: 800, color: getAccuracyColor(stats.accuracy), lineHeight: 1 }}>
+              {formatPct(stats.accuracy)}
             </span>
           </div>
-        )}
+
+          {/* Block 2: Baseline label+icon (top) + baseline accuracy (bottom) */}
+          {baseline.total > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '2.5rem' }}>
+              <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', lineHeight: 1 }}>
+                Baseline<InfoTooltip />
+              </div>
+              <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 700, fontSize: '0.9rem', lineHeight: 1 }}>
+                {formatPct(baseline.accuracy)}
+              </span>
+            </div>
+          )}
+
+          {/* Block 3: W-L (top) + eligible picks (bottom) */}
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '2.5rem' }}>
+            <div style={{ fontWeight: 600, fontSize: '0.9rem', lineHeight: 1 }}>
+              <span style={{ color: 'var(--accent-green)' }}>{stats.correct}</span>
+              <span style={{ color: 'var(--text-secondary)' }}> - </span>
+              <span style={{ color: 'var(--accent-red)' }}>{stats.incorrect}</span>
+            </div>
+            <div style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', lineHeight: 1 }}>
+              {stats.eligible} eligible picks
+            </div>
+          </div>
+
+        </div>
       </div>
 
       {CREATOR_BIO[creator] && (

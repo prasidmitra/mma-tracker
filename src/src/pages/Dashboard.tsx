@@ -5,6 +5,7 @@ import { useData } from '../hooks/useData';
 import { useFilters } from '../hooks/useFilters';
 import { useIsMobile } from '../hooks/useIsMobile';
 import { useFilterDrawer } from '../components/Layout';
+import { InfoTooltip } from '../components/InfoTooltip';
 import { getCreatorStats, calcBaselineAccuracy, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
 
 const SITE_URL = 'https://octascore.xyz';
@@ -157,8 +158,7 @@ export function Dashboard() {
                 <tr style={{ borderTop: '2px solid var(--border)', opacity: 0.65 }}>
                   <td style={{ padding: '0.75rem 0.875rem', textAlign: 'center', color: 'var(--muted)', fontWeight: 600, fontSize: '0.85rem' }}>—</td>
                   <td className="mobile-creator-cell" style={{ padding: '0.75rem 0.875rem' }}>
-                    <span style={{ color: 'var(--muted)', fontWeight: 700, fontSize: '0.9rem' }}>Betting Favorite</span>
-                    <span style={{ color: 'var(--muted)', fontSize: '0.72rem', marginLeft: '0.4rem', fontWeight: 400 }}>baseline</span>
+                    <span style={{ color: 'var(--muted)', fontWeight: 700, fontSize: '0.9rem' }}>Baseline<InfoTooltip /></span>
                   </td>
                   <td style={{ padding: '0.75rem 0.875rem' }}>
                     <span style={{ color: getAccuracyColor(baseline.accuracy), fontWeight: 800, fontSize: '1.1rem' }}>
