@@ -408,12 +408,12 @@
     "video_id": "JvAdFoT3oTE",
     "title": "UFC Fight Night Whittaker vs De Ridder Predictions & Full Card Breakdown - UFC Abu Dhabi Betting",
     "published_at": "2025-07-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:31:41.590333+00:00"
   },
   {
     "creator": "mma_guru",
@@ -421,12 +421,12 @@
     "video_id": "VLuu1wBIUXo",
     "title": "UFC 318 Predictions Poirier vs Holloway 3 Full Card Betting Breakdown",
     "published_at": "2025-07-16",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:33:58.321368+00:00"
   },
   {
     "creator": "mma_guru",
@@ -434,12 +434,12 @@
     "video_id": "7YOcdpsF42o",
     "title": "UFC Fight Night Lewis vs Teixeira Predictions & Full Card Breakdown - UFC Nashville Betting Tips",
     "published_at": "2025-07-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:36:35.529764+00:00"
   },
   {
     "creator": "mma_guru",
@@ -447,12 +447,12 @@
     "video_id": "VeAtrutmXhM",
     "title": "UFC 317 Predictions Topuria vs Oliveira Full Card Betting Breakdown",
     "published_at": "2025-06-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:38:44.483201+00:00"
   },
   {
     "creator": "mma_guru",

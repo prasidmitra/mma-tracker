@@ -1895,263 +1895,265 @@ function ReportModal({ prediction, event, fight, onClose }) {
 			zIndex: 1001,
 			width: "100%",
 			maxWidth: "440px",
-			padding: "0 1rem",
-			animation: "octaModalIn 0.18s ease"
+			padding: "0 1rem"
 		},
-		children: /* @__PURE__ */ jsxs("div", {
-			style: {
-				background: "var(--panel)",
-				borderRadius: "12px",
-				border: "1px solid var(--border)",
-				padding: "1.5rem",
-				boxShadow: "0 24px 64px rgba(0,0,0,0.6)"
-			},
-			children: [
-				/* @__PURE__ */ jsx("h2", {
-					style: {
-						fontSize: "1rem",
-						fontWeight: 800,
-						marginBottom: "1.25rem",
-						color: "var(--text)"
-					},
-					children: "Report a Data Issue"
-				}),
-				/* @__PURE__ */ jsx("div", {
-					style: {
-						background: "var(--bg)",
-						borderRadius: "6px",
-						padding: "0.75rem 1rem",
-						marginBottom: "1.25rem",
-						display: "flex",
-						flexDirection: "column",
-						gap: "0.35rem"
-					},
-					children: [
-						{
-							label: "Creator",
-							value: creatorName
-						},
-						{
-							label: "Event",
-							value: event.name
-						},
-						{
-							label: "Fight",
-							value: fightName
-						}
-					].map(({ label, value }) => /* @__PURE__ */ jsxs("div", {
+		children: /* @__PURE__ */ jsx("div", {
+			style: { animation: "octaModalIn 0.18s ease" },
+			children: /* @__PURE__ */ jsxs("div", {
+				style: {
+					background: "var(--panel)",
+					borderRadius: "12px",
+					border: "1px solid var(--border)",
+					padding: "1.5rem",
+					boxShadow: "0 24px 64px rgba(0,0,0,0.6)"
+				},
+				children: [
+					/* @__PURE__ */ jsx("h2", {
 						style: {
-							display: "flex",
-							gap: "0.5rem",
-							fontSize: "0.83rem"
+							fontSize: "1rem",
+							fontWeight: 800,
+							marginBottom: "1.25rem",
+							color: "var(--text)"
 						},
-						children: [/* @__PURE__ */ jsx("span", {
-							style: {
-								color: "var(--muted)",
-								minWidth: "54px",
-								flexShrink: 0
+						children: "Report a Data Issue"
+					}),
+					/* @__PURE__ */ jsx("div", {
+						style: {
+							background: "var(--bg)",
+							borderRadius: "6px",
+							padding: "0.75rem 1rem",
+							marginBottom: "1.25rem",
+							display: "flex",
+							flexDirection: "column",
+							gap: "0.35rem"
+						},
+						children: [
+							{
+								label: "Creator",
+								value: creatorName
 							},
-							children: label
-						}), /* @__PURE__ */ jsx("span", {
-							style: {
-								color: "var(--text)",
-								fontWeight: 500
+							{
+								label: "Event",
+								value: event.name
 							},
-							children: value
-						})]
-					}, label))
-				}),
-				submitted ? /* @__PURE__ */ jsx("div", {
-					style: {
-						color: "var(--accent-green)",
-						fontSize: "0.9rem",
-						fontWeight: 600,
-						textAlign: "center",
-						padding: "1.25rem 0"
-					},
-					children: "✓ Thank you — your report has been submitted"
-				}) : /* @__PURE__ */ jsxs("form", {
-					onSubmit: handleSubmit,
-					children: [
-						/* @__PURE__ */ jsxs("div", {
-							style: { marginBottom: "1rem" },
-							children: [
-								/* @__PURE__ */ jsxs("label", {
-									style: labelStyle,
-									children: ["What's wrong? ", /* @__PURE__ */ jsx("span", {
-										style: { color: "var(--danger)" },
-										children: "*"
-									})]
-								}),
-								/* @__PURE__ */ jsxs("div", {
-									style: { position: "relative" },
-									children: [
-										reasonOpen && /* @__PURE__ */ jsx("div", {
-											style: {
-												position: "fixed",
-												inset: 0,
-												zIndex: 10
-											},
-											onClick: () => setReasonOpen(false)
-										}),
-										/* @__PURE__ */ jsxs("button", {
-											type: "button",
-											onClick: () => setReasonOpen((o) => !o),
-											style: {
-												...fieldBase,
-												border: `1px solid ${reasonError ? "var(--danger)" : "var(--border)"}`,
-												display: "flex",
-												alignItems: "center",
-												justifyContent: "space-between",
-												cursor: "pointer",
-												textAlign: "left",
-												color: reason ? "var(--text)" : "var(--muted)"
-											},
-											children: [/* @__PURE__ */ jsx("span", { children: reason || "Select a reason…" }), /* @__PURE__ */ jsx("span", {
-												style: {
-													fontSize: "0.75rem",
-													color: "var(--muted)",
-													marginLeft: "0.5rem",
-													flexShrink: 0
-												},
-												children: "▾"
-											})]
-										}),
-										reasonOpen && /* @__PURE__ */ jsx("div", {
-											style: {
-												position: "absolute",
-												top: "calc(100% + 4px)",
-												left: 0,
-												right: 0,
-												background: "var(--panel)",
-												border: "1px solid var(--border)",
-												borderRadius: "8px",
-												overflow: "hidden",
-												boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
-												zIndex: 11
-											},
-											children: REASONS.map((r) => /* @__PURE__ */ jsx("button", {
-												type: "button",
-												onClick: () => {
-													setReason(r);
-													setReasonOpen(false);
-													setReasonError("");
-												},
-												style: {
-													display: "block",
-													width: "100%",
-													textAlign: "left",
-													padding: "0.6rem 0.875rem",
-													background: r === reason ? "var(--secondary)" : "none",
-													border: "none",
-													color: r === reason ? "#fff" : "var(--text)",
-													fontSize: "0.875rem",
-													fontFamily: "'Manrope', sans-serif",
-													fontWeight: r === reason ? 600 : 400,
-													cursor: "pointer"
-												},
-												onMouseEnter: (e) => {
-													if (r !== reason) e.currentTarget.style.background = "rgba(255,255,255,0.07)";
-												},
-												onMouseLeave: (e) => {
-													if (r !== reason) e.currentTarget.style.background = "none";
-												},
-												children: r
-											}, r))
-										})
-									]
-								}),
-								reasonError && /* @__PURE__ */ jsx("div", {
-									style: {
-										color: "var(--danger)",
-										fontSize: "0.78rem",
-										marginTop: "0.3rem"
-									},
-									children: reasonError
-								})
-							]
-						}),
-						/* @__PURE__ */ jsxs("div", {
-							style: { marginBottom: "1.25rem" },
-							children: [
-								/* @__PURE__ */ jsxs("label", {
-									style: labelStyle,
-									children: [
-										"Additional notes",
-										" ",
-										/* @__PURE__ */ jsx("span", {
-											style: {
-												textTransform: "none",
-												letterSpacing: 0,
-												fontWeight: 400
-											},
-											children: "(optional)"
-										})
-									]
-								}),
-								/* @__PURE__ */ jsx("textarea", {
-									value: notes,
-									onChange: (e) => setNotes(e.target.value.slice(0, 200)),
-									rows: 3,
-									placeholder: "Any extra context…",
-									style: {
-										...fieldBase,
-										resize: "vertical",
-										lineHeight: 1.6,
-										colorScheme: "dark"
-									}
-								}),
-								/* @__PURE__ */ jsxs("div", {
-									style: {
-										fontSize: "0.72rem",
-										color: "var(--muted)",
-										textAlign: "right",
-										marginTop: "0.2rem"
-									},
-									children: [notes.length, " / 200"]
-								})
-							]
-						}),
-						/* @__PURE__ */ jsxs("div", {
+							{
+								label: "Fight",
+								value: fightName
+							}
+						].map(({ label, value }) => /* @__PURE__ */ jsxs("div", {
 							style: {
 								display: "flex",
-								gap: "0.75rem",
-								justifyContent: "flex-end"
+								gap: "0.5rem",
+								fontSize: "0.83rem"
 							},
-							children: [/* @__PURE__ */ jsx("button", {
-								type: "button",
-								onClick: onClose,
+							children: [/* @__PURE__ */ jsx("span", {
 								style: {
-									padding: "0.5rem 1rem",
-									background: "var(--row-alt)",
-									border: "1px solid var(--border)",
-									borderRadius: "6px",
 									color: "var(--muted)",
-									fontSize: "0.85rem",
-									fontWeight: 600,
-									cursor: "pointer",
-									fontFamily: "'Manrope', sans-serif"
+									minWidth: "54px",
+									flexShrink: 0
 								},
-								children: "Cancel"
-							}), /* @__PURE__ */ jsx("button", {
-								type: "submit",
+								children: label
+							}), /* @__PURE__ */ jsx("span", {
 								style: {
-									padding: "0.5rem 1.25rem",
-									background: "var(--primary)",
-									border: "none",
-									borderRadius: "6px",
-									color: "#fff",
-									fontSize: "0.85rem",
-									fontWeight: 700,
-									cursor: "pointer",
-									fontFamily: "'Manrope', sans-serif"
+									color: "var(--text)",
+									fontWeight: 500
 								},
-								children: "Submit"
+								children: value
 							})]
-						})
-					]
-				})
-			]
+						}, label))
+					}),
+					submitted ? /* @__PURE__ */ jsx("div", {
+						style: {
+							color: "var(--accent-green)",
+							fontSize: "0.9rem",
+							fontWeight: 600,
+							textAlign: "center",
+							padding: "1.25rem 0"
+						},
+						children: "✓ Thank you — your report has been submitted"
+					}) : /* @__PURE__ */ jsxs("form", {
+						onSubmit: handleSubmit,
+						children: [
+							/* @__PURE__ */ jsxs("div", {
+								style: { marginBottom: "1rem" },
+								children: [
+									/* @__PURE__ */ jsxs("label", {
+										style: labelStyle,
+										children: ["What's wrong? ", /* @__PURE__ */ jsx("span", {
+											style: { color: "var(--danger)" },
+											children: "*"
+										})]
+									}),
+									/* @__PURE__ */ jsxs("div", {
+										style: { position: "relative" },
+										children: [
+											reasonOpen && /* @__PURE__ */ jsx("div", {
+												style: {
+													position: "fixed",
+													inset: 0,
+													zIndex: 10
+												},
+												onClick: () => setReasonOpen(false)
+											}),
+											/* @__PURE__ */ jsxs("button", {
+												type: "button",
+												onClick: () => setReasonOpen((o) => !o),
+												style: {
+													...fieldBase,
+													border: `1px solid ${reasonError ? "var(--danger)" : "var(--border)"}`,
+													display: "flex",
+													alignItems: "center",
+													justifyContent: "space-between",
+													cursor: "pointer",
+													textAlign: "left",
+													color: reason ? "var(--text)" : "var(--muted)"
+												},
+												children: [/* @__PURE__ */ jsx("span", { children: reason || "Select a reason…" }), /* @__PURE__ */ jsx("span", {
+													style: {
+														fontSize: "0.75rem",
+														color: "var(--muted)",
+														marginLeft: "0.5rem",
+														flexShrink: 0
+													},
+													children: "▾"
+												})]
+											}),
+											reasonOpen && /* @__PURE__ */ jsx("div", {
+												style: {
+													position: "absolute",
+													top: "calc(100% + 4px)",
+													left: 0,
+													right: 0,
+													background: "var(--panel)",
+													border: "1px solid var(--border)",
+													borderRadius: "8px",
+													overflow: "hidden",
+													boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+													zIndex: 11
+												},
+												children: REASONS.map((r) => /* @__PURE__ */ jsx("button", {
+													type: "button",
+													onClick: () => {
+														setReason(r);
+														setReasonOpen(false);
+														setReasonError("");
+													},
+													style: {
+														display: "block",
+														width: "100%",
+														textAlign: "left",
+														padding: "0.6rem 0.875rem",
+														background: r === reason ? "var(--secondary)" : "none",
+														border: "none",
+														color: r === reason ? "#fff" : "var(--text)",
+														fontSize: "0.875rem",
+														fontFamily: "'Manrope', sans-serif",
+														fontWeight: r === reason ? 600 : 400,
+														cursor: "pointer"
+													},
+													onMouseEnter: (e) => {
+														if (r !== reason) e.currentTarget.style.background = "rgba(255,255,255,0.07)";
+													},
+													onMouseLeave: (e) => {
+														if (r !== reason) e.currentTarget.style.background = "none";
+													},
+													children: r
+												}, r))
+											})
+										]
+									}),
+									reasonError && /* @__PURE__ */ jsx("div", {
+										style: {
+											color: "var(--danger)",
+											fontSize: "0.78rem",
+											marginTop: "0.3rem"
+										},
+										children: reasonError
+									})
+								]
+							}),
+							/* @__PURE__ */ jsxs("div", {
+								style: { marginBottom: "1.25rem" },
+								children: [
+									/* @__PURE__ */ jsxs("label", {
+										style: labelStyle,
+										children: [
+											"Additional notes",
+											" ",
+											/* @__PURE__ */ jsx("span", {
+												style: {
+													textTransform: "none",
+													letterSpacing: 0,
+													fontWeight: 400
+												},
+												children: "(optional)"
+											})
+										]
+									}),
+									/* @__PURE__ */ jsx("textarea", {
+										value: notes,
+										onChange: (e) => setNotes(e.target.value.slice(0, 200)),
+										rows: 3,
+										placeholder: "Any extra context…",
+										style: {
+											...fieldBase,
+											resize: "vertical",
+											lineHeight: 1.6,
+											colorScheme: "dark"
+										}
+									}),
+									/* @__PURE__ */ jsxs("div", {
+										style: {
+											fontSize: "0.72rem",
+											color: "var(--muted)",
+											textAlign: "right",
+											marginTop: "0.2rem"
+										},
+										children: [notes.length, " / 200"]
+									})
+								]
+							}),
+							/* @__PURE__ */ jsxs("div", {
+								style: {
+									display: "flex",
+									gap: "0.75rem",
+									justifyContent: "flex-end"
+								},
+								children: [/* @__PURE__ */ jsx("button", {
+									type: "button",
+									onClick: onClose,
+									style: {
+										padding: "0.5rem 1rem",
+										background: "var(--row-alt)",
+										border: "1px solid var(--border)",
+										borderRadius: "6px",
+										color: "var(--muted)",
+										fontSize: "0.85rem",
+										fontWeight: 600,
+										cursor: "pointer",
+										fontFamily: "'Manrope', sans-serif"
+									},
+									children: "Cancel"
+								}), /* @__PURE__ */ jsx("button", {
+									type: "submit",
+									style: {
+										padding: "0.5rem 1.25rem",
+										background: "var(--primary)",
+										border: "none",
+										borderRadius: "6px",
+										color: "#fff",
+										fontSize: "0.85rem",
+										fontWeight: 700,
+										cursor: "pointer",
+										fontFamily: "'Manrope', sans-serif"
+									},
+									children: "Submit"
+								})]
+							})
+						]
+					})
+				]
+			})
 		})
 	})] });
 }
@@ -2607,31 +2609,12 @@ function CreatorDetail() {
 								justifyContent: "space-between",
 								alignItems: "center"
 							},
-							children: [/* @__PURE__ */ jsxs("span", {
+							children: [/* @__PURE__ */ jsx("span", {
 								style: {
 									color: "var(--muted)",
-									fontSize: "0.72rem",
-									display: "flex",
-									alignItems: "center",
-									gap: "0.3rem"
+									fontSize: "0.72rem"
 								},
-								children: [
-									/* @__PURE__ */ jsx("span", {
-										style: {
-											textTransform: "uppercase",
-											letterSpacing: "0.05em"
-										},
-										children: event.event_type === "ppv" ? "PPV" : "Fight Night"
-									}),
-									/* @__PURE__ */ jsx("span", {
-										style: {
-											fontSize: "0.85rem",
-											opacity: .7
-										},
-										children: "•"
-									}),
-									/* @__PURE__ */ jsx("span", { children: eventDateShort })
-								]
+								children: eventDateShort
 							}), eventAcc !== null && /* @__PURE__ */ jsxs("span", {
 								style: {
 									color: getAccuracyColor(eventAcc),
@@ -2682,24 +2665,6 @@ function CreatorDetail() {
 											fontSize: "0.8rem"
 										},
 										children: eventDate
-									}),
-									/* @__PURE__ */ jsx("span", {
-										style: {
-											color: "var(--muted)",
-											fontSize: "1.3rem",
-											lineHeight: 1,
-											opacity: .8
-										},
-										children: "•"
-									}),
-									/* @__PURE__ */ jsx("span", {
-										style: {
-											color: "var(--text-secondary)",
-											fontSize: "0.8rem",
-											textTransform: "uppercase",
-											letterSpacing: "0.05em"
-										},
-										children: event.event_type || "Fight Night"
 									})
 								]
 							}), /* @__PURE__ */ jsxs("div", {
