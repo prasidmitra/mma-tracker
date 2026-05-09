@@ -1829,6 +1829,7 @@ var REASONS = [
 ];
 function ReportModal({ prediction, event, fight, onClose }) {
 	const [reason, setReason] = useState("");
+	const [reasonOpen, setReasonOpen] = useState(false);
 	const [notes, setNotes] = useState("");
 	const [reasonError, setReasonError] = useState("");
 	const [submitted, setSubmitted] = useState(false);
@@ -1864,6 +1865,17 @@ function ReportModal({ prediction, event, fight, onClose }) {
 		textTransform: "uppercase",
 		letterSpacing: "0.07em",
 		marginBottom: "0.35rem"
+	};
+	const fieldBase = {
+		width: "100%",
+		padding: "0.5rem 0.75rem",
+		background: "var(--bg)",
+		border: "1px solid var(--border)",
+		borderRadius: "6px",
+		color: "var(--text)",
+		fontSize: "0.875rem",
+		fontFamily: "'Manrope', sans-serif",
+		outline: "none"
 	};
 	return /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsx("div", {
 		onClick: onClose,
@@ -1971,30 +1983,83 @@ function ReportModal({ prediction, event, fight, onClose }) {
 										children: "*"
 									})]
 								}),
-								/* @__PURE__ */ jsxs("select", {
-									value: reason,
-									onChange: (e) => {
-										setReason(e.target.value);
-										setReasonError("");
-									},
-									style: {
-										width: "100%",
-										padding: "0.5rem 0.75rem",
-										background: "var(--bg)",
-										border: `1px solid ${reasonError ? "var(--danger)" : "var(--border)"}`,
-										borderRadius: "6px",
-										color: reason ? "var(--text)" : "var(--muted)",
-										fontSize: "0.875rem",
-										fontFamily: "'Manrope', sans-serif",
-										outline: "none"
-									},
-									children: [/* @__PURE__ */ jsx("option", {
-										value: "",
-										children: "Select a reason…"
-									}), REASONS.map((r) => /* @__PURE__ */ jsx("option", {
-										value: r,
-										children: r
-									}, r))]
+								/* @__PURE__ */ jsxs("div", {
+									style: { position: "relative" },
+									children: [
+										reasonOpen && /* @__PURE__ */ jsx("div", {
+											style: {
+												position: "fixed",
+												inset: 0,
+												zIndex: 10
+											},
+											onClick: () => setReasonOpen(false)
+										}),
+										/* @__PURE__ */ jsxs("button", {
+											type: "button",
+											onClick: () => setReasonOpen((o) => !o),
+											style: {
+												...fieldBase,
+												border: `1px solid ${reasonError ? "var(--danger)" : "var(--border)"}`,
+												display: "flex",
+												alignItems: "center",
+												justifyContent: "space-between",
+												cursor: "pointer",
+												textAlign: "left",
+												color: reason ? "var(--text)" : "var(--muted)"
+											},
+											children: [/* @__PURE__ */ jsx("span", { children: reason || "Select a reason…" }), /* @__PURE__ */ jsx("span", {
+												style: {
+													fontSize: "0.75rem",
+													color: "var(--muted)",
+													marginLeft: "0.5rem",
+													flexShrink: 0
+												},
+												children: "▾"
+											})]
+										}),
+										reasonOpen && /* @__PURE__ */ jsx("div", {
+											style: {
+												position: "absolute",
+												top: "calc(100% + 4px)",
+												left: 0,
+												right: 0,
+												background: "var(--panel)",
+												border: "1px solid var(--border)",
+												borderRadius: "8px",
+												overflow: "hidden",
+												boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+												zIndex: 11
+											},
+											children: REASONS.map((r) => /* @__PURE__ */ jsx("button", {
+												type: "button",
+												onClick: () => {
+													setReason(r);
+													setReasonOpen(false);
+													setReasonError("");
+												},
+												style: {
+													display: "block",
+													width: "100%",
+													textAlign: "left",
+													padding: "0.6rem 0.875rem",
+													background: r === reason ? "var(--secondary)" : "none",
+													border: "none",
+													color: r === reason ? "#fff" : "var(--text)",
+													fontSize: "0.875rem",
+													fontFamily: "'Manrope', sans-serif",
+													fontWeight: r === reason ? 600 : 400,
+													cursor: "pointer"
+												},
+												onMouseEnter: (e) => {
+													if (r !== reason) e.currentTarget.style.background = "rgba(255,255,255,0.07)";
+												},
+												onMouseLeave: (e) => {
+													if (r !== reason) e.currentTarget.style.background = "none";
+												},
+												children: r
+											}, r))
+										})
+									]
 								}),
 								reasonError && /* @__PURE__ */ jsx("div", {
 									style: {
@@ -2030,17 +2095,10 @@ function ReportModal({ prediction, event, fight, onClose }) {
 									rows: 3,
 									placeholder: "Any extra context…",
 									style: {
-										width: "100%",
-										padding: "0.5rem 0.75rem",
+										...fieldBase,
 										resize: "vertical",
-										background: "var(--bg)",
-										border: "1px solid var(--border)",
-										borderRadius: "6px",
-										color: "var(--text)",
-										fontSize: "0.875rem",
-										fontFamily: "'Manrope', sans-serif",
-										outline: "none",
-										lineHeight: 1.5
+										lineHeight: 1.6,
+										colorScheme: "dark"
 									}
 								}),
 								/* @__PURE__ */ jsxs("div", {

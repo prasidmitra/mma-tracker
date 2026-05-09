@@ -382,12 +382,12 @@
     "video_id": "1DugpLCba3M",
     "title": "UFC Fight Night Dolidze vs Hernandez Predictions & Full Card Breakdown - UFC Vegas 109 Betting Tips",
     "published_at": "2025-08-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:26:20.079119+00:00"
   },
   {
     "creator": "mma_guru",
@@ -395,12 +395,12 @@
     "video_id": "LYCCCfncbQY",
     "title": "UFC Fight Night Taira vs Park Predictions & Full Card Breakdown - UFC Vegas 108 Betting Tips",
     "published_at": "2025-07-31",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T02:29:15.114127+00:00"
   },
   {
     "creator": "mma_guru",
