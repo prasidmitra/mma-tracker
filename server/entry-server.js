@@ -1501,7 +1501,7 @@ function Layout() {
 var SITE_URL$2 = "https://octascore.xyz";
 var OG_IMAGE$1 = `${SITE_URL$2}/favicon.png`;
 function Dashboard() {
-	const { events, predictions, flagged, loading } = useData();
+	const { events, predictions, loading } = useData();
 	const [filters] = useFilters();
 	const stats = useMemo(() => {
 		return ALL_CREATORS.map((slug) => getCreatorStats(slug, predictions, events, filters)).filter((s) => s.eligible > 0).sort((a, b) => b.accuracy - a.accuracy);
@@ -1510,7 +1510,6 @@ function Dashboard() {
 		events,
 		filters
 	]);
-	const pendingFlags = flagged.filter((f) => !f.manually_resolved).length;
 	return /* @__PURE__ */ jsxs("div", {
 		className: "page-container",
 		style: {
@@ -1792,27 +1791,6 @@ function Dashboard() {
 					textAlign: "center"
 				},
 				children: "Accuracy excludes pick'ems, cancelled fights, and predictions pending review"
-			}),
-			pendingFlags > 0 && /* @__PURE__ */ jsxs("div", {
-				style: {
-					border: "1px solid var(--gold-primary)",
-					background: "rgba(245,197,66,0.07)",
-					borderRadius: "6px",
-					padding: "0.625rem 1rem",
-					marginTop: "1rem",
-					color: "var(--gold-primary)",
-					fontSize: "0.8rem",
-					fontWeight: 500,
-					boxShadow: "0 0 16px rgba(245, 197, 66, 0.10)",
-					textAlign: "center"
-				},
-				children: [
-					"⚠ ",
-					pendingFlags,
-					" prediction",
-					pendingFlags !== 1 ? "s" : "",
-					" pending manual review — excluded from accuracy calculations"
-				]
 			})
 		] })]
 	});
@@ -3387,14 +3365,36 @@ function Admin() {
 					top: 0,
 					zIndex: 50
 				},
-				children: [/* @__PURE__ */ jsx("span", {
+				children: [/* @__PURE__ */ jsxs("div", {
 					style: {
-						fontWeight: 800,
-						fontSize: "0.95rem",
-						color: "var(--logo-red)",
-						letterSpacing: "-0.01em"
+						display: "flex",
+						alignItems: "center",
+						gap: "1rem"
 					},
-					children: "OctaScore Admin"
+					children: [/* @__PURE__ */ jsx("span", {
+						style: {
+							fontWeight: 800,
+							fontSize: "0.95rem",
+							color: "var(--logo-red)",
+							letterSpacing: "-0.01em"
+						},
+						children: "OctaScore Admin"
+					}), flagged.filter((f) => !f.manually_resolved).length > 0 && /* @__PURE__ */ jsxs("span", {
+						style: {
+							fontSize: "0.78rem",
+							fontWeight: 600,
+							color: "var(--gold-primary)",
+							background: "rgba(245,197,66,0.1)",
+							border: "1px solid rgba(245,197,66,0.3)",
+							borderRadius: "4px",
+							padding: "2px 8px"
+						},
+						children: [
+							"⚠ ",
+							flagged.filter((f) => !f.manually_resolved).length,
+							" pending review"
+						]
+					})]
 				}), /* @__PURE__ */ jsx("button", {
 					onClick: () => {
 						sessionStorage.removeItem("admin_pat");
