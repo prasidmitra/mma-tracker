@@ -1,11 +1,24 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, ReferenceLine,
 } from 'recharts';
 import { applyFilters, CREATOR_DISPLAY } from '../utils/accuracy';
 import { eligiblePredictions } from '../hooks/useData';
+import { useIsMobile } from '../hooks/useIsMobile';
 import type { Event, Prediction, Filters } from '../types';
+
+function useIsPortrait(): boolean {
+  const [portrait, setPortrait] = useState(
+    () => typeof window !== 'undefined' && window.innerWidth < window.innerHeight
+  );
+  useEffect(() => {
+    const handler = () => setPortrait(window.innerWidth < window.innerHeight);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
+  return portrait;
+}
 
 const CREATOR_COLORS: Record<string, string> = {
   mma_guru:        '#a78bfa',
@@ -111,6 +124,8 @@ interface Props {
 
 export function AccuracyChart({ events, predictions, filters, activeCreators }: Props) {
   const [hidden, setHidden] = useState<Set<string>>(new Set());
+  const isMobile = useIsMobile();
+  const isPortrait = useIsPortrait();
 
   const chartData = useMemo(() => {
     const filtered = events
@@ -145,13 +160,20 @@ export function AccuracyChart({ events, predictions, filters, activeCreators }: 
       .filter(p => activeCreators.some(slug => p[slug] !== undefined));
   }, [events, predictions, filters, activeCreators]);
 
-  const quarterTicks = useMemo(() => {
-    if (chartData.length < 2) return [];
-    const timestamps = chartData.map(d => d.timestamp as number);
-    return getQuarterTicks(Math.min(...timestamps), Math.max(...timestamps));
-  }, [chartData]);
+  const plotData = useMemo(() => {
+    const isAllTime = filters.year === 'all';
+    const step = isAllTime && isMobile && isPortrait ? 10 : 2;
+    if (step <= 1) return chartData;
+    return chartData.filter((_, i) => i % step === 0 || i === chartData.length - 1);
+  }, [chartData, filters.year, isMobile, isPortrait]);
 
-  if (chartData.length < 2) return null;
+  const quarterTicks = useMemo(() => {
+    if (plotData.length < 2) return [];
+    const timestamps = plotData.map(d => d.timestamp as number);
+    return getQuarterTicks(Math.min(...timestamps), Math.max(...timestamps));
+  }, [plotData]);
+
+  if (plotData.length < 2) return null;
 
   const toggleCreator = (slug: string) => {
     setHidden(prev => {
@@ -200,7 +222,7 @@ export function AccuracyChart({ events, predictions, filters, activeCreators }: 
       </div>
 
       <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={chartData} margin={{ top: 4, right: 16, left: 0, bottom: 8 }}>
+        <LineChart data={plotData} margin={{ top: 4, right: 16, left: 0, bottom: 8 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
           <XAxis
             dataKey="timestamp"

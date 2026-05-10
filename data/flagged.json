@@ -376,5 +376,47 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0028",
+    "creator": "mma_joey",
+    "event_id": "ufc-288",
+    "fight_id": "ufc-288-andrade-xiaonan",
+    "video_id": "93rB-fYbxI4",
+    "ambiguity_reason": "Creator made contradictory statements: first picking Jessica Andrade to win, then agreeing Xiaonan is not ready for competition, creating ambiguity about final pick",
+    "raw_excerpt": "I think Jessica wins...Verna and Yan are not ready for this level of competition...I would agree with you",
+    "suggested_winner": "Yan Xiaonan",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0029",
+    "creator": "mma_joey",
+    "event_id": "ufc-285",
+    "fight_id": "ufc-285-nickal-pickett",
+    "video_id": "nole6uWQETM",
+    "ambiguity_reason": "Creator places a bet on Pickett to win but phrasing is unclear regarding final pick. The statement 'Nico versus pick it prop bet plus 200 for any fighter to get a KO' could indicate betting on Pickett or betting against him.",
+    "raw_excerpt": "I put a a two dollar parlay on Jamie Pickett and Alexa Grasso to win... Nico versus pick it prop bet plus 200",
+    "suggested_winner": "Bo Nickal",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0030",
+    "creator": "mma_joey",
+    "event_id": "ufc-296",
+    "fight_id": "ufc-296-o'neill-silva",
+    "video_id": "NbJK8adA2W4",
+    "ambiguity_reason": "Creator calls fighter 'lipsky' (not on card) but context makes clear this is Casey O'Neill vs. Ariane da Silva fight; 'lipsky' appears to be auto-caption error for fighter name not verified in alias table.",
+    "raw_excerpt": "I'm going to go lipsky via decision...gets it done with her striking movement",
+    "suggested_winner": "Ariane da Silva",
+    "confidence_in_suggestion": "medium",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

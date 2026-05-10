@@ -4750,12 +4750,12 @@
     "video_id": "Cg_Efus6OY0",
     "title": "UFC 296 Predictions, Covington Must Win? Ian Machado Garry Skips The Presser? - Livestream",
     "published_at": "2023-12-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 5,
+    "processed_at": "2026-05-10T02:56:14.579849+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4763,12 +4763,12 @@
     "video_id": "IzDAgbO5fFM",
     "title": "UFC 300 Main Event? Edwards vs Covington, UFC 296 Predictions - Livestream",
     "published_at": "2023-12-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-10T02:58:40.879434+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4776,12 +4776,12 @@
     "video_id": "hEoyYIk6kAs",
     "title": "Makhachev vs Gaethje, Ian Garry Bigger Draw Than Colby, UFC Predictions - Livestream",
     "published_at": "2023-12-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T03:01:07.759082+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4789,12 +4789,12 @@
     "video_id": "fZWJ_a0WlBc",
     "title": "UFC Vegas 82 Brendan Allen vs Paul Craig Full Card Predictions",
     "published_at": "2023-11-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:03:46.687567+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4802,12 +4802,12 @@
     "video_id": "BNAup1lzisg",
     "title": "UFC 295 Predictions, Jamahal Hill Coming Over? Prochazka vs Pereira - Live chat #134",
     "published_at": "2023-11-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-10T03:06:03.836738+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4815,12 +4815,12 @@
     "video_id": "UL_WKBYLjn8",
     "title": "UFC Brazil Jailton Almeida vs. Derrick Lewis Full Card Predictions",
     "published_at": "2023-10-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:09:00.822738+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4828,12 +4828,12 @@
     "video_id": "yHQER56aFqk",
     "title": "Makhachev vs Volkanovski, Chimaev vs Strickland, UFC 294 Predictions - Livestream",
     "published_at": "2023-10-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T03:11:18.759038+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4841,12 +4841,12 @@
     "video_id": "EbA8I9EZox8",
     "title": "UFC Vegas 81 Sodiq Yusuff vs. Edson Barboza Full Card Predictions",
     "published_at": "2023-10-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:13:26.438600+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4854,12 +4854,12 @@
     "video_id": "M19n3GdM53w",
     "title": "McGregor Re-Enters USADA? Strickland vs Chimaev, UFC Predictions - Livechat #129",
     "published_at": "2023-10-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T03:16:08.551888+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4867,12 +4867,12 @@
     "video_id": "FL3A8u2k6d4",
     "title": "UFC Vegas 79 Rafael Fiziev vs. Mateusz Gamrot Full Card Predictions",
     "published_at": "2023-09-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:18:19.778151+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4880,12 +4880,12 @@
     "video_id": "ojxcnbSa3Hg",
     "title": "UFC Noche Alexa Grasso vs Valentina Shevchenko 2 Full Card Predictions",
     "published_at": "2023-09-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:20:49.158425+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4893,12 +4893,12 @@
     "video_id": "UMBhGcbp6hs",
     "title": "Adesanya Vindicated, UFC 293 Predictions, Khamzat Leapfrogs Dricus? - Livestream",
     "published_at": "2023-09-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T03:23:04.708544+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4906,12 +4906,12 @@
     "video_id": "yvjj6_35NUE",
     "title": "UFC Paris Predictions, O'Malley vs Merab, Adesanya vs Strickland - Livestream",
     "published_at": "2023-09-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-10T03:25:27.166995+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4919,12 +4919,12 @@
     "video_id": "KjcYfuCbC4I",
     "title": "UFC Singapore Max Holloway vs Korean Zombie Full Card Predictions",
     "published_at": "2023-08-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:28:09.624207+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4932,12 +4932,12 @@
     "video_id": "RN0fyeSSA2I",
     "title": "Is O'Malley A Star? UFC 292 Predictions, Adesanya vs Strickland - Livechat #122",
     "published_at": "2023-08-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T03:30:35.235628+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4945,12 +4945,12 @@
     "video_id": "Pcfs3Abum8w",
     "title": "UFC Vegas 78 Vicente Luque vs Rafael dos Anjos Full Card Predictions",
     "published_at": "2023-08-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:33:33.090248+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4958,12 +4958,12 @@
     "video_id": "59eiRT0e8zg",
     "title": "UFC Nashville Cory Sandhagen vs Rob Font Full Card Predictions",
     "published_at": "2023-08-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:36:13.124621+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4971,12 +4971,12 @@
     "video_id": "SFKU81tJQtI",
     "title": "UFC 291 Predictions, Poirier vs Gaethje 2, Blachowicz vs Pereira - Livechat #119",
     "published_at": "2023-07-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-10T03:38:34.600001+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4984,12 +4984,12 @@
     "video_id": "mJ-9ZHOC4Ow",
     "title": "UFC London Tom Aspinall vs Marcin Tybura Full Card Predictions",
     "published_at": "2023-07-18",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:40:48.049639+00:00"
   },
   {
     "creator": "mma_joey",
@@ -4997,12 +4997,12 @@
     "video_id": "9zkPqzhjCNg",
     "title": "UFC 290 Predictions, Volkanovski vs Rodriguez, Moreno vs Pantoja - Livechat #116",
     "published_at": "2023-07-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T03:43:17.744240+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5010,12 +5010,12 @@
     "video_id": "juQtqgg7dOE",
     "title": "UFC Vegas 76 Sean Strickland vs Abus Magomedov Full Card Predictions",
     "published_at": "2023-06-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T03:45:48.102226+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5023,12 +5023,12 @@
     "video_id": "-mGTpL9dlFE",
     "title": "Emmett vs Topuria Predictions, UFC 290, Volkanovski vs Yair - Livestream",
     "published_at": "2023-06-21",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-10T03:48:17.379588+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5036,12 +5036,12 @@
     "video_id": "IBQLh_FUQPU",
     "title": "UFC Vegas 75 Marvin Vettori vs Jared Cannonier Full Card Predictions",
     "published_at": "2023-06-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T03:50:45.714406+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5049,12 +5049,12 @@
     "video_id": "xZXO9fAGsiI",
     "title": "UFC 289 Press Conference, Oliveira vs Dariush, UFC 289 Predictions - Livestream",
     "published_at": "2023-06-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-10T03:52:48.774791+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5062,12 +5062,12 @@
     "video_id": "UmnwRe1-mzA",
     "title": "UFC Predictions, Justin Gaethe Delusional, McGregor vs Chandler - Livestream",
     "published_at": "2023-06-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T03:55:25.921231+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5075,12 +5075,12 @@
     "video_id": "IRk6sQfTEJU",
     "title": "UFC Vegas 73 Mackenzie Dern vs. Angela Hill Main Card Predictions",
     "published_at": "2023-05-18",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-10T03:57:51.418437+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5088,12 +5088,12 @@
     "video_id": "YaGooRbUpfw",
     "title": "Anthony Smith vs. Johnny Walker Prediction - UFC ABC 4",
     "published_at": "2023-05-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:00:21.918263+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5101,12 +5101,12 @@
     "video_id": "93rB-fYbxI4",
     "title": "UFC 288 Predictions, Ngannou Contract, Jon Jones Retirement - Livechat #109",
     "published_at": "2023-05-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
+    "flagged_count": 1,
+    "skipped_count": 9,
+    "processed_at": "2026-05-10T04:03:34.028937+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5114,12 +5114,12 @@
     "video_id": "m1g4LV7vUFU",
     "title": "Song Yadong vs Ricky Simon Prediction - UFC Vegas 72",
     "published_at": "2023-04-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:06:18.864808+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5127,12 +5127,12 @@
     "video_id": "fCTGgBjqu1s",
     "title": "Sergei Pavlovich vs Curtis Blaydes Prediction UFC Vegas 71",
     "published_at": "2023-04-18",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:08:19.233547+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5140,12 +5140,12 @@
     "video_id": "EnV-OyLh4cg",
     "title": "Oliveria vs Dariush Off, UFC Kansas City Predictions, Adesanya Next Fight? - Livestream",
     "published_at": "2023-04-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:10:53.772058+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5153,12 +5153,12 @@
     "video_id": "GRS7a9QCkHE",
     "title": "UFC 287 Predictions, Burns vs Masvidal, Adesanya Underdog?",
     "published_at": "2023-04-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 6,
+    "processed_at": "2026-05-10T04:13:37.943432+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5166,12 +5166,12 @@
     "video_id": "gpK1PucdhhI",
     "title": "Marlon Vera vs Cory Sandhagen Prediction - UFC San Antonio",
     "published_at": "2023-03-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-10T04:15:53.296036+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5179,12 +5179,12 @@
     "video_id": "zCEJc0JMpOo",
     "title": "UFC 286 Predictions, Gaethje vs Fiziev, Edwards vs Usman 3 - Livestream",
     "published_at": "2023-03-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-10T04:18:19.743049+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5192,12 +5192,12 @@
     "video_id": "x2wiSF8VSaw",
     "title": "Petr Yan vs Merab Dvalishvili Prediction - UFC Las Vegas",
     "published_at": "2023-03-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-10T04:20:56.002411+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5205,12 +5205,12 @@
     "video_id": "nole6uWQETM",
     "title": "UFC 285 Press Conference Reaction, Jon Jones vs Ciryl Gane Predictions - Livestream",
     "published_at": "2023-03-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
+    "flagged_count": 1,
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:23:56.306853+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5218,12 +5218,12 @@
     "video_id": "pp7SoWteu8k",
     "title": "Jessica Andrade vs Erin Blanchfield Prediction - UFC Vegas 69",
     "published_at": "2023-02-16",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:26:43.392830+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5231,12 +5231,12 @@
     "video_id": "0DBlloJkSSM",
     "title": "UFC 284 Predictions, Khamzat Chimaev Next Fight, Oliveira vs Dariush - Livestream",
     "published_at": "2023-02-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-10T04:29:09.722312+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5244,12 +5244,12 @@
     "video_id": "PlwWA8Esdzk",
     "title": "Derrick Lewis vs Sergey Spivak Prediction - UFC Vegas 68",
     "published_at": "2023-01-31",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:31:32.383626+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5257,12 +5257,12 @@
     "video_id": "094LU8pk7T4",
     "title": "UFC 285 3 Title Fights, Jones vs Gane, UFC 283 Predictions - Live Chat #92",
     "published_at": "2023-01-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-10T04:34:19.975784+00:00"
   },
   {
     "creator": "mma_joey",
@@ -5270,12 +5270,12 @@
     "video_id": "naA2KznpZ5o",
     "title": "Sean Strickland vs Nassordine Imavov Prediction - UFC Vegas 67",
     "published_at": "2023-01-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T04:36:55.799788+00:00"
   },
   {
     "creator": "mma_joey",
@@ -7038,12 +7038,12 @@
     "video_id": "q4pd-RH9Pso",
     "title": "UFC 296: Predictions and Breakdown",
     "published_at": "2023-12-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:55:48.015367+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7051,12 +7051,12 @@
     "video_id": "0t9knMcZDoA",
     "title": "UFC Song Yadong vs Chris Gutierrez: Predictions and Breakdown",
     "published_at": "2023-12-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:58:19.491970+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7064,12 +7064,12 @@
     "video_id": "5U1i-OYP73w",
     "title": "UFC Beneil Dariush vs Arman Tsarukyan: Predictions and Breakdown",
     "published_at": "2023-11-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:00:29.841674+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7077,12 +7077,12 @@
     "video_id": "iBNdugkJbkI",
     "title": "UFC 295: Predictions and Breakdown",
     "published_at": "2023-11-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:03:16.735091+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7090,12 +7090,12 @@
     "video_id": "TYGRdB7jFY8",
     "title": "UFC 294: Predictions and Breakdown",
     "published_at": "2023-10-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:05:23.618892+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7103,12 +7103,12 @@
     "video_id": "68Mk13ZLcDw",
     "title": "UFC Vegas 80: Predictions and Breakdown",
     "published_at": "2023-10-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T07:07:39.088264+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7116,12 +7116,12 @@
     "video_id": "QBbzxBsUF0A",
     "title": "UFC Grasso vs Shevchenko 2: Predictions and Breakdown",
     "published_at": "2023-09-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T07:10:23.499804+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7129,12 +7129,12 @@
     "video_id": "on1kOsrQdpI",
     "title": "UFC 293: Predictions and Breakdown",
     "published_at": "2023-09-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:12:33.309172+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7142,12 +7142,12 @@
     "video_id": "IwinYJnDOCM",
     "title": "UFC Paris: Predictions and Breakdown",
     "published_at": "2023-09-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:15:15.440612+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7155,12 +7155,12 @@
     "video_id": "nAah-SIQ5o0",
     "title": "UFC 292: Predictions and Breakdown",
     "published_at": "2023-08-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-10T07:17:53.339688+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7168,12 +7168,12 @@
     "video_id": "9HmYO1Z4mVo",
     "title": "Jake Paul vs Nate Diaz: Predictions and Breakdown (Also UFC Predictions)",
     "published_at": "2023-08-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T07:20:01.837757+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7181,12 +7181,12 @@
     "video_id": "NeqbeVk1m2s",
     "title": "UFC 291: Predictions and Breakdown",
     "published_at": "2023-07-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 2,
+    "processed_at": "2026-05-10T07:23:03.686640+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7194,12 +7194,12 @@
     "video_id": "ypHTh9FnV7E",
     "title": "UFC 290: Predictions and Breakdown",
     "published_at": "2023-07-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 5,
+    "processed_at": "2026-05-10T07:25:31.839315+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7207,12 +7207,12 @@
     "video_id": "R82Wyb1PC64",
     "title": "UFC on ABC 5: Predictions and Breakdown",
     "published_at": "2023-06-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:27:46.727706+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7220,12 +7220,12 @@
     "video_id": "eJLBTmBFFNU",
     "title": "UFC 289: Predictions and Breakdown",
     "published_at": "2023-06-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 4,
+    "processed_at": "2026-05-10T07:29:49.973071+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7233,12 +7233,12 @@
     "video_id": "-jwXUHmMq9Y",
     "title": "Most STACKED Card!!! UFC 291 Breakdown (Dustin Poirier vs Justin Gaethje 2)",
     "published_at": "2023-05-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-10T07:32:42.695995+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7246,12 +7246,12 @@
     "video_id": "DIU4KkpwcFY",
     "title": "UFC 288: Predictions and Breakdown",
     "published_at": "2023-05-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 5,
+    "processed_at": "2026-05-10T07:35:37.805519+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7259,12 +7259,12 @@
     "video_id": "YWJ3Lil05k8",
     "title": "UFC 287: Predictions and Breakdown",
     "published_at": "2023-04-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 6,
+    "processed_at": "2026-05-10T07:38:10.397428+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7272,12 +7272,12 @@
     "video_id": "pXs0HuBIbq0",
     "title": "UFC 286: Predictions and Breakdown",
     "published_at": "2023-03-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T07:41:28.237383+00:00"
   },
   {
     "creator": "the_weasel",
@@ -14084,12 +14084,12 @@
     "video_id": "NbJK8adA2W4",
     "title": "UFC 296 Leon Edwards vs Colby Covington Full Card Predictions",
     "published_at": "2023-12-11",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
-    "flagged_count": 0,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:39:56.650759+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14097,12 +14097,12 @@
     "video_id": "DUFDPrbk5lU",
     "title": "UFC Vegas 83 Song Yadong vs Chris Gutierrez Full Card Predictions",
     "published_at": "2023-12-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:42:12.700135+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14110,12 +14110,12 @@
     "video_id": "THPapX_n2Mk",
     "title": "UFC Austin Beneil Dariush vs Arman Tsarukyan Full Card Predictions",
     "published_at": "2023-11-27",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:44:12.423812+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14123,12 +14123,12 @@
     "video_id": "4g33avrJayQ",
     "title": "UFC 295 Jiri Procházka vs. Alex Pereira Full Card Predictions",
     "published_at": "2023-11-06",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:46:15.409074+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14136,12 +14136,12 @@
     "video_id": "1ckL2JW4XgQ",
     "title": "UFC 294 Makhachev vs Volkanovski 2 Full Card Predictions",
     "published_at": "2023-10-16",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:48:45.354989+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14149,12 +14149,12 @@
     "video_id": "iKGufJYCydw",
     "title": "UFC Vegas 80 Grant Dawson vs Bobby Green Full Card Predictions",
     "published_at": "2023-10-01",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:51:27.076682+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14162,12 +14162,12 @@
     "video_id": "iM4p8wWjD68",
     "title": "Rafael Fiziev vs. Mateusz Gamrot Prediction - UFC Vegas 79",
     "published_at": "2023-09-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:54:28.780939+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14175,12 +14175,12 @@
     "video_id": "B8TNvsPiyuw",
     "title": "UFC 293 Israel Adesanya vs Sean Strickland Full Card Predictions",
     "published_at": "2023-09-04",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T04:57:23.275022+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14188,12 +14188,12 @@
     "video_id": "xZXmGt0aan0",
     "title": "UFC Paris Ciryl Gane vs Serghei Spivac Full Card Predictions",
     "published_at": "2023-08-29",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:00:15.479419+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14201,12 +14201,12 @@
     "video_id": "_QjxT0Me2GY",
     "title": "UFC 292 Aljamain Sterling vs. Sean O'Malley Full Card Predictions",
     "published_at": "2023-08-15",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:02:57.458255+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14214,8 +14214,8 @@
     "video_id": "GcZTNEtPOAo",
     "title": "UFC 291 Dustin Poirier vs Justin Gaethje 2 Full Card Predictions",
     "published_at": "2023-07-25",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "failed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
@@ -14227,12 +14227,12 @@
     "video_id": "McoaiFOZXzg",
     "title": "UFC 290 Volkanovski vs. Rodriguez Full Card Predictions",
     "published_at": "2023-07-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:07:41.546665+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14240,12 +14240,12 @@
     "video_id": "YsJSlcy2Utk",
     "title": "Sean Strickland vs Abus Magomedov Prediction - UFC Vegas 76",
     "published_at": "2023-06-28",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:10:23.479713+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14253,12 +14253,12 @@
     "video_id": "wuCtwH2z9Go",
     "title": "UFC ABC 5 Josh Emmett vs. Ilia Topuria Full Card Predictions",
     "published_at": "2023-06-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:12:49.840925+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14266,12 +14266,12 @@
     "video_id": "0qikhGYa3qM",
     "title": "UFC 289 Amanda Nunes vs. Irene Aldana Full Card Predictions",
     "published_at": "2023-06-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:15:14.313418+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14279,12 +14279,12 @@
     "video_id": "JGchw6Pc0DY",
     "title": "UFC Vegas 74 Kai Kara-France vs. Amir Albazi Full Card Predictions",
     "published_at": "2023-05-30",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:17:15.671396+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14292,12 +14292,12 @@
     "video_id": "CSI4wL9wg1Q",
     "title": "Jairzinho Rozenstruik vs. Jailton Almeida Prediction - UFC ABC 4",
     "published_at": "2023-05-10",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:19:43.349632+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14305,12 +14305,12 @@
     "video_id": "Xxb5LNZC9B0",
     "title": "Belal Muhammad vs Gilbert Burns - UFC 288 Prediction",
     "published_at": "2023-05-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 1,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T05:22:07.842156+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14318,12 +14318,12 @@
     "video_id": "29o5RBwR-Kw",
     "title": "Max Holloway vs Arnold Allen Prediction - UFC Kansas City",
     "published_at": "2023-04-11",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:24:26.517418+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14331,12 +14331,12 @@
     "video_id": "P6hAIL-Iky4",
     "title": "Rob Font vs Adrian Yanez Prediction - UFC 287",
     "published_at": "2023-04-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:27:12.245566+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14344,12 +14344,12 @@
     "video_id": "eiIcLURZpDw",
     "title": "Marvin Vettori vs Roman Dolidze Prediction - UFC 286",
     "published_at": "2023-03-15",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:29:57.613370+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14357,12 +14357,12 @@
     "video_id": "QmwS57FUpdc",
     "title": "Jon Jones vs Ciryl Gane Prediction - UFC 285",
     "published_at": "2023-02-28",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 1,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T05:32:31.672598+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14370,12 +14370,12 @@
     "video_id": "bG7DtPNcsLM",
     "title": "Jack Della Maddalena vs Randy Brown Prediction - UFC 284",
     "published_at": "2023-02-08",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:34:38.882783+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14383,12 +14383,12 @@
     "video_id": "OEAKsy4ukxQ",
     "title": "Paul Craig vs Johnny Walker Prediction - UFC 283",
     "published_at": "2023-01-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:36:49.937103+00:00"
   },
   {
     "creator": "mma_joey",
@@ -14396,12 +14396,12 @@
     "video_id": "eP9-un8Mohw",
     "title": "Umar Nurmagomedov vs Raoni Barcelos Prediction - UFC Vegas 67",
     "published_at": "2023-01-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:38:59.041457+00:00"
   },
   {
     "creator": "mma_joey",
@@ -15111,12 +15111,12 @@
     "video_id": "B-ryS2Ls_ko",
     "title": "UFC 287 Predictions Pereira vs Adesanya 2 Full Card Betting Breakdown",
     "published_at": "2023-04-02",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:31:43.635269+00:00"
   },
   {
     "creator": "mma_guru",
@@ -15124,12 +15124,12 @@
     "video_id": "NMsG8nNnuG4",
     "title": "I Think Leon Edwards Will RETIRE Kamaru Usman At UFC 286! Prediction and Breakdown",
     "published_at": "2023-03-15",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:34:10.841420+00:00"
   },
   {
     "creator": "mma_guru",
@@ -15137,12 +15137,12 @@
     "video_id": "idSEuvIWpgc",
     "title": "I Think Islam Makhachev Will KO Alexander Volkanovski? Prediction and Breakdown - UFC 284 Betting",
     "published_at": "2023-02-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:36:12.622043+00:00"
   },
   {
     "creator": "mma_guru",
@@ -15150,12 +15150,12 @@
     "video_id": "_dVgiLqcu6w",
     "title": "Glover Teixeira vs Jamahal Hill Prediction and Breakdown - UFC 283 Betting Tips",
     "published_at": "2023-01-18",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:38:45.602707+00:00"
   },
   {
     "creator": "mma_guru",
@@ -17022,12 +17022,12 @@
     "video_id": "K8Dp9KOoAho",
     "title": "Islam Makhachev Will KO Alexander Volkanovski At UFC 294? Prediction and Breakdown",
     "published_at": "2023-10-17",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:41:28.591908+00:00"
   },
   {
     "creator": "mma_guru",
@@ -17035,12 +17035,12 @@
     "video_id": "ct2hk8nOQ0Q",
     "title": "I Think Justin Gaethje Will KO Dustin Poirier At UFC 291? Prediction and Breakdown",
     "published_at": "2023-07-26",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:44:02.433689+00:00"
   },
   {
     "creator": "mma_guru",
@@ -17048,12 +17048,12 @@
     "video_id": "Zh4czplkK-s",
     "title": "Rodriguez Will Drop Volkanovski With A Head Kick! But Alex Will Adjust To Win! UFC 290 Prediction",
     "published_at": "2023-07-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:46:20.986747+00:00"
   },
   {
     "creator": "mma_guru",
@@ -17061,12 +17061,12 @@
     "video_id": "bbBqq8z-NsQ",
     "title": "Gilbert Burns Will RETIRE Jorge Masvidal At UFC 287? Prediction and Breakdown",
     "published_at": "2023-04-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:48:56.095636+00:00"
   },
   {
     "creator": "mma_guru",
@@ -17074,12 +17074,12 @@
     "video_id": "BR2XMtcOGMY",
     "title": "UFC 286 Predictions Edwards vs Usman 3 Full Card Betting Breakdown",
     "published_at": "2023-03-13",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:51:22.932694+00:00"
   },
   {
     "creator": "mma_guru",
@@ -18725,12 +18725,12 @@
     "video_id": "WcZCU5SXgzw",
     "title": "Leon Edwards vs Colby Covington Prediction - UFC 296",
     "published_at": "2023-12-13",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:40:52.167207+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18738,12 +18738,12 @@
     "video_id": "k33wuCahzdU",
     "title": "UFC 300 Prediction? | Burns vs JDM, Perez vs Mokaev & Emmett vs Mitchell Announced",
     "published_at": "2023-12-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:43:14.349182+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18751,12 +18751,12 @@
     "video_id": "P651l7gGq2Y",
     "title": "Ian Garry Fan Club, UFC Predictions, Turner vs Green - Thanksgiving Uncut",
     "published_at": "2023-11-24",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:46:02.360592+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18764,12 +18764,12 @@
     "video_id": "5ujzWnmB46w",
     "title": "Jiri Prochazka vs Alex Pereira Prediction - UFC 295",
     "published_at": "2023-11-08",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:49:02.875340+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18777,12 +18777,12 @@
     "video_id": "n9ai-8fdK3E",
     "title": "Kamaru Usman vs Khamzat Chimaev Prediction - UFC 294",
     "published_at": "2023-10-18",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:51:49.536148+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18790,12 +18790,12 @@
     "video_id": "gHs1fyRFcHU",
     "title": "Israel Adesanya vs Sean Strickland Prediction - UFC 293",
     "published_at": "2023-09-06",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:54:29.429657+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18803,12 +18803,12 @@
     "video_id": "FaHBK1z8RTo",
     "title": "Aljamain Sterling vs Sean O'Malley Prediction - UFC 292",
     "published_at": "2023-08-16",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:56:58.383496+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18816,12 +18816,12 @@
     "video_id": "ZCqE8rYLupw",
     "title": "Jan Blachowicz vs Alex Pereira Prediction UFC 291",
     "published_at": "2023-07-25",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T05:59:12.729569+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18829,12 +18829,12 @@
     "video_id": "YcEQcUZFXME",
     "title": "Robert Whittaker vs Dricus Du Plessis Prediction - UFC 290",
     "published_at": "2023-07-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:01:51.352189+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18842,12 +18842,12 @@
     "video_id": "kTYif1uW3r4",
     "title": "Josh Emmett vs. Ilia Topuria Prediction - UFC ABC 5",
     "published_at": "2023-06-20",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:04:16.120570+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18855,12 +18855,12 @@
     "video_id": "d_jec2tJi0M",
     "title": "Charles Oliveira vs Beneil Dariush Prediction - UFC 289",
     "published_at": "2023-06-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:06:35.986806+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18868,12 +18868,12 @@
     "video_id": "sB3-KiiwlAU",
     "title": "Aljamain Sterling vs Henry Cejudo - UFC 288 Prediction",
     "published_at": "2023-05-02",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:08:40.708625+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18881,12 +18881,12 @@
     "video_id": "wiPw6lKdyDo",
     "title": "Santiago Ponzinibbio vs Kevin Holland Prediction - UFC 287",
     "published_at": "2023-04-04",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:11:36.581307+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18894,12 +18894,12 @@
     "video_id": "2yfPvkDnkR4",
     "title": "Justin Gaethje vs Rafael Fiziev Prediction - UFC 286",
     "published_at": "2023-03-14",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:13:58.661902+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18907,12 +18907,12 @@
     "video_id": "rgbeTKMvSTA",
     "title": "Valentina Shevchenko vs Alexa Grasso Prediction - UFC 285",
     "published_at": "2023-02-28",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:16:21.501279+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18920,12 +18920,12 @@
     "video_id": "8muYkxPmYf0",
     "title": "Yair Rodriguez vs Josh Emmett Prediction - UFC 284",
     "published_at": "2023-02-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:18:22.458067+00:00"
   },
   {
     "creator": "mma_joey",
@@ -18933,12 +18933,12 @@
     "video_id": "U6bXvu79Udg",
     "title": "Gilbert Burns vs Neil Magny Prediction - UFC 283",
     "published_at": "2023-01-17",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:21:24.033407+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19531,12 +19531,12 @@
     "video_id": "ChCDgdV5js4",
     "title": "I Am FORCED To Pick Pereira To KO Adesanya AGAIN At UFC 287! Pereira vs Adesanya 2 Prediction",
     "published_at": "2023-03-30",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T02:54:03.971947+00:00"
   },
   {
     "creator": "mma_guru",
@@ -20662,12 +20662,12 @@
     "video_id": "qmfcCrTboys",
     "title": "Islam Makhachev vs Alexander Volkanovski 2 Prediction - UFC 294",
     "published_at": "2023-10-18",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:23:48.673717+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20675,12 +20675,12 @@
     "video_id": "Q_n09Zg7pcM",
     "title": "Dustin Poirier vs Justin Gaethje Prediction - UFC 291",
     "published_at": "2023-07-25",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:26:00.294578+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20688,12 +20688,12 @@
     "video_id": "UHmTrYNhT-w",
     "title": "Brandon Moreno vs. Alexandre Pantoja lll Prediction - UFC 290",
     "published_at": "2023-07-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:28:00.399264+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20701,12 +20701,12 @@
     "video_id": "xHEz3bFcA8s",
     "title": "Adesanya vs Chimaev, Jones vs Pavlovich, UFC 288 Predictions - MMA Joey After Dark",
     "published_at": "2023-04-27",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:31:04.273752+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20714,12 +20714,12 @@
     "video_id": "7bXc5lNdpTk",
     "title": "Gilbert Burns vs Jorge Masvidal Prediction - UFC 287",
     "published_at": "2023-04-04",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:33:27.016974+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20727,12 +20727,12 @@
     "video_id": "kOAr_bmS9oY",
     "title": "Leon Edwards vs Kamaru Usman 3 Prediction - UFC 286",
     "published_at": "2023-03-13",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:36:10.519487+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20740,12 +20740,12 @@
     "video_id": "C5x3EMfx7Qg",
     "title": "Geoff Neal vs Shavkat Rakhmonov Prediction - UFC 285",
     "published_at": "2023-02-28",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:38:28.760624+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20753,12 +20753,12 @@
     "video_id": "A670LGZBljw",
     "title": "Islam Makhachev vs Alexander Volkanovski Prediction - UFC 284",
     "published_at": "2023-02-06",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:41:06.512989+00:00"
   },
   {
     "creator": "mma_joey",
@@ -20766,12 +20766,12 @@
     "video_id": "DHyNfBuRBEU",
     "title": "Deiveson Figueiredo vs Brandon Moreno 4 Prediction - UFC 283",
     "published_at": "2023-01-17",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T06:43:35.286115+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21728,6 +21728,253 @@
     "video_id": "wkfaUml86Ts",
     "title": "UFC ON ESPN 1: CEJUDO VS DILLASHAW! - PREDICTION/BREAKDOWN - FIGHT NIGHT BROOKLYN",
     "published_at": "2019-01-11",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-302",
+    "video_id": "rK8vcRvuWu8",
+    "title": "Makhachev vs Poirier, UFC 302 Predictions, Strickland vs Costa - Live",
+    "published_at": "2024-05-28",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-290",
+    "video_id": "VA6YTd-DgXI",
+    "title": "Alexander Volkanovski vs Yair Rodriguez Prediction - UFC 290",
+    "published_at": "2023-07-04",
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": "2026-05-10T06:46:17.490446+00:00"
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-287",
+    "video_id": "ksLYMS884AA",
+    "title": "Alex Pereira vs Israel Adesanya ll Prediction - UFC 287",
+    "published_at": "2023-04-04",
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": "2026-05-10T06:48:42.181566+00:00"
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-285",
+    "video_id": "ummVvq2df0s",
+    "title": "Mateusz Gamrot vs Jalin Turner Prediction - UFC 285",
+    "published_at": "2023-02-27",
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": "2026-05-10T06:50:49.157746+00:00"
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-283",
+    "video_id": "FIwP3lAmGqs",
+    "title": "Glover Teixeira vs Jamahal Hill Prediction - UFC 283",
+    "published_at": "2023-01-16",
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": "2026-05-10T06:53:31.431469+00:00"
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-282",
+    "video_id": "2MXnR49Or0g",
+    "title": "Bryce Mitchell vs Ilia Topuria Prediction - UFC 282",
+    "published_at": "2022-12-04",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-281",
+    "video_id": "MDMlUjWxCCU",
+    "title": "Frankie Edgar vs Chris Gutierrez Prediction - UFC 281",
+    "published_at": "2022-11-07",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-280",
+    "video_id": "9m_LQbqb_ZY",
+    "title": "Beneil Dariush vs Mateusz Gamrot Prediction - UFC 280",
+    "published_at": "2022-10-16",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-279",
+    "video_id": "nZezbus2vRw",
+    "title": "Khamzat Chimaev vs Nate Diaz Prediction - UFC 279",
+    "published_at": "2022-09-05",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-277",
+    "video_id": "asrkBvknPSQ",
+    "title": "Julianna Peña vs Amanda Nunes 2 Prediction - UFC 277",
+    "published_at": "2022-07-26",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-276",
+    "video_id": "OeVsL24zcWg",
+    "title": "Pedro Munhoz vs Sean O'Malley Prediction - UFC 276",
+    "published_at": "2022-06-27",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-275",
+    "video_id": "fGQbyY0ZLcU",
+    "title": "Teixeira vs Procházka Prediction, Figueiredo To 135 , Favorite UFC Fights In June - MMA Joey Live",
+    "published_at": "2022-06-07",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-273",
+    "video_id": "Kug3rdRW_Ek",
+    "title": "Ian Garry vs Darian Weeks Prediction - UFC 273",
+    "published_at": "2022-04-01",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-fight-night-santos-vs-ankalaev",
+    "video_id": "n2wb9l2amTk",
+    "title": "Thiago Santos vs Magomed Ankalaev Prediction - UFC Vegas 50",
+    "published_at": "2022-03-08",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-272",
+    "video_id": "Lt3r0uHgsMM",
+    "title": "Edson Barboza vs Bryce Mitchell Prediction - UFC 272",
+    "published_at": "2022-03-01",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-269",
+    "video_id": "QgN3ULJhAm8",
+    "title": "Geoff Neal vs Santiago Ponzinibbio - UFC 269 Prediction",
+    "published_at": "2021-12-03",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-268",
+    "video_id": "gKrecuWNC0I",
+    "title": "Rose Namajunas vs Weili Zhang 2 - UFC 268 Prediction",
+    "published_at": "2021-11-02",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-267",
+    "video_id": "BkwM1CH1Qfg",
+    "title": "Alexander Volkov vs Marcin Tybura - UFC 267 Prediction",
+    "published_at": "2021-10-23",
+    "status": "pending",
+    "transcript_type": null,
+    "predictions_extracted": 0,
+    "flagged_count": 0,
+    "skipped_count": 0,
+    "processed_at": null
+  },
+  {
+    "creator": "mma_joey",
+    "event_id": "ufc-266",
+    "video_id": "1Lo2i6qH-60",
+    "title": "Curtis Blaydes vs Jairzinho Rozenstruik Prediction - UFC 266",
+    "published_at": "2021-09-17",
     "status": "pending",
     "transcript_type": null,
     "predictions_extracted": 0,

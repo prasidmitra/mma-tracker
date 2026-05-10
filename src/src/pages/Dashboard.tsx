@@ -54,12 +54,10 @@ export function Dashboard() {
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '0.75rem' }}>
           See how the top MMA YouTubers perform on their picks.
         </p>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '0.5rem' }}>
-          Track prediction accuracy across UFC events, compare creator records, and see who's really calling fights right over time. From upset picks to hype-train fades, OCTASCORE lets the MMA community compare predictions with real results.
-        </p>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
-          Curious why this site exists?{' '}
-          <Link to="/about" style={{ color: 'var(--highlight)', fontWeight: 600 }}>Read the About page</Link>
+          Read the{' '}
+          <Link to="/about" style={{ color: 'var(--highlight)', fontWeight: 600 }}>About Page</Link>
+          {' '}to find out why we created this.
         </p>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <h2 className="leaderboard-heading" style={{ fontSize: '1.6rem', fontWeight: 800, letterSpacing: '-0.01em', color: 'var(--logo-red)', textShadow: '0 0 40px rgba(245, 197, 66, 0.18)' }}>
