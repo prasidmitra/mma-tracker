@@ -1526,12 +1526,12 @@
     "video_id": "8IsZEPohy8E",
     "title": "UFC 290 Predictions Volkanovski vs Rodriguez Full Card Betting Breakdown",
     "published_at": "2023-07-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:51:10.192420+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1539,12 +1539,12 @@
     "video_id": "AMIWRTzAvhU",
     "title": "UFC Fight Night Strickland vs Magomedov Predictions & Full Card Betting Breakdown UFC Vegas 76",
     "published_at": "2023-06-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:53:33.057940+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1552,12 +1552,12 @@
     "video_id": "xCMsMrXDhgQ",
     "title": "Josh Emmett vs Ilia Topuria Full Fight Reaction and Breakdown - UFC on ABC 5 Event Recap",
     "published_at": "2023-06-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-09T21:55:54.465821+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1565,12 +1565,12 @@
     "video_id": "e0gZ2f7aHao",
     "title": "UFC Fight Night Vettori vs Cannonier Predictions & Full Card Betting Breakdown UFC Vegas 75",
     "published_at": "2023-06-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-09T21:58:27.217979+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1578,7 +1578,7 @@
     "video_id": "Byi3rL71Gi8",
     "title": "I Think Beneil Dariush Will FINISH Charles Oliveira At UFC 289 - Prediction and Breakdown",
     "published_at": "2023-06-07",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -1591,7 +1591,7 @@
     "video_id": "TqK60G3Fsv8",
     "title": "UFC Fight Night Kara-France vs Albazi Predictions & Full Card Betting Breakdown UFC Vegas 74",
     "published_at": "2023-05-29",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -1604,12 +1604,12 @@
     "video_id": "puXkO34JHOQ",
     "title": "UFC Fight Night Dern vs Hill Predictions & Full Card Betting Breakdown UFC Vegas 73",
     "published_at": "2023-05-16",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T00:11:20.713229+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1617,12 +1617,12 @@
     "video_id": "cbM97oI1kXc",
     "title": "UFC Charlotte Event Recap Rozenstruik vs Almeida Full Card Reaction & Breakdown",
     "published_at": "2023-05-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T00:13:45.797221+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1630,7 +1630,7 @@
     "video_id": "rlMWZFyUBLE",
     "title": "Gilbert Burns Will Finish Belal Muhammad In One Round! Prediction and Breakdown For UFC 288",
     "published_at": "2023-05-03",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -1643,12 +1643,12 @@
     "video_id": "yV4AQoNHD0w",
     "title": "UFC Fight Night Song vs Simon Predictions & Full Card Betting Breakdown UFC Vegas 72",
     "published_at": "2023-04-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T00:55:39.476770+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1656,12 +1656,12 @@
     "video_id": "Y2Gr8KKy7FI",
     "title": "UFC Fight Night Pavlovich vs Blaydes Predictions & Full Card Betting Breakdown UFC Vegas 71",
     "published_at": "2023-04-18",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T00:58:16.132162+00:00"
   },
   {
     "creator": "mma_guru",
