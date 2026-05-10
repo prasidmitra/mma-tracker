@@ -13,6 +13,7 @@ export function Layout() {
   const { events } = useData();
   const isMobile = useIsMobile();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   return (
     <FilterDrawerContext.Provider value={{ openDrawer: () => setDrawerOpen(true) }}>
@@ -70,7 +71,7 @@ export function Layout() {
         )}
 
         <div style={{ display: 'flex' }}>
-          {!isMobile && <Sidebar events={events} />}
+          {!isMobile && <Sidebar events={events} collapsed={sidebarCollapsed} onToggle={() => setSidebarCollapsed(c => !c)} />}
           <main style={{ flex: 1, minWidth: 0, overflowX: 'hidden', paddingTop: '3.5rem' }}>
             <Outlet />
           </main>

@@ -1669,12 +1669,12 @@
     "video_id": "79ne-5zraYU",
     "title": "UFC Fight Night Holloway vs Allen Predictions & Full Card Breakdown - UFC Kansas City Betting Tips",
     "published_at": "2023-04-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:00:49.408737+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1682,12 +1682,12 @@
     "video_id": "oyecuJXC9_8",
     "title": "Last Minute Detailed Predictions! UFC 287 Pereira vs Adesanya 2 - Full Card Betting Breakdown",
     "published_at": "2023-04-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:03:16.557183+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1695,12 +1695,12 @@
     "video_id": "znZvUmM_4t8",
     "title": "UFC Fight Night Vera vs Sandhagen Predictions & Full Card Breakdown - UFC San Antonio Betting Tips",
     "published_at": "2023-03-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:06:09.922618+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1708,7 +1708,7 @@
     "video_id": "5RXkCMV3OG4",
     "title": "Last Minute Detailed Predictions! UFC 286 Edwards vs Usman 3 - Full Card Betting Breakdown",
     "published_at": "2023-03-18",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -1721,12 +1721,12 @@
     "video_id": "0Xtu8gsRcH0",
     "title": "UFC Fight Night Yan vs Dvalishvili Predictions & Full Card Betting Breakdown UFC Vegas 71",
     "published_at": "2023-03-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:08:49.800925+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1734,12 +1734,12 @@
     "video_id": "nB-XhYZKBBc",
     "title": "Ciryl Gane Is Going To EXPOSE Jon Jones At UFC 285? Prediction and Breakdown",
     "published_at": "2023-03-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-10T01:11:28.230334+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1747,12 +1747,12 @@
     "video_id": "rBghfyYK0T4",
     "title": "UFC Fight Night Krylov vs Spann Predictions & Full Card Betting Breakdown UFC Vegas 70",
     "published_at": "2023-02-21",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 9,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:13:31.519135+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1760,12 +1760,12 @@
     "video_id": "VcNKM3yAl5M",
     "title": "UFC Fight Night Andrade vs Blanchfield Predictions & Full Card Betting Breakdown UFC Vegas 69",
     "published_at": "2023-02-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:15:58.963678+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1773,12 +1773,12 @@
     "video_id": "rEbXd8zTAj0",
     "title": "Last Minute Detailed Predictions! UFC 284 Makhachev vs Volkanovski - Full Card Betting Breakdown",
     "published_at": "2023-02-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:18:16.263537+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1786,12 +1786,12 @@
     "video_id": "eKfxuQI4DyA",
     "title": "UFC Fight Night Lewis vs Spivak Predictions & Full Card Betting Breakdown UFC Vegas 68",
     "published_at": "2023-01-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:20:51.932828+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1799,12 +1799,12 @@
     "video_id": "t76B70hfJLI",
     "title": "Deiveson Figueiredo vs Brandon Moreno 4 Prediction and Breakdown - UFC 283 Betting Tips",
     "published_at": "2023-01-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 14,
+    "processed_at": "2026-05-10T01:23:23.876260+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1812,12 +1812,12 @@
     "video_id": "sKdxUItNiVQ",
     "title": "UFC Fight Night Imavov vs Gastelum Predictions & Full Card Betting Breakdown UFC Vegas 67",
     "published_at": "2023-01-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:25:57.307446+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11159,12 +11159,12 @@
     "video_id": "hQlS_9_g_lQ",
     "title": "Alex Pereira Will Ko Jiri Prochazka With His FAMOUS LEFT HOOK? UFC 295 Predictions!",
     "published_at": "2023-11-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:27:58.068540+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11172,12 +11172,12 @@
     "video_id": "Hr86uihg04o",
     "title": "Khamzat Chimaev Will FINISH Kamaru Usman In One Round? UFC 294 Prediction and Breakdown",
     "published_at": "2023-10-18",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:30:44.492446+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11185,12 +11185,12 @@
     "video_id": "nY6NMNPSRpM",
     "title": "UFC 293 Predictions Adesanya vs Strickland Full Card Betting Breakdown",
     "published_at": "2023-09-04",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:33:26.755870+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11198,12 +11198,12 @@
     "video_id": "69vx15qlesw",
     "title": "UFC Fight Night Gane vs Spivak Predictions & Full Card Breakdown - UFC Paris Betting Tips",
     "published_at": "2023-08-29",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:36:25.955941+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11211,12 +11211,12 @@
     "video_id": "R8TOLcX6Kqc",
     "title": "UFC Fight Night Holloway vs Korean Zombie Predictions & Full Card Breakdown - UFC Singapore Betting",
     "published_at": "2023-08-22",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:38:47.555959+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11224,12 +11224,12 @@
     "video_id": "N8K6X0f4tNk",
     "title": "UFC 292 Predictions Sterling vs O'Malley Full Card Betting Breakdown",
     "published_at": "2023-08-14",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:41:27.357192+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11237,12 +11237,12 @@
     "video_id": "sI6jqNJuwWA",
     "title": "I Think Pereira Will KO Blachowicz With A Liver Shot? UFC 291 Prediction and Breakdown",
     "published_at": "2023-07-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-10T01:43:31.520159+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11250,12 +11250,12 @@
     "video_id": "JPEuiLwS90k",
     "title": "I Think Pantoja Will Choke Moreno Out Cold And End His Title Reign! UFC 290 Prediction",
     "published_at": "2023-07-06",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:45:54.419406+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11263,12 +11263,12 @@
     "video_id": "ZPnHqGpKB7U",
     "title": "UFC Fight Night Emmett vs Topuria Predictions & Full Card Betting Breakdown on ABC 5",
     "published_at": "2023-06-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:48:41.582550+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11276,12 +11276,12 @@
     "video_id": "cfdCDtplzwk",
     "title": "UFC 289 Predictions Nunes vs Aldana Full Card Betting Breakdown",
     "published_at": "2023-06-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:51:17.540460+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11289,12 +11289,12 @@
     "video_id": "ZHrSlq-4mFU",
     "title": "UFC Fight Night Rozenstruik vs Almeida Predictions & Full Card Betting Breakdown on ABC 4",
     "published_at": "2023-05-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-10T01:53:42.324934+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11302,12 +11302,12 @@
     "video_id": "gjeldqKe_AM",
     "title": "UFC 288 Predictions Sterling vs Cejudo Full Card Betting Breakdown",
     "published_at": "2023-05-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-10T01:56:37.513131+00:00"
   },
   {
     "creator": "mma_guru",

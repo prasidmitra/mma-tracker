@@ -362,5 +362,19 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0027",
+    "creator": "mma_guru",
+    "event_id": "ufc-fight-night-yan-vs-dvalishvili",
+    "fight_id": "ufc-fight-night-yan-vs-dvalishvili-gooden-harris",
+    "video_id": "0Xtu8gsRcH0",
+    "ambiguity_reason": "Transcript references 'Jared Gooden' but fight card lists this as Harris vs Gooden. Creator discusses 'Abu Bakana Megamedov' in opening section which does not appear on official fight card. This appears to be a mislabeling in transcript or creator discussing wrong fight. Fight ID references Gooden-Harris but creator's discussion opener talks about Harris vs 'Abu Bakana Megamedov' - unclear if these are same fight or transcript error.",
+    "raw_excerpt": "I'm gonna start with carlston Harris over abubakana megamedov...I think carlston Harris is way more dangerous",
+    "suggested_winner": "Carlston Harris",
+    "confidence_in_suggestion": "high",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]

@@ -3,7 +3,7 @@ import { useFilters } from '../hooks/useFilters';
 import { useData } from '../hooks/useData';
 import type { Event, Filters } from '../types';
 
-interface Props { events: Event[]; asDrawer?: boolean; }
+interface Props { events: Event[]; asDrawer?: boolean; collapsed?: boolean; onToggle?: () => void; }
 
 function FilterLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -48,7 +48,7 @@ function FilterOption({ active, dim, onClick, children }: { active: boolean; dim
   );
 }
 
-export function Sidebar({ events, asDrawer = false }: Props) {
+export function Sidebar({ events, asDrawer = false, collapsed = false, onToggle }: Props) {
   const [filters, setFilters] = useFilters();
   const { predictions } = useData();
 
@@ -67,6 +67,40 @@ export function Sidebar({ events, asDrawer = false }: Props) {
     return ys;
   }, [events, predictions]);
 
+  if (!asDrawer && collapsed) {
+    return (
+      <aside style={{
+        width: '36px',
+        minWidth: '36px',
+        borderRight: '1px solid var(--border)',
+        position: 'sticky',
+        top: '54px',
+        height: 'calc(100vh - 54px)',
+        background: 'var(--bg-card)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        paddingTop: '0.75rem',
+        transition: 'width 0.2s ease',
+      }}>
+        <button
+          onClick={onToggle}
+          title="Expand filters"
+          style={{
+            background: 'none',
+            border: 'none',
+            color: 'var(--text-secondary)',
+            cursor: 'pointer',
+            padding: '4px',
+            borderRadius: '4px',
+            lineHeight: 1,
+            fontSize: '1rem',
+          }}
+        >›</button>
+      </aside>
+    );
+  }
+
   return (
     <aside style={asDrawer ? {
       padding: '0.75rem 1rem 0.5rem',
@@ -78,10 +112,29 @@ export function Sidebar({ events, asDrawer = false }: Props) {
       borderRight: '1px solid var(--border)',
       position: 'sticky',
       top: '54px',
-      height: 'calc(100vh - 72px)',
+      height: 'calc(100vh - 54px)',
       overflowY: 'auto',
       background: 'var(--bg-card)',
+      transition: 'width 0.2s ease',
     }}>
+      {!asDrawer && (
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '0.25rem' }}>
+          <button
+            onClick={onToggle}
+            title="Collapse filters"
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--text-secondary)',
+              cursor: 'pointer',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              lineHeight: 1,
+              fontSize: '1rem',
+            }}
+          >‹</button>
+        </div>
+      )}
       {asDrawer ? (
         /* ── Drawer: 3-column layout ── */
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0 0.5rem' }}>
