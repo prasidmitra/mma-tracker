@@ -7,6 +7,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import { useFilterDrawer } from '../components/Layout';
 import { InfoTooltip } from '../components/InfoTooltip';
 import { getCreatorStats, calcBaselineAccuracy, ALL_CREATORS, formatPct, getAccuracyColor } from '../utils/accuracy';
+import { AccuracyChart } from '../components/AccuracyChart';
 
 const SITE_URL = 'https://octascore.xyz';
 const OG_IMAGE = `${SITE_URL}/favicon.png`;
@@ -184,6 +185,13 @@ export function Dashboard() {
       <p style={{ marginTop: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.75rem', textAlign: 'center' }}>
         Accuracy excludes pick'ems, cancelled fights, and predictions pending review
       </p>
+
+      <AccuracyChart
+        events={events}
+        predictions={predictions}
+        filters={filters}
+        activeCreators={stats.map(s => s.slug)}
+      />
 
       </>
       )}
