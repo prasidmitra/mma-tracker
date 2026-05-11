@@ -1825,12 +1825,12 @@
     "video_id": "yxlYeJj6JQU",
     "title": "UFC Fight Night Cannonier vs Strickland Predictions & Full Card Betting Breakdown UFC Vegas 66",
     "published_at": "2022-12-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T03:16:25.791534+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1838,12 +1838,12 @@
     "video_id": "rVZuGPf9Mwo",
     "title": "Bryce Mitchell vs Ilia Topuria Prediction and Breakdown - UFC 282 Betting Tips",
     "published_at": "2022-12-08",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T03:18:29.949638+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1851,12 +1851,12 @@
     "video_id": "lvfSvotC2v8",
     "title": "Tai Tuivasa vs Sergei Pavlovich Prediction and Breakdown - UFC Orlando Betting Tips",
     "published_at": "2022-11-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-11T03:21:35.718305+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1864,12 +1864,12 @@
     "video_id": "22PRx8R4T40",
     "title": "UFC Fight Night Lewis vs Spivak Predictions & Full Card Betting Breakdown UFC Vegas 65",
     "published_at": "2022-11-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T03:24:04.718387+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1877,12 +1877,12 @@
     "video_id": "_wQMy89GJeQ",
     "title": "Dan Hooker vs Claudio Puelles Prediction and Breakdown - UFC 281 Betting Tips",
     "published_at": "2022-11-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-11T03:27:03.226712+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1890,12 +1890,12 @@
     "video_id": "YpofXB0xCHw",
     "title": "UFC Fight Night Rodriguez vs Lemos Predictions & Full Card Betting Breakdown UFC Vegas 64",
     "published_at": "2022-11-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T03:29:12.550711+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1903,12 +1903,12 @@
     "video_id": "KtQu7zC7Hfs",
     "title": "Islam Makhachev vs Alexander Volkanovski Early Prediction and Breakdown - UFC 280 Reaction",
     "published_at": "2022-10-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T03:32:03.657964+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1916,12 +1916,12 @@
     "video_id": "o78skCIopNo",
     "title": "Last Minute Detailed Predictions! UFC 280 Oliveira vs Makhachev - Full Card Betting Breakdown",
     "published_at": "2022-10-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-11T03:34:36.293421+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1929,12 +1929,12 @@
     "video_id": "4QAGoqQX-Eg",
     "title": "UFC Fight Night Grasso vs Araujo Predictions & Full Card Betting Breakdown UFC Vegas 62",
     "published_at": "2022-10-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T03:37:18.762288+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1942,12 +1942,12 @@
     "video_id": "61acPZ9zNM4",
     "title": "UFC Fight Night Dern vs Yan Predictions & Full Card Betting Breakdown UFC Vegas 61",
     "published_at": "2022-09-27",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T03:39:38.594450+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1955,12 +1955,12 @@
     "video_id": "TAjT_1EcfgI",
     "title": "UFC Fight Night Sandhagen vs Song Predictions & Full Card Betting Breakdown UFC Vegas 60",
     "published_at": "2022-09-13",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T03:57:37.687624+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1968,7 +1968,7 @@
     "video_id": "Oe3W3mIxQLU",
     "title": "Last Minute Detailed Predictions! UFC 279 Diaz vs Ferguson - Full Card Betting Breakdown",
     "published_at": "2022-09-10",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -1981,12 +1981,12 @@
     "video_id": "lDb8HFPnXRY",
     "title": "Ciryl gane vs Tai Tuivasa Full Fight Reaction and Breakdown - UFC Paris Event Recap",
     "published_at": "2022-09-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T04:00:10.013322+00:00"
   },
   {
     "creator": "mma_guru",
@@ -1994,12 +1994,12 @@
     "video_id": "QL2KWxrtWiI",
     "title": "Last Minute Detailed Predictions! UFC 278 Usman vs Edwards 2 - Full Card Betting Breakdown",
     "published_at": "2022-08-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:03:15.820183+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2007,12 +2007,12 @@
     "video_id": "cEGlbGKo7S4",
     "title": "Marlon Vera vs Dominick Cruz Prediction and Breakdown - UFC San Diego Betting Tips",
     "published_at": "2022-08-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-11T04:05:41.298426+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2020,12 +2020,12 @@
     "video_id": "aImoiVVEJh0",
     "title": "Vicente Luque vs Geoff Neal Prediction and Breakdown - UFC Vegas 59 Betting Tips",
     "published_at": "2022-08-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-11T04:08:08.098179+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2033,7 +2033,7 @@
     "video_id": "aWwc-6wj_WE",
     "title": "Last Minute Detailed Predictions! UFC 277 Pena vs Nunes 2 - Full Card Betting Breakdown",
     "published_at": "2022-07-30",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -2046,12 +2046,12 @@
     "video_id": "zNOizs7YrFA",
     "title": "Last Minute Detailed Predictions! UFC London Blaydes vs Aspinall - Full Card Betting Breakdown",
     "published_at": "2022-07-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:10:02.914702+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2059,12 +2059,12 @@
     "video_id": "MOuDcT8dF3s",
     "title": "UFC on ABC 3 Event Recap Ortega vs Rodriguez Full Card Reaction & Breakdown",
     "published_at": "2022-07-16",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:12:48.605728+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2072,12 +2072,12 @@
     "video_id": "owDTcCn431k",
     "title": "UFC Fight Night Dos Anjos vs Fiziev Predictions & Full Card Betting Breakdown UFC Vegas 58",
     "published_at": "2022-07-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-11T04:25:14.867109+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2085,7 +2085,7 @@
     "video_id": "sn8Hqf7hMwg",
     "title": "Last Minute Detailed Predictions! UFC 276 Adesanya vs Cannonier - Full Card Betting Breakdown",
     "published_at": "2022-07-02",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -2098,12 +2098,12 @@
     "video_id": "X7UJuLogeBU",
     "title": "Neil Magny vs Shavkat Rakhmonov Prediction and Breakdown - UFC Vegas 57 Betting Tips",
     "published_at": "2022-06-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T04:27:17.636016+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2111,12 +2111,12 @@
     "video_id": "_9LPQ1ccTHo",
     "title": "Kevin Holland vs Tim Means Prediction and Breakdown - UFC Austin Betting Tips",
     "published_at": "2022-06-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-11T04:29:56.655253+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2124,12 +2124,12 @@
     "video_id": "GluzyGAnt5g",
     "title": "Last Minute Detailed Predictions! UFC 275 Teixeira vs Prochazka - Full Card Betting Breakdown",
     "published_at": "2022-06-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:32:08.381771+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2137,12 +2137,12 @@
     "video_id": "UBURXpCGBoY",
     "title": "UFC Fight Night Volkov vs Rozenstruik Predictions & Full Card Betting Breakdown UFC Vegas 56",
     "published_at": "2022-05-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-11T04:34:05.426230+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2150,12 +2150,12 @@
     "video_id": "7DiKmhD7ReI",
     "title": "UFC Fight Night Holm vs Vieira Predictions & Full Card Betting Breakdown UFC Vegas 55",
     "published_at": "2022-05-17",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:41:32.320119+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2163,12 +2163,12 @@
     "video_id": "HP9CW7dPsI8",
     "title": "UFC Fight Night Blachowicz vs Rakic Predictions & Full Card Betting Breakdown UFC Vegas 54",
     "published_at": "2022-05-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:46:02.354067+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2176,12 +2176,12 @@
     "video_id": "W7FWUI6uioM",
     "title": "Last Minute Detailed Predictions! UFC 274 Oliveira vs Gaethje - Full Card Betting Breakdown",
     "published_at": "2022-05-07",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:48:23.258729+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2189,12 +2189,12 @@
     "video_id": "JRwLAPppdB8",
     "title": "UFC Fight Night Font vs Vera Predictions & Full Card Betting Breakdown UFC Vegas 53",
     "published_at": "2022-04-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:50:56.510138+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2202,12 +2202,12 @@
     "video_id": "yVOP1G9w6hw",
     "title": "UFC Fight Night Lemos vs Andrade Predictions & Full Card Betting Breakdown UFC Vegas 52",
     "published_at": "2022-04-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:53:00.733152+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2215,12 +2215,12 @@
     "video_id": "oU9_-N9_PfE",
     "title": "Vicente Luque vs Belal Muhammad 2 Prediction and Breakdown - UFC Vegas 51 Betting Tips",
     "published_at": "2022-04-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-11T04:55:27.943499+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2228,12 +2228,12 @@
     "video_id": "VKx2pZGmPZ8",
     "title": "Last Minute Detailed Predictions! UFC 273 Volkanovski vs Korean Zombie - Full Card Betting Breakdown",
     "published_at": "2022-04-09",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T04:57:26.629593+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2241,12 +2241,12 @@
     "video_id": "W_6yd0COJ1I",
     "title": "Curtis Blaydes vs Chris Daukaus Prediction and Breakdown - UFC Columbus Betting Tips",
     "published_at": "2022-03-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T04:59:35.159300+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2254,12 +2254,12 @@
     "video_id": "ugCIX3tbUf4",
     "title": "Alexander Volkov vs Tom Aspinall Full Fight Reaction and Breakdown - UFC London Event Recap",
     "published_at": "2022-03-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T05:02:31.222259+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2267,12 +2267,12 @@
     "video_id": "--gR5ZmcVxw",
     "title": "Alex Pereira vs Bruno Silva Prediction and Breakdown - UFC Vegas 50 Betting Tips",
     "published_at": "2022-03-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 13,
+    "processed_at": "2026-05-11T05:13:57.617992+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2280,7 +2280,7 @@
     "video_id": "7eZMFERTO1c",
     "title": "Last Minute Detailed Predictions For UFC 272 Covington vs Masvidal - Full Card Betting Breakdown",
     "published_at": "2022-03-05",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -2293,12 +2293,12 @@
     "video_id": "0onj90xg08k",
     "title": "Last Minute Detailed Predictions For UFC Vegas 49 Makhachev vs Green Full Card Betting Breakdown",
     "published_at": "2022-02-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:16:15.992738+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2306,7 +2306,7 @@
     "video_id": "YDxSiIIuuIA",
     "title": "UFC Fight Night Walker vs Hill Predictions & Full Card Betting Breakdown UFC Vegas 48",
     "published_at": "2022-02-15",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -2319,12 +2319,12 @@
     "video_id": "1v4gt9uuE14",
     "title": "Last Minute Detailed Predictions For UFC 271 Adesanya vs Whittaker 2 - Full Card Betting Breakdown",
     "published_at": "2022-02-12",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:19:04.691342+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2332,12 +2332,12 @@
     "video_id": "qikWTHRsE1U",
     "title": "UFC Fight Night Hermansson vs Strickland Predictions & Full Card Betting Breakdown UFC Vegas 47",
     "published_at": "2022-01-31",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:21:23.474072+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2345,12 +2345,12 @@
     "video_id": "M5Gshzc-ZLw",
     "title": "Last Minute Detailed Predictions For UFC 270 Ngannou vs Gane - Full Card Betting Breakdown",
     "published_at": "2022-01-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:23:41.987883+00:00"
   },
   {
     "creator": "mma_guru",
@@ -2358,12 +2358,12 @@
     "video_id": "jAn5AleeHNM",
     "title": "Last Minute Detailed Predictions For UFC Vegas 46 Kattar vs Chikadze Full Card Betting Breakdown",
     "published_at": "2022-01-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:26:03.988829+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11393,12 +11393,12 @@
     "video_id": "-p-tzBFxovA",
     "title": "Jared Cannonier vs Sean Strickland Prediction and Breakdown - UFC Vegas 66 Betting Tips",
     "published_at": "2022-12-14",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:28:35.552875+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11406,12 +11406,12 @@
     "video_id": "zAfA_JJdz3c",
     "title": "Darren Till vs Dricus Du Plessis Prediction and Breakdown - UFC 282 Betting Tips",
     "published_at": "2022-12-08",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:31:20.891217+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11419,12 +11419,12 @@
     "video_id": "PO2iqhoBRjA",
     "title": "UFC Fight Night Thompson vs Holland Predictions & Full Card Breakdown - UFC Orlando Betting Tips",
     "published_at": "2022-11-28",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:33:39.282368+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11432,12 +11432,12 @@
     "video_id": "o30FIEwRGUI",
     "title": "Dustin Poirier vs Michael Chandler Prediction and Breakdown - UFC 281 Betting Tips",
     "published_at": "2022-11-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:36:42.533204+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11445,12 +11445,12 @@
     "video_id": "c5qyWo2VqJo",
     "title": "UFC Fight Night Kattar vs Allen Predictions & Full Card Betting Breakdown UFC Vegas 63",
     "published_at": "2022-10-25",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:39:17.145658+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11458,12 +11458,12 @@
     "video_id": "grInSADJsCI",
     "title": "Belal Muhammad vs Sean Brady Prediction and Breakdown - UFC 280 Betting Tips",
     "published_at": "2022-10-20",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:41:14.965500+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11471,12 +11471,12 @@
     "video_id": "ehWtICIErrU",
     "title": "Cory Sandhagen vs Song Yadong Prediction and Breakdown - UFC 279 Betting Tips",
     "published_at": "2022-09-13",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:43:06.046837+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11484,12 +11484,12 @@
     "video_id": "QNfhzHtORzc",
     "title": "UFC 279 New Predictions! Chimaev vs Holland? Diaz vs Ferguson? Jingliang vs Rodriguez?",
     "published_at": "2022-09-10",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 10,
+    "processed_at": "2026-05-11T05:45:40.995493+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11497,12 +11497,12 @@
     "video_id": "6ActIIV1yHk",
     "title": "Robert Whittaker vs Marvin Vettori Prediction and Breakdown - UFC Paris Betting Tips",
     "published_at": "2022-09-01",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:48:34.197992+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11510,12 +11510,12 @@
     "video_id": "liKoGe3Nt6I",
     "title": "Jose Aldo vs Merab Dvalishvili Prediction and Breakdown - UFC 278 Betting Tips",
     "published_at": "2022-08-19",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 1,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-11T05:51:32.518079+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11523,12 +11523,12 @@
     "video_id": "432e4VtYKdk",
     "title": "UFC Fight Night Vera vs Cruz Predictions & Full Card Breakdown - UFC San Diego Betting Tips",
     "published_at": "2022-08-08",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:54:11.584974+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11536,12 +11536,12 @@
     "video_id": "6lFa-FoyQgA",
     "title": "Thiago Santos vs Jamahal Hill Prediction and Breakdown - UFC Vegas 59 Betting Tips",
     "published_at": "2022-08-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T05:56:48.961679+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11549,12 +11549,12 @@
     "video_id": "uoHa1CrBMEA",
     "title": "Brandon Moreno vs Kai Kara-France 2 Prediction and Breakdown - UFC 277 Betting Tips",
     "published_at": "2022-07-28",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-11T05:59:43.359341+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11562,12 +11562,12 @@
     "video_id": "y2PFkeShukI",
     "title": "Paddy Pimblett vs Jordan Leavitt Prediction and Breakdown - UFC London Betting Tips",
     "published_at": "2022-07-21",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:02:23.541833+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11575,12 +11575,12 @@
     "video_id": "soo3LIrizEg",
     "title": "UFC Fight Night Ortega vs Rodriguez Predictions & Full Card Betting Breakdown on ABC 3",
     "published_at": "2022-07-11",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:04:22.648194+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11588,12 +11588,12 @@
     "video_id": "juh2WvmnRfw",
     "title": "Brad Riddell vs Jalin Turner Prediction and Breakdown - UFC 276 Betting Tips",
     "published_at": "2022-06-30",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T06:06:40.141293+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11601,12 +11601,12 @@
     "video_id": "u5CCUQ6YS9U",
     "title": "UFC Fight Night Tsarukyan vs Gamrot Predictions & Full Card Betting Breakdown UFC Vegas 57",
     "published_at": "2022-06-20",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:09:03.770005+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11614,12 +11614,12 @@
     "video_id": "TjOUxqT23w4",
     "title": "UFC Fight Night Kattar vs Emmett Predictions & Full Card Betting Breakdown UFC Austin",
     "published_at": "2022-06-13",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:11:52.381002+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11627,12 +11627,12 @@
     "video_id": "5hcAQ2rK9sQ",
     "title": "Valentina Shevchenko vs Taila Santos Prediction and Breakdown - UFC 275 Betting Tips",
     "published_at": "2022-06-08",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:13:41.331488+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11640,12 +11640,12 @@
     "video_id": "emZBRa5Cqw0",
     "title": "Jan Blachowicz vs Aleksandar Rakic Prediction and Breakdown - UFC Vegas 54 Betting Tips",
     "published_at": "2022-05-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:15:54.403241+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11653,12 +11653,12 @@
     "video_id": "ICSQxyyDoiE",
     "title": "Michael Chandler vs Tony Ferguson Prediction and Breakdown - UFC 274 Betting Tips",
     "published_at": "2022-05-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:18:20.778304+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11666,12 +11666,12 @@
     "video_id": "T67dRtA8TSk",
     "title": "Rob Font vs Marlon Vera Prediction and Breakdown - UFC Vegas 53 Betting Tips",
     "published_at": "2022-04-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 1,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-11T06:20:24.737442+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11679,12 +11679,12 @@
     "video_id": "unQAP7egJv4",
     "title": "UFC Fight Night Luque vs Muhammad 2 Predictions & Full Card Betting Breakdown UFC Vegas 51",
     "published_at": "2022-04-11",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
-    "flagged_count": 0,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:23:13.045136+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11692,12 +11692,12 @@
     "video_id": "cDVlfqXfMKc",
     "title": "Alexander Volkanovski vs The Korean Zombie Prediction and Breakdown - UFC 273 Betting Tips",
     "published_at": "2022-04-06",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:25:20.727428+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11705,12 +11705,12 @@
     "video_id": "oufEm06rmVA",
     "title": "UFC Fight Night Blaydes vs Daukaus Predictions & Full Card Betting Breakdown UFC Columbus",
     "published_at": "2022-03-21",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:27:56.778422+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11718,12 +11718,12 @@
     "video_id": "YGawO8zIWSw",
     "title": "Paddy Pimblett vs Rodrigo Vargas Prediction and Breakdown - UFC London Betting Tips",
     "published_at": "2022-03-17",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:30:57.739149+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11731,12 +11731,12 @@
     "video_id": "S7faqXbSWXc",
     "title": "Thiago Santos vs Magomed Ankalaev Prediction and Breakdown - UFC Vegas 50 Betting Tips",
     "published_at": "2022-03-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:33:45.598215+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11744,12 +11744,12 @@
     "video_id": "rE5WOxp0WeM",
     "title": "Edson Barboza vs Bryce Mitchell Prediction and Breakdown - UFC 272 Betting Tips",
     "published_at": "2022-03-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 12,
+    "processed_at": "2026-05-11T06:36:05.182969+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11757,12 +11757,12 @@
     "video_id": "0NqLDbGWXhs",
     "title": "UFC Fight Night Makhachev vs Green Predictions & Full Card Betting Breakdown UFC Vegas 49",
     "published_at": "2022-02-21",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:38:29.755830+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11770,12 +11770,12 @@
     "video_id": "pSStc12EfJA",
     "title": "Johnny Walker vs Jamahal Hill Prediction and Breakdown - UFC Vegas 48 Betting Tips",
     "published_at": "2022-02-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-11T06:40:47.088563+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11783,12 +11783,12 @@
     "video_id": "y4PuKPmHTuo",
     "title": "Jared Cannonier vs Derek Brunson Prediction and Breakdown - UFC 271 Betting Tips",
     "published_at": "2022-02-10",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:43:24.298066+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11796,12 +11796,12 @@
     "video_id": "Gr_OtG3L3N4",
     "title": "Jack Hermansson vs Sean Strickland Prediction and Breakdown - UFC Vegas 47 Betting Tips",
     "published_at": "2022-02-01",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 1,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 1,
+    "processed_at": "2026-05-11T06:46:16.831060+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11809,12 +11809,12 @@
     "video_id": "z64cMEgP7DE",
     "title": "Brandon Moreno vs Deiveson Figueiredo 3 Prediction and Breakdown - UFC 270 Betting Tips",
     "published_at": "2022-01-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:48:37.167605+00:00"
   },
   {
     "creator": "mma_guru",
@@ -11822,12 +11822,12 @@
     "video_id": "e_k89-ccZ38",
     "title": "UFC Fight Night Kattar vs Chikadze Predictions & Full Card Betting Breakdown UFC Vegas 46",
     "published_at": "2022-01-10",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
-    "flagged_count": 0,
+    "flagged_count": 1,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:51:11.959587+00:00"
   },
   {
     "creator": "mma_guru",
@@ -15163,12 +15163,12 @@
     "video_id": "YKUb3Wc96h0",
     "title": "Jan Blachowicz vs Magomed Ankalaev Prediction and Breakdown - UFC 282 Betting Tips",
     "published_at": "2022-12-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:53:01.239301+00:00"
   },
   {
     "creator": "mma_guru",
@@ -15176,12 +15176,12 @@
     "video_id": "0t6Nh9gwPd4",
     "title": "Stephen Thompson vs Kevin Holland Prediction and Breakdown - UFC Orlando Betting Tips",
     "published_at": "2022-11-29",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:56:01.504274+00:00"
   },
   {
     "creator": "mma_guru",
@@ -15189,12 +15189,12 @@
     "video_id": "o-JNesloVYM",
     "title": "Carla Esparza vs Zhang Weili Prediction and Breakdown - UFC 281 Betting Tips",
     "published_at": "2022-11-09",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-11T06:58:43.507007+00:00"
   },
   {
     "creator": "mma_guru",

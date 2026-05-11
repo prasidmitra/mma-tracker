@@ -184,12 +184,7 @@ export function Dashboard() {
         Accuracy excludes pick'ems, cancelled fights, and predictions pending review
       </p>
 
-      <AccuracyChart
-        events={events}
-        predictions={predictions}
-        filters={filters}
-        activeCreators={stats.map(s => s.slug)}
-      />
+      <AccuracyChart events={events} predictions={predictions} />
 
       </>
       )}
