@@ -7714,7 +7714,7 @@
     "video_id": "n-ZEbA_nnR4",
     "title": "UFC 269: Predictions and Breakdown",
     "published_at": "2021-12-10",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7727,12 +7727,12 @@
     "video_id": "N9UgNM0X-VU",
     "title": "UFC Vegas 44: Predictions and Breakdown",
     "published_at": "2021-12-03",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-12T01:57:05.323656+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7740,12 +7740,12 @@
     "video_id": "oZ15Danb-RM",
     "title": "UFC 268: Predictions and Breakdown",
     "published_at": "2021-11-05",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-12T01:59:25.508679+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7753,7 +7753,7 @@
     "video_id": "mV8hiZ0sNj8",
     "title": "UFC 267: Predictions and Breakdown",
     "published_at": "2021-10-29",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7766,12 +7766,12 @@
     "video_id": "bySS7HN0g3U",
     "title": "UFC Vegas 41: Predictions and Breakdown",
     "published_at": "2021-10-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 14,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-12T02:02:21.410465+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7779,7 +7779,7 @@
     "video_id": "HVezhgXVISA",
     "title": "BREAKING!!! Francis Ngannou vs Ciryl Gane OFFICIAL for UFC 270 (Breakdown)",
     "published_at": "2021-10-06",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7792,12 +7792,12 @@
     "video_id": "fzDUnwX0MgM",
     "title": "UFC Vegas 38: Predictions and Breakdown",
     "published_at": "2021-10-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 8,
+    "processed_at": "2026-05-12T02:04:40.360224+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7805,12 +7805,12 @@
     "video_id": "FKaNJ3DV_S8",
     "title": "UFC 266: Predictions and Breakdown",
     "published_at": "2021-09-24",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
-    "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
+    "flagged_count": 1,
+    "skipped_count": 5,
+    "processed_at": "2026-05-12T02:07:19.724335+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7818,7 +7818,7 @@
     "video_id": "Qdhf6oXCR2U",
     "title": "UFC ESPN 30: Predictions and Breakdown",
     "published_at": "2021-08-27",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7831,12 +7831,12 @@
     "video_id": "m45RLIYUiTM",
     "title": "UFC Vegas 34: Predictions and Breakdown (Pacquiao vs Ugas)",
     "published_at": "2021-08-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 11,
+    "processed_at": "2026-05-12T02:10:12.810676+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7844,12 +7844,12 @@
     "video_id": "rcP0Ice7_ao",
     "title": "UFC 265: Predictions and Breakdown",
     "published_at": "2021-08-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-12T02:12:02.182986+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7857,12 +7857,12 @@
     "video_id": "TU2XD5BrrVo",
     "title": "UFC on ESPN 27: Predictions and Breakdown",
     "published_at": "2021-07-23",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-12T02:14:39.080448+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7870,7 +7870,7 @@
     "video_id": "PRZIxHqbVwM",
     "title": "UFC 264: Predictions and Breakdown",
     "published_at": "2021-07-08",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7883,12 +7883,12 @@
     "video_id": "8Zv6YAzW2-c",
     "title": "UFC Vegas 30: Predictions and Breakdown",
     "published_at": "2021-06-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 8,
+    "processed_at": "2026-05-12T02:16:57.608257+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7896,7 +7896,7 @@
     "video_id": "FCe51ZIWu0A",
     "title": "UFC 263: Predictions and Breakdown",
     "published_at": "2021-06-10",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7909,7 +7909,7 @@
     "video_id": "gK-WfVMioOY",
     "title": "UFC Vegas 27: Predictions and Breakdown",
     "published_at": "2021-05-21",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -7922,12 +7922,12 @@
     "video_id": "hPCosW9nHII",
     "title": "UFC 262: Predictions and Breakdown",
     "published_at": "2021-05-14",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-12T02:19:14.897371+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7935,12 +7935,12 @@
     "video_id": "SIe0k5kTQ40",
     "title": "UFC 261: Predictions and Breakdown",
     "published_at": "2021-04-22",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 13,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 8,
+    "processed_at": "2026-05-12T02:21:36.531047+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7948,12 +7948,12 @@
     "video_id": "qwnodl7hzeE",
     "title": "UFC 260: Predictions and Breakdown",
     "published_at": "2021-03-25",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-12T02:23:52.624641+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7961,12 +7961,12 @@
     "video_id": "0xxaxPSEr2g",
     "title": "UFC 259: Predictions and Breakdown",
     "published_at": "2021-03-04",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 15,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-12T02:26:12.688741+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7974,12 +7974,12 @@
     "video_id": "JFNOQhiVtHQ",
     "title": "UFC Vegas 20: Predictions and Breakdown",
     "published_at": "2021-02-26",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 9,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 5,
+    "processed_at": "2026-05-12T02:28:33.827948+00:00"
   },
   {
     "creator": "the_weasel",
@@ -7987,12 +7987,12 @@
     "video_id": "dKTe6O1rF8o",
     "title": "UFC 258: Predictions and Breakdown",
     "published_at": "2021-02-11",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 6,
+    "processed_at": "2026-05-12T02:30:46.363791+00:00"
   },
   {
     "creator": "the_weasel",
@@ -8000,12 +8000,12 @@
     "video_id": "7FwOOv0LwZ4",
     "title": "UFC 257 (Conor McGregor vs Dustin Poirier 2): Predictions and Breakdown",
     "published_at": "2021-01-20",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 11,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 7,
+    "processed_at": "2026-05-12T02:33:16.024972+00:00"
   },
   {
     "creator": "the_weasel",
@@ -8013,12 +8013,12 @@
     "video_id": "pVhMF74E3IE",
     "title": "UFC on ABC (Max Holloway vs Calvin Kattar): Predictions and Breakdown",
     "published_at": "2021-01-15",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 10,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 6,
+    "processed_at": "2026-05-12T02:35:43.851339+00:00"
   },
   {
     "creator": "the_weasel",
@@ -9846,12 +9846,12 @@
     "video_id": "FhTPgw9Mi1c",
     "title": "Let's Talk: Volkanovski the Best UFC Fighter? If Colby Covington Wins Belt; UFC 267 & 268 Preview",
     "published_at": "2021-10-06",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 9,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 9,
+    "processed_at": "2026-05-12T02:38:08.515604+00:00"
   },
   {
     "creator": "the_weasel",
@@ -9859,12 +9859,12 @@
     "video_id": "Co1izkbG9Uc",
     "title": "Let's Talk: Conor's Changes for Dustin; How Colby beats Usman; UFC 264 Preview + more",
     "published_at": "2021-07-02",
-    "status": "pending",
-    "transcript_type": null,
-    "predictions_extracted": 0,
+    "status": "completed",
+    "transcript_type": "auto",
+    "predictions_extracted": 12,
     "flagged_count": 0,
-    "skipped_count": 0,
-    "processed_at": null
+    "skipped_count": 8,
+    "processed_at": "2026-05-12T02:40:24.966132+00:00"
   },
   {
     "creator": "the_weasel",
@@ -19258,12 +19258,12 @@
     "video_id": "e60LEUHqx1o",
     "title": "Shane Burgos vs Billy Quarantillo - UFC 268 Prediction",
     "published_at": "2021-11-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:05:41.629093+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19271,12 +19271,12 @@
     "video_id": "646Pc9fjPSo",
     "title": "Petr Yan vs Cory Sandhagen - UFC 267 Prediction",
     "published_at": "2021-10-25",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:08:36.043672+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19284,12 +19284,12 @@
     "video_id": "li6ifuxJjUc",
     "title": "Valentina Shevchenko vs Lauren Murphy Prediction - UFC 266",
     "published_at": "2021-09-21",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:11:36.931023+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19297,7 +19297,7 @@
     "video_id": "bOwo-eq_hAc",
     "title": "Jose Aldo vs Pedro Munhoz UFC 265 Prediction",
     "published_at": "2021-08-03",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -19310,12 +19310,12 @@
     "video_id": "5rqmARp2NIw",
     "title": "UFC 264 Prediction: Stephen Wonderboy Thompson vs Gilbert Burns",
     "published_at": "2021-07-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:13:51.103550+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19323,12 +19323,12 @@
     "video_id": "YySJUv5ldcg",
     "title": "UFC 263: Nate Diaz vs Leon Edwards Breakdown + Prediction",
     "published_at": "2021-06-07",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:16:07.636615+00:00"
   },
   {
     "creator": "mma_joey",
@@ -19336,12 +19336,12 @@
     "video_id": "xF1cq_rFP10",
     "title": "UFC 261 Prediction: Weili Zhang vs Rose Namajunas",
     "published_at": "2021-04-20",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:18:34.017378+00:00"
   },
   {
     "creator": "the_weasel",
@@ -20974,7 +20974,7 @@
     "video_id": "0m-5WFwoBFc",
     "title": "Amanda Nunes vs Julianna Peña - UFC 269 Prediction",
     "published_at": "2021-12-06",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -20987,7 +20987,7 @@
     "video_id": "tb8HC7EZq5Q",
     "title": "Kamaru Usman vs Colby Covington 2 - UFC 268 Prediction",
     "published_at": "2021-11-02",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -21000,12 +21000,12 @@
     "video_id": "64qp6dVYNKQ",
     "title": "Islam Makhachev vs Dan Hooker - UFC 267 Prediction",
     "published_at": "2021-10-25",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:21:25.062862+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21013,12 +21013,12 @@
     "video_id": "5I0JhQR4bjA",
     "title": "Nick Diaz vs Robbie Lawler 2 Prediction - UFC 266",
     "published_at": "2021-09-20",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:24:10.590443+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21026,7 +21026,7 @@
     "video_id": "ZCsKHQk3q4M",
     "title": "Derrick Lewis vs Ciryl Gane UFC 265 Prediction",
     "published_at": "2021-08-02",
-    "status": "pending",
+    "status": "transcript_unavailable",
     "transcript_type": null,
     "predictions_extracted": 0,
     "flagged_count": 0,
@@ -21039,12 +21039,12 @@
     "video_id": "SVe0RJRm7s0",
     "title": "UFC 264 Prediction: Conor McGregor vs Dustin Poirier 3",
     "published_at": "2021-07-05",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:26:45.154230+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21052,12 +21052,12 @@
     "video_id": "3-S9hv6Ss1U",
     "title": "UFC 261 Prediction: Kamaru Usman vs Jorge Masvidal 2",
     "published_at": "2021-04-19",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:28:37.574880+00:00"
   },
   {
     "creator": "mma_guru",
@@ -21936,12 +21936,12 @@
     "video_id": "QgN3ULJhAm8",
     "title": "Geoff Neal vs Santiago Ponzinibbio - UFC 269 Prediction",
     "published_at": "2021-12-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:31:23.668638+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21949,12 +21949,12 @@
     "video_id": "gKrecuWNC0I",
     "title": "Rose Namajunas vs Weili Zhang 2 - UFC 268 Prediction",
     "published_at": "2021-11-02",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:33:58.891472+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21962,12 +21962,12 @@
     "video_id": "BkwM1CH1Qfg",
     "title": "Alexander Volkov vs Marcin Tybura - UFC 267 Prediction",
     "published_at": "2021-10-23",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:36:03.862757+00:00"
   },
   {
     "creator": "mma_joey",
@@ -21975,12 +21975,12 @@
     "video_id": "1Lo2i6qH-60",
     "title": "Curtis Blaydes vs Jairzinho Rozenstruik Prediction - UFC 266",
     "published_at": "2021-09-17",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:38:47.165322+00:00"
   },
   {
     "creator": "mma_guru",
@@ -22534,12 +22534,12 @@
     "video_id": "wa9-ff-Y3Ds",
     "title": "Kai Kara-France vs Cody Garbrandt - UFC 269 Prediction",
     "published_at": "2021-12-03",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:40:48.139858+00:00"
   },
   {
     "creator": "mma_joey",
@@ -22547,12 +22547,12 @@
     "video_id": "iDCDhzYx30c",
     "title": "Justin Gaethje vs Michael Chandler - UFC 268 Prediction",
     "published_at": "2021-11-01",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:42:36.158170+00:00"
   },
   {
     "creator": "mma_joey",
@@ -22560,12 +22560,12 @@
     "video_id": "RuOVnpc6tGQ",
     "title": "Khamzat Chimaev vs Li JingLiang - UFC 267 Prediction",
     "published_at": "2021-10-23",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:45:12.269463+00:00"
   },
   {
     "creator": "mma_joey",
@@ -22573,12 +22573,12 @@
     "video_id": "JLjsqXx3GeM",
     "title": "Jessica Andrade vs Cynthia Calvillo Prediction - UFC 266",
     "published_at": "2021-09-17",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:47:23.051027+00:00"
   },
   {
     "creator": "mma_guru",
@@ -22937,12 +22937,12 @@
     "video_id": "G6M7YcsVCPw",
     "title": "Sean O'Malley vs Raulian Paiva - UFC 269 Prediction",
     "published_at": "2021-12-01",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:49:51.001314+00:00"
   },
   {
     "creator": "mma_joey",
@@ -22950,12 +22950,12 @@
     "video_id": "E2Fbr52ZRxw",
     "title": "Magomed Ankalaev vs Volkan Oezdemir - UFC 267 Prediction",
     "published_at": "2021-10-22",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:52:36.864013+00:00"
   },
   {
     "creator": "mma_joey",
@@ -22963,11 +22963,11 @@
     "video_id": "TvhOEREgf-w",
     "title": "Marlon Moraes vs Merab Dvalishvili Prediction - UFC 266",
     "published_at": "2021-09-16",
-    "status": "pending",
-    "transcript_type": null,
+    "status": "completed",
+    "transcript_type": "auto",
     "predictions_extracted": 0,
     "flagged_count": 0,
     "skipped_count": 0,
-    "processed_at": null
+    "processed_at": "2026-05-12T01:54:35.772265+00:00"
   }
 ]

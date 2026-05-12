@@ -712,5 +712,19 @@
     "status": "pending_review",
     "manually_resolved": false,
     "resolved_winner": null
+  },
+  {
+    "flag_id": "flag_0052",
+    "creator": "the_weasel",
+    "event_id": "ufc-266",
+    "fight_id": "ufc-266-modafferi-santos",
+    "video_id": "FKaNJ3DV_S8",
+    "ambiguity_reason": "Creator does not explicitly state a prediction for this fight, only comments on the odds being unfavorable to Modafferi.",
+    "raw_excerpt": "tyler santos vs roxanne mata fairy has santos as a -435 favorite",
+    "suggested_winner": "Taila Santos",
+    "confidence_in_suggestion": "low",
+    "status": "pending_review",
+    "manually_resolved": false,
+    "resolved_winner": null
   }
 ]
