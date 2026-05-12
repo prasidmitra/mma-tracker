@@ -5,6 +5,7 @@ import { Dashboard } from './pages/Dashboard';
 import { CreatorDetail } from './pages/CreatorDetail';
 import { Compare } from './pages/Compare';
 import { About } from './pages/About';
+import { Contact } from './pages/Contact';
 import { Admin } from './pages/Admin';
 import { Navbar } from './components/Navbar';
 
@@ -27,6 +28,7 @@ export function AppRoutes() {
         <Route path="compare" element={<Compare />} />
       </Route>
       <Route path="about" element={<><Navbar /><About /></>} />
+      <Route path="contact" element={<Contact />} />
       <Route path="admin" element={<Admin />} />
     </Routes>
   );

@@ -12,7 +12,7 @@ const CREATOR_SLUGS = [
   'mma_guru', 'mma_joey', 'sneaky_mma', 'brendan_schaub',
   'luke_thomas', 'the_weasel', 'bedtime_mma', 'lucas_tracy_mma',
 ];
-const ROUTES = ['/', '/about', '/admin', '/compare', ...CREATOR_SLUGS.map(s => `/creator/${s}`)];
+const ROUTES = ['/', '/about', '/contact', '/admin', '/compare', ...CREATOR_SLUGS.map(s => `/creator/${s}`)];
 
 if (!fs.existsSync(SERVER_BUNDLE)) {
   console.error('SSR bundle not found — skipping prerender.');

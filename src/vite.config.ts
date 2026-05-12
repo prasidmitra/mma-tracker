@@ -9,7 +9,7 @@ const CREATOR_SLUGS = [
   'mma_guru', 'mma_joey', 'sneaky_mma', 'brendan_schaub',
   'luke_thomas', 'the_weasel', 'bedtime_mma', 'lucas_tracy_mma',
 ];
-const STATIC_ROUTES = ['/', '/about', ...CREATOR_SLUGS.map(s => `/creator/${s}`)];
+const STATIC_ROUTES = ['/', '/about', '/contact', ...CREATOR_SLUGS.map(s => `/creator/${s}`)];
 
 function copyDirRecursive(src: string, dest: string) {
   fs.mkdirSync(dest, { recursive: true });
